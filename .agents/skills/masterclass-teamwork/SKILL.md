@@ -1,11 +1,11 @@
 ---
 name: masterclass-teamwork
-description: Help a participant install Git, clone the masterclass starter, and practise local branches and commits; later join a group repository when assigned.
+description: Help a participant install Git and clone the masterclass starter; later join a group repository when assigned.
 ---
 
 # Learn Git with the starter project
 
-Read `guides/teamwork.md` when available. The first session is **Git and the starter repository only**. Help each participant clone `https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit.git` into a new folder, open that folder in Codex, inspect `git status` and `git log -1 --oneline`, then practise a local branch and reviewed commit. Preserve any existing ZIP-based work. Participants have read access to the starter and must not push to it. Do not initialize inside the clone.
+Read `guides/teamwork.md` when available. The first session is **Git and the starter repository only**. Help each participant clone `https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit.git` into a new folder, open that folder in Codex, and inspect `git status`. Preserve any existing ZIP-based work. Participants have read access to the starter and must not push to it. Do not initialize inside the clone.
 
 Group repositories, invitations, shared branches, and pull requests come later. Load `references/group-repositories.md` only after the facilitator has assigned the actual group, owner, repository URL, and members. Never guess those values.
 

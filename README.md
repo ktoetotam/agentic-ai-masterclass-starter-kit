@@ -28,7 +28,7 @@ For the first session, each participant makes their own local clone of the [publ
 git clone https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit.git
 ```
 
-Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP folder; the clone is a separate copy. Practise a local branch and commit, but do not push to the shared starter. The facilitator will set up separate private group repositories when groups are known. GitHub accounts are useful for the workshop; local Git itself works without one.
+Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP folder; the clone is a separate copy. This is the last setup step. Do not push to the shared starter. The facilitator will set up separate private group repositories when groups are known. GitHub accounts are useful for the workshop; local Git itself works without one.
 
 ## Dependencies and local settings
 
@@ -43,6 +43,7 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 - `AGENTS.md`: official-documentation checks, Poetry, variables, group workflow and bounded parallel-agent instructions.
 - `.codex/config.toml`: project defaults for Sol medium, Luna high subagents, live search and at most two child agents. Review before trusting the project; verify effective settings in your client. See [agent settings](guides/agent-practices.md).
 - `.agents/skills/`: ten reusable workshop skills. Keep hidden folders when copying the kit.
+- `.agents/plugins/` and `.claude-plugin/`: optional Codex and Claude Code plugin marketplaces for the same workshop skills.
 - `data/`: fictional practice inputs and expected results where useful.
 - `public/`: local-preview and publishable files. Keep only public-safe content here.
 - `scripts/`: readiness checks, local environment and Git setup, preview and deployment checks.
@@ -51,3 +52,19 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 Use `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. If discovery fails, ask Codex to read the corresponding `.agents/skills/<name>/SKILL.md` directly.
 
 Keep credentials and private inputs out of `public/` and Git. Use ignored `output/` for private drafts. The kit uses no facilitator credentials and does not grant cloud access or API credits. It runs independently of the AI Realist website repository.
+
+## Optional Codex and Claude Code plugins
+
+The local `.agents/skills/` work in Codex without installing a plugin. For a reusable plugin, each client can add this public repository as a marketplace and install `ai-realist-masterclass@ai-realist-workshops`:
+
+```sh
+codex plugin marketplace add ktoetotam/agentic-ai-masterclass-starter-kit
+codex plugin add ai-realist-masterclass@ai-realist-workshops
+```
+
+```sh
+claude plugin marketplace add ktoetotam/agentic-ai-masterclass-starter-kit
+claude plugin install ai-realist-masterclass@ai-realist-workshops
+```
+
+Claude Code also reads `CLAUDE.md` in this project. Its sign-in and billing are separate from ChatGPT Plus. Plugin installation is optional and is not part of the first-session setup, which ends when you get the starter repository.

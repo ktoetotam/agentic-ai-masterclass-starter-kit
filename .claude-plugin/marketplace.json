@@ -1,0 +1,14 @@
+{
+  "name": "ai-realist-workshops",
+  "description": "Reusable skills for the AI Realist Agentic AI Masterclass",
+  "owner": {
+    "name": "AI Realist"
+  },
+  "plugins": [
+    {
+      "name": "ai-realist-masterclass",
+      "source": "./.agents/plugins/plugins/ai-realist-masterclass",
+      "description": "Skills for the Agentic AI Masterclass starter project"
+    }
+  ]
+}

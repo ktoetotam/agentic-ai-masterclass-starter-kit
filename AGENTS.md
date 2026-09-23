@@ -24,7 +24,7 @@ For parallel edits, assign non-overlapping file ownership and tell every agent t
 
 ## Git workflow
 
-For the first session, clone the public starter repository into a new folder, make a local practice branch and commit, and do not push to the starter. Follow `guides/teamwork.md` and `$masterclass-teamwork`; preserve any earlier ZIP-based work. When the facilitator later assigns groups, use one private repository per group, each participant's own clone and one feature branch per task. Inspect `git status` and the active branch before edits; preserve others' work. Agree file ownership and one dependency/lockfile owner. Stage explicit files, inspect the staged diff and exclude secrets/generated environments. Do not use blanket staging, force pushes or destructive resets. Share group work through reviewed commits/pull requests; do not edit in one shared synced folder.
+For the first session, clone the public starter repository into a new folder and open it in Codex; do not push to the starter. Follow `guides/teamwork.md` and `$masterclass-teamwork`; preserve any earlier ZIP-based work. When the facilitator later assigns groups, use one private repository per group, each participant's own clone and one feature branch per task. Inspect `git status` and the active branch before edits; preserve others' work. Agree file ownership and one dependency/lockfile owner. Stage explicit files, inspect the staged diff and exclude secrets/generated environments. Do not use blanket staging, force pushes or destructive resets. Share group work through reviewed commits/pull requests; do not edit in one shared synced folder.
 
 ## Data, secrets and external actions
 

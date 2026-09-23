@@ -6,7 +6,7 @@ GitHub is separate from Git: the laptop check works without an account. Check th
 
 1. Open [github.com/signup](https://github.com/signup). Choose the free account, follow the prompts, and verify the email GitHub sends. If already registered, use **Sign in**. Each person uses their own account. Recommend two-factor authentication. The participant enters their own password, passkey and verification codes.
 2. Open the [AI Realist starter repository](https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit). It is public and needs no invitation. In the repository, click **Code → HTTPS → copy**. In a normal projects folder, run `git clone https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit.git`, then open the cloned folder in Codex. Keep any prior ZIP-based work in its original folder.
-3. Run `git status` and `git log -1 --oneline`. Ask Codex to help make a local practice branch and commit. Do not push to the starter. Never paste a token into a URL or share a GitHub login.
+3. Open the cloned folder in Codex and run `git status`. Stop here for the first session. Do not push to the starter. Never paste a token into a URL or share a GitHub login.
 
 ## Later: find an assigned group repository
 

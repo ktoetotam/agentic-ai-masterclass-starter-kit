@@ -1,0 +1,18 @@
+{
+  "name": "ai-realist-masterclass",
+  "version": "1.0.0",
+  "description": "Workshop skills for setting up and using the AI Realist Agentic AI Masterclass starter.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "AI Realist Masterclass",
+    "shortDescription": "Set up and use the Agentic AI Masterclass starter.",
+    "longDescription": "Guides setup, Git, research, building, data, media, localization and safe workshop deployment in the starter project.",
+    "developerName": "AI Realist",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me with the AI Realist Agentic AI Masterclass starter project. Read AGENTS.md and use the relevant masterclass skill."
+  }
+}

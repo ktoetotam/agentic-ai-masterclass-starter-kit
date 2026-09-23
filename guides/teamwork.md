@@ -1,6 +1,6 @@
 # Get the starter repository
 
-Tomorrow we will set up **Git**, get the starter project from GitHub, and try a local branch. **No groups, invitations, or shared repositories yet.**
+Tomorrow we will set up **Git** and get the starter project from GitHub. **No groups, invitations, or shared repositories yet.**
 
 ## 1. Install Git
 
@@ -30,10 +30,4 @@ git status
 
 If you already started in the ZIP folder, keep it. The clone is a second copy with Git history. Do not run `setup-team-repo.mjs` inside a clone.
 
-## 4. Try Git locally
-
-Ask Codex:
-
-> In this cloned starter, show me the latest commit and help me create my own practice branch. Let me make one small change, review it, and commit it locally. Do not push to the shared starter repository.
-
-You can also see the latest commit with `git log -1 --oneline`. Your practice branch and commit stay on your computer. Later, when groups are known, the facilitator will provide a separate group repository for sharing work. Do not push changes to this starter repository.
+**Done:** open the cloned folder in Codex. The facilitator will provide separate group repositories later. Do not push changes to the shared starter repository.

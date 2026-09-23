@@ -1,0 +1,20 @@
+{
+  "name": "ai-realist-workshops",
+  "interface": {
+    "displayName": "Ai Realist Workshops"
+  },
+  "plugins": [
+    {
+      "name": "ai-realist-masterclass",
+      "source": {
+        "source": "local",
+        "path": "./plugins/ai-realist-masterclass"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

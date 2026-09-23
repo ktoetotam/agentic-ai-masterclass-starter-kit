@@ -72,9 +72,9 @@ Start a **New chat** in your project. Copy this message, paste it, and press **S
 <span class="copy-feedback" role="status" aria-live="polite"></span>
 </div>
 
-For the Git exercise, create a [free GitHub account](https://github.com/signup) and [get the starter repository](teamwork.md). Groups come later.
+Create a [free GitHub account](https://github.com/signup), then [get the starter repository](teamwork.md). This is the last setup step. Groups come later.
 
-**Done when:** the check passes and you see **“Your workspace is running.”**
+**Done when:** the check passes, you see **“Your workspace is running,”** and the cloned starter repository is open in Codex.
 
 </div>
 </section>
