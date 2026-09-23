@@ -16,7 +16,7 @@ function run(command, args) {
   return result.status === 0 ? result.stdout.trim() : null;
 }
 report(meetsTarget(process.versions.node, nodeTarget, 1), 'Node.js',
-  `${process.version}; September 2026 target: ${nodeTarget}+ within Node 26 (Current). See guides/setup-technical.md.`);
+  `${process.version}; September 2026 target: ${nodeTarget}+ within Node 26 (Current). See $masterclass-setup skill.`);
 // npm's JavaScript entrypoint avoids PowerShell execution-policy issues with npm.ps1.
 const npmCandidates = [
   path.join(path.dirname(process.execPath), 'node_modules/npm/bin/npm-cli.js'),
@@ -44,7 +44,7 @@ const gitParts = gitVersion?.match(/^git version (\d+)\.(\d+)\.(\d+)(?:\s|$|\.wi
 const gitOK = Boolean(gitParts && (Number(gitParts[1]) > 2 ||
   (Number(gitParts[1]) === 2 && Number(gitParts[2]) >= 55)));
 report(gitOK, 'Git', gitOK ? gitVersion :
-  `${gitVersion || 'Missing or unavailable on PATH'}; install current Git 2.55.0+ using guides/setup-technical.md#install-git. No GitHub account needed.`);
+  `${gitVersion || 'Missing or unavailable on PATH'}; install current Git 2.55.0+ using $masterclass-setup skill. No GitHub account needed.`);
 const python = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
 const pyResult = existsSync(python) ? run(python, ['-c',
   'import json,sys,sqlite3,ssl; print(json.dumps({"version":list(sys.version_info[:3]),"releaselevel":sys.version_info.releaselevel,"sqlite":sqlite3.sqlite_version,"tls":bool(ssl.OPENSSL_VERSION)}))'
@@ -54,18 +54,18 @@ try { py = JSON.parse(pyResult); } catch { /* human-readable failure below */ }
 const pyVersion = Array.isArray(py?.version) ? py.version.join('.') : 'unavailable';
 const pyOK = meetsTarget(pyVersion, pythonTarget, 2) && py.releaselevel === 'final' && py.tls;
 report(Boolean(pyOK), 'Project Python', pyOK ? `${py.version.join('.')}; SQLite ${py.sqlite}; TLS available` :
-  `${pyVersion}; need stable Python ${pythonTarget}+ within Python 3.14. Follow guides/setup-technical.md; preserve any existing environment.`);
+  `${pyVersion}; need stable Python ${pythonTarget}+ within Python 3.14. Follow $masterclass-setup skill; preserve any existing environment.`);
 const poetryVersion = run('poetry', ['--version']);
 const poetryParts = poetryVersion?.match(/Poetry \(version (\d+)\.(\d+)\.(\d+)\)/);
 const poetryOK = Boolean(poetryParts && Number(poetryParts[1]) === 2 &&
   (Number(poetryParts[2]) > 5 || (Number(poetryParts[2]) === 5 && Number(poetryParts[3]) >= 1)));
-report(poetryOK, 'Poetry', poetryOK ? poetryVersion : 'Install Poetry 2.5.1+ (2.x) using guides/setup-technical.md#poetry-and-env.');
+report(poetryOK, 'Poetry', poetryOK ? poetryVersion : 'Install Poetry 2.5.1+ (2.x) using $masterclass-setup skill.');
 const poetryEnvironment = poetryOK ? run('poetry', ['env', 'info', '--path']) : null;
 let projectEnvironment = false;
 try { projectEnvironment = Boolean(poetryEnvironment && realpathSync(poetryEnvironment) === realpathSync(path.join(root, '.venv'))); }
 catch { /* missing/incomplete environment is reported below */ }
 report(projectEnvironment, 'Poetry environment', projectEnvironment ? 'Poetry selects this project’s .venv.' :
-  'Poetry must select this project’s .venv. Follow guides/setup-technical.md#poetry-and-env; preserve other environments.');
+  'Poetry must select this project’s .venv. Follow $masterclass-setup skill; preserve other environments.');
 report(poetryOK && run('poetry', ['check', '--lock']) !== null, 'Python lockfile',
   'pyproject.toml and poetry.lock must agree. Use Poetry to add/remove dependencies and commit both files.');
 report(Boolean(pyOK && run(python, [path.join(root, 'scripts/check-python.py')])), 'Python dependencies',

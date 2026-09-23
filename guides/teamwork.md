@@ -8,7 +8,7 @@ In Codex, open your masterclass project and say:
 
 > Use $masterclass-setup to check Git on my Mac or Windows computer. If it is missing, install it in my user account. Show me `git --version` when it works.
 
-The [installation skill](setup-technical.md#install-git) handles the commands; you do not need administrator access.
+The `$masterclass-setup` skill handles the commands; you do not need administrator access.
 
 ## 2. Make your own GitHub account
 

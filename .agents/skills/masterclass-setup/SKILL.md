@@ -5,7 +5,7 @@ description: Set up or diagnose an Agentic AI Masterclass participant workspace 
 
 # Prepare the participant workspace
 
-Read `AGENTS.md` and `guides/setup.md`. `guides/setup-technical.md` is the short participant page. For installation commands, read only the relevant OS and failed-check sections of `references/platform-installation.md`; use `guides/agent-practices.md` for configuration. For GitHub account and repository steps, read `references/github-setup.md`; use `guides/teamwork.md` for the full group workflow. If these are missing, locate the extracted kit first. Work only in the participant project, outside the facilitator's website repository.
+Read `AGENTS.md` and `guides/setup.md`. For installation commands, read only the relevant OS and failed-check sections of `references/platform-installation.md`; use `guides/agent-practices.md` for configuration. For GitHub account and repository steps, read `references/github-setup.md`; use `guides/teamwork.md` for the full group workflow. If these are missing, locate the extracted kit first. Work only in the participant project, outside the facilitator's website repository.
 
 ## Check before changing
 

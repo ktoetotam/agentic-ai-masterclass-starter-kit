@@ -6,7 +6,7 @@ Open this extracted folder in Codex as a local project. Start a new task and ask
 
 > Use $masterclass-setup. Check my computer and this workspace. Install or update the workshop tools in my user account without admin rights. Use Poetry for Python dependencies, create my local .env, run the readiness check, and open the preview. Then help me get the public starter repository with Git.
 
-Targets checked **23 September 2026**: **Python 3.14.7**, **Node.js 26.10.0 (Current)** with bundled npm, **Poetry 2.5.1** and **Git 2.55.0+**. Follow [the simple installation steps](guides/setup-technical.md) and use `$masterclass-setup` in Codex. uv installs Python and the isolated Poetry CLI; Poetry manages this project's `.venv` and dependencies.
+Targets checked **23 September 2026**: **Python 3.14.7**, **Node.js 26.10.0 (Current)** with bundled npm, **Poetry 2.5.1** and **Git 2.55.0+**. Use `$masterclass-setup` in Codex. uv installs Python and the isolated Poetry CLI; Poetry manages this project's `.venv` and dependencies.
 
 Once the tools and project environment are ready, from this folder:
 
@@ -39,7 +39,7 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 
 ## What is included
 
-- `guides/`: illustrated setup, simple installation, troubleshooting, team Git workflow, agent practices and Cloudflare runbook.
+- `guides/`: illustrated setup, troubleshooting, team Git workflow, agent practices and Cloudflare runbook.
 - `AGENTS.md`: official-documentation checks, Poetry, variables, group workflow and bounded parallel-agent instructions.
 - `.codex/config.toml`: project defaults for Sol medium, Luna high subagents, live search and at most two child agents. Review before trusting the project; verify effective settings in your client. See [agent settings](guides/agent-practices.md).
 - `.agents/skills/`: ten reusable workshop skills. Keep hidden folders when copying the kit.

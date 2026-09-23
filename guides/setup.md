@@ -79,7 +79,7 @@ Create a [free GitHub account](https://github.com/signup), then [get the starter
 </div>
 </section>
 
-Need help? [Let Codex install the tools](setup-technical.md) · [Troubleshooting](troubleshooting.md) · [Get the starter with Git](teamwork.md) · [Agent settings](agent-practices.md)
+Need help? [Troubleshooting](troubleshooting.md) · [Get the starter with Git](teamwork.md) · [Agent settings](agent-practices.md)
 
 If your work laptop blocks installation, email [hello@airealist.org](mailto:hello@airealist.org) before the workshop.
 

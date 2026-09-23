@@ -45,12 +45,12 @@ export function resolveGitExecutable({ platform = process.platform, pathValue = 
     .find(candidate => {
       try { accessSync(candidate, constants.X_OK); return statSync(candidate).isFile(); } catch { return false; }
     });
-  if (!executable) throw new Error('Git is missing from PATH. Follow guides/setup-technical.md#install-git.');
+  if (!executable) throw new Error('Git is missing from PATH. Follow $masterclass-setup skill.');
   if (platform === 'darwin' && realpathSync(executable) === '/usr/bin/git') {
     const selected = run('/usr/bin/xcode-select', ['-p'], { encoding: 'utf8', timeout: 10000, windowsHide: true });
     const developerPath = selected.status === 0 ? selected.stdout?.trim() : null;
     if (!developerPath || !existsSync(path.join(developerPath, 'usr/bin/git'))) {
-      throw new Error('The macOS Git installer shim is on PATH, but developer tools are unavailable. It was not run. Follow guides/setup-technical.md#install-git.');
+      throw new Error('The macOS Git installer shim is on PATH, but developer tools are unavailable. It was not run. Follow $masterclass-setup skill.');
     }
   }
   return executable;
@@ -62,7 +62,7 @@ function git(executable, root, args) {
     env: { ...process.env, LC_ALL: 'C', GIT_TERMINAL_PROMPT: '0' },
   });
   if (result.error?.code === 'ETIMEDOUT') throw new Error('Git exceeded the 10-second timeout. Inspect the folder before retrying; no history was deleted.');
-  if (result.error) throw new Error('Git could not start. Follow guides/setup-technical.md#install-git.');
+  if (result.error) throw new Error('Git could not start. Follow $masterclass-setup skill.');
   return { ...result, stdout: result.stdout.trim(), stderr: result.stderr.trim() };
 }
 
@@ -93,7 +93,7 @@ export async function initializeTeamRepo({ root, team }) {
   if (!agents.startsWith('# Agentic AI Masterclass workspace')) throw new Error('The workshop workspace marker is missing.');
   const executable = resolveGitExecutable();
   const version = requireSuccess(git(executable, root, ['--version']), 'Checking Git');
-  if (!supportsGit(version)) throw new Error(`Git 2.55.0 or newer is required; found ${version}. Follow guides/setup-technical.md#install-git.`);
+  if (!supportsGit(version)) throw new Error(`Git 2.55.0 or newer is required; found ${version}. Follow $masterclass-setup skill.`);
 
   const ancestor = git(executable, path.dirname(root), ['rev-parse', '--show-toplevel']);
   if (ancestor.status === 0) throw new Error('This kit is inside another Git repository. Extract it outside the AI Realist website and all other repositories.');
