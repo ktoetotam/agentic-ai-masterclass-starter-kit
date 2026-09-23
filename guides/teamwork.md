@@ -24,7 +24,7 @@ Or use a terminal in your normal projects folder:
 
 ```text
 git clone https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit.git
-cd agentic-ai-masterclass-starter
+cd agentic-ai-masterclass-starter-kit
 git status
 ```
 
