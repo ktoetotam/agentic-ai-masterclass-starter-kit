@@ -1,6 +1,6 @@
 ---
 name: masterclass-setup
-description: Set up or diagnose an Agentic AI Masterclass participant workspace on macOS or Windows using user-owned installations, Poetry, local environment variables and group Git repositories.
+description: Set up or diagnose an Agentic AI Masterclass participant workspace and install only the optional tools needed for its chosen challenge on macOS or Windows.
 ---
 
 # Prepare the participant workspace
@@ -33,6 +33,10 @@ Preserve an existing `.venv` and record its dependencies before migration. If it
 Run `node scripts/init-env.mjs`; it preserves an existing `.env`. Keep actual local variables in ignored `.env` and only harmless placeholders in `.env.example`. Never print values, collect reimbursement/bank details, or put secrets in Git or `public/`. Verify explicit loading: the Node preview uses `process.loadEnvFile`, and `poetry run python scripts/check-python.py` checks the locked Python loader. Poetry alone does not load `.env`.
 
 Use project-local npm packages and a committed lockfile for optional JavaScript dependencies. Choose only what the selected challenge needs. Core work requires no Docker, database server or paid API key. Plus and API/media charges are separate; obtain a missing budget decision before paid calls.
+
+## Set up the chosen challenge
+
+After the participant chooses a challenge, read `references/challenge-tools.md` and its matching `masterclass-*` skill. Check what is already installed, choose the smallest local path, then install only packages needed for the first working version. Verify the current official documentation and package compatibility before installation. Use Poetry for Python packages and project-local npm for JavaScript; commit the resulting manifest and lockfile together. Check an import or command and one representative fixture. If a browser binary, OCR tool, FFmpeg or paid provider is blocked or unnecessary, use the documented local fallback instead. Do not install every optional tool during initial setup.
 
 ## Prepare group work and verify
 

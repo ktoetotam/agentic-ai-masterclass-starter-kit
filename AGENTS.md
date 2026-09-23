@@ -13,6 +13,7 @@ Before creating or changing configuration, tool setup, dependency-management set
 - Use npm locally for JavaScript packages and commit `package.json` with its lockfile. Use `npm ci` when a lockfile exists. In Windows PowerShell, use `npm.cmd` and `npx.cmd` when `.ps1` command selection is blocked; do not relax execution policy.
 - Run `node scripts/check-setup.mjs` to check readiness and `node scripts/serve.mjs` for the local preview. Run Python scripts through `poetry run python ...`. Inspect the project's actual test/build scripts before invoking them; do not claim nonexistent checks passed.
 - Use the matching skill in `.agents/skills/`: `masterclass-setup`, `masterclass-teamwork`, `masterclass-web`, `masterclass-research`, `masterclass-knowledge`, `masterclass-present-media`, `masterclass-business-data`, `masterclass-localise`, `masterclass-build` or `masterclass-deploy`.
+- For a chosen challenge, have `masterclass-setup` read `references/challenge-tools.md` and install only its missing optional tools. Do not preload all challenge packages during initial setup.
 
 ## Model choice and parallel work
 

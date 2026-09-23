@@ -51,6 +51,8 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 
 Use `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. If discovery fails, ask Codex to read the corresponding `.agents/skills/<name>/SKILL.md` directly.
 
+After you choose a challenge, ask `$masterclass-setup` to install only the missing tools for that challenge. Its `references/challenge-tools.md` covers all ten options and local fallbacks.
+
 Keep credentials and private inputs out of `public/` and Git. Use ignored `output/` for private drafts. The kit uses no facilitator credentials and does not grant cloud access or API credits. It runs independently of the AI Realist website repository.
 
 ## Optional Codex and Claude Code plugins
