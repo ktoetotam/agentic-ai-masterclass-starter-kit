@@ -1,0 +1,25 @@
+{
+  "fixture_only": true,
+  "source_files": 3,
+  "unique_invoice_records": 2,
+  "records": [
+    {
+      "invoice_id": "DEMO-001",
+      "currency": "EUR",
+      "net_minor": 25000,
+      "tax_minor": 5000,
+      "gross_minor": 30000,
+      "duplicate_sources": ["invoice-001.txt", "invoice-001-copy.txt"],
+      "issues": []
+    },
+    {
+      "invoice_id": "DEMO-002",
+      "currency": null,
+      "net_decimal": "300.00",
+      "tax_decimal": "60.00",
+      "stated_gross_decimal": "390.00",
+      "calculated_gross_decimal": "360.00",
+      "issues": ["missing_currency", "gross_total_mismatch"]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "fixture_only": true,
+  "exclude_from_index": true,
+  "questions": [
+    {"question": "Who coordinates Project Lantern?", "expected": "Alex Example", "sources": ["01-project-plan.md", "02-budget-decision.md"]},
+    {"question": "What is the current budget, and did it change?", "expected": "EUR 2,500; revised from EUR 2,000 on 2026-09-05", "sources": ["01-project-plan.md", "02-budget-decision.md"]},
+    {"question": "Which venue is confirmed?", "expected": "None; Maple Room is being considered after Birch Room became unavailable", "sources": ["03-meeting-notes.md"]},
+    {"question": "What is the office door code?", "expected": "Not found in the supplied documents", "sources": []}
+  ]
+}

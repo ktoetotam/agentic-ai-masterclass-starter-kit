@@ -1,0 +1,9 @@
+{
+  "hero.title": "Make space for the work that matters.",
+  "hero.body": "ClearDesk helps {company} keep requests, decisions and handovers in one place.",
+  "cta.demo": "Plan a demo",
+  "seats.one": "{count} team member",
+  "seats.other": "{count} team members",
+  "event.date": "Your workshop is on {date}.",
+  "invoice.total": "Total to review: {amount}"
+}

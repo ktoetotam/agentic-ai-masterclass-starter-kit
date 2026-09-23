@@ -1,0 +1,6 @@
+source_term,target_locale,approved_term,note
+ClearDesk,de-DE,ClearDesk,Product name remains unchanged
+handover,de-DE,Übergabe,Use consistently in this workflow context
+request,de-DE,Anfrage,An incoming work request
+team member,de-DE,Teammitglied,Use grammatical inflection where needed
+demo,de-DE,Demo,Product walkthrough rather than political demonstration

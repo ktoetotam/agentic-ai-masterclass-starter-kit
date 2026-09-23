@@ -1,0 +1,14 @@
+{
+  "name": "agentic-ai-masterclass-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-setup.mjs",
+    "setup:env": "node scripts/init-env.mjs",
+    "setup:team": "node scripts/setup-team-repo.mjs",
+    "preview": "node scripts/serve.mjs",
+    "check:deploy": "node scripts/check-deploy.mjs"
+  },
+  "engines": { "node": ">=26.10.0 <27" }
+}

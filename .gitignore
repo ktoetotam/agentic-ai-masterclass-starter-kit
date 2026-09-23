@@ -1,0 +1,13 @@
+.venv/
+node_modules/
+.env
+.env.*
+!.env.example
+.dev.vars*
+.wrangler/
+deployment-target.json
+private/
+output/
+*.log
+.DS_Store
+__pycache__/

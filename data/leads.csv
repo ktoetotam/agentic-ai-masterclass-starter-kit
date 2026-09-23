@@ -1,0 +1,5 @@
+company_id,company_name,sector,employees,need,evidence_source,evidence_date,contact_name,contact_role,contact_email
+L001,Fern Sample Studio,Design services,18,Manual weekly client request intake,fixture:L001,2026-09-10,Alex Example,Operations lead,alex@fern-sample.invalid
+L002,Cedar Demo Analytics,Consulting,42,Repeated project status reporting,fixture:L002,2026-09-12,Sam Example,Delivery lead,sam@cedar-demo.invalid
+L003,Willow Practice Kitchens,Hospitality,85,Shift planning across four locations,fixture:L003,2026-09-08,Riley Example,General manager,riley@willow-practice.invalid
+L004,Moss Training Collective,Education,,Workshop registration follow-ups,fixture:L004,,Jordan Example,Programme coordinator,

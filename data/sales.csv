@@ -1,0 +1,13 @@
+row_id,month,region,product,units,revenue_eur_cents,cost_eur_cents
+S001,2026-01,North,ClearDesk,10,100000,50000
+S002,2026-01,South,ClearDesk,8,80000,40000
+S003,2026-02,North,ClearDesk,12,120000,60000
+S004,2026-02,South,ClearDesk,9,90000,45000
+S005,2026-03,North,ClearDesk,15,150000,75000
+S006,2026-03,South,ClearDesk,11,110000,55000
+S007,2026-01,North,Guided setup,5,75000,37500
+S008,2026-01,South,Guided setup,4,60000,30000
+S009,2026-02,North,Guided setup,7,105000,52500
+S010,2026-02,South,Guided setup,6,90000,45000
+S011,2026-03,North,Guided setup,12,180000,90000
+S012,2026-03,South,Guided setup,11,165000,82500

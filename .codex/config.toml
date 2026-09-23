@@ -1,0 +1,16 @@
+# Project defaults verified against official OpenAI documentation on 2026-09-23.
+# Review this file before trusting the project. Existing task/UI overrides and
+# organization requirements may take precedence; inspect the active model.
+# https://learn.chatgpt.com/docs/config-file/config-basic
+# https://learn.chatgpt.com/docs/config-file/config-reference
+model = "gpt-6-sol"
+model_reasoning_effort = "medium"
+web_search = "live"
+
+# Workshop recommendation: at most two child agents, plus the primary agent.
+# Complex delegated work should explicitly request Sol with suitable effort.
+# https://learn.chatgpt.com/docs/agent-configuration/subagents
+[agents]
+max_concurrent_threads_per_session = 2
+default_subagent_model = "gpt-6-luna"
+default_subagent_reasoning_effort = "high"

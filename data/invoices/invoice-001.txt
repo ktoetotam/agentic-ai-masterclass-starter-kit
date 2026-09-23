@@ -1,0 +1,18 @@
+FICTIONAL WORKSHOP INVOICE — NOT PAYABLE
+Supplier: Juniper Workshop Lab
+Customer: Fern Sample Studio
+Invoice ID: DEMO-001
+Issue date: 2026-09-01
+Due date: 2026-09-15
+Currency: EUR
+
+Line 1: Workflow session | Quantity: 2 | Unit net: 100.00 | Line net: 200.00
+Line 2: Setup notes | Quantity: 1 | Unit net: 50.00 | Line net: 50.00
+Net total: 250.00
+Illustrative tax rate: 20%
+Tax total: 50.00
+Gross total: 300.00
+
+Payment details: DEMO-NOT-A-BANK-ACCOUNT
+Contact: billing@juniper-workshop.invalid
+Tax rate is a fictional arithmetic example, not tax guidance.

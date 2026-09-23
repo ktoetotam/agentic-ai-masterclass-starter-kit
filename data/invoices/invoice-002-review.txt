@@ -1,0 +1,17 @@
+FICTIONAL WORKSHOP INVOICE — NOT PAYABLE
+Supplier: Juniper Workshop Lab
+Customer: Cedar Demo Analytics
+Invoice ID: DEMO-002
+Issue date: 2026-09-03
+Due date: 2026-09-17
+Currency:
+
+Line 1: Workflow session | Quantity: 3 | Unit net: 100.00 | Line net: 300.00
+Net total: 300.00
+Illustrative tax rate: 20%
+Tax total: 60.00
+Gross total: 390.00
+
+Payment details: DEMO-NOT-A-BANK-ACCOUNT
+Contact: billing@juniper-workshop.invalid
+Tax rate is a fictional arithmetic example, not tax guidance.
