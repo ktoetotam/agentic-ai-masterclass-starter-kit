@@ -38,6 +38,12 @@ Some challenges come with their own plugin in `.agents/plugins/plugins/`. The fi
 
 Setup copies the challenge skills into this project with `node scripts/activate-challenge.mjs second-brain`, so they appear in a new chat as `$second-brain-ingest`, `$second-brain-ask` and `$second-brain-check`. Your notes stay in the Git-ignored `output/second-brain/` folder.
 
+The second is **website-building**: brand, layout and motion, images, SEO, design critique and a safe Cloudflare deployment, as seven skills that run in order. Start with:
+
+> Set up the website challenge: follow .agents/plugins/plugins/website-building/skills/setup/SKILL.md
+
+Setup runs `node scripts/activate-challenge.mjs website-building`; afterwards say "Use website-building-build to build my website". Its two checkers, `seo_check.py` and `check_page.py`, read your HTML and cost nothing; image generation is optional and needs an agreed spend limit.
+
 ## Not sure what to build or what to do next?
 
 > Use $masterclass-guide. Help me choose a build for today and tell me what to do next.

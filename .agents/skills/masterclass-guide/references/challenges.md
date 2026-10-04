@@ -26,7 +26,7 @@ Ten build ideas plus "bring your own problem". Each card says who it suits, what
 - **By lunch:** one page running in the local preview.
 - **Push further:** more pages, brand adaptation, accessibility pass, SEO metadata, deployment.
 - **Where agents fail, so test it:** invented testimonials, numbers or certifications; a contact form that looks like it sent something but did not; layouts that break on a phone. Check at phone width, using only the keyboard, and click every link.
-- **Skill:** `masterclass-web`, then `masterclass-deploy`.
+- **Skill:** the `website-building` plugin. First message: "Set up the website challenge: follow `.agents/plugins/plugins/website-building/skills/setup/SKILL.md`." After setup, `website-building-build` runs the steps (brand, layout, images, SEO, critique, deploy preparation). `masterclass-web` is the lighter single-skill route; `masterclass-deploy` publishes.
 
 ## 2. Market & lead scout
 
