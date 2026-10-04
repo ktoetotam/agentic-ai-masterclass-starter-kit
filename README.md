@@ -30,6 +30,14 @@ Start a new task and ask:
 
 It runs `node scripts/check-setup.mjs` and `node scripts/check-browser.mjs`, tests the preview and asks you about the account steps a script cannot see. It never installs or changes anything.
 
+## Challenge plugins
+
+Some challenges come with their own plugin in `.agents/plugins/plugins/`. The first is **second-brain**: the agent keeps your notes as a linked wiki (open it in [Obsidian](https://obsidian.md/download) or as a page in your browser) and answers with the exact source passage, checked by a script. Start it with:
+
+> Set up the second brain challenge: follow .agents/plugins/plugins/second-brain/skills/setup/SKILL.md
+
+Setup copies the challenge skills into this project with `node scripts/activate-challenge.mjs second-brain`, so they appear in a new chat as `$second-brain-ingest`, `$second-brain-ask` and `$second-brain-check`. Your notes stay in the Git-ignored `output/second-brain/` folder.
+
 ## Not sure what to build or what to do next?
 
 > Use $masterclass-guide. Help me choose a build for today and tell me what to do next.
