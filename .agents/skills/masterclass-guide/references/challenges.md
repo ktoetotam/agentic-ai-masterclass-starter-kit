@@ -48,7 +48,7 @@ Ten build ideas plus "bring your own problem". Each card says who it suits, what
 - **By lunch:** questions about the sample notes answered with sources.
 - **Push further:** your own notes, links between related ideas, PDFs, meeting transcripts, a browsable view of the notes.
 - **Where agents fail, so test it:** mixing an old fact with a newer one; citing a passage that does not say it; inventing an answer instead of "not found". Check: the budget is EUR 2,500, revised from EUR 2,000; the office door code is not in the notes; importing twice does not create duplicates.
-- **Skill:** `masterclass-knowledge`.
+- **Skill:** the `second-brain` plugin. First message: "Set up the second brain challenge: follow `.agents/plugins/plugins/second-brain/skills/setup/SKILL.md`." After setup, `second-brain-ingest`, `second-brain-ask` and `second-brain-check`. Developers who want to build their own search app use `masterclass-knowledge`.
 
 ## 4. Beyond PowerPoint
 

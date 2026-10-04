@@ -9,6 +9,11 @@
       "name": "ai-realist-masterclass",
       "source": "./.agents/plugins/plugins/ai-realist-masterclass",
       "description": "Skills for the Agentic AI Masterclass starter project"
+    },
+    {
+      "name": "second-brain",
+      "source": "./.agents/plugins/plugins/second-brain",
+      "description": "Second brain challenge: linked notes with exact citations, checks and an Obsidian or browser view"
     }
   ]
 }
