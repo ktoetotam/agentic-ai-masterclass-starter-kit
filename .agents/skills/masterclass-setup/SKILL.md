@@ -48,4 +48,6 @@ Read the included `.codex/config.toml` and explain its Sol/Luna defaults. Apply 
 
 Run the readiness check, start `node scripts/serve.mjs`, and verify the loopback page. Stop only the process you started when finished unless it should stay open. Check skill discovery in a new task; use exact skill paths if discovery is unavailable.
 
-Report **ready / needs attention / optional**, including the checks actually completed and the next challenge prompt. Use `guides/troubleshooting.md` for failures. Reimbursement covers one month of ChatGPT Plus: the participant emails their receipt and bank transfer details to hello@airealist.org themselves; do not promise additional expenses.
+The participant installs Google Chrome and the ChatGPT or Claude browser extension themselves from the official links in step 3 of `guides/setup.md`; explain the steps, but never install extensions, accept browser permission prompts or sign in on their behalf. Finish with `masterclass-check`, which verifies everything without changing it.
+
+Report **ready / needs attention / optional**, including the checks actually completed and the next challenge prompt. If no build is chosen yet, suggest `masterclass-guide`. Use `guides/troubleshooting.md` for failures. Reimbursement covers one month of ChatGPT Plus: the participant emails their receipt and bank transfer details to hello@airealist.org themselves; do not promise additional expenses.

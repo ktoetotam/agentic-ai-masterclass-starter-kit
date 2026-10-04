@@ -1,6 +1,6 @@
 # Configure your workshop agent
 
-The starter includes project instructions, ten skills and a small Codex configuration. Together they give your group repeatable working habits. Complete [setup](setup.md), open **your own project folder** in Codex, then use this guide. Official OpenAI documentation was searched and opened on **23 September 2026** before these files were written.
+The starter includes project instructions, twelve skills and a small Codex configuration. Together they give your group repeatable working habits. Complete [setup](setup.md), open **your own project folder** in Codex, then use this guide. Official OpenAI documentation was searched and opened on **23 September 2026** before these files were written.
 
 ## What the files do
 
@@ -8,7 +8,7 @@ The starter includes project instructions, ten skills and a small Codex configur
 | --- | --- | --- |
 | `AGENTS.md` | Shared instructions for how Codex works in this project | Keep commands, boundaries and completion checks accurate |
 | `.codex/config.toml` | Supported settings for model, effort, web search and subagent defaults | Review it and confirm the effective settings in your client |
-| `.agents/skills/` | Ten reusable workflows for setup, challenge work and deployment | Select the skill that matches the task |
+| `.agents/skills/` | Twelve reusable workflows for guidance, setup checks, challenge work and deployment | Select the skill that matches the task |
 | `pyproject.toml` and `poetry.lock` | Declared and resolved Python dependencies | Change together through Poetry; assign one lockfile owner |
 | `poetry.toml` | Project-local Poetry settings | Keep the virtual environment inside this project |
 | `.env.example` / `.env` | Variable names with placeholders / private local values | Track the example; keep real values out of Git and public files |
