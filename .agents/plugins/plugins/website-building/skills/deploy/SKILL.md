@@ -15,6 +15,10 @@ This skill prepares. **Publishing needs the participant's direct request and the
 - Default `Cache-Control` for assets is `public, max-age=0, must-revalidate`.
 - Source: Cloudflare Workers docs, "Static Assets" (headers, routing and HTML handling pages), read on 4 October 2026. Re-read them if Cloudflare's behaviour looks different.
 
+## Connectors that help (optional)
+
+The Cloudflare Documentation MCP server (`https://docs.mcp.cloudflare.com/mcp`) lets you read current docs instead of relying on memory. Observability and Workers Bindings servers can show the **workshop** account's logs and resources; they can also change things, so keep write tools off and never use them to publish. Do not use the broad Cloudflare API server here. Setup commands and cautions: `website-building-setup`, `references/connectors.md`.
+
 ## Preflight, in order
 
 1. **Public means public.** Walk `public/` and read the list. No `.env`, notes, drafts, extracts, `AGENTS.md`, `package*.json`, keys, personal data. No symlinks, no dotfiles (the guard blocks them). Fictional content stays labelled fictional.
