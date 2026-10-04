@@ -1,0 +1,19 @@
+{
+  "name": "second-brain",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: a second brain the AI agent keeps as linked Markdown notes, answering with exact source passages.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Second Brain",
+    "shortDescription": "Ask your notes and get answers that point to the source.",
+    "longDescription": "Sets up and runs the Agentic AI Masterclass second brain challenge: import notes, let the agent build a linked wiki, ask questions with checked citations, and view it in Obsidian or the browser.",
+    "developerName": "AI Realist",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Set up my second brain for the AI Realist masterclass."
+  }
+}

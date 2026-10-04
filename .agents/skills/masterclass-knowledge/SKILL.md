@@ -5,6 +5,8 @@ description: Build a local second-brain prototype that retrieves notes and docum
 
 # Second brain
 
+**Default path for most participants:** the `second-brain` challenge plugin. The agent keeps a linked Markdown wiki (it opens in Obsidian or as a browser page), answers with exact quotes, and checks every citation with a helper script. Start it by following `.agents/plugins/plugins/second-brain/skills/setup/SKILL.md`; it makes `second-brain-ingest`, `second-brain-ask` and `second-brain-check` available. The rest of this skill is the developer track: building your own retrieval app. That app can reuse the plugin's `brain.py verify` and `brain.py eval` as tests.
+
 Use the participant's approved folder or `data/knowledge/`. Deliver ingestion, retrieval and a question interface with citations. Begin with text/Markdown and SQLite or JSON storage. Python's `sqlite3` avoids a separate database server; probe FTS5 availability before relying on it and fall back to simple text matching when absent. Embeddings and a hosted vector database are optional improvements after evaluating keyword retrieval.
 
 1. Inventory allowed input types and records; exclude credentials and unrelated folders. Explain where input text will go if a remote model or embedding service is used. Local storage does not imply local inference.

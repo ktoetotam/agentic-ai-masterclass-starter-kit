@@ -5,7 +5,7 @@ Companion to [the setup guide](setup.md). Checked 23 September 2026. Tell the fa
 ## Start here
 
 1. Confirm you are inside the extracted `agentic-ai-masterclass` project folder.
-2. Run `node scripts/check-setup.mjs` in Codex's integrated terminal, then `poetry run python scripts/check-python.py` from the project folder.
+2. Run `node scripts/check-setup.mjs` and `node scripts/check-browser.mjs` in Codex's integrated terminal, then `poetry run python scripts/check-python.py` from the project folder. Or ask Codex: “Use $masterclass-check.”
 3. If it fails before producing a report, check Node with `node --version` and use the relevant row below.
 4. After a tool or PATH change, close terminal windows, fully quit ChatGPT, reopen it and start a new task. An already-running app can retain its old environment.
 
@@ -34,6 +34,10 @@ Companion to [the setup guide](setup.md). Checked 23 September 2026. Tell the fa
 | `bad CPU type`, invalid application or wrong architecture | Re-download the archive matching your CPU: Apple M-series = darwin-arm64; Intel Mac = darwin-x64; Windows = the x64/ARM64 value in Settings. Check the current app/Node OS requirements. |
 | Package tries to compile or asks for Visual Studio/Xcode | Stop and ask Codex for a supported prebuilt wheel or simpler package. Re-check Python 3.14.7, Node 26 and CPU architecture. Compilers are not a baseline dependency. |
 | Browser shows a blank page or cannot connect | Keep the preview command running, open exactly the printed localhost URL, and use a normal browser if the app browser is unavailable. Do not open HTML as `file://` when it needs a server. |
+| The check cannot find the ChatGPT or Claude extension | Open `chrome://extensions` in the Chrome profile you use and switch the extension on. If it is missing, install it from the official link in [setup step 3](setup.md#add-browser), then restart Chrome. |
+| Codex cannot use Chrome | In the ChatGPT app open **Settings → Computer Use**, select Chrome and follow **Install** until it shows **Manage**, then restart Chrome. Availability can depend on rollout and workspace settings; the app's built-in browser still works. |
+| Claude Code says the browser extension is not connected | Run `/chrome` and choose **Reconnect extension**. Check you are signed in to the extension with a paid Claude plan and to Claude Code with `/login` (an API key does not work for Chrome). Restart Chrome after the first connection. |
+| The Web Store refuses the extension, or IT blocks extensions | Do not side-load extensions from other sources. Use Microsoft Edge if it is approved, or the ChatGPT app's built-in browser, and tell the facilitator. |
 | Port is in use | Stop your own earlier preview with `Ctrl+C`, or use an available port as supported by the project. Do not terminate an unfamiliar process. |
 | Download hash does not match | Do not extract or run that archive. Download it again from the official release directory and compare with its matching checksum file. Avoid mixing versions. |
 | Permission denied when installing packages | Confirm the project is in your own home directory and Poetry selects its `.venv`; use `poetry add`/`poetry install` or local npm packages. Never repair this with `sudo pip`, `sudo npm` or a machine-wide ownership change. |

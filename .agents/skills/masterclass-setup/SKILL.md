@@ -36,7 +36,7 @@ Use project-local npm packages and a committed lockfile for optional JavaScript 
 
 ## Set up the chosen challenge
 
-After the participant chooses a challenge, read `references/challenge-tools.md` and its matching `masterclass-*` skill. Check what is already installed, choose the smallest local path, then install only packages needed for the first working version. Verify the current official documentation and package compatibility before installation. Use Poetry for Python packages and project-local npm for JavaScript; commit the resulting manifest and lockfile together. Check an import or command and one representative fixture. If a browser binary, OCR tool, FFmpeg or paid provider is blocked or unnecessary, use the documented local fallback instead. Do not install every optional tool during initial setup.
+After the participant chooses a challenge, check whether it has a challenge plugin with a setup skill (`.agents/plugins/plugins/<challenge>/skills/setup/SKILL.md`, for example `second-brain`). If it does, follow that setup skill; it checks and installs what the challenge needs and runs `node scripts/activate-challenge.mjs <challenge>` to make the challenge skills available. Otherwise read `references/challenge-tools.md` and its matching `masterclass-*` skill. Check what is already installed, choose the smallest local path, then install only packages needed for the first working version. Verify the current official documentation and package compatibility before installation. Use Poetry for Python packages and project-local npm for JavaScript; commit the resulting manifest and lockfile together. Check an import or command and one representative fixture. If a browser binary, OCR tool, FFmpeg or paid provider is blocked or unnecessary, use the documented local fallback instead. Do not install every optional tool during initial setup.
 
 ## Prepare group work and verify
 
@@ -48,4 +48,6 @@ Read the included `.codex/config.toml` and explain its Sol/Luna defaults. Apply 
 
 Run the readiness check, start `node scripts/serve.mjs`, and verify the loopback page. Stop only the process you started when finished unless it should stay open. Check skill discovery in a new task; use exact skill paths if discovery is unavailable.
 
-Report **ready / needs attention / optional**, including the checks actually completed and the next challenge prompt. Use `guides/troubleshooting.md` for failures. Reimbursement covers one month of ChatGPT Plus: the participant emails their receipt and bank transfer details to hello@airealist.org themselves; do not promise additional expenses.
+The participant installs Google Chrome and the ChatGPT or Claude browser extension themselves from the official links in step 3 of `guides/setup.md`; explain the steps, but never install extensions, accept browser permission prompts or sign in on their behalf. Finish with `masterclass-check`, which verifies everything without changing it.
+
+Report **ready / needs attention / optional**, including the checks actually completed and the next challenge prompt. If no build is chosen yet, suggest `masterclass-guide`. Use `guides/troubleshooting.md` for failures. Reimbursement covers one month of ChatGPT Plus: the participant emails their receipt and bank transfer details to hello@airealist.org themselves; do not promise additional expenses.

@@ -20,6 +20,30 @@ node scripts/serve.mjs
 
 Open the printed preview URL; stop with Ctrl+C. No `npm install` is needed for the starter scripts. Add optional dependencies only for your chosen challenge.
 
+Your agent also needs a browser: install [Google Chrome](https://www.google.com/chrome/) and the [ChatGPT extension](https://chromewebstore.google.com/detail/chatgpt/hehggadaopoacecdllhhajmbjkdcmajg) (Codex) or the [Claude extension](https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn) (Claude Code, Cowork). Step 3 of [the setup guide](guides/setup.md#add-browser) shows how.
+
+## Check that everything is installed
+
+Start a new task and ask:
+
+> Use $masterclass-check. Check that everything for the masterclass is installed and working, without changing anything, and tell me what still needs attention.
+
+It runs `node scripts/check-setup.mjs` and `node scripts/check-browser.mjs`, tests the preview and asks you about the account steps a script cannot see. It never installs or changes anything.
+
+## Challenge plugins
+
+Some challenges come with their own plugin in `.agents/plugins/plugins/`. The first is **second-brain**: the agent keeps your notes as a linked wiki (open it in [Obsidian](https://obsidian.md/download) or as a page in your browser) and answers with the exact source passage, checked by a script. Start it with:
+
+> Set up the second brain challenge: follow .agents/plugins/plugins/second-brain/skills/setup/SKILL.md
+
+Setup copies the challenge skills into this project with `node scripts/activate-challenge.mjs second-brain`, so they appear in a new chat as `$second-brain-ingest`, `$second-brain-ask` and `$second-brain-check`. Your notes stay in the Git-ignored `output/second-brain/` folder.
+
+## Not sure what to build or what to do next?
+
+> Use $masterclass-guide. Help me choose a build for today and tell me what to do next.
+
+The guide asks a few questions, suggests builds that fit your work, writes your group's `PLAN.md`, and keeps you moving through the day up to the demo.
+
 ## Get the starter with Git
 
 For the first session, each participant makes their own local clone of the [public starter repository](https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit). Use [the short Git guide](guides/teamwork.md) and `$masterclass-teamwork`:
@@ -42,14 +66,15 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 - `guides/`: illustrated setup, troubleshooting, team Git workflow, agent practices and Cloudflare runbook.
 - `AGENTS.md`: official-documentation checks, Poetry, variables, group workflow and bounded parallel-agent instructions.
 - `.codex/config.toml`: project defaults for Sol medium, Luna high subagents, live search and at most two child agents. Review before trusting the project; verify effective settings in your client. See [agent settings](guides/agent-practices.md).
-- `.agents/skills/`: ten reusable workshop skills. Keep hidden folders when copying the kit.
+- `.agents/skills/`: twelve reusable workshop skills, including `masterclass-guide` and `masterclass-check`. Keep hidden folders when copying the kit.
+- `.claude/skills/`: `/masterclass-guide` and `/masterclass-check` for Claude Code, without installing the plugin.
 - `.agents/plugins/` and `.claude-plugin/`: optional Codex and Claude Code plugin marketplaces for the same workshop skills.
 - `data/`: fictional practice inputs and expected results where useful.
 - `public/`: local-preview and publishable files. Keep only public-safe content here.
 - `scripts/`: readiness checks, local environment and Git setup, preview and deployment checks.
 - `wrangler.workshop.json` and `deployment-target.example.json`: inactive examples until the facilitator assigns a workshop target.
 
-Use `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. If discovery fails, ask Codex to read the corresponding `.agents/skills/<name>/SKILL.md` directly.
+Use `$masterclass-guide`, `$masterclass-check`, `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. If discovery fails, ask Codex to read the corresponding `.agents/skills/<name>/SKILL.md` directly.
 
 After you choose a challenge, ask `$masterclass-setup` to install only the missing tools for that challenge. Its `references/challenge-tools.md` covers all ten options and local fallbacks.
 

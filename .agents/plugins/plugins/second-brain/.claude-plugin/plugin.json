@@ -1,0 +1,11 @@
+{
+  "name": "second-brain",
+  "displayName": "Second Brain",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: a second brain the AI agent keeps as linked Markdown notes, answering with exact source passages, with checks and an Obsidian or browser view.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "keywords": ["second-brain", "knowledge", "obsidian", "masterclass"]
+}
