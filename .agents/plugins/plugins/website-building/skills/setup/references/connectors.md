@@ -9,7 +9,7 @@ Commands and keys below were checked against the vendors' current documentation 
 - Ask before adding. One sentence: what it reads, what it can change, whether it costs money.
 - Sign-in happens in the browser (OAuth). Never paste a password, API key or token into the chat. A token, if one is unavoidable, goes into an ignored `.env` and is read through an environment variable.
 - Prefer read-only. Use `enabled_tools` (Codex) or the client's tool approval (Claude Code) to keep write actions off.
-- Access to an account is not permission to change it. For Cloudflare, only the workshop account named in `deployment-target.json`; never the AI Realist production account.
+- Cloudflare: the only Cloudflare connector is the read-only Documentation server. Deploying happens only to the participant's own workshop Worker, named in `deployment-target.json`, never the AI Realist production account, and never through an account-wide connector.
 - Project-scoped Claude Code servers are saved in `.mcp.json`; this repository ignores nothing there, so check `git status` and do not commit one that carries a header with a token.
 
 ## Tier 1: recommended
@@ -37,9 +37,7 @@ codex mcp add playwright npx "@playwright/mcp@latest"
 
 | Connector | Server URL | Use | Sign-in and risk |
 | --- | --- | --- | --- |
-| **Cloudflare Workers Bindings** | `https://bindings.mcp.cloudflare.com/mcp` | Look at Workers, KV, R2 and D1 in the **workshop** account | OAuth to Cloudflare. It can create and delete resources: choose only the workshop account, keep write tools off, and never use it to publish; deploying stays with `website-building-deploy` and `masterclass-deploy` |
-| **Cloudflare Observability** | `https://observability.mcp.cloudflare.com/mcp` | Read logs and errors of the published demo Worker | OAuth; read-oriented |
-| **Cloudflare API** | `https://mcp.cloudflare.com/mcp` | Broad access to the Cloudflare API | **Not recommended for this challenge.** Too wide; the starter's deploy guard exists to keep the workshop to one Worker |
+| **Cloudflare Workers Bindings, Observability, API and every other Cloudflare account connector** | `bindings.`, `observability.`, `mcp.cloudflare.com` | None | **Not offered.** Their OAuth sign-in covers a whole account and cannot be limited to one Worker. Participants touch only their own workshop deploy, and only through `website-building-deploy`, `masterclass-deploy` and the facilitator-issued target. Only the read-only Documentation connector is used for Cloudflare |
 | **Figma** | `https://mcp.figma.com/mcp` | Bring an existing design (frames, colours, variables) into the brand and layout steps | OAuth to Figma; reads the files the participant opens |
 | **Canva** | `https://mcp.canva.com/mcp` | Pull or export a logo or social image the participant already designed | OAuth to Canva; use only the participant's own designs |
 
@@ -47,17 +45,16 @@ Claude Code (`--scope user` makes it available in every project; the default kee
 
 ```sh
 claude mcp add --transport http figma https://mcp.figma.com/mcp
-claude mcp add --transport http cloudflare-observability https://observability.mcp.cloudflare.com/mcp
 ```
 
 Then run `/mcp` in Claude Code, pick the server and finish the browser sign-in (`claude mcp login <name>` does the same from the terminal).
 
-Codex: `codex mcp add figma --url https://mcp.figma.com/mcp`, then `codex mcp login figma`. To keep a server read-only, edit `~/.codex/config.toml`:
+Codex: `codex mcp add figma --url https://mcp.figma.com/mcp`, then `codex mcp login figma`. To keep a server read-only, edit `~/.codex/config.toml` and list only the read tools you have inspected:
 
 ```toml
-[mcp_servers.cloudflare-observability]
-url = "https://observability.mcp.cloudflare.com/mcp"
-enabled_tools = []   # list only the read tools you have inspected
+[mcp_servers.figma]
+url = "https://mcp.figma.com/mcp"
+enabled_tools = ["get_design_context", "get_screenshot", "get_metadata"]
 ```
 
 Keys used: `url`, `enabled`, `enabled_tools`, `disabled_tools`, `bearer_token_env_var`. Use `bearer_token_env_var` (the name of an environment variable) for any token; never write the token into the file.
