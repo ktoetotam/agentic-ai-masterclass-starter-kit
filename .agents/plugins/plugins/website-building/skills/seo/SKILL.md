@@ -38,6 +38,10 @@ python3 .agents/skills/website-building-seo/scripts/seo_check.py public/site --m
 
 Fix every FAIL. Explain every WARN you keep (for example a missing canonical on a demo). The script also fails on internal links that do not resolve. Paste the real output into `output/site-handover.md`.
 
+## Wider SEO work
+
+The `searchfit-seo` plugin ([searchfit/searchfit-seo](https://github.com/searchfit/searchfit-seo), third party, MIT) adds site audits, content strategy and keyword clustering. Use it for planning; keep running `seo_check.py` for the pass/fail on your own pages. Install notes: `website-building-setup`, `references/plugins.md`.
+
 ## Not covered here
 
 Rankings, backlinks, Core Web Vitals in the field and Search Console need live data and the participant's own accounts. Say so rather than guessing numbers.

@@ -41,4 +41,4 @@ Review in this order and name one concrete evidence per point:
 
 Finish with a list: **Fix now** (breaks use or access), **Fix next** (clear improvement), **Optional**. Fix the first group, re-run both passes, and report the result in one line with the real numbers.
 
-If the design plugin skills `design:design-critique` or `design:accessibility-review` are available in your client, use them for the second opinion; the steps above work without them.
+If the `design` plugin ([anthropics/knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins/tree/main/design)) is installed, use `design:design-critique` and `design:accessibility-review` for the second opinion; the steps above work without them.

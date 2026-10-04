@@ -61,10 +61,7 @@ Keys used: `url`, `enabled`, `enabled_tools`, `disabled_tools`, `bearer_token_en
 
 ## Plugins and skills worth knowing
 
-- **Already in this starter**: the `website-building` skills, `masterclass-web` and `masterclass-deploy`.
-- **Claude Code, optional**: `/plugin install frontend-design@claude-plugins-official` adds a general front-end design skill. Use it as a second opinion on layout, not instead of the brand step.
-- **Client built-ins**: if the client offers design critique or accessibility review skills, `website-building-critique` can call them for a second opinion; it works without them.
-- **GitHub**: use the `gh` command-line tool the workshop already sets up for branches and pull requests. A GitHub connector is not needed.
+See `plugins.md` in this folder: frontend-design, design, searchfit-seo, marketing, figma, canva and playwright, each with the repository it comes from, and why the Cloudflare plugin is not recommended. GitHub work uses the `gh` command-line tool the workshop already sets up.
 
 ## What not to add for this challenge
 
