@@ -2,6 +2,10 @@
 
 Work inside this participant workspace. The surrounding AI Realist website repository is outside the assignment. Choose a workshop challenge from the landing page or bring your own problem; preserve fictional fixtures under `data/`. Put browser assets in `public/` and private drafts, extracts and databases in `output/`. Serve only `public/`.
 
+## Consult current official documentation in every answer
+
+Before every answer, consult the latest available official Codex/OpenAI and Anthropic/Claude documentation: search for relevant pages, then open and read them rather than relying on search snippets or memory. Include direct Markdown links to the pages used in the answer. Start with the [Codex documentation](https://learn.chatgpt.com/docs) and [Claude Code documentation](https://code.claude.com/docs/en/overview), and use the relevant official API documentation when the question concerns APIs. Distinguish documented vendor behavior from this starter's conventions and from the agent's own explanation or recommendations. If either vendor's documentation is unavailable or does not address the question, say so explicitly; do not invent support or attach unrelated links as evidence.
+
 ## Check official documentation before configuration changes
 
 Before creating or changing configuration, tool setup, dependency-management settings or these instructions, **search the relevant vendor's current official documentation, then open/read the matching page**. Verify exact keys, supported versions and scope; a search snippet or remembered example is insufficient. Link the source used in the handover. For Codex instructions, start with the [official AGENTS.md guide](https://learn.chatgpt.com/docs/agent-configuration/agents-md); for settings, use [Config basics](https://learn.chatgpt.com/docs/config-file/config-basic) and the [Configuration Reference](https://learn.chatgpt.com/docs/config-file/config-reference). If verification is unavailable, identify the unsupported change and continue independent work without inventing configuration.
