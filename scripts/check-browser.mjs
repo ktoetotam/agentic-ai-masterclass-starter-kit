@@ -116,7 +116,8 @@ for (const browser of browsers.filter(b => b.app)) {
   }
 }
 
-console.log('\nManual checks: the extension is switched on in chrome://extensions and you are signed in to it in the browser profile you use.');
+console.log('\nManual checks: in chrome://extensions the extension\'s switch is blue, it is pinned next to the address bar (puzzle-piece icon, then the pin),');
+console.log('and you are signed in to it in the browser profile you use.');
 console.log('Codex: Settings → Computer Use shows Manage next to your browser. Claude Code: /chrome shows Status: Enabled and Extension: Installed.');
 console.log(failures ? `\n${failures} required browser check(s) need attention.` : '\nBrowser checks passed. Finish the manual checks above.');
 process.exitCode = failures ? 1 : 0;

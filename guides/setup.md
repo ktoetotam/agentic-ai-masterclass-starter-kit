@@ -1,11 +1,17 @@
 # Get ready for the masterclass
 
-Five steps. Once the app is open, Codex can help with the rest.
+The same five steps as on the workspace page, with screenshots. Once the app is open, Codex helps with the rest.
+
+<p class="toc"><a href="#download-chatgpt">Step 1 · ChatGPT app</a> · <a href="#get-plus">Step 2 · Plus</a> · <a href="#add-browser">Step 3 · Chrome and extension</a> · <a href="#open-workspace">Step 4 · Starter kit in Codex</a> · <a href="#finish-setup">Step 5 · Install and check</a></p>
+
+> **Work in Codex, not in a normal ChatGPT chat.** Everything in the masterclass happens in **Codex**. In the ChatGPT app, click **ChatGPT ⌄** at the top left and choose **Codex** (*Build, debug, and ship*). Step 4 shows where.
+
+> **Which model.** For the installation, use **GPT-6.1 Sol** with **low** effort (shown as *Light*). During the workshop, stay on **GPT-6.1 Sol** or **GPT-6 Luna**. **Never choose GPT-6 Astra**: it uses up your credits far faster. Step 5 shows where to pick the model.
 
 <section class="setup-step" aria-labelledby="download-chatgpt" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 1. Download ChatGPT {#download-chatgpt}
+## Step 1 · Download the ChatGPT app {#download-chatgpt}
 
 Choose your computer:
 
@@ -26,7 +32,7 @@ Open ChatGPT and sign in. On a Mac, **Apple menu → About This Mac** tells you 
 <section class="setup-step" aria-labelledby="get-plus" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 2. Get ChatGPT Plus {#get-plus}
+## Step 2 · Get ChatGPT Plus {#get-plus}
 
 <p><a class="button" href="https://chatgpt.com/pricing/">Purchase Plus here ↗</a></p>
 
@@ -45,7 +51,7 @@ Email your **receipt** and **bank transfer details** (account holder, IBAN, and 
 <section class="setup-step" aria-labelledby="add-browser" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 3. Add Chrome and an AI browser extension {#add-browser}
+## Step 3 · Add Chrome and the ChatGPT extension {#add-browser}
 
 Your agent uses a browser to research, open your pages and test them. Install **Google Chrome**, then the extension for the AI app you use. Using both apps? Install both extensions.
 
@@ -70,34 +76,45 @@ Chrome not listed under Computer Use? The feature can depend on rollout; Codex c
 2. Sign in to your Claude account in the extension and pin it to the toolbar.
 3. In Claude Code, type `/chrome`. When it is connected, it shows **Status: Enabled** and **Extension: Installed**.
 
+**Check that it is on and pinned:**
+
+1. Type `chrome://extensions` into Chrome's address bar and press **Enter**. Chrome opens this page only when you type or paste the address.
+2. On the **ChatGPT** card, and on **Claude** if you installed it, the switch at the bottom right must be **blue**. Click it if it is grey.
+3. Click the **puzzle-piece icon** to the right of the address bar, then click the **pin** next to ChatGPT (and Claude). Their icons now stay next to the address bar, so you can see at a glance that they are there.
+
 The extension works in your signed-in browser and can see the sites you are logged into. If you are unsure, create a separate Chrome profile for the workshop and install the extension there.
 
 </div>
+<figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/chrome-extensions-on.png"><img src="../assets/setup/chrome-extensions-on.png" width="1664" height="462" alt="Two extension cards on chrome://extensions: ChatGPT, Control your browser with ChatGPT, and Claude, Claude in Chrome. Each card has Details and Remove buttons and a blue switch at the bottom right, which means the extension is on."></a><a href="../assets/setup/chrome-extensions-pinned.png" style="margin-top:12px"><img src="../assets/setup/chrome-extensions-pinned.png" width="1192" height="112" alt="Chrome's toolbar with chrome://extensions typed in the address bar. To the right are the pinned Claude and ChatGPT icons, next to the puzzle-piece Extensions icon."></a><figcaption>On <code>chrome://extensions</code> each switch is <strong>blue</strong>. Once pinned, the Claude and ChatGPT icons sit next to the puzzle-piece icon.</figcaption></figure>
 </section>
 
 <section class="setup-step" aria-labelledby="open-workspace" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 4. Open your workspace {#open-workspace}
+## Step 4 · Open the starter kit in Codex {#open-workspace}
 
 <p>The starter kit is the folder you extracted.</p>
 
 1. **Unzip it:** double-click on Mac; right-click → **Extract All** on Windows.
-2. In ChatGPT, open the top-left product menu and choose **Codex**.
+2. At the top left of the ChatGPT app, click **ChatGPT ⌄** and choose **Codex**. Stay in Codex for the whole masterclass.
 3. Open **Projects** and create a project named **Agentic AI Masterclass**.
 4. Click **Add folder**, choose the extracted **agentic-ai-masterclass** folder, then click **Create project**.
 
 </div>
-<figure class="setup-shot compact"><a class="screen-crop" href="../assets/setup/choose-codex.jpg"><img src="../assets/setup/choose-codex.jpg" width="1280" height="720" alt="The product menu with ChatGPT and Codex options; Codex is selected."></a><figcaption>Choose <strong>Codex</strong> from the top-left menu. Screenshot of <a href="https://learn.chatgpt.com/docs/app">OpenAI’s interactive app example</a>.</figcaption></figure>
+<figure class="setup-shot"><a href="../assets/setup/choose-codex.png"><img src="../assets/setup/choose-codex.png" width="664" height="456" alt="The ChatGPT desktop app with the product menu at the top left open. It lists ChatGPT, Create, learn, and explore, and Codex, Build, debug, and ship."></a><figcaption>Click <strong>ChatGPT ⌄</strong> at the top left and choose <strong>Codex</strong>. ChatGPT desktop app, 5 October 2026.</figcaption></figure>
 <figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/create-project.png"><img src="../assets/setup/create-project.png" width="1020" height="632" alt="Create project dialog with the name Agentic AI Masterclass, the agentic-ai-masterclass source folder, Add folder, and Create project."></a><figcaption>Name your project, add the extracted folder, then click <strong>Create project</strong>.</figcaption></figure>
 </section>
 
 <section class="setup-step setup-last" aria-labelledby="finish-setup" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 5. Let Codex finish the setup {#finish-setup}
+## Step 5 · Let Codex install the tools, then check {#finish-setup}
 
-Start a **New chat** in your project. Copy this message, paste it, and press **Send**:
+In Codex, start a **New chat** in your project. Below the message box, click the model name and choose **GPT-6.1 Sol**, then set the effort to **low** (*Light*). Do not choose GPT-6 Astra: it burns through credits.
+
+<figure class="setup-shot" style="max-width:340px"><a href="../assets/setup/choose-model.png"><img src="../assets/setup/choose-model.png" width="714" height="842" alt="Codex model menu below the message box with GPT-6.1 Sol selected. Other options include GPT-6 Astra, GPT-6 Sol and GPT-6 Luna. The button reads GPT-6.1 Sol Light."></a><figcaption>Choose <strong>GPT-6.1 Sol</strong> with <strong>Light</strong> effort for the installation. Never GPT-6 Astra.</figcaption></figure>
+
+Copy this message, paste it, and press **Send**:
 
 <div class="setup-prompt" markdown="1">
 <p id="installation-prompt">Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry and Git in my user account, without admin rights. Preserve existing work. Install the locked Python dependencies, create my local .env, run the setup check and open the preview. Then help me get the starter repository with Git.</p>
