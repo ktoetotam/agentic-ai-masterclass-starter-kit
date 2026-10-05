@@ -6,6 +6,8 @@ The same five steps as on the workspace page, with screenshots. Once the app is 
 
 > **Work in Codex, not in a normal ChatGPT chat.** Everything in the masterclass happens in **Codex**. In the ChatGPT app, click **ChatGPT ⌄** at the top left and choose **Codex** (*Build, debug, and ship*). Step 4 shows where.
 
+> **Which model.** For the installation, use **GPT-6.1 Sol** with **low** effort (shown as *Light*). During the workshop, stay on **GPT-6.1 Sol** or **GPT-6 Luna**. **Never choose GPT-6 Astra**: it uses up your credits far faster. Step 5 shows where to pick the model.
+
 <section class="setup-step" aria-labelledby="download-chatgpt" markdown="1">
 <div class="setup-copy" markdown="1">
 
@@ -108,7 +110,11 @@ The extension works in your signed-in browser and can see the sites you are logg
 
 ## Step 5 · Let Codex install the tools, then check {#finish-setup}
 
-In Codex, start a **New chat** in your project. Copy this message, paste it, and press **Send**:
+In Codex, start a **New chat** in your project. Below the message box, click the model name and choose **GPT-6.1 Sol**, then set the effort to **low** (*Light*). Do not choose GPT-6 Astra: it burns through credits.
+
+<figure class="setup-shot" style="max-width:340px"><a href="../assets/setup/choose-model.png"><img src="../assets/setup/choose-model.png" width="714" height="842" alt="Codex model menu below the message box with GPT-6.1 Sol selected. Other options include GPT-6 Astra, GPT-6 Sol and GPT-6 Luna. The button reads GPT-6.1 Sol Light."></a><figcaption>Choose <strong>GPT-6.1 Sol</strong> with <strong>Light</strong> effort for the installation. Never GPT-6 Astra.</figcaption></figure>
+
+Copy this message, paste it, and press **Send**:
 
 <div class="setup-prompt" markdown="1">
 <p id="installation-prompt">Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry and Git in my user account, without admin rights. Preserve existing work. Install the locked Python dependencies, create my local .env, run the setup check and open the preview. Then help me get the starter repository with Git.</p>
