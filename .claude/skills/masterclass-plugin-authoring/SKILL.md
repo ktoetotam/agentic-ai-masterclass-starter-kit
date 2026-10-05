@@ -5,7 +5,7 @@ description: Create, change, rename or remove a skill, plugin or marketplace ent
 
 # Plugin and skill authoring
 
-Every skill and plugin in this starter has **one maintained source** and works in **both clients**. Codex reads `.agents/skills/`, `AGENTS.md`, `.agents/plugins/marketplace.json` and root `plugin.json`. Claude Code reads `.claude/skills/`, `CLAUDE.md` (which imports `AGENTS.md`), `.claude-plugin/marketplace.json` and `.claude-plugin/plugin.json`. Follow this skill for every new skill, plugin or modification, then run the checks in step 6.
+Every skill and plugin in this starter has **one maintained source** and works in **both clients**. Codex reads `.agents/skills/`, `AGENTS.md`, `.agents/plugins/marketplace.json` and root `plugin.json`. Claude Code reads `.claude/skills/`, `CLAUDE.md` (which imports `AGENTS.md`), `.claude-plugin/marketplace.json` and `.claude-plugin/plugin.json`. Follow this skill for every new skill, plugin or modification, then review behavior in step 6 and run the checks in step 7.
 
 Before changing a format, follow `AGENTS.md`: open the current official page and confirm the keys. Starting points: [Claude skills](https://code.claude.com/docs/en/skills), [Claude plugin manifest](https://code.claude.com/docs/en/plugins-reference), [Claude marketplaces](https://code.claude.com/docs/en/plugin-marketplaces), [Codex skills](https://learn.chatgpt.com/docs/build-skills), [OpenAI plugin packaging](https://developers.openai.com/plugins/build/plugins), [Agent Skills spec](https://agentskills.io/specification). If a page contradicts this skill, follow the page and update this skill in the same change.
 
@@ -70,7 +70,11 @@ Both paths are written from the repository root, start with `./` and never conta
 - A new challenge plugin: `AGENTS.md` (challenge plugin list), `.agents/skills/masterclass-guide/references/challenges.md` and `.agents/skills/masterclass-setup/references/challenge-tools.md`.
 - A removed skill or plugin: search the repository for its name and remove every reference.
 
-## 6. Verify - run all of it, report what ran
+## 6. Review behavior with realistic prompts
+
+For new skills or substantial changes to instructions or descriptions, read [references/behavioral-testing.md](references/behavioral-testing.md). Test realistic requests, missing inputs and scope boundaries; test automatic selection separately from explicit invocation. Compare substantial revisions with the previous version in isolated sessions, inspect the actual outputs and record evidence. Use independent review when complexity or risk warrants it. For a small wording correction, use focused review rather than a full benchmark. Packaging checks below do not prove useful behavior; report behavioral checks separately, including any not run.
+
+## 7. Verify - run all of it, report what ran
 
 1. `node scripts/sync-claude-skills.mjs` after any change under `.agents/skills/masterclass-*`.
 2. `npm run check:plugins` - manifests, marketplaces and every SKILL.md against the rules above.
