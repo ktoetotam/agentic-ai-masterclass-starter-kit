@@ -81,6 +81,7 @@ Chrome not listed under Computer Use? The feature can depend on rollout; Codex c
 The extension works in your signed-in browser and can see the sites you are logged into. If you are unsure, create a separate Chrome profile for the workshop and install the extension there.
 
 </div>
+<figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/chrome-extensions-on.png"><img src="../assets/setup/chrome-extensions-on.png" width="1664" height="462" alt="Two extension cards on chrome://extensions: ChatGPT, Control your browser with ChatGPT, and Claude, Claude in Chrome. Each card has Details and Remove buttons and a blue switch at the bottom right, which means the extension is on."></a><a href="../assets/setup/chrome-extensions-pinned.png" style="margin-top:12px"><img src="../assets/setup/chrome-extensions-pinned.png" width="1192" height="112" alt="Chrome's toolbar with chrome://extensions typed in the address bar. To the right are the pinned Claude and ChatGPT icons, next to the puzzle-piece Extensions icon."></a><figcaption>On <code>chrome://extensions</code> each switch is <strong>blue</strong>. Once pinned, the Claude and ChatGPT icons sit next to the puzzle-piece icon.</figcaption></figure>
 </section>
 
 <section class="setup-step" aria-labelledby="open-workspace" markdown="1">
@@ -96,7 +97,7 @@ The extension works in your signed-in browser and can see the sites you are logg
 4. Click **Add folder**, choose the extracted **agentic-ai-masterclass** folder, then click **Create project**.
 
 </div>
-<figure class="setup-shot"><a href="../assets/setup/choose-codex.png"><img src="../assets/setup/choose-codex.png" width="768" height="446" alt="The ChatGPT desktop app with the product menu at the top left open. It lists ChatGPT, Create, learn, and explore, and Codex, Build, debug, and ship."></a><figcaption>Click <strong>ChatGPT ⌄</strong> at the top left and choose <strong>Codex</strong>. ChatGPT desktop app, 5 October 2026.</figcaption></figure>
+<figure class="setup-shot"><a href="../assets/setup/choose-codex.png"><img src="../assets/setup/choose-codex.png" width="664" height="456" alt="The ChatGPT desktop app with the product menu at the top left open. It lists ChatGPT, Create, learn, and explore, and Codex, Build, debug, and ship."></a><figcaption>Click <strong>ChatGPT ⌄</strong> at the top left and choose <strong>Codex</strong>. ChatGPT desktop app, 5 October 2026.</figcaption></figure>
 <figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/create-project.png"><img src="../assets/setup/create-project.png" width="1020" height="632" alt="Create project dialog with the name Agentic AI Masterclass, the agentic-ai-masterclass source folder, Add folder, and Create project."></a><figcaption>Name your project, add the extracted folder, then click <strong>Create project</strong>.</figcaption></figure>
 </section>
 
