@@ -1,0 +1,11 @@
+{
+  "name": "website-building",
+  "displayName": "Website Building",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: build a company website the AI Realist way - brand, layout and motion, images, SEO, design critique and a safe Cloudflare deployment.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "keywords": ["website", "brand", "seo", "design", "cloudflare", "masterclass"]
+}

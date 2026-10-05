@@ -14,6 +14,11 @@
       "name": "second-brain",
       "source": "./.agents/plugins/plugins/second-brain",
       "description": "Second brain challenge: linked notes with exact citations, checks and an Obsidian or browser view"
+    },
+    {
+      "name": "website-building",
+      "source": "./.agents/plugins/plugins/website-building",
+      "description": "Website challenge: brand, layout and motion, images, SEO, design critique and a safe Cloudflare deployment"
     }
   ]
 }

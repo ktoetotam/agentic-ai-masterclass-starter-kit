@@ -1,0 +1,19 @@
+{
+  "name": "website-building",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: build a company website the AI Realist way, from brand to a safe Cloudflare deployment.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Website Building",
+    "shortDescription": "Build a branded, accessible, searchable website and publish it safely.",
+    "longDescription": "Walks through the website challenge: write the brand, plan layout and motion, make images, check SEO, critique the design and prepare a Cloudflare deployment to the assigned workshop Worker.",
+    "developerName": "AI Realist",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Build my company website with the website-building skills."
+  }
+}

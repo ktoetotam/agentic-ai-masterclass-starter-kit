@@ -4,7 +4,7 @@ The starter already installs `pypdf`, `openpyxl`, `python-docx`, `httpx`, `feedp
 
 | Challenge | First working version | Add only when needed |
 | --- | --- | --- |
-| Company website | Plain HTML, CSS and JavaScript with the included local preview. | A framework chosen by the participant; project-local Playwright for browser checks if an existing browser is insufficient. Browser downloads are optional and may be large or blocked on managed laptops. |
+| Company website | The `website-building` plugin's setup skill: plain HTML, CSS and JavaScript with the included local preview, plus two standard-library checkers (`seo_check.py`, `check_page.py`). | A framework chosen by the participant; project-local Playwright for browser checks if an existing browser is insufficient. Browser downloads are optional and may be large or blocked on managed laptops. |
 | Market and lead scout | Browser/search tools, public pages and CSV/JSON fixtures. | `httpx` for repeatable Python fetching and `feedparser` for RSS/Atom feeds. Paid search/enrichment APIs require a separate budget. |
 | Second brain | The `second-brain` plugin's setup skill: a standard-library helper (`brain.py`), Markdown notes and a browser view. Obsidian is optional and installed by the participant. The developer track uses Python `sqlite3` or JSON, with cited source locations. | `pypdf` for text PDFs. Image-only PDFs need OCR or a supplied text export; do not silently treat OCR as included. Hosted embeddings/vector stores are optional. |
 | Beyond PowerPoint | HTML slides, keyboard controls and browser Print to PDF. | `python-pptx` or local `pptxgenjs` only if an editable PowerPoint file is required; Playwright only for automated export/screenshots. |
