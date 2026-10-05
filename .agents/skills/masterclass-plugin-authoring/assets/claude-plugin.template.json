@@ -1,0 +1,11 @@
+{
+  "name": "<plugin-name>",
+  "displayName": "<Plugin Name>",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: <one sentence on what participants get>.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "keywords": ["<topic>", "masterclass"]
+}

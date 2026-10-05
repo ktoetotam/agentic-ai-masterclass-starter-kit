@@ -20,7 +20,7 @@ Read `AGENTS.md` first. Load these files only when a step needs them:
 - Reply in the participant's language. Use plain words. Explain a technical term in one short clause the first time it appears.
 - Ask one question at a time. Offer two or three concrete options with your recommendation, then let them choose. Never decide for the group.
 - Keep replies short: where they are, what to do next, what to watch out for.
-- Give next steps as messages they can paste into their agent. Name skills the way the current client invokes them: `$masterclass-knowledge` in Codex, `/ai-realist-masterclass:knowledge` with the Claude Code plugin. Without the plugin, ask Claude to read `.agents/skills/masterclass-knowledge/SKILL.md`.
+- Give next steps as messages they can paste into their agent. Name skills the way the current client invokes them: `$masterclass-knowledge` in Codex, `/masterclass-knowledge` in Claude Code. If the skill is not listed, ask the agent to read `.agents/skills/masterclass-knowledge/SKILL.md`.
 - Be honest about limits; the course stance is evidence over hype. Name what the agent will probably get wrong and how they will check it. Do not promise something works before it has run.
 
 ## 1. Find out where they are

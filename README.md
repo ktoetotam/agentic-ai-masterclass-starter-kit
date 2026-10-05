@@ -73,32 +73,22 @@ Open the cloned folder in Codex. Preserve any work you made in the extracted ZIP
 - `guides/`: illustrated setup, troubleshooting, team Git workflow, agent practices and Cloudflare runbook.
 - `AGENTS.md`: official-documentation checks, Poetry, variables, group workflow and bounded parallel-agent instructions.
 - `.codex/config.toml`: project defaults for Sol medium, Luna high subagents, live search and at most two child agents. Review before trusting the project; verify effective settings in your client. See [agent settings](guides/agent-practices.md).
-- `.agents/skills/`: twelve reusable workshop skills, including `masterclass-guide` and `masterclass-check`. Keep hidden folders when copying the kit.
-- `.claude/skills/`: `/masterclass-guide` and `/masterclass-check` for Claude Code, without installing the plugin.
-- `.agents/plugins/` and `.claude-plugin/`: optional Codex and Claude Code plugin marketplaces for the same workshop skills.
+- `.agents/skills/`: twelve reusable workshop skills, including `masterclass-guide` and `masterclass-check`, plus `masterclass-plugin-authoring`, the template for creating or changing skills and plugins. Keep hidden folders when copying the kit.
+- `.claude/skills/`: the same skills for Claude Code (`/masterclass-guide`, `/masterclass-check` and so on), generated from `.agents/skills/` by `node scripts/sync-claude-skills.mjs`. Edit `.agents/skills/`, not these copies.
+- `.agents/plugins/` and `.claude-plugin/`: the challenge plugins (`second-brain`, `website-building`) and their Codex and Claude Code marketplaces. Each plugin has a portable root `plugin.json` for Codex and `.claude-plugin/plugin.json` for Claude Code.
 - `data/`: fictional practice inputs and expected results where useful.
 - `public/`: local-preview and publishable files. Keep only public-safe content here.
 - `scripts/`: readiness checks, local environment and Git setup, preview and deployment checks.
 - `wrangler.workshop.json` and `deployment-target.example.json`: inactive examples until the facilitator assigns a workshop target.
 
-Use `$masterclass-guide`, `$masterclass-check`, `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. If discovery fails, ask Codex to read the corresponding `.agents/skills/<name>/SKILL.md` directly.
+Use `$masterclass-guide`, `$masterclass-check`, `$masterclass-setup`, `$masterclass-teamwork`, `$masterclass-web`, `$masterclass-research`, `$masterclass-knowledge`, `$masterclass-present-media`, `$masterclass-business-data`, `$masterclass-localise`, `$masterclass-build` or `$masterclass-deploy`. In Claude Code, type `/masterclass-guide` and so on. If discovery fails, ask the agent to read the corresponding `.agents/skills/<name>/SKILL.md` directly. To create or change a skill or plugin, use `$masterclass-plugin-authoring` (`/masterclass-plugin-authoring` in Claude Code); `npm run check:plugins` checks the result.
 
 After you choose a challenge, ask `$masterclass-setup` to install only the missing tools for that challenge. Its `references/challenge-tools.md` covers all ten options and local fallbacks.
 
 Keep credentials and private inputs out of `public/` and Git. Use ignored `output/` for private drafts. The kit uses no facilitator credentials and does not grant cloud access or API credits. It runs independently of the AI Realist website repository.
 
-## Optional Codex and Claude Code plugins
+## Codex and Claude Code
 
-The local `.agents/skills/` work in Codex without installing a plugin. For a reusable plugin, each client can add this public repository as a marketplace and install `ai-realist-masterclass@ai-realist-workshops`:
+The workshop skills work in both clients without installing anything: Codex reads `.agents/skills/` and `AGENTS.md`; Claude Code reads `.claude/skills/` and `CLAUDE.md`, which imports `AGENTS.md`. Claude Code's sign-in and billing are separate from ChatGPT Plus.
 
-```sh
-codex plugin marketplace add ktoetotam/agentic-ai-masterclass-starter-kit
-codex plugin add ai-realist-masterclass@ai-realist-workshops
-```
-
-```sh
-claude plugin marketplace add ktoetotam/agentic-ai-masterclass-starter-kit
-claude plugin install ai-realist-masterclass@ai-realist-workshops
-```
-
-Claude Code also reads `CLAUDE.md` in this project. Its sign-in and billing are separate from ChatGPT Plus. Plugin installation is optional and is not part of the first-session setup, which ends when you get the starter repository.
+Challenge plugins are activated inside this project by their setup skill, which copies their skills into both skill folders. Installing them from the marketplace (`second-brain@ai-realist-workshops` or `website-building@ai-realist-workshops`) is only useful in another project; here it would list the same skills twice. Plugin installation is not part of the first-session setup, which ends when you get the starter repository.

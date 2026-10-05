@@ -14,7 +14,7 @@ const [name, ...flags] = process.argv.slice(2);
 const force = flags.includes('--force');
 
 const available = existsSync(pluginsDir) ? readdirSync(pluginsDir).filter(dir =>
-  dir !== 'ai-realist-masterclass' && existsSync(path.join(pluginsDir, dir, 'skills'))) : [];
+  existsSync(path.join(pluginsDir, dir, 'skills'))) : [];
 if (!name || name.startsWith('--')) {
   console.log(`Challenge plugins: ${available.join(', ') || 'none'}`);
   console.log('Usage: node scripts/activate-challenge.mjs <plugin> [--force]');
