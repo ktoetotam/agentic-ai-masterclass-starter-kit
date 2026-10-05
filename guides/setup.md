@@ -1,8 +1,8 @@
 # Get ready for the masterclass
 
-The same five steps as on the workspace page, with screenshots. Once the app is open, Codex helps with the rest.
+The same seven steps as on the workspace page, with screenshots. Once the app is open, Codex helps with the rest.
 
-<p class="toc"><a href="#download-chatgpt">Step 1 · ChatGPT app</a> · <a href="#get-plus">Step 2 · Plus</a> · <a href="#add-browser">Step 3 · Chrome and extension</a> · <a href="#open-workspace">Step 4 · Starter kit in Codex</a> · <a href="#finish-setup">Step 5 · Install and check</a></p>
+<p class="toc"><a href="#download-chatgpt">Step 1 · ChatGPT app</a> · <a href="#get-plus">Step 2 · Plus</a> · <a href="#add-browser">Step 3 · Chrome and extension</a> · <a href="#open-workspace">Step 4 · Starter kit in Codex</a> · <a href="#finish-setup">Step 5 · Install the tools</a> · <a href="#google-drive">Step 6 · Google Drive</a> · <a href="#final-check">Step 7 · Check</a></p>
 
 > **Work in Codex, not in a normal ChatGPT chat.** Everything in the masterclass happens in **Codex**. In the ChatGPT app, click **ChatGPT ⌄** at the top left and choose **Codex** (*Build, debug, and ship*). Step 4 shows where.
 
@@ -105,10 +105,10 @@ The extension works in your signed-in browser and can see the sites you are logg
 <figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/create-project.png"><img src="../assets/setup/create-project.png" width="1020" height="632" alt="Create project dialog with the name Agentic AI Masterclass, the agentic-ai-masterclass source folder, Add folder, and Create project."></a><figcaption>Name your project, add the extracted folder, then click <strong>Create project</strong>.</figcaption></figure>
 </section>
 
-<section class="setup-step setup-last" aria-labelledby="finish-setup" markdown="1">
+<section class="setup-step" aria-labelledby="finish-setup" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## Step 5 · Let Codex install the tools, then check {#finish-setup}
+## Step 5 · Let Codex install the tools {#finish-setup}
 
 In Codex, start a **New chat** in your project. Below the message box, click the model name and choose **GPT-6.1 Sol**, then set the effort to **low** (*Light*). Do not choose GPT-6 Astra: it burns through credits.
 
@@ -117,14 +117,38 @@ In Codex, start a **New chat** in your project. Below the message box, click the
 Copy this message, paste it, and press **Send**:
 
 <div class="setup-prompt" markdown="1">
-<p id="installation-prompt">Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry and Git in my user account, without admin rights. Preserve existing work. Install the locked Python dependencies, create my local .env, run the setup check and open the preview. Then help me get the starter repository with Git.</p>
+<p id="installation-prompt">Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry, Git and GitHub CLI in my user account, without admin rights. Preserve existing work. Install the locked Python libraries and the project's pinned Wrangler, create my local .env, run the setup check and open the preview. Then help me sign Git in to GitHub and get the starter repository.</p>
 <button class="button" type="button" data-copy="installation-prompt">Copy setup message</button>
 <span class="copy-feedback" role="status" aria-live="polite"></span>
 </div>
 
-Create a [free GitHub account](https://github.com/signup), then [get the starter repository](teamwork.md). Groups come later.
+Create a [free GitHub account](https://github.com/signup) when Codex asks. To sign Git in, Codex runs a command that opens GitHub in your browser with a one-time code: **you** type the code, sign in and click **Authorize**. Then Codex [gets the starter repository](teamwork.md). Groups come later.
 
-Last, check that everything is installed. In the cloned project, start a **New chat** and send:
+</div>
+</section>
+
+<section class="setup-step" aria-labelledby="google-drive" markdown="1">
+<div class="setup-copy" markdown="1">
+
+## Step 6 · Connect Google Drive {#google-drive}
+
+Your agent can then read the notes, spreadsheets and slides you keep in Drive. You connect it yourself, because it means signing in to Google.
+
+1. Pick the Google account. A work account only if your company allows ChatGPT to access it; otherwise a personal account with material you may share.
+2. In the ChatGPT app, open **Plugins**, search **Google Drive**, click **+**, then **Connect**. Sign in to Google and review what it asks for.
+3. In Codex, start a **New chat** and send: *List the names of three files in my Google Drive. Do not open, change or share anything.*
+
+**If Codex says it cannot reach Drive,** don't lose time: this is a known Codex app bug. In Drive, use **File → Download** and save the file into a folder named **private** inside your project (create it if it is missing; Git ignores it). Codex can read PDF, Word and Excel files from there. Using Claude? Connect Drive under **Settings → Connectors**.
+
+</div>
+</section>
+
+<section class="setup-step setup-last" aria-labelledby="final-check" markdown="1">
+<div class="setup-copy" markdown="1">
+
+## Step 7 · Check that everything works {#final-check}
+
+In the cloned project, start a **New chat** and send:
 
 <div class="setup-prompt" markdown="1">
 <p id="check-prompt">Use $masterclass-check. Check that everything for the masterclass is installed and working, without changing anything, and tell me what still needs attention.</p>
@@ -132,7 +156,7 @@ Last, check that everything is installed. In the cloned project, start a **New c
 <span class="copy-feedback" role="status" aria-live="polite"></span>
 </div>
 
-**Done when:** the check ends with **“Ready for the workshop,”** you have seen **“Your workspace is running,”** and the cloned starter repository is open in Codex.
+**Done when:** the check ends with **“Ready for the workshop,”** you have seen **“Your workspace is running,”** the cloned starter repository is open in Codex, and Codex listed three of your Drive files (or you know the download fallback).
 
 </div>
 </section>

@@ -8,14 +8,14 @@ Before creating or changing configuration, tool setup, dependency-management set
 
 ## Project commands and dependencies
 
-- Follow `guides/setup.md` for the workshop's current Python, Node/npm and Git requirements. Install missing tools in user-owned folders; no administrator access, Docker, WSL, Homebrew or compiler is required for the baseline.
+- Follow `guides/setup.md` for the workshop's current Python, Node/npm, Git and GitHub CLI requirements. Install missing tools in user-owned folders; no administrator access, Docker, WSL, Homebrew or compiler is required for the baseline.
 - **Poetry owns project Python dependencies.** Use `poetry install`, `poetry add PACKAGE`, `poetry add --group dev PACKAGE` and `poetry run ...`. Commit `pyproject.toml`, `poetry.lock` and the shared `poetry.toml` setting for an in-project `.venv`. Never commit `.venv/`. Use uv only to bootstrap Python and the Poetry tool; do not bypass Poetry with `pip install` or `uv pip install` for project packages.
 - Use npm locally for JavaScript packages and commit `package.json` with its lockfile. Use `npm ci` when a lockfile exists. In Windows PowerShell, use `npm.cmd` and `npx.cmd` when `.ps1` command selection is blocked; do not relax execution policy.
 - Run `node scripts/check-setup.mjs` to check readiness and `node scripts/serve.mjs` for the local preview. Run Python scripts through `poetry run python ...`. Inspect the project's actual test/build scripts before invoking them; do not claim nonexistent checks passed.
 - Use the matching skill in `.agents/skills/`: `masterclass-guide`, `masterclass-check`, `masterclass-setup`, `masterclass-teamwork`, `masterclass-web`, `masterclass-research`, `masterclass-knowledge`, `masterclass-present-media`, `masterclass-business-data`, `masterclass-localise`, `masterclass-build` or `masterclass-deploy`.
 - Challenge plugins live in `.agents/plugins/plugins/<challenge>/` (currently `second-brain`). Their setup skill runs `node scripts/activate-challenge.mjs <challenge>`, which copies that challenge's skills into `.agents/skills/` and `.claude/skills/` so they appear in a new chat; it never overwrites an edited copy.
 - Participants are mostly non-technical. When someone is unsure what to build or what to do next, is stuck, or is preparing the demo, use `masterclass-guide`; the group's plan lives in `PLAN.md`. To verify an installation without changing anything, use `masterclass-check`.
-- For a chosen challenge, have `masterclass-setup` read `references/challenge-tools.md` and install only its missing optional tools. Do not preload all challenge packages during initial setup.
+- For a chosen challenge, have `masterclass-setup` read `references/challenge-tools.md` and install only its missing optional tools. The shared libraries in `pyproject.toml` and the pinned Wrangler are installed for everyone during setup; do not preload other challenge packages.
 
 ## Model choice and parallel work
 

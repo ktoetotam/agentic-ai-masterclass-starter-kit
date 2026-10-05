@@ -316,9 +316,9 @@ def extract(path: Path) -> tuple[str | None, str]:
         return read_text(path), ""
     if suffix == ".pdf":
         try:
-            from pypdf import PdfReader  # optional, see the upgrades reference
+            from pypdf import PdfReader  # installed by the starter; see the upgrades reference
         except ImportError:
-            return None, "PDF skipped: add the optional pypdf package first"
+            return None, "PDF skipped: pypdf missing; run poetry install, then use poetry run python"
         parts, empty = [], []
         for number, page in enumerate(PdfReader(str(path)).pages, 1):
             text = (page.extract_text() or "").strip()
