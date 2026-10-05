@@ -1,13 +1,15 @@
 # Get ready for the masterclass
 
-Five steps. Once the app is open, Codex can help with the rest.
+The same five steps as on the workspace page, with screenshots. Once the app is open, Codex helps with the rest.
+
+<p class="toc"><a href="#download-chatgpt">Step 1 · ChatGPT app</a> · <a href="#get-plus">Step 2 · Plus</a> · <a href="#add-browser">Step 3 · Chrome and extension</a> · <a href="#open-workspace">Step 4 · Starter kit in Codex</a> · <a href="#finish-setup">Step 5 · Install and check</a></p>
 
 > **Work in Codex, not in a normal ChatGPT chat.** Everything in the masterclass happens in **Codex**. In the ChatGPT app, click **ChatGPT ⌄** at the top left and choose **Codex** (*Build, debug, and ship*). Step 4 shows where.
 
 <section class="setup-step" aria-labelledby="download-chatgpt" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 1. Download ChatGPT {#download-chatgpt}
+## Step 1 · Download the ChatGPT app {#download-chatgpt}
 
 Choose your computer:
 
@@ -28,7 +30,7 @@ Open ChatGPT and sign in. On a Mac, **Apple menu → About This Mac** tells you 
 <section class="setup-step" aria-labelledby="get-plus" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 2. Get ChatGPT Plus {#get-plus}
+## Step 2 · Get ChatGPT Plus {#get-plus}
 
 <p><a class="button" href="https://chatgpt.com/pricing/">Purchase Plus here ↗</a></p>
 
@@ -47,7 +49,7 @@ Email your **receipt** and **bank transfer details** (account holder, IBAN, and 
 <section class="setup-step" aria-labelledby="add-browser" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 3. Add Chrome and an AI browser extension {#add-browser}
+## Step 3 · Add Chrome and the ChatGPT extension {#add-browser}
 
 Your agent uses a browser to research, open your pages and test them. Install **Google Chrome**, then the extension for the AI app you use. Using both apps? Install both extensions.
 
@@ -87,7 +89,7 @@ The extension works in your signed-in browser and can see the sites you are logg
 <section class="setup-step" aria-labelledby="open-workspace" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 4. Open your workspace {#open-workspace}
+## Step 4 · Open the starter kit in Codex {#open-workspace}
 
 <p>The starter kit is the folder you extracted.</p>
 
@@ -104,7 +106,7 @@ The extension works in your signed-in browser and can see the sites you are logg
 <section class="setup-step setup-last" aria-labelledby="finish-setup" markdown="1">
 <div class="setup-copy" markdown="1">
 
-## 5. Let Codex finish the setup {#finish-setup}
+## Step 5 · Let Codex install the tools, then check {#finish-setup}
 
 In Codex, start a **New chat** in your project. Copy this message, paste it, and press **Send**:
 
