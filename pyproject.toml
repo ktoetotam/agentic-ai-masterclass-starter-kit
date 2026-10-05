@@ -3,7 +3,16 @@ name = "agentic-ai-masterclass"
 version = "0.1.0"
 description = "Shared Python dependencies for the Agentic AI Masterclass"
 requires-python = ">=3.14.7,<3.15"
-dependencies = ["python-dotenv>=1.2.3,<2.0.0"]
+# Shared by most challenges, so everyone installs them before the day:
+# PDFs, Excel workbooks, Word documents, web requests and news feeds.
+dependencies = [
+    "python-dotenv>=1.2.3,<2.0.0",
+    "pypdf>=6.19.0,<7.0.0",
+    "openpyxl>=3.1.5,<4.0.0",
+    "python-docx>=1.2.0,<2.0.0",
+    "httpx>=0.28.1,<0.29.0",
+    "feedparser>=6.0.14,<7.0.0",
+]
 
 [tool.poetry]
 package-mode = false

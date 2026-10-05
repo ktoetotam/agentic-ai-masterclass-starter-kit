@@ -66,13 +66,13 @@ An optional `DEPLOYMENT.md` can hold the human-readable card above. Neither loca
 
 ## Participant commands: static project
 
-Work in the standalone participant project, not the AI Realist website repository. The local exercises do not need Wrangler. When you reach deployment, install this workshop's selected version inside the project, without a global install or administrator rights:
+Work in the standalone participant project, not the AI Realist website repository. The starter pins this workshop's Wrangler in `package.json` and `package-lock.json`, and participants install it during setup, inside the project, without a global install or administrator rights:
 
 ```text
-npm install --save-dev --save-exact wrangler@4.137.0
+npm ci
 ```
 
-Wrangler **4.137.0** is the current stable npm release checked on 23 September 2026 ([official releases](https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.137.0)). Keep the resulting `package-lock.json`. On subsequent machines or a prepared project with that lockfile, use `npm ci`. In Windows PowerShell, use **`npm.cmd` and `npx.cmd`** in place of `npm` and `npx` in the commands below if script execution policy blocks the `.ps1` launcher; no policy change is needed. The facilitator should retest the selected Wrangler version before the event.
+Wrangler **4.147.0** is the current stable npm release checked on 5 October 2026 ([official releases](https://github.com/cloudflare/workers-sdk/releases/tag/wrangler%404.147.0)); 4.137.0, selected earlier, depends on an `undici` release with a high-severity advisory, which `npm audit` reports. Change the version only with `npm install --save-dev --save-exact wrangler@VERSION`, and commit the updated lockfile. In Windows PowerShell, use **`npm.cmd` and `npx.cmd`** in place of `npm` and `npx` in the commands below if script execution policy blocks the `.ps1` launcher; no policy change is needed. The facilitator should retest the selected Wrangler version before the event.
 
 Set the supplied values in `wrangler.workshop.json` and keep them consistent with the facilitator-issued `deployment-target.json`:
 

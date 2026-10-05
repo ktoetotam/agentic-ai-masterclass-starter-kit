@@ -39,7 +39,7 @@ Another location, such as an existing Obsidian vault, only on request. Use a new
 Ask: "Shall we start with the fictional sample notes, or your own notes?" Recommend the sample first.
 
 - **Sample:** `data/knowledge/`, four fictional notes. The answer key `evaluation.json` is skipped automatically.
-- **Own notes:** only after they confirm they are allowed to send them to this AI service. Ask for one specific folder, never their whole home or Documents folder, and start with 5–20 notes. `.md` and `.txt` work now. PDFs need the optional pypdf package (`references/upgrades.md`). For Word files, ask them to save a PDF or text copy.
+- **Own notes:** only after they confirm they are allowed to send them to this AI service. Ask for one specific folder, never their whole home or Documents folder, and start with 5–20 notes. `.md` and `.txt` work now. Text PDFs work through pypdf, which the starter installs (`references/upgrades.md`). For Word files, ask them to save a PDF or text copy.
 
 Run `brain.py import <folder>` and explain the result in plain words: how many notes were added, which were skipped and why.
 

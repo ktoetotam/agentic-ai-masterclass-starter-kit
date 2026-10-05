@@ -1,6 +1,6 @@
 // Read-only, offline checks. No installs, environment changes, or account requests.
 import { spawnSync } from 'node:child_process';
-import { accessSync, constants, existsSync, realpathSync } from 'node:fs';
+import { accessSync, constants, existsSync, readFileSync, realpathSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { nodeTarget, pythonTarget, meetsTarget } from './runtime-versions.mjs';
@@ -45,6 +45,25 @@ const gitOK = Boolean(gitParts && (Number(gitParts[1]) > 2 ||
   (Number(gitParts[1]) === 2 && Number(gitParts[2]) >= 55)));
 report(gitOK, 'Git', gitOK ? gitVersion :
   `${gitVersion || 'Missing or unavailable on PATH'}; install current Git 2.55.0+ using $masterclass-setup skill. No GitHub account needed.`);
+// GitHub CLI signs Git in to GitHub through the browser; GitHub rejects passwords for Git.
+const ghVersion = run('gh', ['--version'])?.split('\n')[0] || null;
+const ghParts = ghVersion?.match(/^gh version (\d+)\.(\d+)\.(\d+)/);
+const ghOK = Boolean(ghParts && Number(ghParts[1]) === 2 && Number(ghParts[2]) >= 80);
+report(ghOK, 'GitHub CLI', ghOK ? ghVersion :
+  `${ghVersion || 'Missing or unavailable on PATH'}; install GitHub CLI 2.102.0 (2.80+ already installed is fine) in your user account using $masterclass-setup skill.`);
+const gitHelpers = gitOK ? run(gitPath, ['config', '--global', '--get-all', 'credential.https://github.com.helper']) : null;
+report(Boolean(gitHelpers?.includes('gh')), 'Git sign-in to GitHub',
+  gitHelpers?.includes('gh') ? 'Git uses your GitHub CLI sign-in.' :
+  'After creating your GitHub account, run gh auth login --web --git-protocol https, then gh auth setup-git (see $masterclass-setup skill). This check does not contact GitHub.');
+let wranglerInstalled = null;
+let wranglerPinned = null;
+try {
+  wranglerPinned = JSON.parse(readFileSync(path.join(root, 'package.json'), 'utf8')).devDependencies?.wrangler;
+  wranglerInstalled = JSON.parse(readFileSync(path.join(root, 'node_modules/wrangler/package.json'), 'utf8')).version;
+} catch { /* reported below */ }
+report(Boolean(wranglerPinned && wranglerInstalled === wranglerPinned), 'Wrangler (deploy tool)',
+  wranglerInstalled === wranglerPinned ? `${wranglerInstalled}, from the project lockfile` :
+  `${wranglerInstalled || 'Not installed'}; run npm ci in this project (npm.cmd ci in Windows PowerShell) to install the pinned ${wranglerPinned || 'version'}.`);
 const python = path.join(root, '.venv', process.platform === 'win32' ? 'Scripts/python.exe' : 'bin/python');
 const pyResult = existsSync(python) ? run(python, ['-c',
   'import json,sys,sqlite3,ssl; print(json.dumps({"version":list(sys.version_info[:3]),"releaselevel":sys.version_info.releaselevel,"sqlite":sqlite3.sqlite_version,"tls":bool(ssl.OPENSSL_VERSION)}))'
@@ -75,7 +94,7 @@ for (const file of ['AGENTS.md', '.agents/skills/masterclass-setup/SKILL.md', 'p
   report(existsSync(path.join(root, file)), file, 'Starter file');
 }
 report(Boolean(run('uv', ['--version'])), 'uv on PATH', 'Only needed to manage Python; an existing .venv can run without it.', false);
-console.log('\nManual checks: sign in to ChatGPT; open Codex in this folder; see $masterclass-setup; open the preview; confirm your subscription and company policy.');
-console.log('This check cannot verify sign-in, remaining AI usage, network access, reimbursement, or deployment permissions.');
+console.log('\nManual checks: sign in to ChatGPT; open Codex in this folder; see $masterclass-setup; open the preview; connect Google Drive; confirm your subscription and company policy.');
+console.log('This check cannot verify sign-in, Google Drive, remaining AI usage, network access, reimbursement, or deployment permissions.');
 console.log(failures ? `\n${failures} required check(s) need attention.` : '\nLocal runtime checks passed. Finish the manual checks before the workshop.');
 process.exitCode = failures ? 1 : 0;

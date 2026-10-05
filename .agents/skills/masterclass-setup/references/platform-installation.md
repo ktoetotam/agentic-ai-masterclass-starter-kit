@@ -433,6 +433,70 @@ The check loads this project's explicit `.env` using `python-dotenv`; existing p
 
 Use [Teamwork](../../../../guides/teamwork.md) to agree the group's shared Git repository, remotes, branch ownership and review process. Commit `pyproject.toml`, `poetry.lock`, `poetry.toml`, `.env.example` and source changes; keep `.venv`, `.env`, local credentials and generated private output out of Git. Each person clones the repository and creates their own environment. Use [Agent practices](../../../../guides/agent-practices.md) for working with Codex, checking results and handing off work.
 
+## 3F. Install GitHub CLI and sign Git in to GitHub {#github-cli}
+
+GitHub refuses account passwords for Git, so the first clone of a private group repository or the first push fails without a sign-in helper. **GitHub CLI** (`gh`) signs in through the browser and lets Git reuse that sign-in. Install it in your user account; no administrator rights, Homebrew or installer package are needed. The stable release checked on 5 October 2026 is **2.102.0** ([release](https://github.com/cli/cli/releases/tag/v2.102.0), [official install notes](https://github.com/cli/cli#installation)). Reuse an existing working `gh` 2.80 or newer.
+
+### Mac
+
+```sh
+(
+  set -eu
+  gh_version=2.102.0
+  case "$(uname -m)" in
+    arm64) gh_arch=arm64 ;;
+    x86_64) gh_arch=amd64 ;;
+    *) printf '%s\n' 'Unsupported Mac architecture.' >&2; exit 1 ;;
+  esac
+  gh_name="gh_${gh_version}_macOS_${gh_arch}"
+  gh_download=$(mktemp -d)
+  cd "$gh_download"
+  curl -fLsSO "https://github.com/cli/cli/releases/download/v${gh_version}/${gh_name}.zip"
+  curl -fLsSO "https://github.com/cli/cli/releases/download/v${gh_version}/gh_${gh_version}_checksums.txt"
+  grep " ${gh_name}.zip\$" "gh_${gh_version}_checksums.txt" | shasum -a 256 -c -
+  unzip -q "${gh_name}.zip"
+  mkdir -p "$HOME/.local/bin"
+  cp "${gh_name}/bin/gh" "$HOME/.local/bin/gh"
+  "$HOME/.local/bin/gh" --version
+)
+```
+
+If `~/.local/bin` is not yet on PATH (`command -v gh` prints nothing in a new Terminal), add `export PATH="$HOME/.local/bin:$PATH"` once to `.zprofile` and `.zshrc`, preserving existing contents, then restart Terminal and ChatGPT.
+
+### Windows
+
+In PowerShell (use `arm64` instead of `amd64` on an ARM laptop):
+
+```powershell
+$GhVersion = '2.102.0'
+$GhName = "gh_${GhVersion}_windows_amd64"
+$GhDownload = Join-Path $env:TEMP $GhName
+New-Item -ItemType Directory -Force $GhDownload | Out-Null
+$Base = "https://github.com/cli/cli/releases/download/v$GhVersion"
+Invoke-WebRequest "$Base/$GhName.zip" -OutFile "$GhDownload\$GhName.zip"
+Invoke-WebRequest "$Base/gh_${GhVersion}_checksums.txt" -OutFile "$GhDownload\checksums.txt"
+$Expected = ((Select-String -Path "$GhDownload\checksums.txt" -Pattern " $GhName.zip$").Line -split ' ')[0]
+if ((Get-FileHash "$GhDownload\$GhName.zip" -Algorithm SHA256).Hash -ne $Expected.ToUpper()) { throw 'Checksum mismatch: do not use this download.' }
+$GhHome = Join-Path $env:LOCALAPPDATA 'Programs\ai-masterclass\gh'
+Expand-Archive "$GhDownload\$GhName.zip" -DestinationPath $GhHome -Force
+$env:Path = "$GhHome\bin;$env:Path"
+gh --version
+```
+
+Add the `…\ai-masterclass\gh\bin` folder to **User variables → Path** as for Git, then restart PowerShell and ChatGPT.
+
+### Sign in (the participant does this)
+
+After the GitHub account exists, run in Codex's terminal:
+
+```sh
+gh auth login --hostname github.com --git-protocol https --web
+gh auth setup-git
+gh auth status
+```
+
+`gh auth login` shows a one-time code and opens the browser. The participant enters the code, signs in and approves **GitHub CLI** themselves; the agent never types passwords, codes or tokens. The token is stored in the Mac Keychain or Windows Credential Manager, not in the project. `gh auth setup-git` adds a GitHub-only credential helper to the user's Git configuration; it does not set a name or email. `gh auth status` should show the account as logged in. On a shared or borrowed laptop, run `gh auth logout` after the workshop.
+
 ## 4. Run the readiness check
 
 In Codex's integrated terminal, open your extracted project folder. This proves that the app sees the same tools as your external terminal.
@@ -449,11 +513,11 @@ Then ask Codex:
 
 > Read AGENTS.md. Tell me which workshop skills are available. Create a small setup-check.txt file in this project saying “Ready for the masterclass”, open it for review, then report the Node and project Python versions. Do not deploy anything or connect external accounts.
 
-You are ready when you can sign in, run a Codex task, read/write a file in this project, run Node 26.10.0+ and stable project Python 3.14.7+ within their selected release series, use Poetry 2.5.1+ within 2.x and Git 2.55.0 or newer, load the local `.env`, and open the preview. Before group work, also confirm access to the group's shared Git repository. Record optional tools separately. [Troubleshooting](../../../../guides/troubleshooting.md).
+You are ready when you can sign in, run a Codex task, read/write a file in this project, run Node 26.10.0+ and stable project Python 3.14.7+ within their selected release series, use Poetry 2.5.1+ within 2.x and Git 2.55.0 or newer, import the shared Python libraries, run the project's pinned Wrangler, see Git signed in through GitHub CLI, load the local `.env`, and open the preview. Connect Google Drive as in [step 6](#google-drive). Before group work, also confirm access to the group's shared Git repository. Record optional tools separately. [Troubleshooting](../../../../guides/troubleshooting.md).
 
 ## 5. Add only what your challenge needs
 
-The baseline is deliberately small. Check your challenge's guide before adding packages. Use Poetry for Python dependencies and keep its declaration and lockfile together in Git.
+Most challenges read the same kinds of files, so the baseline already includes them: `pypdf` (text PDFs), `openpyxl` (Excel workbooks), `python-docx` (Word documents), `httpx` (web requests) and `feedparser` (news feeds), plus Wrangler for deployment. `poetry install` and `npm ci` install them before the day, so nobody downloads them over the venue Wi-Fi. Check your challenge's guide before adding anything else. Use Poetry for Python dependencies and keep its declaration and lockfile together in Git.
 
 | Build direction | Bring | Possible additions when needed |
 | --- | --- | --- |
@@ -468,15 +532,30 @@ The baseline is deliberately small. Check your challenge's guide before adding p
 | Spreadsheet killer | A small sample CSV or XLSX with known totals | `openpyxl` for XLSX, optional pandas; explicit rules for formulas and missing values |
 | Your own problem | Example input, desired output, success criterion | Decide dependencies with the facilitator after the first small prototype |
 
-For a challenge that needs XLSX and text-PDF support, run `poetry add openpyxl pypdf` from the project folder on either platform. This records the dependency declarations and updates `poetry.lock`; review and commit both files. Run Python with `poetry run python your_script.py`. Teammates pull those files and run `poetry install`, rather than adding the packages again. The starter requires prebuilt wheels; if a package has no compatible wheel for your Python/CPU, choose the challenge fallback. These packages are optional examples, not an instruction to install every tool. Do not use ad-hoc `uv pip install` or `pip install` for this project.
+For a challenge that needs another library, for example `pandas` for large spreadsheets or `python-pptx` for editable PowerPoint, run `poetry add pandas` from the project folder on either platform. This records the dependency declarations and updates `poetry.lock`; review and commit both files. Run Python with `poetry run python your_script.py`. Teammates pull those files and run `poetry install`, rather than adding the packages again. The starter requires prebuilt wheels; if a package has no compatible wheel for your Python/CPU, choose the challenge fallback. These packages are optional examples, not an instruction to install every tool. Do not use ad-hoc `uv pip install` or `pip install` for this project.
 
-For browser automation, a project can use Playwright and a user-level Chromium download. For deployment, it can use a local Wrangler dependency. Ask Codex to install the versions appropriate to the starter and check their current requirements. Avoid `--with-deps` on a locked-down machine because OS dependencies can require administration. A normal browser and manual checks remain useful.
+For browser automation, a project can use Playwright and a user-level Chromium download; Chrome with the ChatGPT or Claude extension covers most checks without it. For deployment, use the Wrangler version pinned in `package.json` and `package-lock.json`: run `npm ci` (`npm.cmd ci` in Windows PowerShell), never a different global version. Ask Codex to check current requirements before adding other tools. Avoid `--with-deps` on a locked-down machine because OS dependencies can require administration. A normal browser and manual checks remain useful.
 
 Git is installed in [step 3C](#install-git) for checkpoints and group collaboration. Use the shared repository and branch workflow in [Teamwork](../../../../guides/teamwork.md); each participant needs access to the chosen Git hosting provider when working with its remote.
 
 **Cloudflare:** use only the workshop deployment route and project assigned by the facilitator. A local folder or a different branch does not limit cloud permissions. Do not sign in using Maria's credentials or request access to the main AI Realist website. Keep deployment credentials outside prompts and source files. Deployment access is an organizer provision, separate from your laptop setup.
 
 **Paid AI services:** signing into Codex with ChatGPT does not require an API key for ordinary workshop assistance. A standalone application that calls a model API, a voice service or video generation needs its own authorized provider access and may incur separate charges. Start with samples or mock responses until the facilitator confirms the provider and budget.
+
+## 6. Connect Google Drive {#google-drive}
+
+Most groups keep their notes, spreadsheets and slides in Google Drive. The participant connects it themselves, because it means signing in to Google and approving access; the agent explains the steps but never signs in, approves permissions or picks the account. [Plugins in Codex](https://learn.chatgpt.com/docs/plugins), [Plugins in ChatGPT](https://help.openai.com/en/articles/20001256-plugins-in-chatgpt).
+
+1. Decide which Google account to connect. Use a work account only if the company allows ChatGPT to access it; otherwise use a personal account with only material you may share. Google Workspace admins can block the connection; that is a policy decision, not an error to work around.
+2. In the ChatGPT app, open **Plugins**, search **Google Drive**, select the plus button, then **Connect**. Sign in to Google and review the permissions yourself.
+3. In Codex, start a **New chat** and ask: “List the names of three files in my Google Drive. Do not open, change or share anything.” Start a new chat after connecting; existing chats do not see new plugins.
+
+**If Codex cannot reach Drive.** Open bug reports describe Drive connected in ChatGPT but failing inside the Codex desktop app ([openai/codex#49168](https://github.com/openai/codex/issues/49168), [#50849](https://github.com/openai/codex/issues/50849), [#25854](https://github.com/openai/codex/issues/25854)). Do not spend workshop time on it. Use either fallback:
+
+- In Google Drive, use **File → Download** (Docs as `.docx`, Sheets as `.xlsx`, Slides as `.pdf`) and save the file into the project's `private/` folder (create it if missing; Git ignores it). The shared libraries read these formats.
+- Ask in a normal ChatGPT chat, where the Drive connection works, and copy the needed result into the project.
+
+Never move private Drive files into `public/`, `data/` or Git. Claude users connect Google Drive under **Settings → Connectors** in Claude instead.
 
 ## Optional: Codex in a terminal
 

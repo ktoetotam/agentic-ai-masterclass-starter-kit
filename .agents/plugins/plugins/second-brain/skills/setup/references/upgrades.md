@@ -4,7 +4,7 @@ Ideas for the "ambitious" block once the sample brain works and the participant'
 
 | Upgrade | How | Watch out |
 | --- | --- | --- |
-| PDFs | One person owns dependencies: `poetry add pypdf`, commit `pyproject.toml` and `poetry.lock`, then import again. Pages are marked `<!-- page N -->` in the raw note. | Scanned pages have no text; the importer reports them. OCR is not included. Check one PDF's extracted text against the original. |
+| PDFs | `pypdf` is in the starter's shared libraries. If `poetry run python -c "import pypdf"` fails, run `poetry install`, then import again. Pages are marked `<!-- page N -->` in the raw note. | Scanned pages have no text; the importer reports them. OCR is not included. Check one PDF's extracted text against the original. |
 | Meeting transcripts | Export the transcript as `.txt` or `.md` from Teams, Zoom or Meet and import it. Speaker lines keep their line numbers for citations. | Transcripts contain other people's words; only use meetings they may share with this AI service. |
 | Saved web pages | Ask the agent to save an article as Markdown in a separate `clips/` folder, with its URL and date at the top, then import that folder. | Only pages they may store. A saved copy can go stale; keep the date. |
 | Word files | Save as PDF or text first. A developer can add `python-docx` with Poetry and extend the importer. | Formatting and tables may not survive conversion; check the result. |

@@ -4,21 +4,22 @@ Start with [the setup guide](guides/setup.md). It covers ChatGPT/Codex access an
 
 Open this extracted folder in Codex as a local project. Start a new task and ask:
 
-> Use $masterclass-setup. Check my computer and this workspace. Install or update the workshop tools in my user account without admin rights. Use Poetry for Python dependencies, create my local .env, run the readiness check, and open the preview. Then help me get the public starter repository with Git.
+> Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry, Git and GitHub CLI in my user account, without admin rights. Preserve existing work. Install the locked Python libraries and the project's pinned Wrangler, create my local .env, run the setup check and open the preview. Then help me sign Git in to GitHub and get the starter repository.
 
-Targets checked **23 September 2026**: **Python 3.14.7**, **Node.js 26.10.0 (Current)** with bundled npm, **Poetry 2.5.1** and **Git 2.55.0+**. Use `$masterclass-setup` in Codex. uv installs Python and the isolated Poetry CLI; Poetry manages this project's `.venv` and dependencies.
+Targets checked **23 September 2026**: **Python 3.14.7**, **Node.js 26.10.0 (Current)** with bundled npm, **Poetry 2.5.1** and **Git 2.55.0+**; **GitHub CLI 2.102.0** and **Wrangler 4.147.0** checked 5 October 2026. Use `$masterclass-setup` in Codex. uv installs Python and the isolated Poetry CLI; Poetry manages this project's `.venv` and dependencies.
 
 Once the tools and project environment are ready, from this folder:
 
 ```sh
 poetry install
+npm ci
 node scripts/init-env.mjs
 poetry run python scripts/check-python.py
 node scripts/check-setup.mjs
 node scripts/serve.mjs
 ```
 
-Open the printed preview URL; stop with Ctrl+C. No `npm install` is needed for the starter scripts. Add optional dependencies only for your chosen challenge.
+Open the printed preview URL; stop with Ctrl+C. `poetry install` adds the shared libraries most challenges need (PDF, Excel, Word, web requests, news feeds) and `npm ci` the pinned Wrangler for deployment (`npm.cmd ci` in Windows PowerShell). Add other dependencies only for your chosen challenge. Then connect Google Drive yourself ([setup step 6](guides/setup.md#google-drive)).
 
 Your agent also needs a browser: install [Google Chrome](https://www.google.com/chrome/) and the [ChatGPT extension](https://chromewebstore.google.com/detail/chatgpt/hehggadaopoacecdllhhajmbjkdcmajg) (Codex) or the [Claude extension](https://chromewebstore.google.com/detail/claude/fcoeoabgfenejglbffodgkkbkcdhcgfn) (Claude Code, Cowork). Step 3 of [the setup guide](guides/setup.md#add-browser) shows how.
 

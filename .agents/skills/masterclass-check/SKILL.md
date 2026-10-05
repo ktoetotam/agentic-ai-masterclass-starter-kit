@@ -1,6 +1,6 @@
 ---
 name: masterclass-check
-description: Check, without installing or changing anything, that a masterclass participant has everything the workshop needs - Python, Node, Poetry, Git, the project environment, the cloned starter, Google Chrome with the ChatGPT or Claude extension, the local preview and the account steps - and report ready / needs attention / optional in plain language with the exact next step. Use before the workshop, at the 10:25 tool check, after any installation, or when someone asks "am I set up?", "did I install everything?" or "check my computer".
+description: Check, without installing or changing anything, that a masterclass participant has everything the workshop needs - Python, Node, Poetry, Git, GitHub CLI and its sign-in, Wrangler, the shared Python libraries, the project environment, the cloned starter, Google Chrome with the ChatGPT or Claude extension, the local preview and the account steps including Google Drive - and report ready / needs attention / optional in plain language with the exact next step. Use before the workshop, at the 10:25 tool check, after any installation, or when someone asks "am I set up?", "did I install everything?" or "check my computer".
 ---
 
 # Check my setup
@@ -11,7 +11,9 @@ Tell the participant in one line what you will check and that nothing will be in
 
 ## 1. Run the automatic checks
 
-1. `node scripts/check-setup.mjs`: Node, npm, Git, project Python, Poetry, the project environment, the lockfile, the locked Python packages, `.env` and the starter files.
+1. `node scripts/check-setup.mjs`: Node, npm, Git, GitHub CLI, whether Git uses the GitHub CLI sign-in, the pinned Wrangler, project Python, Poetry, the project environment, the lockfile, the locked Python packages, `.env` and the starter files.
+   Then `poetry run python scripts/check-python.py`: imports the shared libraries for PDFs, Excel, Word, web requests and news feeds.
+   If `gh` is available, `gh auth status` shows whether the GitHub sign-in is still valid. Report only logged in / not logged in and the account's existence, never the token or its scopes.
 2. `node scripts/check-browser.mjs`: Google Chrome (or Microsoft Edge), the ChatGPT and Claude browser extensions, and whether Codex or Claude can connect to them. It only looks at app locations and extension folder names, never at browsing data.
 
 If `node` is missing, report Node as the first thing to fix and check the rest by hand with version commands only (`python3 --version`, or `py --version` on Windows; `poetry --version`). On a Mac, run `xcode-select -p` before `git --version`. If that fails, report Git as missing instead of running `git`, because it would open Apple's installer.
@@ -23,7 +25,7 @@ Read-only:
 - `git rev-parse --show-toplevel` and `git remote get-url origin`: is this the cloned starter (`ktoetotam/agentic-ai-masterclass-starter-kit`) or the group's assigned repository? A folder extracted from the ZIP has no `.git`; that is fine before the Git step.
 - `git status --short`: report the number of changed files, not their contents.
 - Do not open or print `.env`. Its existence is enough.
-- If `PLAN.md` names a build, check that build's optional tools from `.agents/skills/masterclass-setup/references/challenge-tools.md` with an import or version command only, for example `poetry run python -c "import pypdf"`.
+- If `PLAN.md` names a build, check that build's optional tools from `.agents/skills/masterclass-setup/references/challenge-tools.md` with an import or version command only, for example `poetry run python -c "import pandas"`.
 
 ## 3. Run the live checks
 
@@ -39,6 +41,7 @@ Ask once, as a short yes/no list:
 - In Chrome, `chrome://extensions` (typed into the address bar) shows the ChatGPT or Claude extension with its switch **blue**, and the extension is pinned next to the address bar (puzzle-piece icon, then the pin).
 - Using Codex: ChatGPT app → **Settings → Computer Use** shows **Manage** next to Chrome.
 - Using Claude Code or Cowork: a paid Claude plan (Pro, Max, Team or Enterprise), signed in to the Claude extension; in Claude Code, `/chrome` shows **Status: Enabled** and **Extension: Installed**.
+- **Google Drive** is connected in the ChatGPT app (**Plugins → Google Drive**), with an account their company allows, and a new Codex chat could list three file names. If Codex cannot reach Drive, they know the fallback: download the file into the project's `private/` folder. Do not open Drive files to check this.
 - Their company allows these tools with the material they plan to use.
 
 Record what they confirm as "confirmed by participant", never as "checked".
