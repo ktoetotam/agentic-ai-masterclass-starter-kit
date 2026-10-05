@@ -9,7 +9,10 @@
     "setup:env": "node scripts/init-env.mjs",
     "setup:team": "node scripts/setup-team-repo.mjs",
     "preview": "node scripts/serve.mjs",
-    "check:deploy": "node scripts/check-deploy.mjs"
+    "check:deploy": "node scripts/check-deploy.mjs",
+    "sync:skills": "node scripts/sync-claude-skills.mjs",
+    "check:skills": "node scripts/sync-claude-skills.mjs --check",
+    "check:plugins": "node scripts/check-plugins.mjs"
   },
   "engines": {
     "node": ">=26.10.0 <27"
