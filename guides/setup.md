@@ -2,6 +2,8 @@
 
 Five steps. Once the app is open, Codex can help with the rest.
 
+> **Work in Codex, not in a normal ChatGPT chat.** Everything in the masterclass happens in **Codex**. In the ChatGPT app, click **ChatGPT ⌄** at the top left and choose **Codex** (*Build, debug, and ship*). Step 4 shows where.
+
 <section class="setup-step" aria-labelledby="download-chatgpt" markdown="1">
 <div class="setup-copy" markdown="1">
 
@@ -70,6 +72,12 @@ Chrome not listed under Computer Use? The feature can depend on rollout; Codex c
 2. Sign in to your Claude account in the extension and pin it to the toolbar.
 3. In Claude Code, type `/chrome`. When it is connected, it shows **Status: Enabled** and **Extension: Installed**.
 
+**Check that it is on and pinned:**
+
+1. Type `chrome://extensions` into Chrome's address bar and press **Enter**. Chrome opens this page only when you type or paste the address.
+2. On the **ChatGPT** card, and on **Claude** if you installed it, the switch at the bottom right must be **blue**. Click it if it is grey.
+3. Click the **puzzle-piece icon** to the right of the address bar, then click the **pin** next to ChatGPT (and Claude). Their icons now stay next to the address bar, so you can see at a glance that they are there.
+
 The extension works in your signed-in browser and can see the sites you are logged into. If you are unsure, create a separate Chrome profile for the workshop and install the extension there.
 
 </div>
@@ -83,12 +91,12 @@ The extension works in your signed-in browser and can see the sites you are logg
 <p>The starter kit is the folder you extracted.</p>
 
 1. **Unzip it:** double-click on Mac; right-click → **Extract All** on Windows.
-2. In ChatGPT, open the top-left product menu and choose **Codex**.
+2. At the top left of the ChatGPT app, click **ChatGPT ⌄** and choose **Codex**. Stay in Codex for the whole masterclass.
 3. Open **Projects** and create a project named **Agentic AI Masterclass**.
 4. Click **Add folder**, choose the extracted **agentic-ai-masterclass** folder, then click **Create project**.
 
 </div>
-<figure class="setup-shot compact"><a class="screen-crop" href="../assets/setup/choose-codex.jpg"><img src="../assets/setup/choose-codex.jpg" width="1280" height="720" alt="The product menu with ChatGPT and Codex options; Codex is selected."></a><figcaption>Choose <strong>Codex</strong> from the top-left menu. Screenshot of <a href="https://learn.chatgpt.com/docs/app">OpenAI’s interactive app example</a>.</figcaption></figure>
+<figure class="setup-shot"><a href="../assets/setup/choose-codex.png"><img src="../assets/setup/choose-codex.png" width="768" height="446" alt="The ChatGPT desktop app with the product menu at the top left open. It lists ChatGPT, Create, learn, and explore, and Codex, Build, debug, and ship."></a><figcaption>Click <strong>ChatGPT ⌄</strong> at the top left and choose <strong>Codex</strong>. ChatGPT desktop app, 5 October 2026.</figcaption></figure>
 <figure class="setup-shot" style="grid-column:1 / -1;max-width:760px;width:100%;justify-self:center"><a href="../assets/setup/create-project.png"><img src="../assets/setup/create-project.png" width="1020" height="632" alt="Create project dialog with the name Agentic AI Masterclass, the agentic-ai-masterclass source folder, Add folder, and Create project."></a><figcaption>Name your project, add the extracted folder, then click <strong>Create project</strong>.</figcaption></figure>
 </section>
 
@@ -97,7 +105,7 @@ The extension works in your signed-in browser and can see the sites you are logg
 
 ## 5. Let Codex finish the setup {#finish-setup}
 
-Start a **New chat** in your project. Copy this message, paste it, and press **Send**:
+In Codex, start a **New chat** in your project. Copy this message, paste it, and press **Send**:
 
 <div class="setup-prompt" markdown="1">
 <p id="installation-prompt">Use $masterclass-setup. Check my computer and this workspace. Install or update Python 3.14.7, Node 26.10.0, Poetry and Git in my user account, without admin rights. Preserve existing work. Install the locked Python dependencies, create my local .env, run the setup check and open the preview. Then help me get the starter repository with Git.</p>

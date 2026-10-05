@@ -36,6 +36,7 @@ Ask once, as a short yes/no list:
 
 - Signed in to the ChatGPT desktop app with Plus (or Pro), with this folder open as a Codex project.
 - A free GitHub account exists, its email is verified and two-factor authentication is on.
+- In Chrome, `chrome://extensions` (typed into the address bar) shows the ChatGPT or Claude extension with its switch **blue**, and the extension is pinned next to the address bar (puzzle-piece icon, then the pin).
 - Using Codex: ChatGPT app → **Settings → Computer Use** shows **Manage** next to Chrome.
 - Using Claude Code or Cowork: a paid Claude plan (Pro, Max, Team or Enterprise), signed in to the Claude extension; in Claude Code, `/chrome` shows **Status: Enabled** and **Extension: Installed**.
 - Their company allows these tools with the material they plan to use.
