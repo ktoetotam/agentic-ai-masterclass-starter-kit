@@ -2,7 +2,7 @@
 
 Everything here is optional. The `website-building` skills work alone. These are the plugins we use around them, with the repository each one comes from, so you can read the source before installing. Sources and commands checked on 4 October 2026 against each repository's marketplace file and README.
 
-Install syntax (Claude Code): `claude plugin marketplace add <owner/repo>` once, then `claude plugin install <plugin>@<marketplace>`. Inside a chat the same works as `/plugin`. Codex does not use these plugins; the `website-building` skills cover the same steps there.
+Install syntax (Claude Code): `claude plugin marketplace add --scope local <owner/repo>` once, then `claude plugin install --scope local <plugin>@<marketplace>`. **Always pass `--scope local`:** both commands default to `user`, which installs for every project on the computer ([plugin commands reference](https://code.claude.com/docs/en/plugins/cli-reference)). `local` keeps the plugin to this project and out of Git. Say so before installing, and remove with `claude plugin uninstall --scope local <plugin>`. Inside a chat the same works as `/plugin`. Codex does not use these plugins; the `website-building` skills cover the same steps there.
 
 ## Which one for which step
 
@@ -21,15 +21,15 @@ Install syntax (Claude Code): `claude plugin marketplace add <owner/repo>` once,
 
 ```sh
 # Anthropic official marketplace (already known to Claude Code): frontend-design, figma, canva, playwright
-claude plugin install frontend-design@claude-plugins-official
+claude plugin install --scope local frontend-design@claude-plugins-official
 
 # Anthropic knowledge-work marketplace: design, marketing, searchfit-seo
-claude plugin marketplace add anthropics/knowledge-work-plugins
-claude plugin install design@knowledge-work-plugins
-claude plugin install searchfit-seo@knowledge-work-plugins
+claude plugin marketplace add --scope local anthropics/knowledge-work-plugins
+claude plugin install --scope local design@knowledge-work-plugins
+claude plugin install --scope local searchfit-seo@knowledge-work-plugins
 ```
 
-Direct from the SearchFit repository instead: `claude plugin marketplace add searchfit/searchfit-seo`, then `claude plugin install searchfit-seo@searchfit-seo` (use the marketplace name that `claude plugin marketplace list` prints). Start a new chat after installing so the skills are listed.
+Direct from the SearchFit repository instead: `claude plugin marketplace add --scope local searchfit/searchfit-seo`, then `claude plugin install --scope local searchfit-seo@searchfit-seo` (use the marketplace name that `claude plugin marketplace list` prints). Start a new chat after installing so the skills are listed.
 
 ## Read this before installing
 
