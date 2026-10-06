@@ -9,7 +9,7 @@
 
 Maintainer tool, not needed by participants (the generated files are committed):
 
-    uv run data/second-brain-pack/generator/generate.py
+    uv run --no-project --script data/second-brain-pack/generator/generate.py
 
 It rewrites mailbox/, drive/, downloads/, notes/, records/, calendar/, telegram/,
 answer-key/ and manifest.json next to this folder. README.md is hand-written and kept.

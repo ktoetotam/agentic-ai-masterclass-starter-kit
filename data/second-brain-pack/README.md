@@ -74,8 +74,8 @@ Optional, for a real Gmail, Drive and Calendar per participant. Allow about an h
 6. **Fill.** Dry run first, then apply:
 
    ```sh
-   uv run data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN
-   uv run data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN --apply
+   uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN
+   uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN --apply
    ```
 
    Each account gets 84 emails with original dates and labels (nothing is sent), a Drive folder "Juniper (fictional)" with 49 files, and 16 calendar events. Alex's address in the emails becomes the account's own address.
@@ -86,7 +86,7 @@ Optional, for a real Gmail, Drive and Calendar per participant. Allow about an h
 The pack is generated; edit the story in `generator/*.py`, never the output:
 
 ```sh
-uv run data/second-brain-pack/generator/generate.py
+uv run --no-project --script data/second-brain-pack/generator/generate.py
 ```
 
 This is a maintainer tool; participants need nothing extra. The photos in `generator/assets/photos/` were generated with Codex image generation and show no real people, brands or text. The build checks every computed answer in the answer key against the data and stops if they disagree.

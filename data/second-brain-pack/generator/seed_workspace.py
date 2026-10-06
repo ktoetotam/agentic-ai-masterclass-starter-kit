@@ -20,7 +20,7 @@ Needs a service account with domain-wide delegation for these scopes (see the RE
   https://www.googleapis.com/auth/calendar
 
 Usage (keep the key file outside the repository, for example in private/):
-  uv run data/second-brain-pack/generator/seed_workspace.py --key private/sa.json \\
+  uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --key private/sa.json \\
       --users brain1@example-domain,brain2@example-domain --only gmail,drive,calendar
 Without --apply it only prints what it would do.
 """
