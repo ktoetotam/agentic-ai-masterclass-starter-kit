@@ -64,22 +64,35 @@ Open `http://localhost:8025`. `--use-message-dates` sorts the inbox by each emai
 
 ## Facilitator: fill Google Workspace accounts
 
-Optional, for a real Gmail, Drive and Calendar per participant. Allow about an hour, at least a day before the workshop.
+Optional, for a real Gmail, Drive and Calendar per participant. About 15 minutes, at least a few hours before the workshop. Tested on 7 October 2026 with a Business Starter trial.
 
-1. **Tenant.** Sign up for Google Workspace Business Starter with a dedicated domain. The free trial allows 10 users for 14 days; without billing it ends by itself. Cancelling during the trial switches the services off immediately, so if billing was added, cancel only after the workshop.
-2. **Users.** Create one account per participant (the admin counts as one of the 10), for example `brain1@` to `brain9@`, with temporary passwords.
-3. **Keep mail inside.** Admin console > Apps > Google Workspace > Gmail > Compliance > Restrict delivery: allow only the workshop domain.
-4. **Service account.** In the Google Cloud console create a project, enable the Gmail, Drive and Calendar APIs, and create a service account. New organisations [block key creation by default](https://cloud.google.com/resource-manager/docs/secure-by-default-organizations): as super admin, grant yourself Organization Policy Administrator and set `iam.disableServiceAccountKeyCreation` to "not enforced" for this project only. Create a JSON key and store it in `private/` (ignored by Git). Turn the policy back on afterwards.
-5. **Delegation.** Admin console > Security > Access and data control > API controls > Domain-wide delegation: add the service account's client ID with the four scopes listed at the top of `generator/seed_workspace.py`.
-6. **Fill.** Dry run first, then apply:
+1. **Tenant and users.** Sign up for Google Workspace Business Starter with a dedicated domain and create one account per participant. The free trial allows 10 users including the admin. Cancelling during the trial switches the services off immediately; without billing the trial simply ends after 14 days.
+2. **Google Cloud CLI** in your user folder, no shell changes ([official download](https://cloud.google.com/sdk/docs/install)); then sign in twice as the admin:
 
    ```sh
-   uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN
-   uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --key private/sa.json --users brain1@DOMAIN,brain2@DOMAIN --apply
+   CLOUDSDK_PYTHON="$(uv python find 3.13)" ~/google-cloud-sdk/bin/gcloud auth login ADMIN@DOMAIN
+   CLOUDSDK_PYTHON="$(uv python find 3.13)" ~/google-cloud-sdk/bin/gcloud auth application-default login
    ```
 
-   Each account gets 84 emails with original dates and labels (nothing is sent), a Drive folder "Juniper (fictional)" with 49 files, and 16 calendar events. Alex's address in the emails becomes the account's own address.
-7. **After the workshop.** Delete the key, remove the delegation, and let the trial end.
+3. **Project and service account.** Accept the Google Cloud terms once in the console if `projects create` asks for it. Service account names must be 6 to 30 characters. No key file is created: the script borrows the service account's identity through your own sign-in (role Service Account Token Creator), so the organisation's default ban on service account keys stays on.
+
+   ```sh
+   g(){ CLOUDSDK_PYTHON="$(uv python find 3.13)" "$HOME/google-cloud-sdk/bin/gcloud" "$@"; }; P=YOUR-PROJECT-ID; S=masterclass-seed@$P.iam.gserviceaccount.com
+   g projects create $P && g config set project $P && g services enable gmail.googleapis.com drive.googleapis.com calendar-json.googleapis.com iamcredentials.googleapis.com
+   g iam service-accounts create masterclass-seed && sleep 15 && g iam service-accounts add-iam-policy-binding $S --member user:ADMIN@DOMAIN --role roles/iam.serviceAccountTokenCreator
+   g auth application-default set-quota-project $P && g iam service-accounts describe $S --format "value(oauth2ClientId)"
+   ```
+
+4. **Domain-wide delegation.** Admin console > Security > Access and data control > API controls > Domain-wide delegation > Add new: the client ID from step 3 and the scopes `https://www.googleapis.com/auth/gmail.modify,https://www.googleapis.com/auth/drive,https://www.googleapis.com/auth/calendar`.
+5. **Keep mail inside (recommended).** Admin console > Apps > Google Workspace > Gmail > Compliance > Restrict delivery: allow only the workshop domain.
+6. **Fill.** Dry run first, then `--apply`, then `--check`:
+
+   ```sh
+   uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --sa masterclass-seed@PROJECT.iam.gserviceaccount.com --owner ADMIN@DOMAIN --users a@DOMAIN,b@DOMAIN
+   ```
+
+   The owner's My Drive gets "Juniper (fictional)" (Alex's 49 Drive files), shared read-only with the participants without notification emails, and "Second brain pack (facilitator only)" with the answer key, not shared. Each participant gets 84 emails with original dates, labels and read state (imported, nothing is sent), 16 calendar events and a "Juniper (fictional)" shortcut in My Drive. Alex's address in the emails becomes the account's own. Re-running skips what is already there.
+7. **After the workshop.** Remove the delegation, delete the service account or the project, and let the trial end or cancel it.
 
 ## Rebuild
 
