@@ -1,0 +1,51 @@
+From: Alpenbank Demo <karte@alpenbank-demo.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Kartenzahlung im Ausland
+Date: Sat, 22 Aug 2026 13:06:00 +0200
+Message-ID: <e018.kartenzahlung-im-ausland@alpenbank-demo.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_juniper_E018_0"
+
+--=_juniper_E018_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Kartenzahlung mit Ihrer Karte **** 0000:
+
+CHF 46,50 bei BISTRO LIMMATBLICK ZUERICH am 22.08.2026, 13:05
+Belastung: 49,71 EUR (Kurs 1 CHF = 1,0690 EUR)
+
+Waren Sie das nicht? Rufen Sie uns an.
+Ihre Alpenbank Demo
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E018_0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#0a463c;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Alpenbank Demo</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Kartenzahlung mit Ihrer Karte **** 0000:</p><p st=
+yle=3D"margin:0 0 14px">CHF 46,50 bei BISTRO LIMMATBLICK ZUERICH am 22.08.202=
+6, 13:05<br>Belastung: 49,71 EUR (Kurs 1 CHF =3D 1,0690 EUR)</p><p style=3D"m=
+argin:0 0 14px">Waren Sie das nicht? Rufen Sie uns an.<br>Ihre Alpenbank Demo=
+</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Alpenbank Demo AG (fiktiv), Bankplatz 0, 80333 M=C3=BCnchen =
+=C2=B7 alpenbank-demo.example<br>Fictional workshop data - not a real message=
+.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E018_0--

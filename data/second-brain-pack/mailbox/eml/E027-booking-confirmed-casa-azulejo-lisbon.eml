@@ -1,0 +1,127 @@
+From: StayPilot <noreply@staypilot.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Booking confirmed: Casa Azulejo, Lisbon
+Date: Fri, 28 Aug 2026 21:05:00 +0200
+Message-ID: <e027.booking-confirmed-casa-a@staypilot.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E027_0"
+
+--=_juniper_E027_0
+Content-Type: multipart/alternative; boundary="=_juniper_E027_1"
+
+--=_juniper_E027_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Your booking is confirmed.
+
+Casa Azulejo, Lisbon
+Check-in: Thu 12 Nov 2026
+Check-out: Sun 15 Nov 2026
+Confirmation number: SP-LX7KQ2
+Total: EUR 429.00 (prepaid)
+
+Free cancellation until 10 Nov 2026.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E027_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"><script type=3D"applicatio=
+n/ld+json">{"@context": "https://schema.org", "@type": "LodgingReservation", =
+"reservationNumber": "SP-LX7KQ2", "reservationStatus": "https://schema.org/Re=
+servationConfirmed", "underName": {"@type": "Person", "name": "Alex Example"}=
+, "reservationFor": {"@type": "LodgingBusiness", "name": "Casa Azulejo (ficti=
+onal)"}, "checkinTime": "Thu 12 Nov 2026, from 15:00", "checkoutTime": "Sun 1=
+5 Nov 2026, until 11:00", "totalPrice": "429.00", "priceCurrency": "EUR"}</sc=
+ript></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#005aa0;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">StayPilot</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Your booking is confirmed.</p><p style=3D"margin:=
+0 0 14px">Casa Azulejo, Lisbon<br>Check-in: Thu 12 Nov 2026<br>Check-out: Sun=
+ 15 Nov 2026<br>Confirmation number: SP-LX7KQ2<br>Total: EUR 429.00 (prepaid)=
+</p><p style=3D"margin:0 0 14px">Free cancellation until 10 Nov 2026.</p></td=
+></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">StayPilot B.V. (fictional), Keizersgracht 0, Amsterdam =C2=
+=B7 staypilot.example<br>Fictional workshop data - not a real message.</td></=
+tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E027_1--
+
+--=_juniper_E027_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Booking_Confirmation_SP-LX7KQ2.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChTdGF5
+UGlsb3QgXChmaWN0aW9uYWxcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDAwMDEwMTAwMDAwMCswMCcw
+MCcpIC9DcmVhdG9yIChzZWNvbmQtYnJhaW4tcGFjayBnZW5lcmF0b3IpIC9LZXl3b3JkcyAoZmlj
+dGlvbmFsOiB0cnVlOyBBSSBSZWFsaXN0IEFnZW50aWMgQUkgTWFzdGVyY2xhc3MpIC9Nb2REYXRl
+IChEOjIwMDAwMTAxMDAwMDAwKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJh
+cnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKEZpY3Rpb25hbCB3b3Jrc2hvcCBkb2N1
+bWVudCkgL1RpdGxlIChCb29raW5nIGNvbmZpcm1hdGlvbiBTUC1MWDdLUTIpIC9UcmFwcGVkIC9G
+YWxzZQo+PgplbmRvYmoKOCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDUgMCBSIF0gL1R5cGUg
+L1BhZ2VzCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxh
+dGVEZWNvZGUgXSAvTGVuZ3RoIDE0NzEKPj4Kc3RyZWFtCkdhdTBDPV09J0cmOldlRG9PQ0ZbYV10
+OFo6TVVTNkQnYmtdMypaOXFNaWJ1ZkplIitXJS9LU04zYyVJK3AoaEdQT0JiNnJJSm46YSs1XGNG
+cHJEW0crOWpmdF5rWVBlTjVLMDE5Ry5ZcURmQEVrVGc0Ok9YXmpbMmZAIi9qYyQpOl9xL1ZYS1ZT
+am4lLFxYNjctVGhcaT1AdEVoVmtDRkFiJlJrZUI6WXJWbllqQj0qWz9tV2BPa0ZPLWFXT3BhOWNV
+VjIrJWpJJjtgV1hSXHFAUjE5W08zJFd1X1s7RkRxUC8kIlVfVGpcU09dQSQ4T3IuPCZmXWwncihH
+VnVwVCQtT19FPCwqW20zI15fZl8oR1RKbFMocWglUi1XKXFIYkMmMEdVZjxsNEM2VktHaU1MTDMp
+byVKXC0tNDBJWGRwblk8X0YmVVxgW0RqVFNXYlJZSG1jazI1c11QdVFSTyNvSGItRF1ZPnA2aSpi
+LyE/WmlBUyRQKS1VMXAsRFU3KGMmOFA6LD9nYjU/MFE7TF1LJVFKQE4sVm0tX0pELzpIR2o7MW5l
+YUo8JDI2S0EsLktlUEZEUypzLzlNXCNaY1VaK2VMYDk2YCFFPUhfN1xmI19dLU9bZihRUDIocDND
+YSsoRS8qQiE1WiRVTixAZGk4UlNbMnQmMnJNO1sxPW4iJSdFP1xVMTpcTi9qYyhiLFpAbXJxK0Es
+WnFSUCYlKllMIy9PT2AnMjAncj9xPTAvVlFiQHNAb201aG4kNClgKyhCRCdZbFY0S0ZuWWxTWUtz
+cl1YaFhrbmE3STY8T11BRFxZYjFtMipRYlNwTFM1Y1VGNVc6YFVObj5hTSkmQ3NIXyUhK1FQSWll
+Oz0sUVZub0dubV5XWF5zOHIlLC47dS8xQkdOW05tOVhkLDdbIzY7ZWwnUEwjcyIySWBlKVJiQGdH
+JSQ8MklaUWtFNUJGcHBdQyxSbVdUZyVNbUJAblg3V1tSWFYmZF8xcl5VOU9qYDojOUBLVCpRR28h
+IT5JYEVDV0o4V19FZ1tWTSJIOiMjQi1GTC9nO19SLWRjRW9ILGpSJyoiK09LRDBCMkpJUUhXYFxc
+Jzg8cDhebUgqTmE5MEBCbUNkXGE6TklzNiFAYS5xOlFIJzZhbytKMlxlX3JnRDctcSo0dDphViEm
+dDZEV3VwVD1HPV1xSnI2cy9WSTs0YjkmQ2FLNENcWzRbY3RdXUlwTy1jXVNBRSdwWVkmXkImJVws
+RDY2W1xlK0I+azVgZD4hMFQ1bjBdQnBOUiJJWj8wcjNtbic0UzJ1WCxzWVlYQThWTig5MisxLDFD
+IzxfOzJtRWFRNmA+K2MnIjVxaic4W0ozPEdxMkQ6Nl9rNW8pJ1hyNDgkXixTPEFjcmJGYFFfZEs3
+TDprXTshNyI+JFksVjM+a1UkVUpcKSl1JiZIaTpGbkVFXihNPCFLZFJkTiRwL1hnYU4tbGlZTGUk
+VjgvMVU8IT9dYmcuNGoxI09PbWEpPXNMRyYlPF9IYkFKSmJ1SihvKEVcOCduLl9OI2xRcyU9b2dE
+L2dlSFpnNC46RjglOGBLN0NrOScwVmNIVytWR0hPa2ZZSGVoPztAUVwzLGpLLUE3Nj9eXV9ONEVj
+TEsvc0ZdWUQxUz42WFRUW3FKalY4REt1LzcwUmsmM0pZOW0kIVwxcGVeQkpFOGEuXXBbU3FzPk8u
+SmVeY2pZNEtfViFcOCZmQXFra3NEWkUkaUlnOi4mLihHM2UmOXIrXiJObWdlQ0AhW0tgMC5AdUZw
+KWxJVEE+QUswUlBVSU5ucik2KDtWVjxydT0nRy1RMFBJO1JvKERqL2tuXzBVRjFkQTUnSWM1cm4z
+ZW9vL0BHRzcpWDdnKEVcUmwpSTFqZDpba242RWg6ZmE9cGM2LEQzSHUpZFdGLW8oZT1TTyxORGdQ
+cl42MSIuXlxUSVFKOkF0OThEbTEpfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMAowMDAwMDAw
+MDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAw
+MDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAwMCBuIAow
+MDAwMDAwNjQ5IDAwMDAwIG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTA5OCAwMDAwMCBu
+IAowMDAwMDAxMTU3IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPGU0OWMzZWVlMjFjM2ZiNWJk
+NDYxM2ZmMzM4Yjc2ZmEwPjxlNDljM2VlZTIxYzNmYjViZDQ2MTNmZjMzOGI3NmZhMD5dCiUgUmVw
+b3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0lu
+Zm8gNyAwIFIKL1Jvb3QgNiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjI3MTkKJSVFT0YK
+
+--=_juniper_E027_0--

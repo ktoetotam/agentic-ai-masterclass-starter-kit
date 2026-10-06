@@ -1,0 +1,108 @@
+From: Kabelkiste Online <rechnung@kabelkiste.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Ihre Rechnung zur Bestellung KK-O-55102
+Date: Thu, 10 Sep 2026 16:45:00 +0200
+Message-ID: <e042.ihre-rechnung-zur-bestel@kabelkiste.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E042_0"
+
+--=_juniper_E042_0
+Content-Type: multipart/alternative; boundary="=_juniper_E042_1"
+
+--=_juniper_E042_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Vielen Dank f=C3=BCr Ihren Einkauf. Ihre Rechnung =C3=BCber 89,90 EUR finden =
+Sie im Anhang.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E042_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#f0a01e;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Kabelkiste Online</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Vielen Dank f=C3=BCr Ihren Einkauf. Ihre Rechnung=
+ =C3=BCber 89,90 EUR finden Sie im Anhang.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Steckerweg 1, 90402 N=C3=BCrnberg =C2=B7 kabelkiste.example<=
+br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E042_1--
+
+--=_juniper_E042_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Rechnung_KK-55102.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChLYWJl
+bGtpc3RlIE9ubGluZSBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAwMTAxMDAw
+MDAwKzAwJzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikgL0tleXdv
+cmRzIChmaWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJjbGFzcykg
+L01vZERhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQ
+REYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFsIHdvcmtz
+aG9wIGRvY3VtZW50KSAvVGl0bGUgKFJlY2hudW5nIEtLLTU1MTAyKSAvVHJhcHBlZCAvRmFsc2UK
+Pj4KZW5kb2JqCjggMCBvYmoKPDwKL0NvdW50IDEgL0tpZHMgWyA1IDAgUiBdIC9UeXBlIC9QYWdl
+cwo+PgplbmRvYmoKOSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVj
+b2RlIF0gL0xlbmd0aCAxMzc5Cj4+CnN0cmVhbQpHYXRtOj5Bck0lJjpYQVdSJFVGVy5sKUo+UWFc
+OzlHMUBxLzwuVXVHUG8jNEdKO1ouRTEhQCM/XjEvKmxSZkkvZiI7QVVqYzhYWEtiQkpbQ1VETC01
+TzY2TFUsUF8xaiF1RVk7IWo1QTlrUiZxMyZVTUYsMjFTLnVWKV9yWjlqLE9iI0NqPmApSiwlU2FH
+b14mWD5dOSE7X1g5JjZ1QjxcWFkjTyY3RWxSVlhqJlovYlNeTjYwUCFmT1khbylaZF9bdFlEOWVw
+S0plTTEjbytJbS8qYTNaKE8/PiUsM0FkJUFMTUxCbSxIWGRdYSpESUwqMTttWFstNFdnaUJVTEw+
+Smk+Y2csOjxuZEA0KExON1UlWDdTZlgjYXBHYTBnZjkoM0UvRF5GY2A5L0dqSVlbM1diO0ZqQTxt
+J3BBSkBTTUVvXVZ0MWt1VS4yXWxLIyhROlBrUDFSXjlZJEFLJ2thVnI/TCtVXydPTm8uZXEiUSMu
+WlhkMkFcQjMvRSRYSVpibkUvUE9pOEAzNCptSERNTD5xMz9qXjsyRG5MV2JlMEVGQTFVLzRQIW90
+QF5eY1E1RDpsKyQlJS4xMnVYVkdEP0o/SzVpcChXMjtZcmdcXUYhKHJwP0BCcD07cExHN201KU8/
+VTRaRWRON3AyYT9QYnBkRD1PM3MnVyZBYjxQZW8sS0ctJTtvR2RcJFBnXCw/OkVKbDpMM188PlUy
+YSkrNU4ucTlRPCokaUUiPzxJSTZRQD5kMz5KVVInblA3Qz1uM1BRcGddSDRRSUVmLz5mQDZONmJf
+QXBdTD05Jlg3aS8kNz4+Y01MKihBUy83SXBgbD8sa2lYNS1pS3A6K0dqbzQ9JylwSlRdRkNdS0xD
+LWhwXmAyXUdPW2VkJ3UvVS0hWDY+WThtMiZKdVBAO0IoZyVQVjAuQG82SkUkMHVZYlcybS1ATV5D
+YyM8aThzJ1dmJGtVVlZiLTlQYXMmPzVjZjhJbElqPCxoKltjcz0uJHVdLGslUkIkTlJKWC89ZU8y
+O2UqSiosZzRjQWpoUmxjZE4+OXQ3V2c4SCpqKFRGcGA+YVlXJlYjbEFeNTw7NVRfZjZxYWZKJUlo
+Z14jJDRgPERPKGFRciFZRF8taFNuPiQ+WTY5cUdCXHJCaFVMYChXLj9wMG9VMEVkYTxzJi1bV29E
+KSVkIVxDMz0kSjhtTEdeckRxbnRtP09cKCdQOkpFXipWZzFmU3E/NERyPCNpO0VXa1wiLGE8bFtx
+U2lKVnNiNVItUixsOHNiY2ZBaGQ4OF50blVzUWFPODdzOCY5P00vX2xBaFtUNGdFUDlVb2BcTERL
+cD9xJF8vbGlaUXUia01tdTpuZnE5JjxkdTZWVVE1WzI6Kl1UVEZqajtxNistQFkkSy5NKUNBVWd1
+OCIwRSklNV1GKS4qRkZqQ2xETC1eLjYuZXNYVHQ8NkZ0XlMzV1AmITlLV1VTUk5EOjtxPiRHT11m
+JC80VU1JTFJVL3UoSFhlKGU1OWQ9bUxqZ1hmQjRmPSw0M0gqKWkqO1Q4XC5NWC9OLVhwL3BNPSlt
+O0VENFQsSm1gVlQ5S19jVVFuW3BpQzs2T1xBKCZcVGUlbThWOjlrVU9MOGVVZi1EYWA5LWtbXlxK
+ZUtZRVxHRlNALFJTb3E3YEwqVmA5SV1ZL100I15NbGYzLEpFLjVWXUlxSEghcDM9cjctdEpzaTBJ
+NFNlSiorQSIrZEs3TWIzbDxjbT9yWCZKPUZnRW9xaDQkUUo5T0VqRXJbZGJzUE9JJC1ZX104PFIw
+SWYtcCVlYztyc1NJPVQ5XWwyPmB1O08+YDttJyknKT9SXW41R1F+PmVuZHN0cmVhbQplbmRvYmoK
+eHJlZgowIDEwCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAw
+MTEyIDAwMDAwIG4gCjAwMDAwMDAyMTkgMDAwMDAgbiAKMDAwMDAwMDMzMSAwMDAwMCBuIAowMDAw
+MDAwNDQ2IDAwMDAwIG4gCjAwMDAwMDA2NDkgMDAwMDAgbiAKMDAwMDAwMDcxNyAwMDAwMCBuIAow
+MDAwMDAxMDkzIDAwMDAwIG4gCjAwMDAwMDExNTIgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8
+Y2VlMmJkNGNmMDE5NWVkZGM3YTJiODM3MjBkOGFkNTU+PGNlZTJiZDRjZjAxOTVlZGRjN2EyYjgz
+NzIwZDhhZDU1Pl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3Qg
+KG9wZW5zb3VyY2UpCgovSW5mbyA3IDAgUgovUm9vdCA2IDAgUgovU2l6ZSAxMAo+PgpzdGFydHhy
+ZWYKMjYyMgolJUVPRgo=
+
+--=_juniper_E042_0--

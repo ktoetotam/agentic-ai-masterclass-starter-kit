@@ -1,0 +1,112 @@
+From: FitPass <service@fitpass.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Deine =?utf-8?q?K=C3=BCndigung?=
+Date: Wed, 30 Sep 2026 16:20:00 +0200
+Message-ID: <e026.deine-k-ndigung@fitpass.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E026_0"
+
+--=_juniper_E026_0
+Content-Type: multipart/alternative; boundary="=_juniper_E026_1"
+
+--=_juniper_E026_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hallo Alex,
+
+wir haben deine K=C3=BCndigung erhalten. Deine Mitgliedschaft endet am 31.10.=
+2026. Die Best=C3=A4tigung findest du im Anhang.
+
+Dein FitPass-Team
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E026_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#00a078;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">FitPass</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Hallo Alex,</p><p style=3D"margin:0 0 14px">wir h=
+aben deine K=C3=BCndigung erhalten. Deine Mitgliedschaft endet am 31.10.2026.=
+ Die Best=C3=A4tigung findest du im Anhang.</p><p style=3D"margin:0 0 14px">D=
+ein FitPass-Team</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">FitPass Studios GmbH (fiktiv), Westendstra=C3=9Fe 0, 80339 M=
+=C3=BCnchen =C2=B7 fitpass.example<br>Fictional workshop data - not a real me=
+ssage.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E026_1--
+
+--=_juniper_E026_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="Kuendigungsbestaetigung_FitPass.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChGaXRQ
+YXNzIFwoZmljdGlvbmFsXCkpIC9DcmVhdGlvbkRhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAn
+KSAvQ3JlYXRvciAoc2Vjb25kLWJyYWluLXBhY2sgZ2VuZXJhdG9yKSAvS2V5d29yZHMgKGZpY3Rp
+b25hbDogdHJ1ZTsgQUkgUmVhbGlzdCBBZ2VudGljIEFJIE1hc3RlcmNsYXNzKSAvTW9kRGF0ZSAo
+RDoyMDAwMDEwMTAwMDAwMCswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBMaWJyYXJ5
+IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChGaWN0aW9uYWwgd29ya3Nob3AgZG9jdW1l
+bnQpIC9UaXRsZSAoS1wzNzRuZGlndW5nc2Jlc3RcMzQ0dGlndW5nIEZQLUstMjAyNi0wOTMwLTEx
+OCkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9Db3VudCAxIC9LaWRzIFsg
+NSAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJ
+STg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTE1Nwo+PgpzdHJlYW0KR2F1MEJiQXMo
+QyddJj9xR0Y+OCZsW0YmYVJyUitWV1xSPkdDZVxLOSU9c2hgPTxKRVEuLTdZKSRTcChsKy1UKTFV
+JCEvPWNLVzVwXmsnbkxdRCZaNDMxbiU/J2FIQCFbSypJLF88YGhiUzQqazUjY2ZjZTwwaDddVE5Y
+TW1dUWtUYTs5W0JCQisubVhkKTcsXywpQTc7N1dTWmxVRChkSSxXO1R0PGFaZm4pLWkvYDF0Iit1
+YlVQP2UxZS9tZyZMNV5AbDFvI0smMlA2LCxfLUl1KWclTyZJIW05IjdURmtRPDhKaV9oLVYnUGhG
+NktEKkZxaCtUYD9dQmRAXCdtZE5GVV1JUGQ2YGkvYlNrSzJzR1BAV0NKV19RODhIPSlWT0AmJ1du
+REJSSi4hNClGWCpROD0oY2ciJUYiQTpyT3BrMDwoYlhvaWQxKVohTnJiSkNUajBxLV41TkMzLW4m
+L0svUUQzZipUR1tHanMhOnIuLXIzIi9WYy8yOlNNbSIoLEFwJSN1RiIrM3IyP0Nqb044XSg4WFhf
+ZWIwKj4mUFQvJi1BVGFuUTpnWy9zQjJ0dDdJcmQuUHVZUGVqMFs3NS83W0omLls0Uz0zOl1gLVRb
+anNYVVJQc01FIU5MSCgoIl9hYC9rVEk2ZWdQPzJMcnU+PVBYZkg/PFcnS08lLktoZjNiXmxtO0A0
+Xz1vTycrdDlNVzpkMi0xUkVgYzcsRnJuJjUxOHA+PWoiMj1sVEctRlA9VkU4QSpIVEBgaEo/Z21u
+KmxzOmliMGFqU3BgP1NgOjE8RCp0IVtFZ0NcWTFxL1AndSUiS3MtTGtgQSh1Z2A7Z2JMOWQwX1Fx
+RTReOSdoanVETV49a0BgQklRXTxLcTdJVm8/REFSVmQmPWhATkk8QTIxTkU6WSc3NkRYMkJMSF8h
+Kz1GbWNUSXIhYGpjXnVSL0Q4LCUyPEBPai01QzEkX0FVcmpLJCQ0WlAlSEcjdDVSIjB1P041PVc1
+MmVVYTMxMjBMJGhkYyRaSzFfWDM9U1VPNjhYOyQ9amcra1hvZmVeNzI7UVUtLlUwc0MrSztibS8w
+QyZKSDM4IzQ6UyhtRSpzJEchIlBgI1EiQTQoSz1tZEhnI1w2K1BJMER1NVY1bi5TaTMsdXMwaURB
+Y1w0PGJnKlJabS4nVTBvYj1dWklIa0JSTT5aSD5oTTk/T1BYK1BRc2NpLmtvS0RPVWw8LCReNVRb
+O1IqKSYoSlh1ZGs1KDxYZzd0QUo2RS1NJmlVYz5KTV0iWF9oTy1HYD8hLjtscyYxUmpzUk1QOGtk
+c1ZkXV9yNTxEPlElYmgpKyctWGhXbiNRI21uMzdOXi5EWVB1SVwwODQkRUhMKy1xImdzPS1mX1lu
+UkpRcl1nXTlMbVdzTyZCSVMzYmkiJGJoZGsjOyNpWHVcL0s8aEAvTzokWjRvW2psZTg/VC1HP14i
+Vjc7MC9lJS9fTnReKmlOQz9uVDw9Ij1MLUE0JXI8XSE0ZG9CVFNSdUIsZztqKztgU0JfQz0hTVkm
+RVEibjdBfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMAowMDAwMDAwMDAwIDY1NTM1IGYgCjAw
+MDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAwMDAwMjE5IDAwMDAwIG4g
+CjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAwMCBuIAowMDAwMDAwNjQ5IDAwMDAw
+IG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTExMiAwMDAwMCBuIAowMDAwMDAxMTcxIDAw
+MDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPGMxOGQ1NWU5OGQyOGJmMGUwOWM4YjFiMDE3ZDliOWZj
+PjxjMThkNTVlOThkMjhiZjBlMDljOGIxYjAxN2Q5YjlmYz5dCiUgUmVwb3J0TGFiIGdlbmVyYXRl
+ZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gNyAwIFIKL1Jvb3Qg
+NiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjI0MTkKJSVFT0YK
+
+--=_juniper_E026_0--

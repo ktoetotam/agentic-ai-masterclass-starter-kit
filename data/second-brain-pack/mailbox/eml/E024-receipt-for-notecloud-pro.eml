@@ -1,0 +1,104 @@
+From: NoteCloud Pro <billing@notecloud.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Receipt for NoteCloud Pro
+Date: Thu, 01 Oct 2026 05:00:00 +0200
+Message-ID: <e024.receipt-for-notecloud-pr@notecloud.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E024_0"
+
+--=_juniper_E024_0
+Content-Type: multipart/alternative; boundary="=_juniper_E024_1"
+
+--=_juniper_E024_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Payment received: EUR 8.00 for NoteCloud Pro (monthly). Receipt attached.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E024_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#5050c8;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">NoteCloud Pro</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Payment received: EUR 8.00 for NoteCloud Pro (mon=
+thly). Receipt attached.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">NoteCloud Inc. (fictional) =C2=B7 notecloud.example<br>Ficti=
+onal workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E024_1--
+
+--=_juniper_E024_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Receipt-NC-2026-10-55821.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChOb3Rl
+Q2xvdWQgUHJvIFwoZmljdGlvbmFsXCkpIC9DcmVhdGlvbkRhdGUgKEQ6MjAwMDAxMDEwMDAwMDAr
+MDAnMDAnKSAvQ3JlYXRvciAoc2Vjb25kLWJyYWluLXBhY2sgZ2VuZXJhdG9yKSAvS2V5d29yZHMg
+KGZpY3Rpb25hbDogdHJ1ZTsgQUkgUmVhbGlzdCBBZ2VudGljIEFJIE1hc3RlcmNsYXNzKSAvTW9k
+RGF0ZSAoRDoyMDAwMDEwMTAwMDAwMCswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBERiBM
+aWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChGaWN0aW9uYWwgd29ya3Nob3Ag
+ZG9jdW1lbnQpIC9UaXRsZSAoUmVjZWlwdCBOQy0yMDI2LTEwLTU1ODIxKSAvVHJhcHBlZCAvRmFs
+c2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0NvdW50IDEgL0tpZHMgWyA1IDAgUiBdIC9UeXBlIC9Q
+YWdlcwo+PgplbmRvYmoKOSAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRl
+RGVjb2RlIF0gL0xlbmd0aCAxMjE3Cj4+CnN0cmVhbQpHYXRtOmFgPy0sJSkoc1dFLSt0bmRjZDcy
+Q3NMTzBjKGFfVjJkW0UlRDAkbmEuWjFcJF5DTmttLCYmV21QXGNKaiUhRml0VTRFT1wjbFtabDQz
+N0lkY0pkUnEhZzU3UCJrJz5YcldjXVEtYEJRckJqZ1xlSConVilIJEFvLm9sJCVBJmRgWnM+Nzhf
+WlsjcDppKXFfZWpDV00pVG9NVSVFNmwoYjspT3MnIV8naEI8MSwwQTFfSi5dWCUmJmQqYXJbT2tG
+VC1PQmM9Uk1IYDtpJmFaMDcvYXFXZl1TVWhBNjJIS0g2cnJxZSIqZ1VAaVYrRmNAMTlmc19gNkhw
+JT9NNWoiJWFEOnQlJFlYa2tRP1xOaGApcVs0OTowQDJuXm0rOmJsPD1rZ10nOWZjQjJnR3BqSTVz
+JnF0TE9YPF9nQ0EuKWFEaVI+KVc9TVYhaDdcND9KbUc0SExwX2w3XUhPQVNULFRqXSJzI2otaERE
+I2hVVWU2UC0/SmA9NHBfcHFdajNTVylrLicpXDBQQD5bTDtORW9CPCxUJ1o8by0tSy8mOiwtbS1u
+YF1LWlI+LCk2SU5DYVNzI1phPCJjKjklQmNlZ1NlWVsiTm9WPlZrY3RhM0UuU289SkhNJkZORGw3
+J0V1UjU4Q1xqZiJrLyU7RGJuc0IrZHAmYUFcXDBjOSJbWWs3PmMqIkJWS2ZdXEAnRExJdDFybS8l
+WEpvZFVFbzl0MTpMJCFvJSpqJC5JSGRzNXNVbmhKWEY8LWYuYGNDI2wzUl9iQWU2YUJ0ZjltQF9i
+RGtWUTguOjZOb0EkSCxwXHEyIilJW1drUG0/R1E9KGJiLSRcbSxgVmNBV1w/RidPRFRhVVs4OHJf
+PXJBcTQ6PTBmIT1PNyIkOWAsSGNQYm8vO0lvNiUpLkNyYUssNCJvRCsnMWAoOTQmWVwwWSdNb0Qq
+U0xPXzNdWThMVSo7NmhPV25IX28qWFEmQ29qT0taV0xUbl8ubkcjVXQ9Wld0SCRJQz4hKFUtSzNx
+X1BibTBwQitQNWZhYVVJS3RJUz9FKC4kSDZkPV1KbmVyTStVUkQ1M2klXl5oVSgqVm1tLFA4LVxH
+N144azA0a2ZiQDg5XiskXU0hNFIpZyJtc2hSb0BQZjNHWHU+cCViXkJCK0Jrb0YqN2ReJ2pCMCkr
+OS5aLF5XMEdsbkQ/IVNdOCIoTEZCaEZSLTBFN0s9UzhmaiFeMTAyVk9nSHEpPnAkQjNANlsqY1U/
+dFZNJz9BdEVYWUopMDZiVmhxLmc8cz8hK2tJbi4+bCtmRlFDW10rMVs/W0dkNTpkRVhgbVliQEAj
+K1xKdVdzPSQ9PE1kSzdQPzs7ckE7Nl1ONDByTEtxVXFIXVs2bUMuc1NIWU0ublA7XFBBNDN0Ujxp
+b0xjWDZMXjNoYTZSTkhFOnJtTThEJDpWMGshaHNkQidZTjExOHErZzAnLGZEMHU8Mlw+I14kbEBo
+RUM+VCNoM1BgIUslWmhRLVFeIls+RC82P11FM0JTU29kVzhpPXFYXk9uITFUX1xeOmw3JFlVR1pp
+PiozNSM0PDZjNEFeNkBjcjM+MWNcVitsaW5cJXUoVTRiKSFmPz1DJzZ0I1FmNyhOLyV+PmVuZHN0
+cmVhbQplbmRvYmoKeHJlZgowIDEwCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAw
+MCBuIAowMDAwMDAwMTEyIDAwMDAwIG4gCjAwMDAwMDAyMTkgMDAwMDAgbiAKMDAwMDAwMDMzMSAw
+MDAwMCBuIAowMDAwMDAwNDQ2IDAwMDAwIG4gCjAwMDAwMDA2NDkgMDAwMDAgbiAKMDAwMDAwMDcx
+NyAwMDAwMCBuIAowMDAwMDAxMDk2IDAwMDAwIG4gCjAwMDAwMDExNTUgMDAwMDAgbiAKdHJhaWxl
+cgo8PAovSUQgCls8YjU4NjUzYjkwODY0MWVlYTQwOGM1NzVjNWI2ZWQ0MzY+PGI1ODY1M2I5MDg2
+NDFlZWE0MDhjNTc1YzViNmVkNDM2Pl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVu
+dCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA3IDAgUgovUm9vdCA2IDAgUgovU2l6ZSAx
+MAo+PgpzdGFydHhyZWYKMjQ2MwolJUVPRgo=
+
+--=_juniper_E024_0--

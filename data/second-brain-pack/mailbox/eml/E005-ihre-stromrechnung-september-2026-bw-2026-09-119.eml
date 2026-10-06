@@ -1,0 +1,114 @@
+From: Brightwell Energie <rechnung@brightwell-energie.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Ihre Stromrechnung September 2026 (BW-2026-09-119344)
+Date: Thu, 03 Sep 2026 08:03:00 +0200
+Message-ID: <e005.ihre-stromrechnung-septe@brightwell-energie.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E005_0"
+
+--=_juniper_E005_0
+Content-Type: multipart/alternative; boundary="=_juniper_E005_1"
+
+--=_juniper_E005_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+
+Guten Tag Alex Example,
+
+Ihre Rechnung für September 2026 ist da: 84,20 EUR, fällig am 15.09.2026.
+
+Ihr Brightwell Kundenservice
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E005_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#e6aa14;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Brightwell Energie GmbH</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Guten Tag Alex Example,</p><p style=3D"margin:0 0=
+ 14px">Ihre Rechnung f=C3=BCr September 2026 ist da: 84,20 EUR, f=C3=A4llig a=
+m 15.09.2026.</p><p style=3D"margin:0 0 14px">Ihr Brightwell Kundenservice</p=
+></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Sonnenallee 100, 80335 M=C3=BCnchen =C2=B7 brightwell-energi=
+e.example<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E005_1--
+
+--=_juniper_E005_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Rechnung_BW-2026-09-119344.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChCcmln
+aHR3ZWxsIEVuZXJnaWUgR21iSCBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAw
+MTAxMDAwMDAwKzAwJzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikg
+L0tleXdvcmRzIChmaWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJj
+bGFzcykgL01vZERhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9y
+dExhYiBQREYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFs
+IHdvcmtzaG9wIGRvY3VtZW50KSAvVGl0bGUgKFJlY2hudW5nIFN0cm9tIFNlcHRlbWJlciAyMDI2
+IEJXLTIwMjYtMDktMTE5MzQ0KSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjggMCBvYmoKPDwK
+L0NvdW50IDEgL0tpZHMgWyA1IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKOSAwIG9iago8
+PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxNDI1Cj4+
+CnN0cmVhbQpHYXRtOjlsbyNaJkFAWmNxTyInUEI+LVRKQ1I7O00uaVRRPVdFY3E1KmVXJSxFIVss
+U28nPGJUNjpldEo4ZF0nYlArMGtiMmEpKjkxXj9MIl1fWXJGISo5ai9JKUNMQ1Fva0ZPVypvMExO
+JFxaIU4taUdDOiZKKllBdD4pKU1XTjZYbVZgQCteZSokRjkrQkdqMWdZRkozXGJyZGJldFVOPWA0
+STQ0QSU3ZD1HRyo8WTFncys/bUljYlp0WCUoK1pJRWEoOSo5TXElZVRAQWlwdSkla1NEV0dxWCJe
+P1A/UU4+I25BIUFfblFDVCY0I0hwaDprdD4zaVNMUVUpLCxUTi1yPzooPXVwaV8oMEQ9OjQoSjxa
+cSJYJmc6bzhGL3MjVjtzNj8nIT85by9gMW5DLkVxWSllUiMnTFIpJ2lPJzJjXlQhYE80cGhDNGY4
+ckJiIy1qVT1mbCtdNmxKKy1EVjYvSHM5ak47JkxhLlw0MlEuQlVvWS8pTENER2NTclM3Ujxoa2co
+OlVENShSTiZJLVpxc0U8TjZoTUZlcmleZGtqTWg6QiRiXDUjaG5jK0FKJ1xUPj87YCwkRChrUV1T
+J3ViIVdGLSFvLkRaXkhdVHI1Rj9odVtLV2RcRiNTQShcPHIhWEYiMzRvOyxSUixSZGlHYjZVIi9s
+JjgyJ1UhNjZBRElAWCEybyMzKj5TVi8iNyxzOmFzV1wzRCJRUFoxXEJiKlIqKW9MISlwNy1qXjVb
+OilCSTg2OC5yKCVVXllNWzJYaTthaWRbMEtuNi4jalxFKU5bXlk2RDZLN1w9RFY+cCFvQVdgY0Fa
+KCdtNW5RVydaVS5QVz8tZjBHVk9uOlEhRHMxYkI8Yi5mRzAlNm9bW09DQ3VELlZWcm5dOjZnOy5U
+KCpTbSY/X1RpODJlZGM4NzA0SENzQSVgUSw9UG00L2NTTzlRSCZLXmtlZDQ3ak4jL2FtUVQ/KDVi
+SVFFSlc7TWA/KkNwcDF0OS9sTUZDM0A+O3U6M1ZRRk5vRC1oOzssSmJTcmQlVV9aU1VpaG5YKFQi
+Xzh1Q2ZTcWFvLjMqakBMZyNgZWdjZWtHKz51W2lrUVFdaWloWCNYKDxoTk5vaFhRcygrdFFkajJJ
+Qz9OS3FwODNrPm8tS2M/TjkhKGtRO2U9KXBAVyJaXj1fakNWIyE5QElEWFpaRVskQEVCUXRkbGxt
+JEJtNzdgS0BlZSZocVtcQyYqJ3J0Qi5zaEFBXVgjLUo6bCdtaWAnMnNEWWdoUFo5I0U2Wm1lOmRN
+PCQtIVw0OVVsXidJIiYkK1kpKVs8Kkc/SGw5WltEbURbKzxeUz11RzxXRTtYR1crYE09b1gmLTVC
+JjxQajYkWDI8O3FqQitdMmE7KDtBcU4wPSo/OD1xP11rKlYzbUk3ZzFEcTJwVyZZO1BIZCc2UFt1
+ZCpBIl40X2F0NEJFI0tmQjRbTm4kUSFiQlZxSXVTQiJiJmBWR2BlWkZaQ3Q4YTZDVmhvcTUmWEgx
+MVgvcigmRE0+WWYpWUhcN20jJkY7cSYiQGp1bWwxJTtKWGZnPEtkZk04YlJiQycwQ1A/bFVqYUFQ
+S2JEaUhdKmVCSkxFQDZeP2YvVG1kWDNdZVtZYUsoYU9uajleO01rQVwnalZaKV1DL1hAOmdaVlk8
+OC1YY3AoJjIjOXJSSi1XJnJiaUooLkBlKydrNTRHQSZHakBHZilkbj1QS0ohb1xJREZyc0FfR3Rh
+Z1BqTXMhb0JNU043T0Y5MCIxMitpJ1IzLTE1JSdlWy8oL09hZEUpXyhnQ1I4cT1yKl1dYmY+WjNO
+Wz0wMCdZRmk3K2FAaWkoVmldcz9hSStHYEBvKnRcWzldbC47bHEtVCs1RyxeIkRDR21mTzRsN3Jy
+R0U+NU4pfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMAowMDAwMDAwMDAwIDY1NTM1IGYgCjAw
+MDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAwMDAwMjE5IDAwMDAwIG4g
+CjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAwMCBuIAowMDAwMDAwNjQ5IDAwMDAw
+IG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTEyOSAwMDAwMCBuIAowMDAwMDAxMTg4IDAw
+MDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPGY4MjA5OWIyMzRlMzhmYjgzMzZhOGRiOWJjZTFmN2M3
+PjxmODIwOTliMjM0ZTM4ZmI4MzM2YThkYjliY2UxZjdjNz5dCiUgUmVwb3J0TGFiIGdlbmVyYXRl
+ZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0luZm8gNyAwIFIKL1Jvb3Qg
+NiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjI3MDQKJSVFT0YK
+
+--=_juniper_E005_0--

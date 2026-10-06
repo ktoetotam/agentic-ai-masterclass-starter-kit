@@ -1,0 +1,109 @@
+From: Northwind Mobile <billing@northwind-mobile.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your July bill is ready
+Date: Sun, 05 Jul 2026 06:30:00 +0200
+Message-ID: <e009.your-july-bill-is-ready@northwind-mobile.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E009_0"
+
+--=_juniper_E009_0
+Content-Type: multipart/alternative; boundary="=_juniper_E009_1"
+
+--=_juniper_E009_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hi Alex,
+
+your bill for July is EUR 19.99 and will be collected on 20 July.
+
+Northwind Mobile
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E009_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#006ec8;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Northwind Mobile</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Hi Alex,</p><p style=3D"margin:0 0 14px">your bil=
+l for July is EUR 19.99 and will be collected on 20 July.</p><p style=3D"marg=
+in:0 0 14px">Northwind Mobile</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Funkturmstra=C3=9Fe 4, 80636 M=C3=BCnchen =C2=B7 northwind-m=
+obile.example<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E009_1--
+
+--=_juniper_E009_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="NWM-0726-55102.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChOb3J0
+aHdpbmQgTW9iaWxlIFwoZmljdGlvbmFsXCkpIC9DcmVhdGlvbkRhdGUgKEQ6MjAwMDAxMDEwMDAw
+MDArMDAnMDAnKSAvQ3JlYXRvciAoc2Vjb25kLWJyYWluLXBhY2sgZ2VuZXJhdG9yKSAvS2V5d29y
+ZHMgKGZpY3Rpb25hbDogdHJ1ZTsgQUkgUmVhbGlzdCBBZ2VudGljIEFJIE1hc3RlcmNsYXNzKSAv
+TW9kRGF0ZSAoRDoyMDAwMDEwMTAwMDAwMCswMCcwMCcpIC9Qcm9kdWNlciAoUmVwb3J0TGFiIFBE
+RiBMaWJyYXJ5IC0gXChvcGVuc291cmNlXCkpIAogIC9TdWJqZWN0IChGaWN0aW9uYWwgd29ya3No
+b3AgZG9jdW1lbnQpIC9UaXRsZSAoWW91ciBtb2JpbGUgYmlsbCwgSnVseSAyMDI2IE5XTS0wNzI2
+LTU1MTAyKSAvVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjggMCBvYmoKPDwKL0NvdW50IDEgL0tp
+ZHMgWyA1IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKOSAwIG9iago8PAovRmlsdGVyIFsg
+L0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAxMjE3Cj4+CnN0cmVhbQpHYXRt
+OmdNWWIqJjpPOlNiW11DZVZyW0BIZWNuXFEvPU48ZlxsXk5BKFdUQWMyN2FYMT5kbzN0NmNsVltf
+YCJzaGAxaiJcUzI1cjxfalFXMHBgbDlzR24rZFJKW1tRTixmL09CVWRiZldPKVI2IiNzYlZnRVhM
+MD1JYV8rVipnbGxyQEFNOlIsJTRrQi5fblJoVWIlKScoN2dYIUVqMTRKSmxMWUpUZC1cVUMlUCMl
+X2xFb2RrbFYnPjozXlB1RzRYLDUhTTZXMikubkVeJCo/K2dMWl1MRSRnUVxuRzVITlVrRz4kVj82
+RClVTCl1cCZCUipfa1lIcy4zKiZtajokayxvaVRkPmV0JCpFKGZRPW89QSUmPiFbZy81MGctSDBW
+Wl9sSFJFPEJtVjdpWjwhXF0vMy9lX3JObVFoRihSSSMuaTJCT1BoQDQ1XlVZKW9iYlJkblNfSUlG
+MW5VRUFSM1FYOSI+KXMiYUZJQEwiaVNJXHNQXS43RixaWU8qPz1OJipeN0tDRmhOaGoxTShFYWo0
+LCgoZjlbcjhCOSxgIiZkPTxxTjknZUdRLl4uVEVsamxUKVEpXyw8PiRMKHAvb29EXnBDQyw4UFYm
+bSxJNTwqPCNSOG9HSSRuTSZLcUY0PUhTW0ZuISQlJ29lN3AkUm0iKWNtXWAuVSgxM14vRGIkXTpV
+aVMnbiNgLGklTWIrRWxuNEtEXE9fcCNTTk1MXiUkY3VHImBRXz1ITkVLJ1dIYm9dYFp1UXNDTkxN
+cTxJVTk2cWo9YU9mb08pZjBOZHM6a1dRX3JEb11fVyo/Mm0/NUcnSzYnSEslRFoqLmJeRVtLPSNT
+Ok5uKykzPnRmMkdOS1g+JlcsOVQ/a1xcOzRnQGMmKGxQN0xjRT9LOUtDVy5YaSQnZnJXKUV1cmxt
+IlNMZCpTQW9vUkpiWm4saEJvXyYlOE5DVyE4Zmo5ayFiTDVBXiguamRXcExpb2Yla1BiS2hjTGMy
+PzpZdTxUc2dIN0ZMPS8uXl1RRCsjQzY8YFJeWXBaX1I/aiRdKGkxLjxSPj8qaTMyTSxMclRzOTxX
+W0FxczZRUzFfX01nXWg8VV9xO2szdC1jbzYwUjkmU1tRTSFJSittKVhLaGZhOWorRk9fL1tFPTNv
+Q2pFWyJBaz5mKkxPdW8xVFEtbE5FW2xPVnReWm8xSDhnNXE/Z2sjcyNJay9xYygpPkg/QHU2YVFD
+MWk5JW4rL25sNXNqND9kW3EpZERSW1ZCRFtrXmhDZlw+R1g+O0RdJiFvZTBDZnJNOktWPkEtaEZJ
+by1DMlwrLSY8OlJsLFddZys6OUkobG1EQkIhIUQzYGEtOldkVjRyNE9dQ0JfLkZZbmNJWkhhTjhs
+P0w+alwlWmEkbEhzOzFMQU5lNHNDYkhWaDopXjlSZllbPGowN0NoXWc0cFIrPzNlL2xsLVxwcmco
+JmlWXzlNYlctOlddVm83X1kwLT4pMlUrdDVQRW5wMHFySjombUE8UVROZV1tTDtjalUxUHVjN1Ut
+bkZLJD40QWJFXWAuTW0mMmM8IzloZTFjV09YQzkrbVNjPjVyNT4mWE8oTjxIQWNTOjNBUzdAYERQ
+Lj10XSNgU2BkXGtEV25+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDEwCjAwMDAwMDAwMDAgNjU1
+MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAwMTEyIDAwMDAwIG4gCjAwMDAwMDAyMTkg
+MDAwMDAgbiAKMDAwMDAwMDMzMSAwMDAwMCBuIAowMDAwMDAwNDQ2IDAwMDAwIG4gCjAwMDAwMDA2
+NDkgMDAwMDAgbiAKMDAwMDAwMDcxNyAwMDAwMCBuIAowMDAwMDAxMTE3IDAwMDAwIG4gCjAwMDAw
+MDExNzYgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZTE3OGQ2NDk2MmFiMmRkYWNkZGY4NGQ1
+ZGY0OTEwMWY+PGUxNzhkNjQ5NjJhYjJkZGFjZGRmODRkNWRmNDkxMDFmPl0KJSBSZXBvcnRMYWIg
+Z2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA3IDAg
+UgovUm9vdCA2IDAgUgovU2l6ZSAxMAo+PgpzdGFydHhyZWYKMjQ4NAolJUVPRgo=
+
+--=_juniper_E009_0--

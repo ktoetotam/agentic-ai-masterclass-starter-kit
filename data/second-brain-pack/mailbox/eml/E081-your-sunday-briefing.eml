@@ -1,0 +1,31 @@
+From: Newsroom Daily <briefing@newsroom-daily.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your Sunday briefing
+Date: Sun, 20 Sep 2026 08:00:00 +0200
+Message-ID: <e081.your-sunday-briefing@newsroom-daily.example>
+X-Fictional: true
+List-Unsubscribe: <https://newsroom-daily.example/unsubscribe>
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#141414;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Newsroom Daily</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Newsroom Daily - Sunday briefing</p><p style=3D"m=
+argin:0 0 14px">The week in five minutes: city council votes on new cycle lan=
+es; autumn fair opens; how to read your energy bill.</p><p style=3D"margin:0 =
+0 14px">You are receiving this because you started a trial.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Newsroom Daily (fictional) =C2=B7 newsroom-daily.example =C2=
+=B7 <a href=3D"https://newsroom-daily.example/unsubscribe">Unsubscribe</a><br=
+>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>

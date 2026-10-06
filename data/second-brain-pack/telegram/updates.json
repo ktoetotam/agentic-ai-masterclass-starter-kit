@@ -1,0 +1,155 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "update_id": 500000,
+      "message": {
+        "message_id": 10,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791306000,
+        "text": "/start",
+        "entities": [
+          {
+            "offset": 0,
+            "length": 6,
+            "type": "bot_command"
+          }
+        ]
+      }
+    },
+    {
+      "update_id": 500001,
+      "message": {
+        "message_id": 11,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791306120,
+        "text": "bought a monitor arm 39,90 € at Bureau Bits for the second desk"
+      }
+    },
+    {
+      "update_id": 500002,
+      "message": {
+        "message_id": 12,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791314100,
+        "text": "idea: run the learning day again in spring, in German"
+      }
+    },
+    {
+      "update_id": 500003,
+      "message": {
+        "message_id": 13,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791351600,
+        "text": "remind me: call Lea about the interpreter confirmation before 12 Oct"
+      }
+    },
+    {
+      "update_id": 500004,
+      "message": {
+        "message_id": 14,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791353100,
+        "photo": [
+          {
+            "file_id": "FICTIONAL-PHOTO-0001",
+            "file_unique_id": "FICT0001",
+            "width": 1280,
+            "height": 960,
+            "file_size": 182000
+          }
+        ],
+        "caption": "parking receipt Linden Hall"
+      }
+    },
+    {
+      "update_id": 500005,
+      "message": {
+        "message_id": 15,
+        "from": {
+          "id": 100000001,
+          "is_bot": false,
+          "first_name": "Alex",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 100000001,
+          "type": "private",
+          "first_name": "Alex"
+        },
+        "date": 1791354600,
+        "text": "Noor says the guest Wi-Fi password is written on the whiteboard in the Maple Room"
+      }
+    },
+    {
+      "update_id": 500006,
+      "message": {
+        "message_id": 16,
+        "from": {
+          "id": 200000002,
+          "is_bot": false,
+          "first_name": "Promo",
+          "language_code": "en"
+        },
+        "chat": {
+          "id": 200000002,
+          "type": "private",
+          "first_name": "Promo"
+        },
+        "date": 1791357000,
+        "text": "Hi! You won a free trip, click here to claim it"
+      }
+    }
+  ],
+  "_note": "Fictional workshop data in the shape of the Telegram Bot API getUpdates response."
+}

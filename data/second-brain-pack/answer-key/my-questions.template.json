@@ -1,0 +1,55 @@
+{
+  "note": "Your own test questions. Keep this file in output/, never in Git.",
+  "scenario_date": "YYYY-MM-DD",
+  "questions": [
+    {
+      "id": "MY1",
+      "question": "",
+      "expected": "",
+      "type": "fact",
+      "sources": []
+    },
+    {
+      "id": "MY2",
+      "question": "",
+      "expected": "",
+      "type": "fact",
+      "sources": []
+    },
+    {
+      "id": "MY3",
+      "question": "",
+      "expected": "",
+      "type": "fact",
+      "sources": []
+    },
+    {
+      "id": "MY4",
+      "question": "",
+      "expected": "",
+      "type": "fact",
+      "sources": []
+    },
+    {
+      "id": "MY5",
+      "question": "",
+      "expected": "",
+      "type": "fact",
+      "sources": []
+    },
+    {
+      "id": "MY6",
+      "question": "",
+      "expected": "",
+      "type": "not_found",
+      "sources": []
+    },
+    {
+      "id": "MY7",
+      "question": "",
+      "expected": "",
+      "type": "not_found",
+      "sources": []
+    }
+  ]
+}

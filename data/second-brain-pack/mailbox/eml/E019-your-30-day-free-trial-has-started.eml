@@ -1,0 +1,48 @@
+From: Newsroom Daily <hello@newsroom-daily.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your 30-day free trial has started
+Date: Sat, 12 Sep 2026 20:15:00 +0200
+Message-ID: <e019.your-30-day-free-trial-h@newsroom-daily.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_juniper_E019_0"
+
+--=_juniper_E019_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Welcome to Newsroom Daily.
+
+Your free trial runs until 12 October 2026. After that, your subscription con=
+tinues at EUR 9.99 per month unless you cancel.
+
+The Newsroom Daily team
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E019_0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#141414;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Newsroom Daily</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Welcome to Newsroom Daily.</p><p style=3D"margin:=
+0 0 14px">Your free trial runs until 12 October 2026. After that, your subscr=
+iption continues at EUR 9.99 per month unless you cancel.</p><p style=3D"marg=
+in:0 0 14px">The Newsroom Daily team</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Newsroom Daily (fictional) =C2=B7 newsroom-daily.example<br>=
+Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E019_0--

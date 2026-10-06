@@ -1,0 +1,115 @@
+From: StayPilot <noreply@staypilot.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your booking SP-LX7KQ2 has been changed
+Date: Tue, 15 Sep 2026 08:44:00 +0200
+Message-ID: <e028.your-booking-sp-lx7kq2-h@staypilot.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E028_0"
+
+--=_juniper_E028_0
+Content-Type: multipart/alternative; boundary="=_juniper_E028_1"
+
+--=_juniper_E028_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Your booking has been changed.
+
+New check-in: Fri 13 Nov 2026
+Check-out: Sun 15 Nov 2026
+New total: EUR 286.00. We refunded EUR 143.00 to your card.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E028_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#005aa0;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">StayPilot</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Your booking has been changed.</p><p style=3D"mar=
+gin:0 0 14px">New check-in: Fri 13 Nov 2026<br>Check-out: Sun 15 Nov 2026<br>=
+New total: EUR 286.00. We refunded EUR 143.00 to your card.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">StayPilot B.V. (fictional), Keizersgracht 0, Amsterdam =C2=
+=B7 staypilot.example<br>Fictional workshop data - not a real message.</td></=
+tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E028_1--
+
+--=_juniper_E028_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename="Booking_Confirmation_SP-LX7KQ2 (1).pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChTdGF5
+UGlsb3QgXChmaWN0aW9uYWxcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDAwMDEwMTAwMDAwMCswMCcw
+MCcpIC9DcmVhdG9yIChzZWNvbmQtYnJhaW4tcGFjayBnZW5lcmF0b3IpIC9LZXl3b3JkcyAoZmlj
+dGlvbmFsOiB0cnVlOyBBSSBSZWFsaXN0IEFnZW50aWMgQUkgTWFzdGVyY2xhc3MpIC9Nb2REYXRl
+IChEOjIwMDAwMTAxMDAwMDAwKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJh
+cnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKEZpY3Rpb25hbCB3b3Jrc2hvcCBkb2N1
+bWVudCkgL1RpdGxlIChZb3VyIGJvb2tpbmcgaGFzIGJlZW4gY2hhbmdlZCBTUC1MWDdLUTIpIC9U
+cmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKOCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDUgMCBS
+IF0gL1R5cGUgL1BhZ2VzCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURl
+Y29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDE0MTQKPj4Kc3RyZWFtCkdhdTBDYVxqJ0wmQUBC
+W25uOSI+WSdvaFM/dTEzRTZYVi03TiRHaGg7RnRXUE1rViJ1cjpTQSNmJFoscTNOdFYzW2ZUMCUw
+NC87KT5bVGhlTEdiXiEnXTxGK0RfO25dJWA4VCw4TCtfSmk7SVVbSkknNWNBM190MTtEQlNzM3Ux
+JjEoaEAjJlohJnBpYGJEMCNQKXQ5amApJ1xCQGwyU240JU1GMFBVOUYuTS8udFxiKF0hNklDJGNO
+b2AuITxBJGZbY0pJKk9qQ1kmIilLSzVvcTwsaSJFaEZfUS1bLSMxUyw+OHBrVlhXbUUiR1lmQXBq
+MkQ6PFllWWVENGVeJGFwRj07OFFxLFkzLGBmO2tpakVobnVAPidrY2ZBN2E6KWtiRyFtRT1lczgj
+VXFTNyY5clp1T1hDKGNULTM3Ij5bbWM1J0dxWTVoIWIlVkhJQWVpWmszKUBgPyhaUXEybkU/NyRS
+TTQ6Y14vdXBXTSs2WEQjaz9mSUZJcjdqVmtrXWJrb1JVZihRXCstcyllVFZWYzRNbFlYJCRASmhA
+ZDgkc2ZIVlAqMGU3PVxAVXFKOSNJdU5BIiNxVi1XRG82Wm4lKDNPKHA5L1NFcFtEO1lzIlE4XEZw
+TiM2RFJfW2VKMiUrVkNdX3JzNVFocjRNV1ZtIkVcQjhHTCQyV2xdPz5nP2lPL0dwNCsuOUomJks3
+RTxCT2tGRjFaVGNrS2ZraWBqQVA9ZEYsX0AxMjZeWW1bJUU+UjpvXExEPVIhXWpabFxkV24+QHIn
+aW5GbCMybDlGbjEnMGknOWspOV5IJCpgbG1hcmVhMiRccFV0ZiRBbkdZKWhfRVhXY0R1IzU+Ijlr
+SiFtZE5oYjtzciZaQVEzPClpJ3JgZClnai9dXSZjXThscTJIVnU4Q200a1AwKiNRQUg4cGhUK2kh
+TF4/LmQ9RWBtUEBLcS4mSVc7alw4RU1QXikiVjhyMS9RPmlxLlhoUGVCSCFNRl5eNUk4QEI7JypX
+YU9hUTAtYyJAVkA1Im5HbCIoViw7I0BPSk8vMVY5QS5YYWRqSSVmMWNCO0NAXDg2NmEtQC86NEct
+JElHTGtWSGtuSkUkXTIxbmIqTjU5L2UzMUJ1RzRXIi0pP1hNRGZqVlNUWlsuWDYxPzVJUlFrNz5E
+Uy8xVFc4cVtCa1NBUShoTWVIXHBxWV41aWM6NEgzYiY9Y2wrODErXG9FPDQ4cWdKalpaIiY6bC8m
+RExoYmY5MkZRLStjM3E9PFdJJlklXGohR0o1JTNuTjdNOWgkak8jMSpRa3RbITFsY0chMCJmSTJp
+QkQ3LCM/QT9hQDFuSCVETjk/ZT06ajhZYy1bY0k5RlQvZFZgIkd0RT9KJzpbYEtvUyspdGpsO0hB
+ZG9mWlBHMHF0OEVHMzxzRk8uWENRbDtPTSFuX1IwWTBnTGFGYSpGI0dfTGRLZyJPY1NtZERNLWc4
+Q0AoIm4jcU8zKF9KPytQVmk9bF9RPDNYTWhfcFwuQ1ZKPWZzPiljN2o8OT5KXjRrWUcsUlJyTiU1
+JyM1N2YjRkZ0ZmYqTVFpLSc4NTIjQ0I4NWIlW2M7XDwmOVJqOlwuKEBERjprU1ZTWi1vQ2xJW1sl
+U244KjY+aSJFVWdQYUkuZ2hWc3BCWyhFSSQtbEArZFAhMj1TcSUiOXJbOjdYYEUmUmdLazFkU0dL
+al0vZCZLNjRyPzRQYWtrZ2FyaFU6QGVQXEs8aWtHSzpwSTFqWEUxdCpIcSowa0E+TUExam9lIyNn
+O2ZwSi1bTixYVG81LkpfIzoiZWI+SEJwMWpiYicwbyY/QDVqYDs6JVVIMTQ7My5oWEMmWVRYJmxT
+czc4WilGMXFDRyY0LG9qcnRiXSgoPGU6UzYtVVYjfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAx
+MAowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAw
+MCBuIAowMDAwMDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAw
+MDAwMCBuIAowMDAwMDAwNjQ5IDAwMDAwIG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTEw
+NyAwMDAwMCBuIAowMDAwMDAxMTY2IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDA1ZGY4ZWIx
+YWE1MmU0MDA0YjYxNWRiNjE3NmExM2QxPjwwNWRmOGViMWFhNTJlNDAwNGI2MTVkYjYxNzZhMTNk
+MT5dCiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291
+cmNlKQoKL0luZm8gNyAwIFIKL1Jvb3QgNiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjI2NzEK
+JSVFT0YK
+
+--=_juniper_E028_0--

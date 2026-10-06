@@ -1,0 +1,109 @@
+From: Fernleaf Fibre <news@fernleaf-fibre.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Important: your monthly price is changing
+Date: Mon, 03 Aug 2026 10:00:00 +0200
+Message-ID: <e014.important-your-monthly-p@fernleaf-fibre.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E014_0"
+
+--=_juniper_E014_0
+Content-Type: multipart/alternative; boundary="=_juniper_E014_1"
+
+--=_juniper_E014_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello Alex,
+
+from 1 September 2026 your Fibre 250 plan costs EUR 44.90 per month instead o=
+f EUR 39.90. The letter attached explains your options.
+
+Fernleaf Fibre
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E014_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#3c9646;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Fernleaf Fibre</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Hello Alex,</p><p style=3D"margin:0 0 14px">from =
+1 September 2026 your Fibre 250 plan costs EUR 44.90 per month instead of EUR=
+ 39.90. The letter attached explains your options.</p><p style=3D"margin:0 0 =
+14px">Fernleaf Fibre</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Glasfaserweg 11, 81677 M=C3=BCnchen =C2=B7 fernleaf-fibre.ex=
+ample<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E014_1--
+
+--=_juniper_E014_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="2026-08 Fernleaf price change.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChGZXJu
+bGVhZiBGaWJyZSBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAwMTAxMDAwMDAw
+KzAwJzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikgL0tleXdvcmRz
+IChmaWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJjbGFzcykgL01v
+ZERhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYg
+TGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFsIHdvcmtzaG9w
+IGRvY3VtZW50KSAvVGl0bGUgKFlvdXIgbW9udGhseSBwcmljZSBpcyBjaGFuZ2luZyBGRi1OLTIw
+MjYtMDgwMykgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9Db3VudCAxIC9L
+aWRzIFsgNSAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0ZpbHRlciBb
+IC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTEwOQo+PgpzdHJlYW0KR2F0
+bTo5cD06IyZBQFpjcUE/aFBYO1Q5TERSI2JPUHRMJVZnI1YnQD9ZNlx0OmZjIkBQJCNCczUtNUQm
+IUZDcHAlIz5OQGwxT0FvWUdePWpkQDVwW1ppa1dfSjJfTlo+ZWhOYy90JUMzVDVfLSgwRyxndDg3
+OVNEM1gkamg8I2syYjtjYy80UXJLXzxNYVhXTShvPFgjT2JAYl5RPiEuKSxwQSw0TTYsOXA8bW9D
+TCpwWGdFSG1PS3MsXlZcSk4kLD42cSRHdDZQRE1oVGFBT2djRTQmPydEVyFUTlpzWyksYC4wUzRu
+XnRYT0tPPG01PTBWSCkoOV1CbFpCKGJJIkZDWCgsSmJSPExvTTJLLiNULGVsYCo0Ol8qI0s3RT8o
+ckZoXTcmZyVebmAjUihgXiwvYFNfcWtUOi9gQT9OYXBNYkR1VSRDNUk7aTMuKChPXUIhMEModFc/
+LSlHJVQ0PTdZcURIWENtNDNLW2olKTlEcD8vUUE1MGUiMTAsPEE2UitdJVhbczI5MzpAW21iVypa
+N1slVkRubFc3WyZ1QTItTUtmYkNnO1tJaCFaazouLjAnSTczcF4uS20pX2UzQmxESGtZNUxGLU1Y
+Y3FCOCVgSmsqYlVwbWRPVDIlVDY3KEFKbmYvcjtfUlZcPykjJjJsWkYlZUY7J0Enbi4xYCVbJ1ly
+YWJER2kzIWFYcDsoM1VRbT1AMEJjLElPWCdNcmpTKzc/XDtiVjFnM1MlWD45UW4qciI/PCUiNTBj
+UEFvSVFfRWY5PCcxT0lcSG9tLCknKz0mTCdWYFVKJldLVD5CSzFwbzI3Pjg6USdEam83RGY4O1VZ
+LFlkMUIsJ21QQGRnMjcxZyVZMDtfT1w3JVIzXWdsSUBDTlhyTEFsQWNsPkEuV0g+bldKK105TDht
+ZiEsaVhzYSFEK2ZzTE9LTWlyYmNCaUpoNV8xQm80VU1aXW5XXEVFPTVSZ2BXJi9pMkVHNVhbNGdl
+KChMNEglWzlgOENabiI4XGFDayJwalorXnJDRlc+VixyUTxCRFo5Vy9GXlJjRFhVZFgwKFQjT1Yx
+Nk9JWyNFbGlXaSxJa1FuaCVAX05BcUB0VjBkbUY8QEpcSF05RzssL28+JGRcI1svblhCWEkoaERc
+XkEyNVphKjplYD8mV19lN2BNdEpwXmxTakopKTwpJVc7UGpRTmkua3AoR1IoQ0dVRjxwQVRKXVFR
+WkBTbCFkW2UxNS5wajNUbG8wVXAsR3VZQS9tV25XOV05TyFVcT1Wb1EmYmtYPVFodCsjYW1gRks+
+WWY+JUx1LzEqMktJYipSPlhYajoqLFVvT2otIlVCJGFPUk5MUj5FXz9RN0w3XGZIKVwqNWJEVjFj
+cShSRycwa2wnL1pkbC1yYy5xJV0vcWUic0FqTWM0PkBiJj5zcEVXYWgwJ0NjO1ZmJXA+WG5WUlxk
+Ni1lKWZKTE5YPlxUVCckWSRgT1lsfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMAowMDAwMDAw
+MDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAw
+MDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAwMCBuIAow
+MDAwMDAwNjQ5IDAwMDAwIG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTExOCAwMDAwMCBu
+IAowMDAwMDAxMTc3IDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPDlhZjUzNjc1OTA0ZDVmYmQ0
+ZDNjN2E5ZmY5MDhkMmQ0Pjw5YWY1MzY3NTkwNGQ1ZmJkNGQzYzdhOWZmOTA4ZDJkND5dCiUgUmVw
+b3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNlKQoKL0lu
+Zm8gNyAwIFIKL1Jvb3QgNiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjIzNzcKJSVFT0YK
+
+--=_juniper_E014_0--

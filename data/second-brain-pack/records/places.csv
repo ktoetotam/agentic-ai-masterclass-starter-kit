@@ -1,0 +1,9 @@
+id,name,city,country,type,visited,with,rating,status,notes
+PL01,Linden Hall Events (Maple Room),München,Germany,venue,2026-09-25,"Jordan Example, Noor Sample",,visited,Step-free via the glass lift at the side entrance on Lindenplatz
+PL02,Trattoria Fittizia,"Malcesine, Lake Garda",Italy,restaurant,2026-07-18,Ben Sample,5,visited,Dinner EUR 72.50
+PL03,Bistro Limmatblick,Zürich,Switzerland,restaurant,2026-08-22,,4,visited,Lunch CHF 46.50
+PL04,Café Lindgren,München,Germany,café,2026-08-05; 2026-09-30,Jordan Example; the team,4,visited,Room upstairs for about 10 people
+PL05,Cedar Demo Analytics office,Salzburg,Austria,client office,2026-09-18,,,visited,Train from München Hbf at 07:28
+PL06,Lake Garda trip,Malcesine,Italy,trip,2026-07-16 to 2026-07-20,Ben Sample,5,visited,Rental car from Verona airport
+PL07,Casa Azulejo,Lisbon,Portugal,hotel,2026-11-13 to 2026-11-15,,,cancelled,Cancelled on 2026-10-03; refund pending
+PL08,The Quill Hotel,London,United Kingdom,hotel,2026-10-26 to 2026-10-28,,,booked,Pay at the hotel; free cancellation until 24 Oct 18:00

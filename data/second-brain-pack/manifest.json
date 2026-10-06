@@ -1,0 +1,1464 @@
+{
+ "scenario_date": "2026-10-07",
+ "fictional": true,
+ "files": [
+  {
+   "path": "answer-key/inbox-sorting.json",
+   "bytes": 2761,
+   "sha256": "42bd08223310c90568789e0ec039ec012a508b9ad53fc831ac7a0a29c6ff1441",
+   "fictional": true
+  },
+  {
+   "path": "answer-key/my-questions.template.json",
+   "bytes": 972,
+   "sha256": "c10406a3e69b4d82c7750c9f5f3a022bb6aa9f81b0dab754f1c79ed1bd876f12",
+   "fictional": true
+  },
+  {
+   "path": "answer-key/questions.json",
+   "bytes": 19339,
+   "sha256": "3c41f7dfe0a7c511f4dac7aa01b09dd2961a099b3fe6621be552fdd8550697c7",
+   "fictional": true
+  },
+  {
+   "path": "calendar/alex-example.ics",
+   "bytes": 4393,
+   "sha256": "11f4fa428f4f9d9f6da4a44ede231bb849af725fc3736daf145e68fe90c0ee10",
+   "fictional": true
+  },
+  {
+   "path": "downloads/AUR7Q2.ics",
+   "bytes": 724,
+   "sha256": "fcbd3d218763c55a53a70391a9792f9ddc0ab45bd6bc4f9c954c7959b2ea9153",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Angebot SW-2026-118.pdf",
+   "bytes": 2983,
+   "sha256": "c1f342ca0e79332eb22080820f625c907941df1d68283b087aa40b9e98dd4866",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Booking_Confirmation_SP-LD4XK9.pdf",
+   "bytes": 3102,
+   "sha256": "8eed5340cd2c91dd7b9fc1259e3f796356fb1801fa40eeeea51490c83296d3e6",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Booking_Confirmation_SP-LX7KQ2 (1).pdf",
+   "bytes": 3084,
+   "sha256": "b9a53c1d91b2c0c6c949b717f1c82f419e546beb360fd63676a989f00cfba705",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Booking_Confirmation_SP-LX7KQ2.pdf",
+   "bytes": 3132,
+   "sha256": "15a9d95ed3be550dc4a8c9e5cb14b05246828937608f8fac9a4810f744f04759",
+   "fictional": true
+  },
+  {
+   "path": "downloads/CC-26-0903-12.pdf",
+   "bytes": 3082,
+   "sha256": "09ca2d46c9807f65c7ae39b519b94c69166608fdede50e4d70cd734ef2d20c8e",
+   "fictional": true
+  },
+  {
+   "path": "downloads/CK-Q-2026-031.pdf",
+   "bytes": 3161,
+   "sha256": "2ced022ac3bf0a808da87e3f1ad8ab241416eac039805ca297b5c0a83de3b508",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Erstattung_BW-G-2026-10-0012.pdf",
+   "bytes": 3117,
+   "sha256": "3a8053e7862fd715c54cb996220d82daf2324ea30b6eb63a0f6cd3c26c2c5b66",
+   "fictional": true
+  },
+  {
+   "path": "downloads/IMG_4512.jpg",
+   "bytes": 131758,
+   "sha256": "6f72277661f46cfeecd6c05a9dcc81ac23b64f370e3391d6f28c7a146bfcb8d2",
+   "fictional": true
+  },
+  {
+   "path": "downloads/IMG_4603.HEIC",
+   "bytes": 204196,
+   "sha256": "eba7266e717088e07997b760e651506b01023446aca24daeaa233e3b952a152b",
+   "fictional": true
+  },
+  {
+   "path": "downloads/IMG_4688.jpg",
+   "bytes": 205676,
+   "sha256": "5b7309d929c35b03efacaf9572226d57c711eca45ac8387d72d500923ce60f20",
+   "fictional": true
+  },
+  {
+   "path": "downloads/IMG_4829.jpg",
+   "bytes": 176582,
+   "sha256": "36711bc443eabfe37ddebea38cf954469f44c8a1e58e89d37adea1a5d9170307",
+   "fictional": true
+  },
+  {
+   "path": "downloads/IMG_4830.jpg",
+   "bytes": 76753,
+   "sha256": "5abf4480744b3c253f48b2ec39176509e6195c8b0632a40b29237c06c41adcf5",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Kontoauszug_09-2026.pdf",
+   "bytes": 4335,
+   "sha256": "06580509263256c3ab98318c01c36eac82c41ecaa7fe945914491fff75e26252",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Kuendigungsbestaetigung_FitPass.pdf",
+   "bytes": 2832,
+   "sha256": "c798f0c2b03c062516d57649b7b6251fba49fcd586b4517b25b12059b42b4e13",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Maple Room photos.zip",
+   "bytes": 896148,
+   "sha256": "a0f0ef21a02e80af6856d005b91c8cb0673d256f3a947a758f78fc534e076460",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Mietvertrag_Scan.pdf",
+   "bytes": 7744484,
+   "sha256": "45f9a72408a567ac62c91d26c8f6575c82aff598d98b247241b7f92c1c779a5f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/NWM-0726-55102.pdf",
+   "bytes": 2897,
+   "sha256": "9539434f3d7ecdae1291291952224aaca1fad8fab9caf48463e386fa588c9931",
+   "fictional": true
+  },
+  {
+   "path": "downloads/NWM-0826-58841.pdf",
+   "bytes": 3028,
+   "sha256": "7603d4a2623074719e3a8382a838954b5ddc3597fce42bfe78917bc1de0d0967",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Quote LH-Q-2026-0914.pdf",
+   "bytes": 3294,
+   "sha256": "e0ed5edc3f22ec7c752e1e6367f235716a9418eb4a997b9d74e1246bdebd9bc7",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Raummiete_Entwurf_LindenHall.docx",
+   "bytes": 37843,
+   "sha256": "577d14f7e62fcb406b51660ffdf1da72bc7f58bb71ff177606e937a41e2438b4",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Receipt-NC-2026-10-55821.pdf",
+   "bytes": 2876,
+   "sha256": "aa77fb75e36c7c27314ee0b0f039bc142b3c37646200cc5a81c7c1e4a8d63bb3",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_2026-09_0042.pdf",
+   "bytes": 3088,
+   "sha256": "114565ee364f6170974118a4122717500584cda09064695cff3ba7d30c40436c",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_BW-2026-07-118204.pdf",
+   "bytes": 3203,
+   "sha256": "a8ca1dc351128aa406bcd51fa37abcf84913b634c3a4e1c0e9f9486009156e5c",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_BW-2026-08-118761.pdf",
+   "bytes": 3109,
+   "sha256": "c02fb3b95393766dca676bc70db11fa614a7cf32aad52ee847361eac780efd9e",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_BW-2026-09-119344 (1).pdf",
+   "bytes": 3117,
+   "sha256": "8f7dc814b3c7163f9d40162af898586d994bd069a8e407f8bcb8361cbdf5572f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_BW-2026-09-119344.pdf",
+   "bytes": 3117,
+   "sha256": "8f7dc814b3c7163f9d40162af898586d994bd069a8e407f8bcb8361cbdf5572f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Rechnung_KK-55102.pdf",
+   "bytes": 3035,
+   "sha256": "5e0b728d2b0871a3daaac995a5e665eb18346176cf58ca0814d798a7f990c14f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Scan_2026-09-02_1402.pdf",
+   "bytes": 98940,
+   "sha256": "e5d6dc3ec4b4a5e6f841f3fcf3340a4580112af4fcec259887f0bd64e4180b3c",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Scan_2026-09-23_0915.pdf",
+   "bytes": 110975,
+   "sha256": "5bffb94d1cd329815f168171e060132ab572ec54b0dd5e46a8d9dcc2170a5117",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Small-Team-Workflows-2026.pdf",
+   "bytes": 29671,
+   "sha256": "722aafa30ba893032172908558387557d0dbb3c91d377a808f79c2b8ffe26107",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Ticket_SR-2026-0916-7741.pdf",
+   "bytes": 4813,
+   "sha256": "096e4cd42b339865e9bb069fcb1410ab93ebc41fae23cfca3e0b5ba837d51e32",
+   "fictional": true
+  },
+  {
+   "path": "downloads/Unconfirmed 482913.crdownload",
+   "bytes": 9890,
+   "sha256": "2dfd66edec31de2fedebd74c781c3d6ed9bb320f992edd9a278ddf74c20c4d3f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/agenda-draft.docx",
+   "bytes": 37772,
+   "sha256": "212f08633cffaac5664ffad9dfa5605b3062f33078d5335715872b87339767cc",
+   "fictional": true
+  },
+  {
+   "path": "downloads/attendees_2026-10-05.xlsx",
+   "bytes": 5934,
+   "sha256": "eb178f242139548086a29a13b6fe01e728ec6799868997f20e8f590e2369cc4c",
+   "fictional": true
+  },
+  {
+   "path": "downloads/budget v1.xlsx",
+   "bytes": 5208,
+   "sha256": "7e6549f70e99bec7bce4781565e0abbc78aaca455dd52a1598e5d253526dbfd9",
+   "fictional": true
+  },
+  {
+   "path": "downloads/budget v2 FINAL (1).xlsx",
+   "bytes": 5349,
+   "sha256": "2329c0b7ee5ec188bbc05562fa5a8bc637cdedd502b1d4b9aeeae5fff54852cc",
+   "fictional": true
+  },
+  {
+   "path": "downloads/budget v2 FINAL.xlsx",
+   "bytes": 5349,
+   "sha256": "2329c0b7ee5ec188bbc05562fa5a8bc637cdedd502b1d4b9aeeae5fff54852cc",
+   "fictional": true
+  },
+  {
+   "path": "downloads/eticket (1).pdf",
+   "bytes": 5050,
+   "sha256": "59017445e7f94ac2bb431f4757795aa4308d9523b8bf0c1a035fb10d43d592a1",
+   "fictional": true
+  },
+  {
+   "path": "downloads/eticket.pdf",
+   "bytes": 5050,
+   "sha256": "59017445e7f94ac2bb431f4757795aa4308d9523b8bf0c1a035fb10d43d592a1",
+   "fictional": true
+  },
+  {
+   "path": "downloads/invite.ics",
+   "bytes": 727,
+   "sha256": "8180eb0066406b8f31ff56b466a1f189504fea2afcb46dd026bdb3d2830fcf18",
+   "fictional": true
+  },
+  {
+   "path": "downloads/invoice PW-INV-2026-0928.pdf",
+   "bytes": 3055,
+   "sha256": "892f75c7c5a442491cf2dc04766ccd7dd5514b922b655d1de3e7dd8e1add334f",
+   "fictional": true
+  },
+  {
+   "path": "downloads/invoice_BB-2026-08-0417.pdf",
+   "bytes": 3053,
+   "sha256": "2d4cb828e06629462adece4bffe6830ef0540d839b282039e8be7b3f513906cd",
+   "fictional": true
+  },
+  {
+   "path": "downloads/invoice_FF-24-08-3519.pdf",
+   "bytes": 2813,
+   "sha256": "0795ad2a832cd6746734b39c2912cb14cbee48586e32f6f5ecf95e48472222ed",
+   "fictional": true
+  },
+  {
+   "path": "downloads/invoice_FF-24-09-3694.pdf",
+   "bytes": 2848,
+   "sha256": "c61c07dd7b0c5651ab9bac710b1a5b18535cbff2b3e29e5c2d1c2e020d8bbe37",
+   "fictional": true
+  },
+  {
+   "path": "downloads/receipt (3).pdf",
+   "bytes": 2797,
+   "sha256": "b3d527578baea09d71a3d5baee052d5a4d65f08df2e567b8f4aada0adcab7dd3",
+   "fictional": true
+  },
+  {
+   "path": "downloads/tickets_TN-0000-4471.pdf",
+   "bytes": 4633,
+   "sha256": "73c8e7b69dc352e4f64b6abcd0e753ccc0190313fac4464b355642977c8981a8",
+   "fictional": true
+  },
+  {
+   "path": "downloads/transcript (2).vtt",
+   "bytes": 993,
+   "sha256": "5e05d5f121534cf94589eed3622f0cc9a59f1a84b817b5767c1bba5d6192c546",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bank/Kontoauszug 2026-09.pdf",
+   "bytes": 4335,
+   "sha256": "06580509263256c3ab98318c01c36eac82c41ecaa7fe945914491fff75e26252",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-07 Brightwell Strom.pdf",
+   "bytes": 3203,
+   "sha256": "a8ca1dc351128aa406bcd51fa37abcf84913b634c3a4e1c0e9f9486009156e5c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-07 Fernleaf Fibre.pdf",
+   "bytes": 2808,
+   "sha256": "adadf5e6221e5d2d0f003362a5216d01525610a2f05e18c9addeebf6d6c77378",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-07 Northwind Mobile.pdf",
+   "bytes": 2897,
+   "sha256": "9539434f3d7ecdae1291291952224aaca1fad8fab9caf48463e386fa588c9931",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-08 Brightwell Strom.pdf",
+   "bytes": 3109,
+   "sha256": "c02fb3b95393766dca676bc70db11fa614a7cf32aad52ee847361eac780efd9e",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-08 Fernleaf Fibre.pdf",
+   "bytes": 2813,
+   "sha256": "0795ad2a832cd6746734b39c2912cb14cbee48586e32f6f5ecf95e48472222ed",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-08 Fernleaf price change.pdf",
+   "bytes": 2790,
+   "sha256": "db031abdcf72658522a297176ff1032ae5b9dbfbf7cb6fe2c3cdec2196c24d10",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-08 Northwind Mobile.pdf",
+   "bytes": 3028,
+   "sha256": "7603d4a2623074719e3a8382a838954b5ddc3597fce42bfe78917bc1de0d0967",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-09 Brightwell Strom.pdf",
+   "bytes": 3117,
+   "sha256": "8f7dc814b3c7163f9d40162af898586d994bd069a8e407f8bcb8361cbdf5572f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-09 Fernleaf Fibre.pdf",
+   "bytes": 2848,
+   "sha256": "c61c07dd7b0c5651ab9bac710b1a5b18535cbff2b3e29e5c2d1c2e020d8bbe37",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-09 Northwind Mobile.pdf",
+   "bytes": 2901,
+   "sha256": "9c5c487e9209e2f1d8c7bc9235a2d476eabfb355c978fe0cdf918314529695d2",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Bills/2026/2026-10 Brightwell Erstattung.pdf",
+   "bytes": 3117,
+   "sha256": "3a8053e7862fd715c54cb996220d82daf2324ea30b6eb63a0f6cd3c26c2c5b66",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Insurance/Hausrat Beitragsanpassung 2027 (Scan).pdf",
+   "bytes": 110975,
+   "sha256": "5bffb94d1cd329815f168171e060132ab572ec54b0dd5e46a8d9dcc2170a5117",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Invoices/2026-08-18 Bureau Bits BB-2026-08-0417.pdf",
+   "bytes": 3053,
+   "sha256": "2d4cb828e06629462adece4bffe6830ef0540d839b282039e8be7b3f513906cd",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Invoices/2026-09-03 Circuit & Co CC-26-0903-12.pdf",
+   "bytes": 3082,
+   "sha256": "09ca2d46c9807f65c7ae39b519b94c69166608fdede50e4d70cd734ef2d20c8e",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Invoices/2026-09-10 Kabelkiste KK-55102.pdf",
+   "bytes": 3035,
+   "sha256": "5e0b728d2b0871a3daaac995a5e665eb18346176cf58ca0814d798a7f990c14f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Invoices/Scans/2026-08-18 Bureau Bits (Scan).pdf",
+   "bytes": 98940,
+   "sha256": "e5d6dc3ec4b4a5e6f841f3fcf3340a4580112af4fcec259887f0bd64e4180b3c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Receipts/2026-07-18 Trattoria Fittizia.jpg",
+   "bytes": 131758,
+   "sha256": "6f72277661f46cfeecd6c05a9dcc81ac23b64f370e3391d6f28c7a146bfcb8d2",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Receipts/2026-08-22 Z\u00fcrich Mittagessen.jpg",
+   "bytes": 205676,
+   "sha256": "5b7309d929c35b03efacaf9572226d57c711eca45ac8387d72d500923ce60f20",
+   "fictional": true
+  },
+  {
+   "path": "drive/Finance/Receipts/2026-09-30 Caf\u00e9 Lindgren Team-Retro.jpg",
+   "bytes": 176582,
+   "sha256": "36711bc443eabfe37ddebea38cf954469f44c8a1e58e89d37adea1a5d9170307",
+   "fictional": true
+  },
+  {
+   "path": "drive/Home/Mietvertrag (Scan).pdf",
+   "bytes": 7744484,
+   "sha256": "45f9a72408a567ac62c91d26c8f6575c82aff598d98b247241b7f92c1c779a5f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Meetings/2026-09-12 Project Lantern planning call.vtt",
+   "bytes": 735,
+   "sha256": "f6132ff8ab111ff7740b51572ca75d28ea49d7c4695ed23588b148d418a6ddfa",
+   "fictional": true
+  },
+  {
+   "path": "drive/Meetings/2026-09-25 Maple Room walk-through.vtt",
+   "bytes": 993,
+   "sha256": "5e05d5f121534cf94589eed3622f0cc9a59f1a84b817b5767c1bba5d6192c546",
+   "fictional": true
+  },
+  {
+   "path": "drive/Meetings/2026-10-02 Catering call with Copper Kettle.vtt",
+   "bytes": 606,
+   "sha256": "04b58d7f6246fd0f07ecd01e2bdd9b688a6d46727d82a9a23bb7a2aab3a69184",
+   "fictional": true
+  },
+  {
+   "path": "drive/Meetings/2026-10-06 Weekly check-in.vtt",
+   "bytes": 893,
+   "sha256": "61f22126569a58aabbfe8be3253db33f3da689d48ae4388eee2a705b747014b2",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Accessibility/Signwise offer SW-2026-118.pdf",
+   "bytes": 2983,
+   "sha256": "c1f342ca0e79332eb22080820f625c907941df1d68283b087aa40b9e98dd4866",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Agenda draft v2.docx",
+   "bytes": 37772,
+   "sha256": "212f08633cffaac5664ffad9dfa5605b3062f33078d5335715872b87339767cc",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Attendees 2026-10-05.xlsx",
+   "bytes": 5934,
+   "sha256": "eb178f242139548086a29a13b6fe01e728ec6799868997f20e8f590e2369cc4c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Budget/Lantern budget v1.xlsx",
+   "bytes": 5208,
+   "sha256": "7e6549f70e99bec7bce4781565e0abbc78aaca455dd52a1598e5d253526dbfd9",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Budget/Lantern budget v2 FINAL.xlsx",
+   "bytes": 5349,
+   "sha256": "2329c0b7ee5ec188bbc05562fa5a8bc637cdedd502b1d4b9aeeae5fff54852cc",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Catering/Copper Kettle quote CK-Q-2026-031.pdf",
+   "bytes": 3161,
+   "sha256": "2ced022ac3bf0a808da87e3f1ad8ab241416eac039805ca297b5c0a83de3b508",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Printing/PrintWorks invoice PW-INV-2026-0928.pdf",
+   "bytes": 3055,
+   "sha256": "892f75c7c5a442491cf2dc04766ccd7dd5514b922b655d1de3e7dd8e1add334f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Printing/Rechnung Wei\u00dfblatt 2026-0042.pdf",
+   "bytes": 3088,
+   "sha256": "114565ee364f6170974118a4122717500584cda09064695cff3ba7d30c40436c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Venue/Linden Hall quote LH-Q-2026-0914.pdf",
+   "bytes": 3294,
+   "sha256": "e0ed5edc3f22ec7c752e1e6367f235716a9418eb4a997b9d74e1246bdebd9bc7",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Venue/Linden Hall room hire agreement DRAFT.docx",
+   "bytes": 37843,
+   "sha256": "577d14f7e62fcb406b51660ffdf1da72bc7f58bb71ff177606e937a41e2438b4",
+   "fictional": true
+  },
+  {
+   "path": "drive/Projects/Project Lantern/Venue/Maple Room photos 2026-09-25.zip",
+   "bytes": 896148,
+   "sha256": "a0f0ef21a02e80af6856d005b91c8cb0673d256f3a947a758f78fc534e076460",
+   "fictional": true
+  },
+  {
+   "path": "drive/Reading/Small Team Workflows 2026 (report).pdf",
+   "bytes": 29671,
+   "sha256": "722aafa30ba893032172908558387557d0dbb3c91d377a808f79c2b8ffe26107",
+   "fictional": true
+  },
+  {
+   "path": "drive/Subscriptions/CloudVault receipt 2026-10.pdf",
+   "bytes": 2797,
+   "sha256": "b3d527578baea09d71a3d5baee052d5a4d65f08df2e567b8f4aada0adcab7dd3",
+   "fictional": true
+  },
+  {
+   "path": "drive/Subscriptions/FitPass K\u00fcndigungsbest\u00e4tigung.pdf",
+   "bytes": 2832,
+   "sha256": "c798f0c2b03c062516d57649b7b6251fba49fcd586b4517b25b12059b42b4e13",
+   "fictional": true
+  },
+  {
+   "path": "drive/Subscriptions/NoteCloud receipt 2026-10.pdf",
+   "bytes": 2876,
+   "sha256": "aa77fb75e36c7c27314ee0b0f039bc142b3c37646200cc5a81c7c1e4a8d63bb3",
+   "fictional": true
+  },
+  {
+   "path": "drive/Subscriptions/StreamBox receipt 2026-09.pdf",
+   "bytes": 2855,
+   "sha256": "b5b9666f879e3e9b918d6f4faaabe159d3f5c405ef4e377f3604097e14b7b75d",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Lake Garda Jul 2026/Pebble Rent invoice.pdf",
+   "bytes": 3024,
+   "sha256": "ffcf10b698f56bfc16c1b7841d25b51f767aabb3cc58a52d31823f5cc56d3b18",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Lisbon Nov 2026 (cancelled)/StayPilot cancellation SP-LX7KQ2.pdf",
+   "bytes": 2762,
+   "sha256": "23a40ab21dc39d160d5b2a9ec16194efe7bfa631cc6e45db816d11ffd765bc47",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Lisbon Nov 2026 (cancelled)/StayPilot change SP-LX7KQ2.pdf",
+   "bytes": 3084,
+   "sha256": "b9a53c1d91b2c0c6c949b717f1c82f419e546beb360fd63676a989f00cfba705",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Lisbon Nov 2026 (cancelled)/StayPilot confirmation SP-LX7KQ2.pdf",
+   "bytes": 3132,
+   "sha256": "15a9d95ed3be550dc4a8c9e5cb14b05246828937608f8fac9a4810f744f04759",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/London Oct 2026/Aurelian e-ticket AUR7Q2.pdf",
+   "bytes": 5050,
+   "sha256": "59017445e7f94ac2bb431f4757795aa4308d9523b8bf0c1a035fb10d43d592a1",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/London Oct 2026/StayPilot confirmation SP-LD4XK9.pdf",
+   "bytes": 3102,
+   "sha256": "8eed5340cd2c91dd7b9fc1259e3f796356fb1801fa40eeeea51490c83296d3e6",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Salzburg Sep 2026/Ticket M\u00fcnchen-Salzburg 18.09.pdf",
+   "bytes": 4813,
+   "sha256": "096e4cd42b339865e9bb069fcb1410ab93ebc41fae23cfca3e0b5ba837d51e32",
+   "fictional": true
+  },
+  {
+   "path": "drive/Travel/Tickets/TicketNest Jazz 31 Oct.pdf",
+   "bytes": 4633,
+   "sha256": "73c8e7b69dc352e4f64b6abcd0e753ccc0190313fac4464b355642977c8981a8",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/alex-example.mbox",
+   "bytes": 2679923,
+   "sha256": "e94cf8cbf51b146e13ba8cdb351d30e7aafed5b978d01c7278db59f5dfb4876c",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E001-ihre-stromrechnung-juli-2026-bw-2026-07-118204.eml",
+   "bytes": 6727,
+   "sha256": "473348b9d48168e8d233417013cded55c5e7c8d9b57025efa44b671d9d0f9071",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E002-zahlungseingang-best-tigt.eml",
+   "bytes": 2055,
+   "sha256": "b808ed74c7fbf10342600214525eab60fe67dd2fed28995b98695681d30ee395",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E003-ihre-stromrechnung-august-2026-bw-2026-08-118761.eml",
+   "bytes": 6532,
+   "sha256": "9cbd9f2bc5f5016b2ec54276cac08ae7d6673cf5ec66710b48e3d2caba872ab2",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E004-zahlungseingang-best-tigt.eml",
+   "bytes": 2025,
+   "sha256": "93679c7b84e03280c3b4bbcfe6f245ee24bef372bf545013bbfea2b9837f4619",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E005-ihre-stromrechnung-september-2026-bw-2026-09-119.eml",
+   "bytes": 6549,
+   "sha256": "3cd83600a476565c00bbfbbc617cf429baf2757b0a51e308555a13afea90cb0a",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E006-zahlungseingang-best-tigt.eml",
+   "bytes": 2025,
+   "sha256": "9757ab5458696dcfa2d7e2a316aa1aa54ada351ea46a068d41840a3e2e2bf10f",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E007-zahlungseingang-best-tigt.eml",
+   "bytes": 2025,
+   "sha256": "afb72dcd5d0c49a60ed65ee6444e218cb4f526fd2e30fd611ce0d95b8c0d9908",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E008-doppelte-zahlung-wir-erstatten-84-20-eur.eml",
+   "bytes": 6663,
+   "sha256": "fb30aeab057e060b3fe6788df3e4d8786064825af5e58830395e9eb4b2a3c2d0",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E009-your-july-bill-is-ready.eml",
+   "bytes": 6111,
+   "sha256": "9924f26d0de3c414edf92cf6b464f142533ddcf8bf5cdcf73643b08ce4d306d2",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E010-your-august-bill-is-ready.eml",
+   "bytes": 6416,
+   "sha256": "90442e0d7a6d633a6c29b2f81e85b4332024f7297734b6e0265294431fc21344",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E011-your-september-bill-is-ready.eml",
+   "bytes": 1985,
+   "sha256": "484be36e505c6296cf66dc31278d3ed2c9f67707d3eefc59832a5f81fc8c2e52",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E012-your-fernleaf-invoice-for-july.eml",
+   "bytes": 5968,
+   "sha256": "f4ca6dd1caf81e6111ce4c105a57cfcbff08ef225d5168d8b64b3dd86c1680ee",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E013-your-fernleaf-invoice-for-august.eml",
+   "bytes": 5977,
+   "sha256": "611482dcd17aaa7a18d5aeb4f1ac8e0d7c4b6843de9736e3756968bc8720b007",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E014-important-your-monthly-price-is-changing.eml",
+   "bytes": 6132,
+   "sha256": "f46b0f05a7865680fd247c059ca11f7a43157886a27f757fd2c59c90eff6730e",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E015-your-fernleaf-invoice-for-september.eml",
+   "bytes": 6028,
+   "sha256": "7678e98d95d248e0b93774635e86ed0e8802ab8fc6bedb6a25131daa5def8822",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E016-scan-2026-09-23-0915.eml",
+   "bytes": 152661,
+   "sha256": "f1293c950d07c9c26a94723eee4b99a10723858a78de462c37cc75fe29f1adff",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E017-ihr-kontoauszug-september-2026.eml",
+   "bytes": 8261,
+   "sha256": "17d8ce535edac33ff7439d8ed31fd9da9d8bbeced9c89da40b77704af750b827",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E018-kartenzahlung-im-ausland.eml",
+   "bytes": 2127,
+   "sha256": "0f4399bc2f9fd9d989bb0bb9a0cdfd941497c8e99a1754d5accb1ad8ae47f57f",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E019-your-30-day-free-trial-has-started.eml",
+   "bytes": 2037,
+   "sha256": "16bdd30846ff6685600847e612a1c82b93ec223b9686388471e1b944d8936b56",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E020-your-trial-ends-in-7-days.eml",
+   "bytes": 2003,
+   "sha256": "9d3335c7b3b7dc7006fd7c9ef7f70995ce4ee12f9f089fafa160483c798f7521",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E021-your-streambox-receipt.eml",
+   "bytes": 5988,
+   "sha256": "bd07b005bc9fb1a84f15b06222dd5eb52d852a2029d5c71cd1ebb9aed1b6be7e",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E022-we-re-updating-our-prices.eml",
+   "bytes": 2190,
+   "sha256": "17eedb70be5f4a3293a9a84a56208d7ea037271f22df423ea8bf9e3210716de3",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E023-your-annual-plan-renews-on-30-october.eml",
+   "bytes": 1935,
+   "sha256": "afe8418b780c3275be07bbf83d505794ff1e6813b2ede6355333b6d961d5c9bb",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E024-receipt-for-notecloud-pro.eml",
+   "bytes": 5945,
+   "sha256": "dc87d1896bba0ba558bf561b203c65e6d365307fb59c19b2936a5260f1093ef5",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E025-cloudvault-receipt.eml",
+   "bytes": 5849,
+   "sha256": "124b6936c09339ba15a1d90cdb53481282f225b18ed8fd7838a5bd3af64eca5e",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E026-deine-k-ndigung.eml",
+   "bytes": 6175,
+   "sha256": "49f0eaac3260802e5fdefc3fb060751e4fcf7f98b4b666672a295ea94c5442a1",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E027-booking-confirmed-casa-azulejo-lisbon.eml",
+   "bytes": 7191,
+   "sha256": "06a2c011e1f14f42711b455bd834a75e4b7baeb2d315f705c0e8e81ac8200447",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E028-your-booking-sp-lx7kq2-has-been-changed.eml",
+   "bytes": 6472,
+   "sha256": "beb60ab722d567df4e7c46967c88f2c711749c1aa483db15b0d5e7dc5402d1dc",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E029-cancelled-your-booking-sp-lx7kq2.eml",
+   "bytes": 6092,
+   "sha256": "12b6b986ba641a60290ed5d7d6bb6c2b5c90d691237d84a6ad657222de536c2a",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E030-booking-confirmed-the-quill-hotel-london.eml",
+   "bytes": 192030,
+   "sha256": "39dde0bf9d79c7e772b0660366ca86ba91b03335609241143cc7626d8779add0",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E031-your-booking-aur7q2-e-ticket-receipt.eml",
+   "bytes": 11717,
+   "sha256": "fe144210a7329e3ecbe379be209e096b6a2bbd873bc7f97eb6a55f19b59aaec5",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E032-schedule-change-aur-214-on-26-october.eml",
+   "bytes": 2363,
+   "sha256": "36f1fd9063ad1b5bc7882f381413f2ebec93a89bdcb082798f622082a7b426cb",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E033-ihr-online-ticket-sr-2026-0916-7741.eml",
+   "bytes": 8877,
+   "sha256": "aafe8feee30fe4dd2c67434a28ad34571c647f5bb9918a771a0ad464f054d8b4",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E034-your-pebble-rent-invoice-pr-vrn-2026-07-0331.eml",
+   "bytes": 6212,
+   "sha256": "bcb12b673d2c5b0d9836c89787b054bfe9ff3dc76358cc8d4d8bc9449b732e2b",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E035-your-tickets-jazz-im-kulturhaus-31-oct.eml",
+   "bytes": 8426,
+   "sha256": "1b040a73507575521cc69afd6335cabf56562259bfa885a68d085a185504f69c",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E036-action-required-confirm-your-card-or-booking-sp.eml",
+   "bytes": 2276,
+   "sha256": "fbb952db0f22a886199b6257b2544e7846bafd2baf1b7250103ba3fc2a8d7807",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E037-meeting-in-london-on-27-october.eml",
+   "bytes": 700,
+   "sha256": "984cfda6f4a2e893f27525be463c9f4368cdc3c5461f071d0fe7b71609495698",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E038-re-meeting-in-london-on-27-october.eml",
+   "bytes": 1130,
+   "sha256": "09fb28dde3dabf9ff0dd9789d263add82de435496e1198144286c3d1fb16f55f",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E039-your-order-bb-o-55210-has-been-delivered.eml",
+   "bytes": 129031,
+   "sha256": "46c62266b6fcc4edaa16f4bd5b5a3ecb25efa914a44fb07a93ad99880ff3f078",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E040-monitor-invoice-scan-for-the-files.eml",
+   "bytes": 136309,
+   "sha256": "2c493bee3c502c98601de0ec5a86bf196a7519cad0411714b3ae209b67dc9944",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E041-invoice-cc-26-0903-12.eml",
+   "bytes": 6410,
+   "sha256": "6d6f29d134ee0b80ec273e47e89b6711d5f353404ba47b912148dfcbd46cfedf",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E042-ihre-rechnung-zur-bestellung-kk-o-55102.eml",
+   "bytes": 6240,
+   "sha256": "576133c48ea86434988dfe740572758795e835f201cacdd9678624e54e724ddb",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E043-loan-laptops-for-the-learning-day.eml",
+   "bytes": 614,
+   "sha256": "9b6e326221293d32cafb81459385e2f2a7efe484355c3b4ec9fcc8c38ffc1100",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E044-room-for-a-learning-day-on-22-october.eml",
+   "bytes": 704,
+   "sha256": "56222b9e955005b11ad15ab06545972009cbc8de8be598de43aa0e24e92c7020",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E045-re-room-for-a-learning-day-on-22-october.eml",
+   "bytes": 1242,
+   "sha256": "90cf8984a345d276c70037892788330211355a3309dac571bc1be3bb9928cd25",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E046-re-room-for-a-learning-day-on-22-october.eml",
+   "bytes": 1888,
+   "sha256": "2d52dfcd550c4bd5725e23bba125f49ae9256396d9d62865c6bcc203da2dc6f2",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E047-quote-and-agreement-maple-room-22-october.eml",
+   "bytes": 57911,
+   "sha256": "7906ac14d59509461408488f60ca052e2774426dfee0bf53aa65c1a7ecdca1e9",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E048-re-quote-and-agreement-maple-room-22-october.eml",
+   "bytes": 1527,
+   "sha256": "6cf373fdfa64233c787892f747052f04f128e07b5c1771c125e3f7ea42021586",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E049-invitation-maple-room-walk-through-fri-25-sep-10.eml",
+   "bytes": 1900,
+   "sha256": "4068a8501fecc87161e38e232e5d2229c1b8578b77ca6c8436f353ad8c8ac819",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E050-re-quote-and-agreement-maple-room-22-october.eml",
+   "bytes": 2133,
+   "sha256": "6b3dc2da646b9db26ffb2dce45968f3e55364f34d091c0b374b61c04e58df977",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E051-maple-room-photos-from-today.eml",
+   "bytes": 1227135,
+   "sha256": "11f453b00ae156fb177bd172e5888bafdf7da28f5f95f225a9a01e9d219710d0",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E052-meeting-summary-maple-room-walk-through.eml",
+   "bytes": 2869,
+   "sha256": "45a6a88eb4be285eeb73b8b2e299e2c6b178ba4986d8c3c4b656fabc39c33fa0",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E053-lantern-budget-can-we-go-to-eur-2-500.eml",
+   "bytes": 831,
+   "sha256": "c28c4df82734b47f797895f80842cddbbfaf3fbd549e80a026e5dd93c757c935",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E054-re-lantern-budget-can-we-go-to-eur-2-500.eml",
+   "bytes": 1226,
+   "sha256": "9eeb75e8c8322becd1e548c385cd497429bfdbbe17606e340c9a84f6b7264c86",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E055-re-lantern-budget-can-we-go-to-eur-2-500.eml",
+   "bytes": 1585,
+   "sha256": "75571410f58ca324171a2c8a10e3e9c480e822e3d4e543af47e3da54a87fb6db",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E056-re-lantern-budget-can-we-go-to-eur-2-500.eml",
+   "bytes": 1965,
+   "sha256": "f43c170fa184c88e4088caa8b9435ae383e802220f47bf5668ffc0924c807f99",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E057-re-lantern-budget-can-we-go-to-eur-2-500.eml",
+   "bytes": 2295,
+   "sha256": "25f0386bb376860d1d8a2f31592170f9e5e16624e80ca6fe22ae3485822bb777",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E058-catering-quote-for-22-october.eml",
+   "bytes": 5314,
+   "sha256": "b7b9a5df8eda3f00279d124508d116f08838680cca00a1a52da60e95e7653d16",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E059-lantern-budget-v2.eml",
+   "bytes": 8318,
+   "sha256": "2b0843bd14726a3e3e4acea814d5b4c8ec67077bbbac48ac2236956a44b3792a",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E060-lantern-budget-v1.eml",
+   "bytes": 8027,
+   "sha256": "22bf53163fe14d8c34db444cbbd2c745d0423aa27560eab2711c142bc383e892",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E061-re-catering-quote-for-22-october.eml",
+   "bytes": 1506,
+   "sha256": "58062af568b974e5f390c0585dffe51374238696223c9a88febb8f3eccf87d77",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E062-re-catering-quote-for-22-october.eml",
+   "bytes": 1124,
+   "sha256": "b68a9a9750dd0579d7a327d08bbc2f3ca4ba22ef56ab6b3dbe5b2a829addd791",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E063-agenda-draft-v2-demo-files.eml",
+   "bytes": 52582,
+   "sha256": "1f6a7e0e2df13cc2a4096ccd68bb9231711529f7b4fd9c9d6a88a6104dc8a5ac",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E064-attendee-list-as-of-today.eml",
+   "bytes": 9022,
+   "sha256": "cce23e780af0849aa7a901ee487d1d822d6e4cfb3f3a95ed2f113ccc86d64781",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E065-maple-room-deposit.eml",
+   "bytes": 718,
+   "sha256": "3bf3473e28937534ac96299cc55e49bb7dc05333c64da3ca82c6868087703ef8",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E066-updated-billing-contact.eml",
+   "bytes": 664,
+   "sha256": "b1882966030a0c984b6e44d75ee1fdeb3491fa4632ea35f658b5da0cb2e703cf",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E067-krank-heute.eml",
+   "bytes": 554,
+   "sha256": "11c3c0b0baa6799b6d78de62d57a765593933cb16e0771b8dc298e4d98f28a59",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E068-invoice-pw-inv-2026-0928-badges-and-lanyards.eml",
+   "bytes": 5038,
+   "sha256": "bb853abcd9dcc450fa46ade5a91020a4b7c812087c6df2e11ab94ec391c3a12f",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E069-re-invoice-pw-inv-2026-0928-badges-and-lanyards.eml",
+   "bytes": 1040,
+   "sha256": "8a872ad49bfa649a2f4615a0ab5e49a956d5084e999ca78c99eeebbd93b55c93",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E070-ihre-rechnung-2026-0042.eml",
+   "bytes": 5151,
+   "sha256": "f5c1c434b7e70fd14c0edd0fe31546eb95be1b57b4b238eb3e2dc4edfcc381b8",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E071-offer-interpreting-on-22-october.eml",
+   "bytes": 4954,
+   "sha256": "f261047672b17b2902cb06b7a6ef12ed86b5b8b8666152e8d0c0ed6482275329",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E072-learning-day-access-question.eml",
+   "bytes": 573,
+   "sha256": "e123cf2ac739f341fabec618ac9814c262da6eb659c26ffe9e62a882ee6ccf57",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E073-webinar-idea.eml",
+   "bytes": 585,
+   "sha256": "4f04a1e55bac1e04a8bceb69ec8e8fab2f7af7b380ffb7f772271dd61661a40d",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E074-new-role-new-address.eml",
+   "bytes": 701,
+   "sha256": "3fb661eaac0fa96981c12b1cc2378eee43368e7f714233103c26366a1574e1f0",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E075-re-webinar-idea.eml",
+   "bytes": 927,
+   "sha256": "5ccfe196cbba1ca21809ee1f622c6083fbd27698fba8290b0a62c781d1a8f726",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E076-fwd-payment-details-for-your-deposit.eml",
+   "bytes": 1688,
+   "sha256": "eb47e1cf5de66e95b1ec7043fef966b37be6a85083f5674a23061c7e4c37ee00",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E077-retro-notes.eml",
+   "bytes": 674,
+   "sha256": "8c29ac6db51f2ca18b3081e28e02f7686318ad1e4a326a0ff48c76986483f6eb",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E078-31-five-signs-your-review-queue-is-too-long.eml",
+   "bytes": 162237,
+   "sha256": "e9bf3a7a8a9d9c02d8dc0efa5fb5d5ef33e31f8806730a64eac0441ebb21da3d",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E079-35-our-new-report-is-out.eml",
+   "bytes": 162067,
+   "sha256": "43c3d505ddc0866570b8e67775092e404dd22b25ea398efee013e124b49c12ab",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E080-39-the-lisbon-summit-moves-online.eml",
+   "bytes": 161952,
+   "sha256": "42e390ade6412de1d1e2ae2329a20626f2d79a5e53aeed50b5fae1560026b10b",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E081-your-sunday-briefing.eml",
+   "bytes": 1712,
+   "sha256": "9863177304ed3e3a19ebad5bd27a0446347457e012d5f80d752f35ae8b76864d",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E082-lisbon-in-november.eml",
+   "bytes": 588,
+   "sha256": "90b0b6b9d6d8795295aa60e1fcbb5cea2515e21d3d231d6f8423a9e9bf712acf",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E083-re-lisbon-in-november.eml",
+   "bytes": 944,
+   "sha256": "3680d22c238d5ee6e4c0d8fecae6f6bf9589a3f7bce86a6b75a5129d97a4416b",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/E084-invitation-weekly-check-in-tue-6-oct-09-30.eml",
+   "bytes": 2213,
+   "sha256": "4790446daf951cd615b52f26518bf072c628596c7bc9377d01f99d78cfdb7aa6",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/labels.json",
+   "bytes": 8809,
+   "sha256": "8d363f4a153e47bcee18df5818eb7679af246bde67f37495eebba27ad20b4e31",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/cafe-lindgren-upstairs.md",
+   "bytes": 212,
+   "sha256": "916405b12cdfdd895d7ca5ae78346524a3bc1ccb5ce61c1a2309aa7df941940f",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/call-noor.md",
+   "bytes": 176,
+   "sha256": "e8a76e662c710b8b101f714e3ce55dabf698d5dc4d523f94e17e99c6c7253213",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/hdmi-adapter.md",
+   "bytes": 222,
+   "sha256": "109c12e41514df0885e7deb2384c89d9600b61c023a2c4ee706e0671cdd8bd8a",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/notion-formulas.md",
+   "bytes": 140,
+   "sha256": "4a514c7ca9d62e27c14f04ead19c3855b926d50ad625428770e60ea07f77c90d",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/passport.md",
+   "bytes": 178,
+   "sha256": "f45b1e99cf13a3a8db44c76b5bc0c379ffd3a70d2a48fe02b322dac90aa2ae28",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/priya-team-size.md",
+   "bytes": 184,
+   "sha256": "74bc88e701e39b0f5c14812ebaa298fe4725f321e0aa24a1a4ce5d46a4059399",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/ravi-mornings.md",
+   "bytes": 143,
+   "sha256": "f846355519634fd96208f29e5346c0910745639b9471f14859251955eafcf870",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/read-later-handover.md",
+   "bytes": 152,
+   "sha256": "f6bf680f9daab96de6528681ed00cc5dc95165bca616e498e2b89a73aadee63e",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/video-tutorial-idea.md",
+   "bytes": 199,
+   "sha256": "25fc62244d933e315e1291df590780fade96c1978de6fe62b90f52907e35aa85",
+   "fictional": true
+  },
+  {
+   "path": "notes/0-Inbox/wifi-linden-hall.md",
+   "bytes": 164,
+   "sha256": "c9fc55b531c525973f93938284c7a6403df638f3e010c6af41b0a1d504db89f3",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/London client visit/meeting-prep-ravi.md",
+   "bytes": 283,
+   "sha256": "0d9f86aa9e9fa1321d056308fdde5c19f2882d76fd0d36353af65669d99a07e1",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/London client visit/trip-plan.md",
+   "bytes": 411,
+   "sha256": "af551258228b32918c22d7c9d3a261607b956d0336c7aee42de3c0ef58c96a3b",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/01-project-plan.md",
+   "bytes": 517,
+   "sha256": "d66ac410b79cc7dda14eb2d4f4c6bf5c638f2f3db633b84c5c8f0d259819d94e",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/02-budget-decision.md",
+   "bytes": 415,
+   "sha256": "2693f64e46d753a64007be331cb845ed07f5097af392c51eac5f2566feddadad",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/03-meeting-notes.md",
+   "bytes": 514,
+   "sha256": "fa9ce6b86c7d7f7e52a718f1f2cc25c763f2e499d05f47cee8053fbc725ba42d",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/04-working-notes.md",
+   "bytes": 492,
+   "sha256": "a6d12301041d3bcbeb9b73460a8183fe233a5fffe2f2f95bdf4e2f72a9ddd1d3",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/05-decisions-log.md",
+   "bytes": 619,
+   "sha256": "77ce104dc6ebf7569aa39ff22894d62500625b949990b3b6c80acf2193f71ab0",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/06-tasks.md",
+   "bytes": 436,
+   "sha256": "a115b9df17b2e8123036159b229169f2e2c908ac8f972cd9504e3b16d31cdd46",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/07-venue-options.md",
+   "bytes": 454,
+   "sha256": "e31bb60369da50b99ca0e77fc77c7d42deb7ba3257b9e5b719a27e80bc850003",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/08-accessibility.md",
+   "bytes": 374,
+   "sha256": "a0e88903e5b3c5569955a50d651580b313af01e59244c4ab0a1fc781fb29c192",
+   "fictional": true
+  },
+  {
+   "path": "notes/1-Projects/Project Lantern/09-handover-guide-outline.md",
+   "bytes": 373,
+   "sha256": "29fe57d419b491bf99f7fe6e3e88d8510aeafe436ada3dd7cf3bd10c047c4d6e",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Home and finance/bills-checklist.md",
+   "bytes": 320,
+   "sha256": "6aa0522eea61963b9e60dce2b7786390568b26fd0dc9f5e076db65a3683911b4",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Home and finance/insurance-notes.md",
+   "bytes": 204,
+   "sha256": "7134680f84ea49b20a11af12c3e4dd507671d1799c6cbbbebf26d73733d00bf4",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Home and finance/subscriptions-overview.md",
+   "bytes": 388,
+   "sha256": "c39373980d57467c5a43c592a87ecfddcade8b10ce55d077607dbeaa08220a27",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Office admin/equipment-list.md",
+   "bytes": 274,
+   "sha256": "a36c2cf93d46c6c98040b0a2bcaae58f561ef16cbdd59f5f3b9cf9012342da85",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Office admin/expense-claims-how-to.md",
+   "bytes": 338,
+   "sha256": "8ec76a9bebcc9a3ba4f258f0bcd1364bc16fe129ab4a99b3553324334a4c193d",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Office admin/laptop-loan-process.md",
+   "bytes": 220,
+   "sha256": "63c94b6cf5375d84f554ebf404736aef1c223103f509b8376c020ad72f083870",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Team/1-1-jordan-2026-08-05.md",
+   "bytes": 224,
+   "sha256": "b2f46b2610956ee70b796a16e7248d0088b2b9ff3622514f23b8c34522612e79",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Team/team-retro-2026-09-30.md",
+   "bytes": 333,
+   "sha256": "614d5315ca1f2f7b86e1dfdc7ec2abb4241057c18d25a4b9b1b608c97834051a",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Team/voice-memo-2026-09-18.md",
+   "bytes": 387,
+   "sha256": "324be351fca83f0462ee825e8d102bebfac2e0012b9dbf04b1fab5f8ca1545b1",
+   "fictional": true
+  },
+  {
+   "path": "notes/2-Areas/Team/voice-memo-2026-10-02.md",
+   "bytes": 337,
+   "sha256": "4930f36e9b8bcf9c1e9c7398bea0e07c36cc80494a32bd363082b69f12839f01",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/How-to/booking-train-tickets.md",
+   "bytes": 241,
+   "sha256": "3725f34dd916ca314894a6bfd3ce11bdedc2773fad30db5ee00015952737799b",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/Reading/book-notes-small-team-playbook.md",
+   "bytes": 272,
+   "sha256": "e8da10b48bde261f48447be0321e632330892af9bb65f60ef29f2614285fe3fc",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/Reading/clip-handover-notes (1).md",
+   "bytes": 334,
+   "sha256": "3989505f98790f6426d8a262be10142ee6dbce1527bd126daadc3e9164867abc",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/Reading/clip-handover-notes.md",
+   "bytes": 334,
+   "sha256": "decfa88985b399a92d871aa945b1e91bf34495fa06549d13c7b7611c27d731b4",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/Reading/highlights-intake-forms.md",
+   "bytes": 382,
+   "sha256": "f6957f2f097f2077a37f1ee17678d0ac23c0ac8e12f073c039ce4b8249f81045",
+   "fictional": true
+  },
+  {
+   "path": "notes/3-Resources/Reading/highlights-review-queues.md",
+   "bytes": 427,
+   "sha256": "15038665638bbfd148e4f6bb9f861d7c5d2f4c818ae0bbad0e3198b6599770a5",
+   "fictional": true
+  },
+  {
+   "path": "notes/4-Archive/birch-room-request-2026-08-20.md",
+   "bytes": 230,
+   "sha256": "34c662c6d8f454f263ce1fbefd1f77eceac58a739d52e1e4d1a9da72d24f033c",
+   "fictional": true
+  },
+  {
+   "path": "notes/4-Archive/early-budget-ideas.md",
+   "bytes": 197,
+   "sha256": "7f746c6cdd4c1eb4cc807fb781895c86dfc19f78e9038ee6ca14ccea1fea212f",
+   "fictional": true
+  },
+  {
+   "path": "notes/Daily/2026-09-14.md",
+   "bytes": 219,
+   "sha256": "c90e1e841036672906d9c792691bce1f07a77b8283f6472d80542f63e889bfff",
+   "fictional": true
+  },
+  {
+   "path": "notes/Daily/2026-10-01.md",
+   "bytes": 216,
+   "sha256": "e1b04c925f1943c818106fa0957909820bb6f4aa8960e99af1719fb94d10ac1e",
+   "fictional": true
+  },
+  {
+   "path": "notes/Daily/2026-10-06.md",
+   "bytes": 215,
+   "sha256": "2e382c5eb7bee8d528d7b576c12321ce237a621949ff3bf9a3a654a503a6065a",
+   "fictional": true
+  },
+  {
+   "path": "notion/notes-for-notion-import.zip",
+   "bytes": 15153,
+   "sha256": "786cb4c8f096fa7c6724c576f499af228ef03be9b640dbf8def2bdcf2941d1b5",
+   "fictional": true
+  },
+  {
+   "path": "records/deadlines.csv",
+   "bytes": 1164,
+   "sha256": "4ec4c12dcb506ddfd5eda0154ba7e78ee1b31724f48c8d84ae9f91d45ea19b91",
+   "fictional": true
+  },
+  {
+   "path": "records/ideas.csv",
+   "bytes": 1282,
+   "sha256": "1494a2af0294707c35a64a4c81c75172fbcf3225df46bff00445accdb64776b1",
+   "fictional": true
+  },
+  {
+   "path": "records/interactions.csv",
+   "bytes": 2402,
+   "sha256": "fc1926d4cd2afccfc9f1f67d9f0fe4040963f58bb5aed403dbd0154971305dd5",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/deadlines.md",
+   "bytes": 1527,
+   "sha256": "10e1f59e38a8056f729a49f7f9040e853658d7c0e566c6aa8d478fc331f6fe45",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/ideas.md",
+   "bytes": 1645,
+   "sha256": "bb2288b1267f732272354ce88b663874bb098e8241a4073b999eb55e09f5779e",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/interactions.md",
+   "bytes": 3010,
+   "sha256": "729daea470313cae49abf789f77b1ec39b7d61050cb0762483014e1913b50865",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/people.md",
+   "bytes": 2498,
+   "sha256": "cbd2eb6a4784becc0b8951dda43e8c2c9264705152eb1a33ac611f4991930ede",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/places.md",
+   "bytes": 1418,
+   "sha256": "5e30581a2b38abffe7bbc9bd93b5074afd20d6e79eef98db0e4858e7a8a0fd1b",
+   "fictional": true
+  },
+  {
+   "path": "records/markdown/purchases.md",
+   "bytes": 2427,
+   "sha256": "3392efc8a5e08a48e31067ce4dd8df0c8bcd2d3801f5759dce2002a2f70acd2f",
+   "fictional": true
+  },
+  {
+   "path": "records/people.csv",
+   "bytes": 2048,
+   "sha256": "7e5696f0bc5a260c286790b5706828ae7a92d1d3beee91281b6908c84b607bca",
+   "fictional": true
+  },
+  {
+   "path": "records/places.csv",
+   "bytes": 1068,
+   "sha256": "44263edcdc61e9a907a088ae4db37470de7c0097777f58735a7d99d78773742b",
+   "fictional": true
+  },
+  {
+   "path": "records/purchases.csv",
+   "bytes": 1962,
+   "sha256": "2cc3572b4fb73ea7edd201f252e181e4dc34657c1d4e9332532f9f5529bd5c6f",
+   "fictional": true
+  },
+  {
+   "path": "telegram/updates.json",
+   "bytes": 3674,
+   "sha256": "1b72f32613aad59648241d03df54603c60d3a704048ca7231889657950614a5c",
+   "fictional": true
+  }
+ ]
+}

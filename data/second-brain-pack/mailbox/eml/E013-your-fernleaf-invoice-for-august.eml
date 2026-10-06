@@ -1,0 +1,108 @@
+From: Fernleaf Fibre <invoices@fernleaf-fibre.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your Fernleaf invoice for August
+Date: Sun, 02 Aug 2026 07:10:00 +0200
+Message-ID: <e013.your-fernleaf-invoice-fo@fernleaf-fibre.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E013_0"
+
+--=_juniper_E013_0
+Content-Type: multipart/alternative; boundary="=_juniper_E013_1"
+
+--=_juniper_E013_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Hello Alex,
+
+your invoice FF-24-08-3519 for EUR 39.90 is attached.
+
+Fernleaf Fibre
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E013_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#3c9646;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Fernleaf Fibre</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Hello Alex,</p><p style=3D"margin:0 0 14px">your =
+invoice FF-24-08-3519 for EUR 39.90 is attached.</p><p style=3D"margin:0 0 14=
+px">Fernleaf Fibre</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Glasfaserweg 11, 81677 M=C3=BCnchen =C2=B7 fernleaf-fibre.ex=
+ample<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E013_1--
+
+--=_juniper_E013_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invoice_FF-24-08-3519.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChGZXJu
+bGVhZiBGaWJyZSBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAwMTAxMDAwMDAw
+KzAwJzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikgL0tleXdvcmRz
+IChmaWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJjbGFzcykgL01v
+ZERhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYg
+TGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFsIHdvcmtzaG9w
+IGRvY3VtZW50KSAvVGl0bGUgKEludm9pY2U6IEZpYnJlIDI1MCwgQXVndXN0IDIwMjYgRkYtMjQt
+MDgtMzUxOSkgL1RyYXBwZWQgL0ZhbHNlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9Db3VudCAxIC9L
+aWRzIFsgNSAwIFIgXSAvVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0ZpbHRlciBb
+IC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggMTEzMgo+PgpzdHJlYW0KR2F0
+bTpnTihiNiY6TzpTb0hVMGtBcFdtTzpFKEZSW1ZETDxmIkMqNTBrM18zLStSUChaW1lkOkBUdUdL
+O2o5a0xQVlxta0lKV1NRI1IoMCpvNjY7dF1VbSRBKSQqPHIwN2JycFIvW1cpbypKJCNBQyxrSEhp
+PTohU01nVzRDQCVFY21qOiUzNjZWVlppL0MqQ0tTSFM7KCteQTgxXiZBKUdcYlgtLzopKDpYSmI4
+WDx1MTlaPV5GaFQsQT5eZnJeZTVkM2xqUkdRUE0kM2tvQWRvZTdpQTw+IlFQXUYrZz4vYlZPSnVT
+JVhMTklrXFZ1WUtGXEFCZTklV2kkOVFUbT9qbz9hSFU3byptOHBPUDluSCRxX0lqc2VgYmg5SjEn
+aERIOWNmZWhLZ0ZoKVlBNz5BQGtPRFovIUE3JjcnbzlsUSFSUDtibE02TFJAZkVwOTpvSVc6WjI4
+SV9XcDc3cztKRmFeWTE+QT1JXV1fLC41Q1ozKi1dakJLM09KLFUtcDROLlJQbGomQkUlMnJdbDNS
+UDMnQm1ORWZwaWpSXWgqKjF1PnFNZDhBcFRPMSN1c1VpOSYhdWYiRiY5VHBfQEAvSzc6KyVVPCsh
+bWM5O2onWC8zaThiclU8L2dOLWdHY2U2KnJQTDtEUT9INzAiOGBSQ1prYTgmP01GTStVOVFpUl5t
+VS9fTjZkOSI0ZE5NYnJlXzhaMj8kNz01YS1jRVBBbV5IQEAtRD9MISckSEJWNEojWTxKSkJQPmUp
+dD1TSydOWmdTQl1DMUA7dE5cQ211TCQ+RC9qQnRabiI5YHQ5KVwja1BTO0dJJUUvRXJZJ2kxSjI8
+M2YtL2dbXUReNTErZzRGOEAmaUpFakcvSzhRIk1GRWFybmZeVWwyZiIjUj1RNE9YXDhgMlNuR08k
+RSplPjUwV0o8Y0kqc1VbKDFuTSFHWiU4K3AnPm1wPyImZi5pOG9hOTBfPSVMVGFKLiVsKylhXyZR
+VGZ1WWhTSTg1R1lbWXRBUmY8cyovM0gudTNkMEIsWGdiLWBrO2wuSVNQaTQnUDhuZ0ZOcC50QV1h
+P1xfLU06LzJTZ0hYazgiZTFbbyk9KjRvOE5TXmpGZCFRUF1SJCNOVGxcWVNhYj5xZjJQQENWbUJ0
+IU1eXVcxPlVqOXBILD8/JVxnXE5mQF9AVj09IyYsKTtVUD43PF5gWipPUUB0Oj1wWSNOL1RSRThF
+UydoQVtlMS1rRSdtZUAkXDVaOFE2aU4qQDBaQ0JNOUMpQmpFSEhVajYwQ1wlWEBNJVJMO1BLcnFc
+dXRfcXRYMF9aJXIkXWBnaSRAOT5MJ2JPN20iXV1gYDlkRzQuKj8iLjRtXSRORz4qIXNTclwyW0xE
+XkluV2xUa1M2OCs5NVwzVXEpTFJoMHIvRyptR1o/UjAnXlNQZiEkZ01ZTTRoQSIoLXIpL3JPdVk7
+b2prKCchP0VXM2MvKkUyO0IiZWYvLWkjOypsJi0+TlVOIyt1JmZuczBUVCx+PmVuZHN0cmVhbQpl
+bmRvYmoKeHJlZgowIDEwCjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAow
+MDAwMDAwMTEyIDAwMDAwIG4gCjAwMDAwMDAyMTkgMDAwMDAgbiAKMDAwMDAwMDMzMSAwMDAwMCBu
+IAowMDAwMDAwNDQ2IDAwMDAwIG4gCjAwMDAwMDA2NDkgMDAwMDAgbiAKMDAwMDAwMDcxNyAwMDAw
+MCBuIAowMDAwMDAxMTE4IDAwMDAwIG4gCjAwMDAwMDExNzcgMDAwMDAgbiAKdHJhaWxlcgo8PAov
+SUQgCls8ZDYwYTk4M2JkZmZlY2MwNTVlZjIzNzBjMDdlMTc2YmU+PGQ2MGE5ODNiZGZmZWNjMDU1
+ZWYyMzcwYzA3ZTE3NmJlPl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBk
+aWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA3IDAgUgovUm9vdCA2IDAgUgovU2l6ZSAxMAo+Pgpz
+dGFydHhyZWYKMjQwMAolJUVPRgo=
+
+--=_juniper_E013_0--

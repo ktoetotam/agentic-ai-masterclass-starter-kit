@@ -1,0 +1,108 @@
+From: Pebble Rent <invoices@pebblerent.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your Pebble Rent invoice PR-VRN-2026-07-0331
+Date: Mon, 20 Jul 2026 18:40:00 +0200
+Message-ID: <e034.your-pebble-rent-invoice@pebblerent.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E034_0"
+
+--=_juniper_E034_0
+Content-Type: multipart/alternative; boundary="=_juniper_E034_1"
+
+--=_juniper_E034_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thanks for renting with Pebble Rent. Your final invoice of EUR 236.80 is atta=
+ched.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E034_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#646464;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Pebble Rent</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Thanks for renting with Pebble Rent. Your final i=
+nvoice of EUR 236.80 is attached.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Pebble Rent (fictional), Aeroporto di Verona =C2=B7 pebblere=
+nt.example<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E034_1--
+
+--=_juniper_E034_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Pebble Rent invoice.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChQZWJi
+bGUgUmVudCBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAwMTAxMDAwMDAwKzAw
+JzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikgL0tleXdvcmRzIChm
+aWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJjbGFzcykgL01vZERh
+dGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYgTGli
+cmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFsIHdvcmtzaG9wIGRv
+Y3VtZW50KSAvVGl0bGUgKFJlbnRhbCBpbnZvaWNlIFBSLVZSTi0yMDI2LTA3LTAzMzEpIC9UcmFw
+cGVkIC9GYWxzZQo+PgplbmRvYmoKOCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDUgMCBSIF0g
+L1R5cGUgL1BhZ2VzCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29k
+ZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDEzNTcKPj4Kc3RyZWFtCkdhdG06OWxvI1omQUBaY3FB
+Py0nVVxVTTdkbEpGcFgwc3BjLzBSJUxLI1FCbilDLm9cUFBrO3A4STE8L0whLEFeSl4pUjVxSzVU
+W2xYZ15VTWNIRD4kSzBxUTUkVG1PKitqRTEsWUZJJiU5S2tKJEhKUGlkL1RUbSYsbkVhRi1NXGlL
+STQhLksvIjpQaXNvLCtSUGgjWWRwTyVzL2hPMWJOQ2tUKi06NSJHWjxgO1diK1hgUGpSJkNGKGlj
+NnBNcSJtZHJiMTF0OWUvJlAhKlVZRWRBZVZlZjt1b2NRO3Q5QjEyaTg3aiw2RU9tbWlVLkg7U15f
+SHVgVHItMmtvYlhEMjorV0k4NnRKRjFaSjFHVmpbJkpkX1wlKlZjQW1kJ0tIQilmYTdyPG9PTTMp
+WiJMSF02NW9OZmMvMFh1Szw7R1JhK1tEak1OQjR0U2dFJ0sjN19SdDMvYipVNlNVZyozbCslaDFK
+ZG1aUChOWj8zZ25cSlc1XGNhLmJbKEUiYjpwZCY5OEgvTGdjUUFTOjJhdERsNURNUk5iND09dDs1
+TmYqP2RMUT8hI2c3NXFHXHFqLVBmM1JxUDdUKyFSTltJQi1rL2RDLlREQEleJmZULEVZVSxXaVMw
+L0A7Pm1sJDFoQTAoaUg+Qlg+PyZucSRFOSktYWdIXiJTX1UxN2RrWT8vPEE9PWInMzVtR0FlZ05R
+Vj5naidWYyV1clZrJCxpXFpQUlJvWjpeOXB1VGZZSyxLPCQiO1VkcillITdxNVBWU25vaDtkZFAx
+VmAtYmItNDgsJiotUTNwUC9IUWdPKGhrQyQlXGBzZCQvIS1GMkVLUmRGLVA5ODcsJy07LVZNOU1i
+QEltLkFSMXBTWnVkX1ZpLGlRcFIoX1hScDJnK0spW0hUIloqQzkoP1cqZzY7PFo8YSpDMV4nb0cn
+LyNLXS9EMmMlKmshPlUjUChpY15JP1FHK1ctNTdiNTIqNUlCaCVYJExYMCZLUmoiPDUlYztJIz0q
+JiUtOD9wLFM0JVBobmZga2UoXCNzQEtTWStnWDdcUy0rSi5iaVRZVEMzcXI2YnROTEVcRSVAZT83
+MjArMGpCZ0puYm9JMiJuSVNRc21nIUlDckNFVUA2Qzg/O201V1hIQTI/Szc1Pj91cDsiMTtUOWxo
+WT5rPWZfcCFwbWddLSMyLkNYUCM2WUlURFUlXVBCRTpYaz5kU18mSlRoIzxHMSZOYE5Paiw3J2kv
+PzlRXE9vVmIkcFRdVU9STHFEXjZFPC1Rc1UuYmYuI3BWK0d1NSJMJHAodHJaMjZfZj5FJVYsdFwo
+QHRuJkpVaGwnZGw+dDguMG1eKWpgcjwmMUgqbiMoaT8nalg/Q1c6bUJITzQlXVRwXEN1JSJRXCcq
+a1ljQ1REWWBPNENdbzVsQ2VEKUM1Tl8uWVpORi8hSTprVjxVL2ovZWFkXUI0Y1Q/T1REY2JWMm9P
+UCZFUDBkS00ybWpKaCVrTmhaaz1aQnJrNEEnQl5MZ2s5W2kqXz9wQ1ZdPl8mZC5nJmA1UXNnME4k
+RmwhQXUqPUIzP3BFKDBmWS11Ul0lZGhRN0BNVjY+UG1OMnA4LXAjSyFmSDNiNmdIaz5nKmxsP2Qw
+RFtTVDFWUj9YQyRnRSQ4IkdXLzpnQ2UlRnByciZrZTo6UlM3N2UyUFpdQT06XksoVjdObWxkbGM4
+KC5rPVFXYig0U3Mhci44W1wyPi4ocWYkTS1aRTNEQj8pQC9AJ040LlMzRFlibUtpJSMuTUg1TD4r
+OCs5W1w6L0VgaS5eTDpDVlYiQGlDbE4zUS0+fj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxMAow
+MDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBu
+IAowMDAwMDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDQ0NiAwMDAw
+MCBuIAowMDAwMDAwNjQ5IDAwMDAwIG4gCjAwMDAwMDA3MTcgMDAwMDAgbiAKMDAwMDAwMTEwNCAw
+MDAwMCBuIAowMDAwMDAxMTYzIDAwMDAwIG4gCnRyYWlsZXIKPDwKL0lEIApbPGQyMjk1NGFmNGMw
+NTg3MjM4ODcyMmZkMzhlNjUwOGYzPjxkMjI5NTRhZjRjMDU4NzIzODg3MjJmZDM4ZTY1MDhmMz5d
+CiUgUmVwb3J0TGFiIGdlbmVyYXRlZCBQREYgZG9jdW1lbnQgLS0gZGlnZXN0IChvcGVuc291cmNl
+KQoKL0luZm8gNyAwIFIKL1Jvb3QgNiAwIFIKL1NpemUgMTAKPj4Kc3RhcnR4cmVmCjI2MTEKJSVF
+T0YK
+
+--=_juniper_E034_0--
