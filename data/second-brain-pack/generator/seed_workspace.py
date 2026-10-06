@@ -199,7 +199,7 @@ def eml_index():
 def seed_gmail(args, user):
     items = eml_index()
     if not args.apply:
-        print(f"  gmail: would import {len(items)} emails as threaded conversations")
+        print(f"  gmail: would import {len(items)} emails")
         return
     gmail = api(args, user, "gmail", "v1")
     if args.reimport_mail:
@@ -217,8 +217,6 @@ def seed_gmail(args, user):
     for name in CUSTOM_LABELS:
         ids[name] = existing.get(name) or run(gmail.users().labels().create(userId="me", body={
             "name": name, "labelListVisibility": "labelShow", "messageListVisibility": "show"}))["id"]
-    thread_of, subject_of = {}, {}
-    threaded = 0
     for it in items:
         raw = it["path"].read_bytes().replace(ALEX.encode(), user.encode())
         labels = labels_meta[f"mailbox/eml/{it['path'].name}"]
@@ -227,15 +225,11 @@ def seed_gmail(args, user):
         if "Opened" not in labels and "Sent" not in labels:
             label_ids.append("UNREAD")
         body = {"raw": base64.urlsafe_b64encode(raw).decode(), "labelIds": label_ids}
-        # Gmail threads an imported reply only when told the thread and the subjects match.
-        for ref in reversed(it["refs"]):
-            if ref in thread_of and subject_of[ref] == it["subject"]:
-                body["threadId"] = thread_of[ref]; threaded += 1
-                break
-        res = run(gmail.users().messages().import_(userId="me", body=body, internalDateSource="dateHeader",
-                                                   neverMarkSpam=True, processForCalendar=False))
-        thread_of[it["msgid"]] = res["threadId"]; subject_of[it["msgid"]] = it["subject"]
-    print(f"  gmail: imported {len(items)} emails ({threaded} replies joined to their conversations)")
+        # Gmail groups imported replies into conversations by their References headers and subject,
+        # as for received mail; importing oldest first keeps each reply after the message it answers.
+        run(gmail.users().messages().import_(userId="me", body=body, internalDateSource="dateHeader",
+                                             neverMarkSpam=True, processForCalendar=False, fields="id"))
+    print(f"  gmail: imported {len(items)} emails")
 
 
 # ---------------------------------------------------------------------------------- calendar
