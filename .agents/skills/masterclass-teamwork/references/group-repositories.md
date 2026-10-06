@@ -78,7 +78,7 @@ git remote -v
 git push --set-upstream origin main
 ```
 
-If `origin` already exists, inspect it and use it only if it is the approved team repository. Do not overwrite its URL automatically. No force push is needed. Git authenticates through the GitHub CLI sign-in set up before the day (`gh auth status`); if a push asks for a password, run `gh auth setup-git` instead of entering one. [Publish existing local code](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github).
+If `origin` already exists, inspect it and use it only if it is the approved team repository. Do not overwrite its URL automatically. No force push is needed. Git authenticates through the GitHub CLI sign-in set up before the day (`gh auth status`); if a push asks for a password, connect Git to `gh` in this clone with `git config --local credential.https://github.com.helper ""` and `git config --local --add credential.https://github.com.helper "!gh auth git-credential"` instead of entering one. Never use `gh auth setup-git` or `git config --global`; with two GitHub accounts run `gh auth switch` first. [Publish existing local code](https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github).
 
 ## Each teammate clones their own copy
 

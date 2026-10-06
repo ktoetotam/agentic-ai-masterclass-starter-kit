@@ -37,8 +37,8 @@ These are **workshop recommendations**, starting from OpenAI's current guidance.
 | Work to do | Starting model | Effort | Workshop example |
 | --- | --- | --- | --- |
 | A narrow, well-defined task | GPT-6 Luna, `gpt-6-luna` | `high` | Inventory source files; extract a known set of fields; review broken links |
-| Building and integrating a prototype | GPT-6 Sol, `gpt-6-sol` | `medium` | Connect invoice parsing, validation and a review screen |
-| Difficult reasoning or consequential review | GPT-6 Sol, `gpt-6-sol` | `high` | Trace an intermittent bug; review data boundaries; resolve conflicting requirements |
+| Building and integrating a prototype | GPT-6.1 Sol, `gpt-6.1-sol` | `low`, then `medium` | Connect invoice parsing, validation and a review screen |
+| Difficult reasoning or consequential review | GPT-6.1 Sol, `gpt-6.1-sol` | `high` | Trace an intermittent bug; review data boundaries; resolve conflicting requirements |
 
 For a trivial edit, try a lower supported effort when speed matters. Increase effort if the work needs deeper checking. Evaluate the result with the same small input rather than assuming a higher setting fixes every failure. Higher effort and parallel agents use more time/tokens. Luna supports effort up to Max, not Ultra; neither Max nor Ultra is a workshop requirement. [Model effort guidance](https://learn.chatgpt.com/docs/models#pick-a-reasoning-effort).
 
@@ -49,8 +49,8 @@ For a trivial edit, try a lower supported effort when speed matters. Increase ef
 The starter's `.codex/config.toml` sets:
 
 ```toml
-model = "gpt-6-sol"
-model_reasoning_effort = "medium"
+model = "gpt-6.1-sol"
+model_reasoning_effort = "low"
 web_search = "live"
 
 [agents]

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "website-building",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Masterclass challenge: build a company website the AI Realist way - brand, layout and motion, images, SEO, design critique and a safe Cloudflare deployment.",
   "author": {
     "name": "AI Realist"

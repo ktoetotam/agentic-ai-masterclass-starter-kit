@@ -51,10 +51,12 @@ const ghParts = ghVersion?.match(/^gh version (\d+)\.(\d+)\.(\d+)/);
 const ghOK = Boolean(ghParts && Number(ghParts[1]) === 2 && Number(ghParts[2]) >= 80);
 report(ghOK, 'GitHub CLI', ghOK ? ghVersion :
   `${ghVersion || 'Missing or unavailable on PATH'}; install GitHub CLI 2.102.0 (2.80+ already installed is fine) in your user account using $masterclass-setup skill.`);
-const gitHelpers = gitOK ? run(gitPath, ['config', '--global', '--get-all', 'credential.https://github.com.helper']) : null;
-report(Boolean(gitHelpers?.includes('gh')), 'Git sign-in to GitHub',
-  gitHelpers?.includes('gh') ? 'Git uses your GitHub CLI sign-in.' :
-  'After creating your GitHub account, run gh auth login --web --git-protocol https, then gh auth setup-git (see $masterclass-setup skill). This check does not contact GitHub.');
+// Effective helpers for this project (its own .git/config plus any global ones). Read-only; this check never writes Git configuration.
+const gitHelpers = gitOK ? run(gitPath, ['config', '--get-all', 'credential.https://github.com.helper']) : null;
+const ghHelper = /\bgh(\.exe)?['"]? auth git-credential/.test(gitHelpers || '');
+report(ghHelper, 'Git sign-in to GitHub',
+  ghHelper ? 'Git uses your GitHub CLI sign-in.' :
+  'After creating your GitHub account, run gh auth login --web --git-protocol https, then ask the agent to connect Git to gh in this cloned project only (git config --local; see $masterclass-setup skill). Do not run gh auth setup-git or git config --global. This check does not contact GitHub.');
 let wranglerInstalled = null;
 let wranglerPinned = null;
 try {

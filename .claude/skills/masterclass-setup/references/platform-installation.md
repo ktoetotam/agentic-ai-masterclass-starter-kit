@@ -73,13 +73,13 @@ Press `q` to leave the viewer. Paste this complete block. It uses your own tools
     env UV_INSTALL_DIR="$HOME/.local/bin" UV_NO_MODIFY_PATH=1 sh "$HOME/Downloads/uv-install.sh"
   fi
   uv --version
-  uv python install 3.14.7
+  uv python install --no-bin 3.14.7
   workshop_bootstrap_python=$(uv python find --system --no-python-downloads 3.14.7)
   "$workshop_bootstrap_python" --version
 )
 ```
 
-Expect `Python 3.14.7`. This installs a user-owned interpreter; it leaves other projects' runtimes intact. A compatible existing project `.venv` will be checked and reused in [step 3D](#poetry-and-env). uv uses Astral's Python distributions and requires no preinstalled Python. If an older uv cannot find 3.14.7, update your user-owned uv from the official installer; do not silently substitute an older Python. The latest uv checked here is [0.12.18](https://github.com/astral-sh/uv/releases/tag/0.12.18). [uv installation](https://docs.astral.sh/uv/getting-started/installation/), [installer options](https://docs.astral.sh/uv/configuration/installer/), [Python installation](https://docs.astral.sh/uv/guides/install-python/).
+Expect `Python 3.14.7`. This installs a user-owned interpreter; it leaves other projects' runtimes intact. `--no-bin` stops uv from also placing a `python3.14` command in `~/.local/bin`, so no existing `python` lookup changes; the project finds this interpreter through `uv python find` instead. A compatible existing project `.venv` will be checked and reused in [step 3D](#poetry-and-env). uv uses Astral's Python distributions and requires no preinstalled Python. If an older uv cannot find 3.14.7, update your user-owned uv from the official installer; do not silently substitute an older Python. The latest uv checked here is [0.12.18](https://github.com/astral-sh/uv/releases/tag/0.12.18). [uv installation](https://docs.astral.sh/uv/getting-started/installation/), [installer options](https://docs.astral.sh/uv/configuration/installer/), [Python installation](https://docs.astral.sh/uv/guides/install-python/).
 
 ### Portable Node 26
 
@@ -122,14 +122,23 @@ tar -xzf "$HOME/Downloads/node-v26.10.0-darwin-x64.tar.gz" -C "$HOME/.local/shar
 export PATH="$HOME/.local/share/node-v26.10.0-darwin-x64/bin:$HOME/.local/bin:$PATH"
 ```
 
-To keep the tools available after reopening Terminal, open your own shell profile files:
+**Make a tool permanent only if it is needed.** Run `command -v node` (and `node --version`) first. If a Node 26 that meets the target already works, reuse it and add nothing. Adding a folder to PATH changes which `node`, `git` or `python` every future Terminal uses, so never add a folder for a tool that is already current, and never remove or reorder what the participant has (nvm, pyenv, Homebrew, company setup).
+
+When a folder really is needed, add it with this helper. It appends one clearly marked line at the end of your own `~/.zprofile` and `~/.zshrc`, never rewrites a file, and does nothing if the folder is already listed. Use it for every Mac folder in this guide (Node, Git, Poetry, `~/.local/bin`):
 
 ```sh
-touch "$HOME/.zprofile" "$HOME/.zshrc"
-open -e "$HOME/.zprofile" "$HOME/.zshrc"
+workshop_add_path() {
+  [ -d "$1" ] || { printf 'No such folder: %s\n' "$1" >&2; return 1; }
+  for workshop_profile in "$HOME/.zprofile" "$HOME/.zshrc"; do
+    touch "$workshop_profile"
+    grep -qF -- "$1" "$workshop_profile" ||
+      printf '\n# Added for the AI Realist masterclass\nexport PATH="%s:$PATH"\n' "$1" >> "$workshop_profile"
+  done
+}
+workshop_add_path "$HOME/.local/share/node-v26.10.0-darwin-arm64/bin"   # Intel: darwin-x64
 ```
 
-In each file, add **the matching `export PATH=...` line above** once on a new line at the end, preserve existing contents, then save. Keep the files as plain text with their existing names. These names begin with a dot and may be hidden in Finder. This is for macOS's default zsh shell; for another shell, ask Codex to update its corresponding user profile. Fully quit and reopen ChatGPT after changing PATH.
+The function exists only in the Terminal where it was pasted; paste it again before using it in a new one. Show the participant the lines it added (`tail -n 4 ~/.zprofile`) and say they can delete them to undo. This is for macOS's default zsh shell; for another shell, ask the agent to update its user profile the same way. Fully quit and reopen ChatGPT or Claude after changing PATH.
 
 ```sh
 node --version
@@ -155,7 +164,7 @@ $WorkshopUv = Join-Path $env:LOCALAPPDATA 'Programs\ai-masterclass\uv\uv.exe'
     $ErrorActionPreference = 'Stop'
     & $WorkshopUv --version
     if ($LASTEXITCODE -ne 0) { throw 'uv could not run. Stop here.' }
-    & $WorkshopUv python install 3.14.7
+    & $WorkshopUv python install --no-bin --no-registry 3.14.7
     if ($LASTEXITCODE -ne 0) { throw 'Python installation failed. Stop here.' }
     $WorkshopBootstrapPython = & $WorkshopUv python find --system --no-python-downloads 3.14.7
     if ($LASTEXITCODE -ne 0) { throw 'Python 3.14.7 was not found. Stop here.' }
@@ -164,7 +173,7 @@ $WorkshopUv = Join-Path $env:LOCALAPPDATA 'Programs\ai-masterclass\uv\uv.exe'
 }
 ```
 
-Expect `Python 3.14.7`. No activation script or execution-policy exception is needed. Keep an existing `.venv` intact; the Poetry step will check it before doing anything to its packages. If uv cannot find 3.14.7, update your user-owned uv from the latest official portable release and retry. [uv installation methods](https://docs.astral.sh/uv/getting-started/installation/).
+Expect `Python 3.14.7`. `--no-bin` and `--no-registry` keep uv from adding a `python` command or a Windows registry entry, so other programs' Python discovery is unchanged. No activation script or execution-policy exception is needed. Keep an existing `.venv` intact; the Poetry step will check it before doing anything to its packages. If uv cannot find 3.14.7, update your user-owned uv from the latest official portable release and retry. [uv installation methods](https://docs.astral.sh/uv/getting-started/installation/).
 
 ### Portable Node 26
 
@@ -255,7 +264,7 @@ export PATH="$HOME/.local/share/ai-masterclass/git/bin:$PATH"
 git --version
 ```
 
-Add that same `export PATH=…` line once to your own `.zprofile` and `.zshrc`, preserving existing contents as in the Node instructions. Restart Terminal and ChatGPT. Expect `git version 2.55.0` or a newer stable release in Codex's terminal. Micromamba is used only for Git; Poetry manages the project's Python environment and Node stays in its portable folder.
+Only if no current Git was found, run `workshop_add_path "$HOME/.local/share/ai-masterclass/git/bin"` (helper in the Node section). Restart Terminal and ChatGPT. This Git comes from conda-forge, so it will not use settings that Apple's Git is wired to (for example its macOS Keychain credential helper); if the participant already has working Git sign-in, keep their Git and skip this folder. Expect `git version 2.55.0` or a newer stable release in Codex's terminal. Micromamba is used only for Git; Poetry manages the project's Python environment and Node stays in its portable folder.
 
 If company policy blocks these downloads, tell the facilitator. The ZIP and preview still work with folder copies as temporary checkpoints, but Git setup is not complete. Do not bypass the restriction.
 
@@ -289,7 +298,7 @@ export PATH="$(uv tool dir --bin):$PATH"
 poetry --version
 ```
 
-Add an `export PATH="the-printed-folder:$PATH"` line with the **actual printed path** once to your own `.zprofile` and `.zshrc`, preserving existing content. Do not type `the-printed-folder` literally. Restart Terminal and ChatGPT. If you reused an existing Poetry installation, keep its existing executable folder on PATH instead.
+Run `workshop_add_path "$(uv tool dir --bin)"` (helper in the Node section) so the **actual printed path** is added once to your own `.zprofile` and `.zshrc`. Restart Terminal and ChatGPT. If you reused an existing Poetry installation, keep its existing executable folder on PATH instead.
 
 ### Install Poetry on Windows if needed
 
@@ -443,6 +452,7 @@ GitHub refuses account passwords for Git, so the first clone of a private group 
 (
   set -eu
   gh_version=2.102.0
+  [ ! -e "$HOME/.local/bin/gh" ] || { printf '%s\n' 'A gh already exists in ~/.local/bin; it is not replaced. Check it with: gh --version' >&2; exit 1; }
   case "$(uname -m)" in
     arm64) gh_arch=arm64 ;;
     x86_64) gh_arch=amd64 ;;
@@ -461,7 +471,7 @@ GitHub refuses account passwords for Git, so the first clone of a private group 
 )
 ```
 
-If `~/.local/bin` is not yet on PATH (`command -v gh` prints nothing in a new Terminal), add `export PATH="$HOME/.local/bin:$PATH"` once to `.zprofile` and `.zshrc`, preserving existing contents, then restart Terminal and ChatGPT.
+If `~/.local/bin` is not yet on PATH (`command -v gh` prints nothing in a new Terminal), run `workshop_add_path "$HOME/.local/bin"` (helper in the Node section), then restart Terminal and ChatGPT.
 
 ### Windows
 
@@ -487,15 +497,27 @@ Add the `…\ai-masterclass\gh\bin` folder to **User variables → Path** as for
 
 ### Sign in (the participant does this)
 
-After the GitHub account exists, run in Codex's terminal:
+After the GitHub account exists, first run `gh auth status`. If it already lists a `github.com` account, the participant is signed in: do not log in again unless they want to add a second account, and never log out an existing account. When an account is added on top of an existing one, run `gh auth status` afterwards and, if the **Active account** is not the one they use for this work, run `gh auth switch` ([manual](https://cli.github.com/manual/gh_auth_switch)). Then, in Codex's terminal:
 
 ```sh
 gh auth login --hostname github.com --git-protocol https --web
-gh auth setup-git
 gh auth status
 ```
 
-`gh auth login` shows a one-time code and opens the browser. The participant enters the code, signs in and approves **GitHub CLI** themselves; the agent never types passwords, codes or tokens. The token is stored in the Mac Keychain or Windows Credential Manager, not in the project. `gh auth setup-git` adds a GitHub-only credential helper to the user's Git configuration; it does not set a name or email. `gh auth status` should show the account as logged in. On a shared or borrowed laptop, run `gh auth logout` after the workshop.
+`gh auth login` shows a one-time code and opens the browser. The participant enters the code, signs in and approves **GitHub CLI** themselves; the agent never types passwords, codes or tokens. If it asks whether to authenticate Git with GitHub credentials, answer **No**: the project connects Git to `gh` in its own repository instead (below). The token is stored in the Mac Keychain or Windows Credential Manager, not in the project. `gh auth status` should show the account as logged in. On a shared or borrowed laptop only, run `gh auth logout` after the workshop; it asks which account when several are signed in. Never run it on a participant's own computer unless they ask.
+
+**Never run `gh auth setup-git` or any `git config --global` command.** `gh auth setup-git` has no option to stay inside one repository; it rewrites the user's global Git configuration (`~/.gitconfig`) for `github.com` and `gist.github.com`, first clearing every credential helper already set for them. That breaks a computer that already has two GitHub accounts, a work account, or a credential manager set up per folder. Observed with `gh` 2.86.0; the [manual](https://cli.github.com/manual/gh_auth_setup-git) does not state the scope.
+
+### Connect Git to `gh` in the project clone only
+
+Run this inside the cloned project (and later inside each group-repository clone), never anywhere else. It writes only to that clone's `.git/config` ([`--local` is git's default scope for writes](https://git-scm.com/docs/git-config)):
+
+```sh
+git config --local credential.https://github.com.helper ""
+git config --local --add credential.https://github.com.helper "!gh auth git-credential"
+```
+
+The first line stops Git from asking helpers set elsewhere; the second makes `gh` answer for this repository. `gh` uses its currently active GitHub account: with two accounts, run `gh auth status`, then `gh auth switch` to the account that owns the repository before a push. Before changing anything, look at what already exists with `git config --show-origin --get-regexp "^(credential|includeif)"`, report it, and leave the global entries alone.
 
 ## 4. Run the readiness check
 
