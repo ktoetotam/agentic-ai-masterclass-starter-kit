@@ -91,7 +91,11 @@ Optional, for a real Gmail, Drive and Calendar per participant. About 15 minutes
    uv run --no-project --script data/second-brain-pack/generator/seed_workspace.py --sa masterclass-seed@PROJECT.iam.gserviceaccount.com --owner ADMIN@DOMAIN --users a@DOMAIN,b@DOMAIN
    ```
 
-   The owner's My Drive gets "Juniper (fictional)" (Alex's 49 Drive files), shared read-only with the participants without notification emails, and "Second brain pack (facilitator only)" with the answer key, not shared. Each participant gets 84 emails with original dates, labels and read state (imported, nothing is sent), 16 calendar events and a "Juniper (fictional)" shortcut in My Drive. Alex's address in the emails becomes the account's own. Re-running skips what is already there.
+   The owner's My Drive gets "Juniper (fictional)" (Alex's 49 Drive files), shared read-only with the participants without notification emails, and "Second brain pack (facilitator only)" with the answer key, not shared. Each participant gets 84 emails with original dates, labels and read state (imported, nothing is sent), the story's 16 calendar events and a "Juniper (fictional)" shortcut in My Drive. Alex's address in the emails becomes the account's own. Re-running skips what is already there.
+
+   The calendar also gets 35 to 50 entries of everyday life, different in every account (`generator/life.py`): team routines, focus time, home and office days, an out-of-office holiday and Christmas break, doctors, a pet at the vet, children, friends, private blocks. They are built from the account's address, so the same account always gets the same life. The story's events stay identical everywhere because the answer key depends on them, and the everyday entries never sit on top of them. `--redo-life` replaces the everyday entries (marked with the private property `juniper=life`) after `life.py` changes.
+
+   Optional: `--share-calendars-with ADMIN@DOMAIN` gives the facilitator read access to every participant's calendar, without notification emails. New accounts can start with their calendar in UTC, which shows the story's Munich times two hours early; `--calendar-timezone Europe/Berlin --apply` sets every account's calendar time zone.
 7. **After the workshop.** Remove the delegation, delete the service account or the project, and let the trial end or cancel it.
 
 ## Rebuild

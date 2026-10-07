@@ -14,9 +14,13 @@ notification emails, calendar events are added without invitations.
   gmail     imports every email of mailbox/eml into each participant's mailbox with its original
             date, labels, read/unread state and star (users.messages.import)
   calendar  adds the story's events to each participant's primary calendar
+  life      adds everyday life around the story (life.py): routines, focus time, home-office days,
+            private appointments, pets, holidays. Different for every account; the story's events
+            stay the same everywhere because the answer key depends on them.
 
 Alex Example's address in the emails becomes the participant's own address, so everybody reads
-the mailbox as Alex. Re-running is safe: work that is already done is skipped.
+the mailbox as Alex. Re-running is safe: work that is already done is skipped. --redo-life
+replaces the life entries (they carry the private property juniper=life) with a fresh set.
 
 Authorisation: a service account with domain-wide delegation for these scopes:
   https://www.googleapis.com/auth/gmail.modify
@@ -43,9 +47,12 @@ from pathlib import Path
 GEN = Path(__file__).resolve().parent
 PACK = GEN.parent
 sys.path.insert(0, str(GEN))
+from life import life_events  # noqa: E402
 from notes import CALENDAR  # noqa: E402
 
 ALEX = "alex@juniper-workshop.invalid"
+TZ = "Europe/Berlin"
+LIFE = "juniper=life"  # private extended property on every life entry
 SCOPES = ["https://www.googleapis.com/auth/gmail.modify", "https://www.googleapis.com/auth/drive",
           "https://www.googleapis.com/auth/calendar"]
 CUSTOM_LABELS = ["Bills", "Newsletters", "Project Lantern", "Receipts", "Subscriptions", "Travel"]
@@ -259,6 +266,114 @@ def seed_calendar(args, user):
     print(f"  calendar: added {len(events)} events")
 
 
+def life_body(ev):
+    """A life.py entry as a Calendar API event."""
+    body = {"summary": ev["title"], "extendedProperties": {"private": dict([LIFE.split("=")])},
+            "transparency": "opaque" if ev.get("busy", True) else "transparent"}
+    if ev.get("location"):
+        body["location"] = ev["location"]
+    if ev.get("note"):
+        body["description"] = ev["note"]
+    if ev.get("allday"):
+        body["start"], body["end"] = {"date": ev["start"]}, {"date": ev["end"]}
+    else:
+        body["start"] = {"dateTime": dt.datetime.fromisoformat(ev["start"]).isoformat(), "timeZone": TZ}
+        body["end"] = {"dateTime": dt.datetime.fromisoformat(ev["end"]).isoformat(), "timeZone": TZ}
+    if ev.get("rrule"):
+        body["recurrence"] = [f"RRULE:{ev['rrule']}"]
+        if ev.get("exdates") and ev.get("allday"):
+            body["recurrence"].append("EXDATE;VALUE=DATE:" + ",".join(d.replace("-", "") for d in ev["exdates"]))
+        elif ev.get("exdates"):
+            body["recurrence"].append(f"EXDATE;TZID={TZ}:" + ",".join(f"{dt.datetime.fromisoformat(d):%Y%m%dT%H%M%S}" for d in ev["exdates"]))
+    if ev.get("private"):
+        body["visibility"] = "private"
+    if ev.get("color"):
+        body["colorId"] = ev["color"]
+    if ev["kind"] == "focus":
+        body.update(eventType="focusTime", focusTimeProperties={"chatStatus": "doNotDisturb", "autoDeclineMode": "declineNone",
+                                                                "declineMessage": ev["message"]})
+    elif ev["kind"] == "ooo":
+        body.update(eventType="outOfOffice", outOfOfficeProperties={"autoDeclineMode": "declineNone", "declineMessage": ev["message"]})
+    elif ev["kind"] in ("home", "office", "place"):
+        where = {"home": {"type": "homeOffice", "homeOffice": {}},
+                 "office": {"type": "officeLocation", "officeLocation": {"label": ev.get("label", "")}},
+                 "place": {"type": "customLocation", "customLocation": {"label": ev.get("label", "")}}}[ev["kind"]]
+        body.update(eventType="workingLocation", visibility="public", transparency="transparent", workingLocationProperties=where)
+    return body
+
+
+def plain_body(ev):
+    """The same entry as an ordinary event, for accounts without focus time, out of office or working locations."""
+    if ev["kind"] == "office":
+        return None  # an all-day "Office" on most days is noise; home days and trips are enough
+    body = life_body({**ev, "kind": "event"})
+    if ev["kind"] == "home":
+        body["summary"] = "Home office"
+    return body
+
+
+def life_ids(cal):
+    ids, token = [], None
+    while True:
+        page = run(cal.events().list(calendarId="primary", privateExtendedProperty=LIFE, maxResults=250, pageToken=token,
+                                     fields="items(id),nextPageToken"))
+        ids += [e["id"] for e in page.get("items", [])]
+        token = page.get("nextPageToken")
+        if not token:
+            return ids
+
+
+def seed_life(args, user):
+    from googleapiclient.errors import HttpError
+    entries, about = life_events(user)
+    if not args.apply:
+        print(f"  life: would add {len(entries)} entries: {about}")
+        return
+    cal = api(args, user, "calendar", "v3")
+    old = life_ids(cal)
+    if old and not args.redo_life:
+        print("  life: already added, skipped")
+        return
+    for event_id in old:
+        run(cal.events().delete(calendarId="primary", eventId=event_id, sendUpdates="none"))
+    # Someone who has set their own working location keeps it; the life entries leave it alone.
+    own = [e for e in run(cal.events().list(calendarId="primary", eventTypes="workingLocation", maxResults=50,
+                                            fields="items(id,extendedProperties)")).get("items", [])
+           if e.get("extendedProperties", {}).get("private", {}).get("juniper") != "life"]
+    if own:
+        entries = [e for e in entries if e["kind"] not in ("home", "office", "place")]
+        about += ", own working location kept"
+    plain = {}
+    for ev in entries:
+        try:
+            run(cal.events().insert(calendarId="primary", body=life_body(ev), sendUpdates="none"))
+        except HttpError as e:
+            if ev["kind"] == "event":
+                raise
+            plain.setdefault(ev["kind"], getattr(e, "reason", str(e)))
+            body = plain_body(ev)
+            if body:
+                run(cal.events().insert(calendarId="primary", body=body, sendUpdates="none"))
+    replaced = f"replaced {len(old)} earlier entries, " if old else ""
+    print(f"  life: {replaced}added {len(entries)} entries: {about}")
+    for kind, reason in plain.items():
+        print(f"  life: {kind} entries added as ordinary events ({reason})")
+
+
+def set_timezone(args, users, tz):
+    """Show every account's calendar in this time zone (the story's times are Europe/Berlin)."""
+    if not args.apply:
+        print(f"  calendar: would set the time zone of {len(users)} calendars to {tz}")
+        return
+    for u in users:
+        cal = api(args, u, "calendar", "v3")
+        before = run(cal.calendars().get(calendarId="primary", fields="timeZone"))["timeZone"]
+        if before != tz:
+            # patch answers "Not Found" for the alias "primary", so it gets the calendar's real id (the address)
+            run(cal.calendars().patch(calendarId=u, body={"timeZone": tz}, fields="timeZone"))
+        print(f"{u}: calendar time zone {before} -> {tz}" if before != tz else f"{u}: calendar time zone already {tz}")
+
+
 def share_calendars(args, users, viewer):
     """Let the facilitator see each participant's primary calendar (read-only, no notification emails)."""
     if not args.apply:
@@ -285,11 +400,20 @@ def check(args, users):
         n = run(gmail.users().messages().list(userId="me", q="-in:chats", maxResults=500)).get("resultSizeEstimate", 0)
         has = bool(run(gmail.users().messages().list(userId="me", q=f"rfc822msgid:{first}"))["resultSizeEstimate"])
         cal = api(args, u, "calendar", "v3")
-        evs = len(run(cal.events().list(calendarId="primary", timeMin="2026-09-01T00:00:00Z", timeMax="2026-12-31T00:00:00Z",
-                                        singleEvents=False, maxResults=100)).get("items", []))
+        items, token = [], None
+        while True:
+            page = run(cal.events().list(calendarId="primary", timeMin="2026-08-01T00:00:00Z", timeMax="2027-02-01T00:00:00Z",
+                                         maxResults=250, pageToken=token, fields="items(id,extendedProperties),nextPageToken"))
+            items += page.get("items", [])
+            token = page.get("nextPageToken")
+            if not token:
+                break
+        life = sum(1 for e in items if e.get("extendedProperties", {}).get("private", {}).get("juniper") == "life")
+        tz = run(cal.calendars().get(calendarId="primary", fields="timeZone"))["timeZone"]
         drive = api(args, u, "drive", "v3")
         sc = len(run(drive.files().list(q=f"name = '{SHARED_FOLDER}' and trashed = false", fields="files(id)"))["files"])
-        print(f"{u}: mail {n} (pack {'yes' if has else 'no'}), calendar events {evs}, '{SHARED_FOLDER}' visible {sc > 0}")
+        print(f"{u}: mail {n} (pack {'yes' if has else 'no'}), calendar {len(items) - life} story + {life} life entries ({tz}), "
+              f"'{SHARED_FOLDER}' visible {sc > 0}")
 
 
 def main():
@@ -299,11 +423,13 @@ def main():
     auth.add_argument("--key", help="service account JSON key, kept outside Git")
     ap.add_argument("--owner", required=True, help="account whose Drive holds the shared folder, e.g. maria@DOMAIN")
     ap.add_argument("--users", required=True, help="comma-separated participant addresses")
-    ap.add_argument("--only", default="drive,gmail,calendar")
+    ap.add_argument("--only", default="drive,gmail,calendar,life")
     ap.add_argument("--apply", action="store_true", help="really write; without it nothing changes")
     ap.add_argument("--check", action="store_true", help="only report what each account contains")
     ap.add_argument("--reimport-mail", action="store_true", help="move earlier pack emails to Trash and import them again")
+    ap.add_argument("--redo-life", action="store_true", help="replace the life entries with a fresh set")
     ap.add_argument("--share-calendars-with", help="give this account read access to every participant's calendar")
+    ap.add_argument("--calendar-timezone", help="set every account's calendar time zone, e.g. Europe/Berlin")
     args = ap.parse_args()
     users = [u.strip() for u in args.users.split(",") if u.strip()]
     if args.check:
@@ -311,6 +437,9 @@ def main():
         return
     if args.share_calendars_with:
         share_calendars(args, users, args.share_calendars_with)
+        return
+    if args.calendar_timezone:
+        set_timezone(args, users, args.calendar_timezone)
         return
     parts = set(args.only.split(","))
     if "drive" in parts:
@@ -321,6 +450,8 @@ def main():
             seed_gmail(args, u)
         if "calendar" in parts:
             seed_calendar(args, u)
+        if "life" in parts:
+            seed_life(args, u)
     if not args.apply:
         print("Dry run. Add --apply to write.")
 
