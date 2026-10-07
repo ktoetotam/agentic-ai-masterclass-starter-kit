@@ -336,6 +336,13 @@ def seed_life(args, user):
         return
     for event_id in old:
         run(cal.events().delete(calendarId="primary", eventId=event_id, sendUpdates="none"))
+    # Someone who has set their own working location keeps it; the life entries leave it alone.
+    own = [e for e in run(cal.events().list(calendarId="primary", eventTypes="workingLocation", maxResults=50,
+                                            fields="items(id,extendedProperties)")).get("items", [])
+           if e.get("extendedProperties", {}).get("private", {}).get("juniper") != "life"]
+    if own:
+        entries = [e for e in entries if e["kind"] not in ("home", "office", "place")]
+        about += ", own working location kept"
     plain = {}
     for ev in entries:
         try:
@@ -395,7 +402,7 @@ def check(args, users):
         items, token = [], None
         while True:
             page = run(cal.events().list(calendarId="primary", timeMin="2026-08-01T00:00:00Z", timeMax="2027-02-01T00:00:00Z",
-                                         maxResults=250, pageToken=token, fields="items(extendedProperties),nextPageToken"))
+                                         maxResults=250, pageToken=token, fields="items(id,extendedProperties),nextPageToken"))
             items += page.get("items", [])
             token = page.get("nextPageToken")
             if not token:
