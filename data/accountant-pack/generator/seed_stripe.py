@@ -24,6 +24,7 @@ import csv
 import datetime as dt
 import json
 import os
+import re
 import ssl
 import sys
 import time
@@ -66,12 +67,17 @@ def euros(c):
 def read_key():
     key = os.environ.get("STRIPE_SEED_KEY", "").strip()
     env = ROOT / ".env"
+    found = False
     if not key and env.exists():
-        for line in env.read_text().splitlines():
-            if line.strip().startswith("STRIPE_SEED_KEY="):
-                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+        for line in env.read_text(encoding="utf-8-sig").splitlines():
+            m = re.match(r"\s*(?:export\s+)?STRIPE_SEED_KEY\s*=\s*(.*)$", line)
+            if m:
+                found = True
+                key = m.group(1).strip().strip('"').strip("'")
+    if not key and found:
+        sys.exit(f"STRIPE_SEED_KEY in {env} is empty: paste the sandbox secret key (sk_test_...) after the = sign and save the file.")
     if not key:
-        sys.exit("No key: put STRIPE_SEED_KEY=sk_test_... (a SANDBOX secret key) in the project's .env file.")
+        sys.exit(f"No key: add a line STRIPE_SEED_KEY=sk_test_... (a SANDBOX secret key) to {env}.")
     if "_live_" in key or not ("_test_" in key):
         sys.exit("Refused: this is not a sandbox (test) key. Use the secret key of the sandbox, which starts with sk_test_.")
     return key

@@ -661,9 +661,10 @@ def env_value(name: str) -> str:
         return os.environ[name].strip()
     for p in (Path(".env"), Path("..") / ".env"):
         if p.exists():
-            for line in p.read_text().splitlines():
-                if line.strip().startswith(name + "="):
-                    return line.split("=", 1)[1].strip().strip('"').strip("'")
+            for line in p.read_text(encoding="utf-8-sig").splitlines():
+                m = re.match(rf"\s*(?:export\s+)?{name}\s*=\s*(.*)$", line)
+                if m:
+                    return m.group(1).strip().strip('"').strip("'")
     return ""
 
 
