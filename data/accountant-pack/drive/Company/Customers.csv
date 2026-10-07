@@ -1,0 +1,8 @@
+id,name,contact,email,country,type,vat_id,payment_terms_days,channel,note
+C01,Fern Sample Studio GmbH,Lina Sample,lina@fern-sample.example,DE,B2B,DE000000021,14,bank; Stripe from Oct,"ClearDesk Team (2 teams) since October, card on file"
+C02,Cedar Demo Analytics GmbH,Priya Demo,priya.demo@cedar-demo.example,AT,B2B,ATU00000022,14,bank; Stripe from Oct,Payments come from the group company
+C03,Moss Training Collective,Priya Demo,priya@moss-training.example,AT,B2B,ATU00000023,14,bank; Stripe from Oct,New customer since September 2026
+C04,Harbour Lane Consulting Ltd,Ravi Example,ravi@harbourlane.example,GB,B2B,GB000000024,30,bank (GBP),Invoices in GBP
+C05,Riverbend Bakery GmbH,Bob Sample,bob@riverbend-bakery.example,DE,B2B,DE000000025,14,Stripe,ClearDesk agreement of 1 Sep 2026; pays by card or payment link
+C06,Nina Probe,Nina Probe,nina@probe-design.example,DE,B2C,,0,Stripe,"Freelancer, ClearDesk Solo"
+C07,Estudio Ejemplo S.L.,Tomás Ejemplo,tomas@estudio-ejemplo.example,ES,B2B,,14,bank,"VAT ID requested on 10 Sep 2026, not received yet"

@@ -1,0 +1,43 @@
+From: MeetNote AI <billing@meetnote.example>
+To: Mira Beispiel <mira@juniper-workshop.invalid>
+Subject: Your MeetNote receipt (MN-20260914-0310)
+Date: Mon, 14 Sep 2026 06:05:00 +0200
+Message-ID: <m05.your-meetnote-receipt-mn@meetnote.example>
+X-Fictional: true
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"><title>Your MeetNote recei=
+pt (MN-20260914-0310)</title></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#5a32c8;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">MeetNote AI</td></tr>
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Thanks for using MeetNote Team.</p><p style=3D"ma=
+rgin:0 0 14px">We charged your Visa ending 0010. This email is your receipt; =
+keep it for your records.</p><table role=3D"presentation" width=3D"100%" styl=
+e=3D"border-top:1px solid #ddd;margin-top:8px"><tr><td style=3D"padding:4px 0=
+">Receipt</td><td style=3D"padding:4px 0;text-align:right">MN-20260914-0310</=
+td></tr><tr><td style=3D"padding:4px 0">Date</td><td style=3D"padding:4px 0;t=
+ext-align:right">14 Sep 2026</td></tr><tr><td style=3D"padding:4px 0">Plan</t=
+d><td style=3D"padding:4px 0;text-align:right">MeetNote Team, monthly (5 seat=
+s)</td></tr><tr><td style=3D"padding:4px 0">Amount</td><td style=3D"padding:4=
+px 0;text-align:right">USD 30.00</td></tr><tr><td style=3D"padding:4px 0">Tax=
+</td><td style=3D"padding:4px 0;text-align:right">USD 0.00</td></tr><tr><td s=
+tyle=3D"padding:4px 0">Total charged</td><td style=3D"padding:4px 0;text-alig=
+n:right">USD 30.00</td></tr><tr><td style=3D"padding:4px 0">Billed to</td><td=
+ style=3D"padding:4px 0;text-align:right">Juniper Workshop Lab, Munich, Germa=
+ny</td></tr><tr><td style=3D"padding:4px 0">Seller</td><td style=3D"padding:4=
+px 0;text-align:right">MeetNote Inc., San Francisco, USA</td></tr></table></t=
+d></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">MeetNote Inc. (fictional), 0 Market Street, San Francisco, C=
+A, USA =C2=B7 meetnote.example<br>Fictional workshop data - not a real messag=
+e.</td></tr>
+</table></td></tr></table></body></html>

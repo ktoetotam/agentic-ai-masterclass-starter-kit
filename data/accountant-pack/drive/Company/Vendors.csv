@@ -1,0 +1,12 @@
+id,name,country,vat_id,iban_on_file,pays_by,category,note
+V01,Lindwurm Höfe Verwaltung GmbH,DE,DE000000031,DE00 0000 0000 0000 0031 01,"SEPA direct debit, mandate LHV-0042",Rent,"Office lease: EUR 1,000.00 + 19% VAT monthly. The lease is the invoice."
+V02,Circuit & Co.,DE,DE000000005,DE00 0000 0000 0000 0005 01,bank transfer,Equipment,
+V03,Kabelkiste Online,DE,DE000000006,,PayLater Demo GmbH collects the payment,Equipment,Bank shows PAYLATER DEMO GMBH
+V04,Druckerei Weißblatt GmbH,DE,DE000000003,DE00 0000 0000 0000 0003 01,bank transfer,Printing,
+V05,PrintWorks Demo GmbH,DE,DE000000002,DE00 0000 0000 0000 0002 01,bank transfer,Printing,
+V06,Bureau Bits GmbH,DE,DE000000004,,card,Equipment,"Monitor of 18 Aug 2026, paid by card and booked in August"
+V07,Linden Hall Events GmbH,DE,,(stored in online banking only),bank transfer,Events,Venue for the learning day on 22 Oct 2026
+V08,MeetNote Inc.,US,,,company card,Software,Billed in USD on the 14th of each month
+V09,Formflow Ltd,IE,IE0000000FA,,company card,Software,Registration forms for the learning day
+V10,Lumen Fotografie (Jana Lumen),DE,DE000000038,DE00 0000 0000 0000 0038 01,bank transfer,Marketing,Phone on file: +49 000 0000038 (fictional). IBAN from the August invoice.
+V11,Sample & Partner Steuerberatung,DE,DE000000039,DE00 0000 0000 0000 0039 01,bank transfer,Tax adviser,Bookkeeping invoiced monthly

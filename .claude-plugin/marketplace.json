@@ -6,6 +6,11 @@
   },
   "plugins": [
     {
+      "name": "accountant-agent",
+      "source": "./.agents/plugins/plugins/accountant-agent",
+      "description": "Accountant challenge: a month of invoices, receipts, bank statements and Stripe payments, extracted with sources, checked by scripts and reconciled for a person to review"
+    },
+    {
       "name": "second-brain",
       "source": "./.agents/plugins/plugins/second-brain",
       "description": "Second brain challenge: linked notes with exact citations, checks and an Obsidian or browser view"

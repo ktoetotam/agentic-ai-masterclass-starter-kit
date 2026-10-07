@@ -1,0 +1,11 @@
+﻿"Umsatzanzeige";"Alpenbank Demo AG (fiktiv)"
+"Konto";"DE00 0000 0000 0000 0000 10 (ungültig, fiktiv)"
+"Zeitraum";"01.10.2026 - 08.10.2026"
+"Anfangssaldo";"20.506,83 EUR"
+"Endsaldo";"19.412,03 EUR"
+
+"Buchungstag";"Valuta";"Auftraggeber/Empfänger";"Verwendungszweck";"Betrag";"Währung"
+"01.10.2026";"01.10.2026";"LINDWURM HOEFE VERWALTUNG GMBH";"SEPA-Lastschrift Miete 10/2026 Mandat LHV-0042";"-1.190,00";"EUR"
+"02.10.2026";"02.10.2026";"MOSS TRAINING COLLECTIVE";"JWL-1037";"300,00";"EUR"
+"07.10.2026";"07.10.2026";"FERN SAMPLE STUDIO GMBH";"ClearDesk Oktober JWL-1043";"95,20";"EUR"
+"08.10.2026";"08.10.2026";"LINDEN HALL EVENTS GMBH";"Anzahlung LH-A-2026-0930 Maple Room 22.10.";"-300,00";"EUR"

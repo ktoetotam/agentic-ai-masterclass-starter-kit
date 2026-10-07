@@ -1,0 +1,20 @@
+code,item,finding,what_to_do
+RC_WITHOUT_VAT_ID,JWL-1033,Reverse charge invoice to a Spanish business without the customer's VAT ID,Ask Estudio Ejemplo for its VAT ID; tell the tax adviser
+OVERDUE,JWL-1036,"Due 6 Oct 2026, not paid on 8 Oct",Draft a friendly reminder to Fern Sample Studio; do not send it
+TOTAL_MISMATCH,PW-INV-2026-0928,States EUR 117.10; EUR 90.00 + 19% VAT is EUR 107.10,Do not pay; a correction was requested on 5 Oct 2026
+OUT_OF_PERIOD,BB-2026-08-0417,Scan of an August invoice that was already paid and booked in August,Leave it out of September; ask before moving or removing the copy
+NOT_TEXT,BB-2026-08-0417,The scan has no text layer,Read it as an image or by hand; never record zero
+BILLED_TO_PERSON,FFL-2026-0912,Formflow (Ireland) billed Alex Example personally with 23% Irish VAT instead of the company,Ask Formflow to bill Juniper Workshop Lab GmbH with VAT ID DE000000010; tell the tax adviser
+DUPLICATE,FFL-2026-0912,The same receipt arrived as PDF and as HTML email,Count it once
+FOREIGN_NO_VAT,MN-20260914-0310,"US supplier without EU VAT ID, no VAT on the receipt, billed in USD",List it for the tax adviser (reverse charge); book the EUR amount from the bank: 25.91
+IBAN_CHANGED,LF-2026-031,"A second copy of Lumen's invoice asks for payment to a new IBAN, sent from lumen-fotograf1e.example",Do not pay the new IBAN; call Lumen on the number on file; pay the original only after approval
+CEO_FRAUD,Urgent - confidential payment today,"An urgent, confidential payment request in Sam's name from juniper-workshop-mail.example",Do nothing; tell Sam through a known channel
+NO_DOCUMENT,Bank 25 Sep: MARKTPLATZ DEMO 64.99,Card payment of EUR 64.99 to MARKTPLATZ DEMO without any invoice or receipt,Ask the card holder (Mira) for the receipt
+NO_RECEIPT,Expense claim: taxi 14.80,Expense claim line: taxi EUR 14.80 without a receipt,Ask Alex for the receipt or a written note; Sam decides
+UNREADABLE,IMG_4830.jpg (parking),The parking receipt photo is too blurred to read the amount,Check the amount by hand; the claim says EUR 6.00
+DUPLICATE,eticket.pdf,The e-ticket is attached twice (eticket.pdf and eticket (1).pdf),Count it once
+FORMULA_WITHOUT_VALUE,Expense claim Alex Example 2026-09.xlsx,The claim's total is a formula with no stored value,Calculate it with code: EUR 322.40
+CONTACT_OUTDATED,C02 Cedar Demo Analytics,The customer list names Priya Demo at Cedar; she moved to Moss Training Collective on 1 Sep 2026,Update the contact for Cedar to Elif Example after asking
+PAYER_DIFFERS,JWL-1034,"Paid by CEDAR GROUP SERVICES GMBH, not by the customer itself",Matched by invoice number; note the payer
+PAID_AFTER_MONTH_END,JWL-1037,Paid on 2 Oct 2026,"Paid, but after 30 Sep: not open in October, not paid in September"
+CURRENCY,JWL-1035,"GBP 1,100.00 arrived as EUR 1,271.68; the bank charged a separate EUR 15.00 fee",Paid in full; record the EUR amount and the fee separately
