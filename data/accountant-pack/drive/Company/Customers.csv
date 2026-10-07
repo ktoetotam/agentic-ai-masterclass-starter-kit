@@ -5,4 +5,11 @@ C03,Moss Training Collective,Priya Demo,priya@moss-training.example,AT,B2B,ATU00
 C04,Harbour Lane Consulting Ltd,Ravi Example,ravi@harbourlane.example,GB,B2B,GB000000024,30,bank (GBP),Invoices in GBP
 C05,Riverbend Bakery GmbH,Bob Sample,bob@riverbend-bakery.example,DE,B2B,DE000000025,14,Stripe,ClearDesk agreement of 1 Sep 2026; pays by card or payment link
 C06,Nina Probe,Nina Probe,nina@probe-design.example,DE,B2C,,0,Stripe,"Freelancer, ClearDesk Solo"
+C08,Willow Practice Kitchens GmbH,Ada Willow,ada@willow-kitchens.example,DE,B2B,DE000000026,0,Stripe subscription,ClearDesk partner: 10% off for good (coupon PARTNER10)
+C09,Oak Lane Studio,Omar Lane,omar@oaklane-studio.example,DE,B2B,DE000000027,0,Stripe subscription,"Subscribed on 7 Oct, cancelled the same day, refunded in full"
+C10,Pia Muster,Pia Muster,pia.muster@mailbox.example,DE,B2C,,0,Stripe subscription,Cancels at the end of the first month
+C11,Tara Sample,Tara Sample,tara.sample@mailbox.example,DE,B2C,,0,Stripe payment link,Learning day seat
+C12,Leon Beispiel,Leon Beispiel,leon.beispiel@mailbox.example,AT,B2C,,0,Stripe payment link,Learning day seat with early-bird code
+C13,Ines Demo,Ines Demo,ines.demo@mailbox.example,DE,B2C,,0,Stripe payment link,"Learning day seat, cancelled and refunded"
+C14,Kim Example,Kim Example,kim.example@mailbox.example,DE,B2C,,0,Stripe payment link,Learning day seat; the card holder disputed the payment
 C07,Estudio Ejemplo S.L.,Tomás Ejemplo,tomas@estudio-ejemplo.example,ES,B2B,,14,bank,"VAT ID requested on 10 Sep 2026, not received yet"

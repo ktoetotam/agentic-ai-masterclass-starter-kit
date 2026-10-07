@@ -53,5 +53,11 @@
   ],
   "mailbox/eml/M18-cleardesk-october-card-declined-paid-by-transfer.eml": [
     "Customers"
+  ],
+  "mailbox/eml/M19-your-payout-of-eur-330-97-is-on-its-way.eml": [
+    "Stripe"
+  ],
+  "mailbox/eml/M20-your-payout-of-eur-1-037-01-is-on-its-way.eml": [
+    "Stripe"
   ]
 }

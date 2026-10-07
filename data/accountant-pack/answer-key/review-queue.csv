@@ -1,6 +1,7 @@
 code,item,finding,what_to_do
 RC_WITHOUT_VAT_ID,JWL-1033,Reverse charge invoice to a Spanish business without the customer's VAT ID,Ask Estudio Ejemplo for its VAT ID; tell the tax adviser
 OVERDUE,JWL-1036,"Due 6 Oct 2026, not paid on 8 Oct",Draft a friendly reminder to Fern Sample Studio; do not send it
+PAID_BY_BANK_NOT_STRIPE,JWL-1043,"Stripe shows the card payment failed and the invoice open, but Fern paid EUR 95.20 by bank on 7 Oct",Mark it paid outside Stripe after a person approves; do not chase Fern
 TOTAL_MISMATCH,PW-INV-2026-0928,States EUR 117.10; EUR 90.00 + 19% VAT is EUR 107.10,Do not pay; a correction was requested on 5 Oct 2026
 OUT_OF_PERIOD,BB-2026-08-0417,Scan of an August invoice that was already paid and booked in August,Leave it out of September; ask before moving or removing the copy
 NOT_TEXT,BB-2026-08-0417,The scan has no text layer,Read it as an image or by hand; never record zero
@@ -17,4 +18,8 @@ FORMULA_WITHOUT_VALUE,Expense claim Alex Example 2026-09.xlsx,The claim's total 
 CONTACT_OUTDATED,C02 Cedar Demo Analytics,The customer list names Priya Demo at Cedar; she moved to Moss Training Collective on 1 Sep 2026,Update the contact for Cedar to Elif Example after asking
 PAYER_DIFFERS,JWL-1034,"Paid by CEDAR GROUP SERVICES GMBH, not by the customer itself",Matched by invoice number; note the payer
 PAID_AFTER_MONTH_END,JWL-1037,Paid on 2 Oct 2026,"Paid, but after 30 Sep: not open in October, not paid in September"
+PAID_VIA_STRIPE,JWL-1040,Paid with the Stripe payment link; the money is inside the Stripe payout,Count it once: not as a separate bank payment
 CURRENCY,JWL-1035,"GBP 1,100.00 arrived as EUR 1,271.68; the bank charged a separate EUR 15.00 fee",Paid in full; record the EUR amount and the fee separately
+PAYOUT_IS_NOT_REVENUE,STRIPE-PAYOUT,The Stripe payout is charges minus fees minus a refund,"Break it down into its payments, fees and the refund"
+DISPUTE,"Learning day seat, Kim Example",A card payment of EUR 149.00 was disputed: Stripe took back the amount and a dispute fee,Decide whether to answer the dispute in the Stripe Dashboard; book the loss and the fee
+REFUND,Oak Lane Studio subscription,A subscription was cancelled the same day and its first invoice refunded in full,Check the credit note; the refund reduces the payout

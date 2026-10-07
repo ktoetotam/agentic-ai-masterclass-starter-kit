@@ -2,18 +2,18 @@
  "scenario_date": "2026-10-08",
  "month": "2026-09",
  "fictional": true,
- "stripe_seeded": false,
+ "stripe_seeded": true,
  "files": [
   {
    "path": "answer-key/expected.json",
-   "bytes": 25406,
-   "sha256": "caf547df247150da72e35f866bfb9cb6bd80350ac8c1f642ac44794d5a40b969",
+   "bytes": 30121,
+   "sha256": "04e464d1867679aabd9e3c76359becbd0c1acd56415a52c271ff34aa7a7971e6",
    "fictional": true
   },
   {
    "path": "answer-key/review-queue.csv",
-   "bytes": 2917,
-   "sha256": "c2ae4cbb11aa47047ed3cb426d7c3e9efa3e3555100756f7f8a5dc97bfc45d08",
+   "bytes": 3801,
+   "sha256": "496f5ab09483c8d901d0e3a82c803ff05330c9118767d673014b6c8ae66c8714",
    "fictional": true
   },
   {
@@ -30,8 +30,8 @@
   },
   {
    "path": "drive/Bank statements/2026-10/Umsaetze_2026-10-01_bis_2026-10-08.csv",
-   "bytes": 714,
-   "sha256": "c7e99bb0dd1281eae72904b5da8f79878ba8d3c8c0562774d937cd8d1c538180",
+   "bytes": 954,
+   "sha256": "24edb4006bc135ab4d1204f0cc4651a771b9a11e3c35a2786a38fdff84bcc581",
    "fictional": true
   },
   {
@@ -42,8 +42,8 @@
   },
   {
    "path": "drive/Company/Customers.csv",
-   "bytes": 1050,
-   "sha256": "3dcb95a0c8b97e2f632d3ece6d378bbc642b9df99bd007a2da6b7d04473acbd0",
+   "bytes": 2004,
+   "sha256": "ce32dd3c50ad8d3461b7d6c5ab92a20b2d3c85106c768d2101b095eb3a7c0d53",
    "fictional": true
   },
   {
@@ -252,8 +252,8 @@
   },
   {
    "path": "mailbox/eml/M13-expense-claim-september.eml",
-   "bytes": 376702,
-   "sha256": "847b8429352aa33ff2478b54e2583653f9c12ca84ffee9a8a9871680eefb242d",
+   "bytes": 376706,
+   "sha256": "d0fff175d31de3b5ce1e26a2a40fd33502219c6278057d4c8fb423658c8349ce",
    "fictional": true
   },
   {
@@ -287,15 +287,27 @@
    "fictional": true
   },
   {
+   "path": "mailbox/eml/M19-your-payout-of-eur-330-97-is-on-its-way.eml",
+   "bytes": 2169,
+   "sha256": "3af9cf90e560ecc13f00d16e69739bcf385f852ddae0c6ccb1b09a7c062537aa",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M20-your-payout-of-eur-1-037-01-is-on-its-way.eml",
+   "bytes": 2175,
+   "sha256": "47da75784a856a722392f3bffc4d1792dd38b530abdcaecdbef83df2b4e2a34b",
+   "fictional": true
+  },
+  {
    "path": "mailbox/labels.json",
-   "bytes": 1530,
-   "sha256": "077ed04003a2180d88fd0f373082d170e8995affc9a560ecbb738d7832bd8665",
+   "bytes": 1702,
+   "sha256": "db9204e87a220530cec367809644c56ad572029327dacd0e1ab0faac7491eed9",
    "fictional": true
   },
   {
    "path": "mailbox/mira-beispiel.mbox",
-   "bytes": 430023,
-   "sha256": "670acfbfc35d34243013b8d0c8bd29cb1f8e8c40a39da13d88987a74ce0d53a0",
+   "bytes": 434537,
+   "sha256": "805f49f5716a9b3f6fbcd05727bb5863e1272ef03b82b0df99d930d09700ee4d",
    "fictional": true
   }
  ]

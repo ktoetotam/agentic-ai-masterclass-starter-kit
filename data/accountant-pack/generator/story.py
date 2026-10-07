@@ -73,6 +73,26 @@ CUSTOMERS = [
     dict(id="C06", name="Nina Probe", contact="Nina Probe", email="nina@probe-design.example", country="DE", type="B2C",
          vat_id="", terms=0, address=["Probestraße 3", "80337 München", "Germany"], channel="Stripe",
          note="Freelancer, ClearDesk Solo"),
+    dict(id="C08", name="Willow Practice Kitchens GmbH", contact="Ada Willow", email="ada@willow-kitchens.example", country="DE", type="B2B",
+         vat_id="DE000000026", terms=0, address=["Weidenweg 6", "80939 München", "Germany"], channel="Stripe subscription",
+         note="ClearDesk partner: 10% off for good (coupon PARTNER10)"),
+    dict(id="C09", name="Oak Lane Studio", contact="Omar Lane", email="omar@oaklane-studio.example", country="DE", type="B2B",
+         vat_id="DE000000027", terms=0, address=["Eichenstraße 2", "80634 München", "Germany"], channel="Stripe subscription",
+         note="Subscribed on 7 Oct, cancelled the same day, refunded in full"),
+    dict(id="C10", name="Pia Muster", contact="Pia Muster", email="pia.muster@mailbox.example", country="DE", type="B2C",
+         vat_id="", terms=0, address=["Musterplatz 1", "80335 München", "Germany"], channel="Stripe subscription",
+         note="Cancels at the end of the first month"),
+    dict(id="C11", name="Tara Sample", contact="Tara Sample", email="tara.sample@mailbox.example", country="DE", type="B2C",
+         vat_id="", terms=0, address=["Probeweg 9", "80469 München", "Germany"], channel="Stripe payment link", note="Learning day seat"),
+    dict(id="C12", name="Leon Beispiel", contact="Leon Beispiel", email="leon.beispiel@mailbox.example", country="AT", type="B2C",
+         vat_id="", terms=0, address=["Beispielgasse 4", "5020 Salzburg", "Austria"], channel="Stripe payment link",
+         note="Learning day seat with early-bird code"),
+    dict(id="C13", name="Ines Demo", contact="Ines Demo", email="ines.demo@mailbox.example", country="DE", type="B2C",
+         vat_id="", terms=0, address=["Demostraße 3", "80337 München", "Germany"], channel="Stripe payment link",
+         note="Learning day seat, cancelled and refunded"),
+    dict(id="C14", name="Kim Example", contact="Kim Example", email="kim.example@mailbox.example", country="DE", type="B2C",
+         vat_id="", terms=0, address=["Beispielring 8", "81541 München", "Germany"], channel="Stripe payment link",
+         note="Learning day seat; the card holder disputed the payment"),
     dict(id="C07", name="Estudio Ejemplo S.L.", contact="Tomás Ejemplo", email="tomas@estudio-ejemplo.example", country="ES", type="B2B",
          vat_id="", terms=14, address=["Calle del Ejemplo 0", "28001 Madrid", "Spain"], channel="bank",
          note="VAT ID requested on 10 Sep 2026, not received yet"),
@@ -169,6 +189,28 @@ STRIPE_INVOICES = [
 ]
 PAYMENT_LINK_PAYMENT = dict(invoice="JWL-1040", customer="C05", amount="1071.00", card="pm_card_bypassPending",
                             description="JWL-1040 (paid with payment link)")
+# The online shop around the invoices: catalogue, discounts, payment links, subscriptions, refunds and a dispute.
+STRIPE_PRODUCTS = [
+    dict(ref="P-CLEARDESK", name="ClearDesk Team", desc="Guided workflow board, one team, monthly", price="40.00", recurring="month",
+         tax_behavior="exclusive"),
+    dict(ref="P-SEAT", name="Customer learning day seat, 22 Oct 2026", desc="One seat at the learning day in München, lunch included",
+         price="149.00", recurring=None, tax_behavior="inclusive"),
+]
+STRIPE_COUPONS = [dict(id="PARTNER10", name="Partner discount 10%", percent_off="10", duration="forever"),
+                  dict(id="EARLYBIRD20", name="Early bird 20%", percent_off="20", duration="once", promotion_code="EARLYBIRD20")]
+STRIPE_PAYMENT_LINKS = [dict(ref="LINK-SEAT", product="P-SEAT", promotion_codes=True),
+                        dict(ref="LINK-CLEARDESK", product="P-CLEARDESK", promotion_codes=False)]
+STRIPE_SUBSCRIPTIONS = [
+    dict(ref="SUB-WILLOW", customer="C08", coupon="PARTNER10", then=None, note="10% partner discount for good"),
+    dict(ref="SUB-OAK", customer="C09", coupon=None, then="cancel_and_refund", note="Cancelled the same day; first invoice refunded"),
+    dict(ref="SUB-PIA", customer="C10", coupon=None, then="cancel_at_period_end", note="Ends after the first month"),
+]
+STRIPE_SEAT_SALES = [
+    dict(ref="SEAT-TARA", customer="C11", amount="149.00", code=None, card="pm_card_bypassPending", then=None),
+    dict(ref="SEAT-LEON", customer="C12", amount="119.20", code="EARLYBIRD20", card="pm_card_bypassPending", then=None),
+    dict(ref="SEAT-INES", customer="C13", amount="149.00", code=None, card="pm_card_bypassPending", then="refund"),
+    dict(ref="SEAT-KIM", customer="C14", amount="149.00", code=None, card="pm_card_createDispute", then="dispute"),
+]
 STRIPE_GROSS_CHARGED = "1278.60"  # 1071.00 + 47.60 + 120.00 + 40.00
 STRIPE_REFUNDED = "40.00"
 
@@ -291,7 +333,11 @@ FLAGS = [
     ("PAYOUT_IS_NOT_REVENUE", "STRIPE-PAYOUT", "The Stripe payout is charges minus fees minus a refund",
      "Break it down into its payments, fees and the refund", ["STRIPE-PAYOUT", "payout"]),
 ]
-STRIPE_FLAGS = {"PAID_BY_BANK_NOT_STRIPE", "PAID_VIA_STRIPE", "PAYOUT_IS_NOT_REVENUE"}
+FLAGS.append(("DISPUTE", "Learning day seat, Kim Example", "A card payment of EUR 149.00 was disputed: Stripe took back the amount and a dispute fee",
+              "Decide whether to answer the dispute in the Stripe Dashboard; book the loss and the fee", ["dispute"]))
+FLAGS.append(("REFUND", "Oak Lane Studio subscription", "A subscription was cancelled the same day and its first invoice refunded in full",
+              "Check the credit note; the refund reduces the payout", ["Oak Lane", "credit note", "refund"]))
+STRIPE_FLAGS = {"PAID_BY_BANK_NOT_STRIPE", "PAID_VIA_STRIPE", "PAYOUT_IS_NOT_REVENUE", "DISPUTE", "REFUND"}
 NOT_FLAGS = [
     # (item, why it is fine, words that identify it, codes that would be wrong)
     ("Rent direct debits", "No monthly invoice: the lease states rent and VAT", ["LINDWURM", "LHV-0042"], ["NO_DOCUMENT"]),

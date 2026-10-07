@@ -1,0 +1,165 @@
+{
+ "tag": "accountant-pack-v1",
+ "fictional": true,
+ "seeded_at": "2026-10-07T03:43:01+02:00",
+ "customers": {
+  "C01": "cus_VOWucl4d14pyDU",
+  "C02": "cus_VOWuPMQD7wCT04",
+  "C03": "cus_VOWugSTMa3jzrz",
+  "C05": "cus_VOWusp6aRbcsKO",
+  "C06": "cus_VOWuRBwOrFyEoD",
+  "C08": "cus_VOWuM68BNW9sP0",
+  "C09": "cus_VOWuNfpvkGDvfU",
+  "C10": "cus_VOWuGISjV296FB",
+  "C11": "cus_VOWuUWFmiiNVti",
+  "C12": "cus_VOWuA9yhctpAYq",
+  "C13": "cus_VOWuBVcBqN4ue0",
+  "C14": "cus_VOWuy9kUUeP5EP"
+ },
+ "invoices": {
+  "JWL-1041": {
+   "id": "in_1UNjqqRGzbVUD2HtMEOPpRyT",
+   "status": "paid",
+   "total": "47.60",
+   "amount_paid": "47.60",
+   "amount_remaining": "0.00",
+   "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1TXNVYVNhaFJCOWkyR0RlYVpuRUJjZHNTbVp2LDE4MTg3ODE4Mg0200zJzw60Qd?s=ap",
+   "due_date": null,
+   "attempt_count": 1
+  },
+  "JWL-1042": {
+   "id": "in_1UNjquRGzbVUD2HtcPG2jnpM",
+   "status": "open",
+   "total": "197.83",
+   "amount_paid": "0.00",
+   "amount_remaining": "197.83",
+   "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1MlFMOGhjUW9QdllMd0VkN21wYnRHUlk3c2NxLDE4MTg3ODE4Mg0200fBS08O8E?s=ap",
+   "due_date": "2026-10-21",
+   "attempt_count": 0
+  },
+  "JWL-1043": {
+   "id": "in_1UNjqxRGzbVUD2HtM9a6SAae",
+   "status": "open",
+   "total": "95.20",
+   "amount_paid": "0.00",
+   "amount_remaining": "95.20",
+   "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1Mk9rM1ZaSW1DMjhoYkZUQVp1UUk4NHJrWWZVLDE4MTg3ODE4Mg0200u7e0V1HR?s=ap",
+   "due_date": null,
+   "attempt_count": 1
+  },
+  "JWL-1044": {
+   "id": "in_1UNjr1RGzbVUD2HtxVWkamra",
+   "status": "paid",
+   "total": "120.00",
+   "amount_paid": "120.00",
+   "amount_remaining": "0.00",
+   "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1bDdHUlFNTW82R2QzdGRwZ3R2aU5rRktWUnBvLDE4MTg3ODE4Mg0200YXZgF2HV?s=ap",
+   "due_date": null,
+   "attempt_count": 1
+  },
+  "JWL-1045": {
+   "id": "in_1UNjr8RGzbVUD2HtBMCQ8H44",
+   "status": "paid",
+   "total": "40.00",
+   "amount_paid": "40.00",
+   "amount_remaining": "0.00",
+   "hosted_invoice_url": "https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1ZW9NSXdNNlZnTHM1WmZNYjNSWWs4RFVsb0lhLDE4MTg3ODE4Mg0200WIpUcEQG?s=ap",
+   "due_date": null,
+   "attempt_count": 1
+  }
+ },
+ "shop": {
+  "prices": {
+   "P-CLEARDESK": "price_1UNjrERGzbVUD2HtHRl22Qyq",
+   "P-SEAT": "price_1UNjrFRGzbVUD2HtW1Wqxk1M"
+  },
+  "payment_links": {
+   "LINK-SEAT": {
+    "id": "plink_1UNjrHRGzbVUD2Ht8zyAGWt5",
+    "url": "https://buy.stripe.com/test_7sY3cx66M3mA0Zp8MxgrS00"
+   },
+   "LINK-CLEARDESK": {
+    "id": "plink_1UNjrHRGzbVUD2HtFaOvX7A6",
+    "url": "https://buy.stripe.com/test_9B67sN1Qw3mAeQf5AlgrS01"
+   }
+  },
+  "subscriptions": {
+   "SUB-WILLOW": {
+    "id": "sub_1UNjrJRGzbVUD2HtOXSZu1xM",
+    "status": "active",
+    "cancel_at_period_end": false
+   },
+   "SUB-OAK": {
+    "id": "sub_1UNjrMRGzbVUD2HtpPSEl79y",
+    "status": "canceled",
+    "cancel_at_period_end": false
+   },
+   "SUB-PIA": {
+    "id": "sub_1UNjrSRGzbVUD2HtRKGpnAXJ",
+    "status": "active",
+    "cancel_at_period_end": true
+   }
+  },
+  "seats": {
+   "SEAT-TARA": {
+    "payment_intent": "pi_3UNjrXRGzbVUD2Ht1lbY5nT5",
+    "status": "succeeded",
+    "amount": "149.00",
+    "then": null
+   },
+   "SEAT-LEON": {
+    "payment_intent": "pi_3UNjrZRGzbVUD2Ht0ZjNbCy6",
+    "status": "succeeded",
+    "amount": "119.20",
+    "then": null
+   },
+   "SEAT-INES": {
+    "payment_intent": "pi_3UNjraRGzbVUD2Ht0M0P3t91",
+    "status": "succeeded",
+    "amount": "149.00",
+    "then": "refund"
+   },
+   "SEAT-KIM": {
+    "payment_intent": "pi_3UNjrdRGzbVUD2Ht1hhMTX3Y",
+    "status": "succeeded",
+    "amount": "149.00",
+    "then": "dispute"
+   }
+  }
+ },
+ "payment_link_payment": {
+  "invoice": "JWL-1040",
+  "payment_intent": "pi_3UNjrgRGzbVUD2Ht02ym3fph",
+  "status": "succeeded",
+  "amount": "1071.00"
+ },
+ "pending": "144.06",
+ "available": "0.00",
+ "gross": "1982.84",
+ "refunds": "236.60",
+ "disputes": "169.00",
+ "fees": "65.20",
+ "payouts": [
+  {
+   "id": "po_1UNjriRGzbVUD2Ht7FDo8rs9",
+   "amount": "330.97",
+   "status": "paid",
+   "created_date": "2026-10-07",
+   "arrival_date": "2026-10-07"
+  },
+  {
+   "id": "po_1UNjstRGzbVUD2Htxts74ov3",
+   "amount": "1037.01",
+   "status": "pending",
+   "created_date": "2026-10-07",
+   "arrival_date": "2026-10-07"
+  }
+ ],
+ "payout": {
+  "id": "po_1UNjriRGzbVUD2Ht7FDo8rs9",
+  "amount": "330.97",
+  "status": "paid",
+  "created_date": "2026-10-07",
+  "arrival_date": "2026-10-07"
+ }
+}

@@ -45,7 +45,7 @@ API = "https://api.stripe.com/v1"
 API_VERSION = "2026-09-30.endive"  # the version these requests were checked against (stripe/openapi spec3.json)
 BERLIN = ZoneInfo("Europe/Berlin")
 TAG = "accountant-pack-v1"
-STRIPE_CUSTOMERS = ["C01", "C02", "C03", "C05", "C06"]
+STRIPE_CUSTOMERS = ["C01", "C02", "C03", "C05", "C06", "C08", "C09", "C10", "C11", "C12", "C13", "C14"]
 FOOTER = (f"{S.COMPANY['name']} (fictional) · {S.COMPANY['address']} · USt-IdNr. {S.COMPANY['vat_id']} (fictional). "
           "Fictional workshop data: not a real invoice.")
 
@@ -273,6 +273,8 @@ def seed(st):
         manifest["invoices"][inv["number"]] = summarize_invoice(final)
         print(f"  invoice {inv['number']} {final['id']}: {final['status']}, EUR {euros(final['total'])}")
 
+    seed_shop(st, customers, card, rate, manifest)
+
     p = S.PAYMENT_LINK_PAYMENT
     intents = st.all("/payment_intents")
     pi = find_by_tag(intents, p["invoice"])
@@ -285,22 +287,99 @@ def seed(st):
     print(f"  card payment for {p['invoice']}: {pi['id']} ({pi['status']})")
     manifest["payment_link_payment"] = dict(invoice=p["invoice"], payment_intent=pi["id"], status=pi["status"], amount=p["amount"])
 
-    payouts = st.all("/payouts")
-    po = find_by_tag(payouts, "PAYOUT-1")
-    if not po:
+    pos = sorted([p for p in st.all("/payouts") if (p.get("metadata") or {}).get("pack_ref", "").startswith("PAYOUT-")], key=lambda p: p["created"])
+    for _ in range(10):  # pay out what is available; a charge can take a moment to become available
         bal = st.get("/balance")
         available = next((b["amount"] for b in bal["available"] if b["currency"] == "eur"), 0)
-        if available <= 0:
-            sys.exit("No available EUR balance to pay out. Card payments should be available at once with the bypass-pending test card.")
+        if available <= 0 or len(pos) >= 2:
+            break
+        ref = f"PAYOUT-{len(pos) + 1}"
         try:
-            po = st.post("/payouts", dict(amount=available, currency="eur", description="Juniper Workshop Lab payout (workshop)",
-                                          statement_descriptor="JUNIPER STRIPE", metadata=dict(pack_ref="PAYOUT-1", fictional="true")),
-                         idem="payout-1")
+            pos.append(st.post("/payouts", dict(amount=available, currency="eur", description="Juniper Workshop Lab payout (workshop)",
+                                                statement_descriptor="JUNIPER STRIPE", metadata=dict(pack_ref=ref, fictional="true")), idem=ref.lower()))
         except StripeError as e:
             sys.exit(f"The payout failed: {e.message}\nSet Dashboard > Settings > Payouts > Payout schedule to Manual, check that the "
                      "sandbox has a test bank account in EUR, then run this script again.")
-    print(f"  payout {po['id']}: EUR {euros(po['amount'])}, {po['status']}, arrives {day(po['arrival_date'])}")
-    write_outputs(st, manifest, po)
+        time.sleep(5)
+    if not pos:
+        sys.exit("No available EUR balance to pay out.")
+    for po in pos:
+        print(f"  payout {po['id']}: EUR {euros(po['amount'])}, {po['status']}, arrives {day(po['arrival_date'])}")
+    write_outputs(st, manifest, pos)
+
+
+def seed_shop(st, customers, card, rate, manifest):
+    """Catalogue, discounts, payment links, subscriptions with cancellations, seat sales with a refund and a dispute."""
+    shop = manifest.setdefault("shop", {})
+    products = {p["metadata"].get("pack_ref"): p for p in st.all("/products") if p.get("metadata")}
+    prices = {}
+    for pr in S.STRIPE_PRODUCTS:
+        prod = products.get(pr["ref"]) or st.post("/products", dict(name=pr["name"], description=pr["desc"],
+                                                                   metadata=dict(pack_ref=pr["ref"], fictional="true")), idem=f"product-{pr['ref']}")
+        existing = [x for x in st.all("/prices", product=prod["id"]) if x.get("active")]
+        price = existing[0] if existing else st.post("/prices", dict(
+            product=prod["id"], currency="eur", unit_amount=cents(pr["price"]), tax_behavior=pr["tax_behavior"],
+            recurring=dict(interval=pr["recurring"]) if pr["recurring"] else None, metadata=dict(pack_ref=pr["ref"])), idem=f"price-{pr['ref']}")
+        prices[pr["ref"]] = price["id"]
+    shop["prices"] = prices
+    have = {c["id"] for c in st.all("/coupons")}
+    for c in S.STRIPE_COUPONS:
+        if c["id"] not in have:
+            st.post("/coupons", dict(id=c["id"], name=c["name"], percent_off=c["percent_off"], duration=c["duration"],
+                                     metadata=dict(fictional="true")), idem=f"coupon-{c['id']}")
+        if c.get("promotion_code") and not st.all("/promotion_codes", code=c["promotion_code"]):
+            st.post("/promotion_codes", dict(code=c["promotion_code"], promotion=dict(type="coupon", coupon=c["id"]),
+                                             metadata=dict(fictional="true")), idem=f"promo-{c['id']}")
+    links = {l["metadata"].get("pack_ref"): l for l in st.all("/payment_links") if l.get("metadata")}
+    shop["payment_links"] = {}
+    for l in S.STRIPE_PAYMENT_LINKS:
+        link = links.get(l["ref"]) or st.post("/payment_links", dict(
+            line_items=[dict(price=prices[l["product"]], quantity=1)], allow_promotion_codes=l["promotion_codes"],
+            metadata=dict(pack_ref=l["ref"], fictional="true")), idem=f"link-{l['ref']}")
+        shop["payment_links"][l["ref"]] = dict(id=link["id"], url=link.get("url"))
+    subs = {x["metadata"].get("pack_ref"): x for x in st.all("/subscriptions", status="all") if x.get("metadata")}
+    shop["subscriptions"] = {}
+    for sub in S.STRIPE_SUBSCRIPTIONS:
+        x = subs.get(sub["ref"])
+        if not x:
+            params = dict(customer=customers[sub["customer"]], items=[dict(price=prices["P-CLEARDESK"])],
+                          default_payment_method=card(sub["customer"], "pm_card_bypassPending"), default_tax_rates=[rate["id"]],
+                          metadata=dict(pack_ref=sub["ref"], fictional="true"), off_session=True)
+            if sub["coupon"]:
+                params["discounts"] = [dict(coupon=sub["coupon"])]
+            x = st.post("/subscriptions", params, idem=f"sub-{sub['ref']}")
+            if sub["then"] == "cancel_and_refund":
+                inv = st.get(f"/invoices/{x['latest_invoice']}")
+                st.post("/credit_notes", dict(invoice=inv["id"], amount=inv["total"], refund_amount=inv["total"], reason="order_change",
+                                              memo="Cancelled within 14 days: full refund.", email_type="none"), idem=f"cn-{sub['ref']}")
+                x = st.call("DELETE", f"/subscriptions/{x['id']}", dict(prorate=False))
+            elif sub["then"] == "cancel_at_period_end":
+                x = st.post(f"/subscriptions/{x['id']}", dict(cancel_at_period_end=True), idem=f"cape-{sub['ref']}")
+        shop["subscriptions"][sub["ref"]] = dict(id=x["id"], status=x["status"], cancel_at_period_end=x.get("cancel_at_period_end"))
+        print(f"  subscription {sub['ref']}: {x['status']}{' (cancels at period end)' if x.get('cancel_at_period_end') else ''}")
+    intents = {i["metadata"].get("pack_ref"): i for i in st.all("/payment_intents") if i.get("metadata")}
+    shop["seats"] = {}
+    for seat in S.STRIPE_SEAT_SALES:
+        pi = intents.get(seat["ref"])
+        if not pi:
+            c = S.CUSTOMER[seat["customer"]]
+            pi = st.post("/payment_intents", dict(
+                amount=cents(seat["amount"]), currency="eur", customer=customers[seat["customer"]],
+                payment_method=card(seat["customer"], seat["card"]), confirm=True, off_session=True,
+                automatic_payment_methods=dict(enabled=True, allow_redirects="never"),
+                description=f"Learning day seat, {c['name']} (payment link)" + (f", code {seat['code']}" if seat["code"] else ""),
+                metadata=dict(pack_ref=seat["ref"], channel="payment_link", payment_link=shop["payment_links"]["LINK-SEAT"]["id"],
+                              promotion_code=seat["code"] or "", fictional="true")), idem=f"seat-{seat['ref']}")
+            if seat["then"] == "refund":
+                st.post("/refunds", dict(payment_intent=pi["id"], reason="requested_by_customer",
+                                         metadata=dict(pack_ref=f"RF-{seat['ref']}")), idem=f"refund-{seat['ref']}")
+        shop["seats"][seat["ref"]] = dict(payment_intent=pi["id"], status=pi["status"], amount=seat["amount"], then=seat["then"])
+        print(f"  seat {seat['ref']}: EUR {seat['amount']} {pi['status']}{', ' + seat['then'] if seat['then'] else ''}")
+    if any(s_["then"] == "dispute" for s_ in S.STRIPE_SEAT_SALES):
+        for _ in range(20):  # the test card opens the dispute a moment after the payment
+            if st.all("/disputes"):
+                break
+            time.sleep(2)
 
 
 def summarize_invoice(inv):
@@ -309,21 +388,29 @@ def summarize_invoice(inv):
                 due_date=day(inv["due_date"]) if inv.get("due_date") else None, attempt_count=inv.get("attempt_count", 0))
 
 
-def write_outputs(st, manifest, po):
+def write_outputs(st, manifest, pos):
     txns = [t for t in st.all("/balance_transactions") if t["currency"] == "eur"]
-    ours = [t for t in txns if t["type"] in ("charge", "payment", "refund", "payment_refund")]
+    ours = [t for t in txns if t["type"] != "payout"]
     fees = sum(t["fee"] for t in ours if t["type"] in ("charge", "payment"))
     gross = sum(t["amount"] for t in ours if t["type"] in ("charge", "payment"))
     refunds = -sum(t["amount"] for t in ours if t["type"] in ("refund", "payment_refund"))
+    disputes = -sum(t["net"] for t in ours if t["type"] == "adjustment")
+    other = [t for t in ours if t["type"] not in ("charge", "payment", "refund", "payment_refund", "adjustment")]
     net = sum(t["net"] for t in ours)
-    if gross != cents(S.STRIPE_GROSS_CHARGED) or refunds != cents(S.STRIPE_REFUNDED):
-        print(f"  WARNING: the sandbox holds other payments too (charged {euros(gross)}, refunded {euros(refunds)}). "
-              "Use a fresh sandbox for the workshop.")
-    if net != po["amount"]:
-        print(f"  WARNING: payout {euros(po['amount'])} differs from the net of these payments {euros(net)}.")
+    if other:
+        print(f"  WARNING: unexpected balance transactions: {sorted({t['type'] for t in other})}")
+    bal = st.get("/balance")
+    pending = sum(b["amount"] for b in bal["pending"] if b["currency"] == "eur")
+    available = sum(b["amount"] for b in bal["available"] if b["currency"] == "eur")
+    paid_out = sum(p["amount"] for p in pos)
+    if net != paid_out + pending + available:
+        print(f"  WARNING: payouts {euros(paid_out)} + pending {euros(pending)} + available {euros(available)} differ from the net {euros(net)}.")
+    manifest.update(pending=euros(pending), available=euros(available))
+    manifest.update(gross=euros(gross), refunds=euros(refunds), disputes=euros(disputes))
     manifest["fees"] = euros(fees)
-    manifest["payout"] = dict(id=po["id"], amount=euros(po["amount"]), status=po["status"], created_date=day(po["created"]),
-                              arrival_date=day(po["arrival_date"]))
+    manifest["payouts"] = [dict(id=po["id"], amount=euros(po["amount"]), status=po["status"], created_date=day(po["created"]),
+                                arrival_date=day(po["arrival_date"])) for po in pos]
+    manifest["payout"] = manifest["payouts"][0]
     out = PACK / "stripe"
     out.mkdir(exist_ok=True)
     (out / "seed-manifest.json").write_text(json.dumps(manifest, indent=1) + "\n")
@@ -352,7 +439,9 @@ def write_outputs(st, manifest, po):
     write_csv(snap / "payouts.csv", ["created", "id", "amount_eur", "status", "arrival_date", "statement_descriptor"],
               [[day(p["created"]), p["id"], euros(p["amount"]), p["status"], day(p["arrival_date"]), p.get("statement_descriptor") or ""]
                for p in st.all("/payouts")])
-    print(f"Wrote {out / 'seed-manifest.json'} and stripe/snapshot/. Fees EUR {manifest['fees']}, payout EUR {manifest['payout']['amount']}.")
+    write_csv(snap / "balance.csv", ["available_eur", "pending_eur"], [[manifest["available"], manifest["pending"]]])
+    print(f"Wrote {out / 'seed-manifest.json'} and stripe/snapshot/. Fees EUR {manifest['fees']}, payouts EUR "
+          f"{' + '.join(p['amount'] for p in manifest['payouts'])}, pending EUR {manifest['pending']}.")
     print("Next: run generate.py again, so the October bank statement shows the payout.")
 
 

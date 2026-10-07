@@ -461,13 +461,14 @@ def emails(stripe_info):
              body="Hi Mira,\n\nwe got a notice that the card payment for our ClearDesk invoice JWL-1043 failed; our card had expired. "
                   "We transferred EUR 95.20 today instead. I'll add the new card next week.\n\nBest\nLina Sample\nFern Sample Studio"),
     ]
-    if stripe_info and stripe_info.get("payout"):
-        po = stripe_info["payout"]
-        mails.append(dict(id="M19", date=f"{po['created_date']} 18:40", frm=("Stripe (sandbox)", "notifications@stripe-notifications.example"),
+    pos = (stripe_info or {}).get("payouts") or ([stripe_info["payout"]] if stripe_info and stripe_info.get("payout") else [])
+    for k, po in enumerate(pos):
+        mails.append(dict(id=f"M{19 + k}", date=f"{po['created_date']} {18 + k}:40", frm=("Stripe (sandbox)", "notifications@stripe-notifications.example"),
                           to=[MIRA], subject=f"Your payout of EUR {render.money(po['amount'])} is on its way", html="only", brand="stripe",
                           labels=["Stripe"], body="A payout from your Stripe sandbox balance to your bank account has been initiated.",
                           html_extra=receipt_table([("Payout", po["id"]), ("Amount", f"EUR {render.money(po['amount'])}"),
-                                                    ("Expected arrival", po["arrival_date"]), ("Destination", "Bank account ending 0010 (fictional)")])))
+                                                    ("Expected arrival", po["arrival_date"]), ("Destination", "Bank account ending 0010 (fictional)")]),
+))
     return mails
 
 
@@ -546,11 +547,13 @@ def main():
     sep_rows = list(S.BANK_SEP)
     sep_close = q2(D(S.BANK_OPENING_SEP) + sum(D(r[4]) for r in sep_rows))
     oct_rows = list(S.BANK_OCT)
-    payout = (stripe_info or {}).get("payout")
-    payout_in_bank = bool(payout and payout["arrival_date"] <= S.SCENARIO_DATE)
-    if payout_in_bank:
-        oct_rows.append((payout["arrival_date"], payout["arrival_date"], "STRIPE PAYMENTS EUROPE LTD",
-                         f"STRIPE AUSZAHLUNG {payout['id']}", payout["amount"], ["STRIPE-PAYOUT"]))
+    payouts = (stripe_info or {}).get("payouts") or ([stripe_info["payout"]] if stripe_info and stripe_info.get("payout") else [])
+    payout = payouts[0] if payouts else None
+    payout_in_bank = bool(payouts) and all(po["arrival_date"] <= S.SCENARIO_DATE for po in payouts)
+    for po in payouts:
+        if po["arrival_date"] <= S.SCENARIO_DATE:
+            oct_rows.append((po["arrival_date"], po["arrival_date"], "STRIPE PAYMENTS EUROPE LTD",
+                             f"STRIPE AUSZAHLUNG {po['id']}", po["amount"], ["STRIPE-PAYOUT"]))
     oct_rows.sort(key=lambda r: r[0])
     oct_close = q2(sep_close + sum(D(r[4]) for r in oct_rows))
     with tempfile.TemporaryDirectory() as t:
@@ -699,9 +702,14 @@ def answer_key(sep_rows, sep_close, oct_rows, oct_close, stripe_info, payout_in_
                              paid=b.get("paid", ""), due=b.get("due", ""), where=b["where"], note=b.get("note", "")))
     stripe_block = dict(seeded=bool(stripe_info), gross_charged=S.STRIPE_GROSS_CHARGED, refunded=S.STRIPE_REFUNDED)
     if stripe_info:
-        stripe_block.update(fees=stripe_info["fees"], payout=stripe_info["payout"], payout_in_bank=payout_in_bank,
-                            check=str(q2(D(S.STRIPE_GROSS_CHARGED) - D(S.STRIPE_REFUNDED) - D(stripe_info["fees"]))))
-        assert stripe_block["check"] == str(q2(stripe_info["payout"]["amount"])), (stripe_block, "payout != charges - refund - fees")
+        g, r, d_ = stripe_info.get("gross", S.STRIPE_GROSS_CHARGED), stripe_info.get("refunds", S.STRIPE_REFUNDED), stripe_info.get("disputes", "0.00")
+        pos = stripe_info.get("payouts") or [stripe_info["payout"]]
+        paid = sum(D(po["amount"]) for po in pos)
+        rest = D(stripe_info.get("pending", "0")) + D(stripe_info.get("available", "0"))
+        stripe_block.update(gross_charged=g, refunded=r, disputes=d_, fees=stripe_info["fees"], payouts=pos, paid_out=str(q2(paid)),
+                            still_in_stripe=str(q2(rest)), payout_in_bank=payout_in_bank, shop=stripe_info.get("shop", {}),
+                            check=str(q2(D(g) - D(r) - D(d_) - D(stripe_info["fees"]))))
+        assert stripe_block["check"] == str(q2(paid + rest)), (stripe_block, "payouts + balance != charged - refunds - disputes - fees")
     flags = [dict(code=c, item=i, finding=f, what_to_do=w, match=m) for c, i, f, w, m in S.FLAGS
              if stripe_info or c not in S.STRIPE_FLAGS]
     if stripe_info and not payout_in_bank:
@@ -736,9 +744,13 @@ def answer_key(sep_rows, sep_close, oct_rows, oct_close, stripe_info, payout_in_
              sources=["drive/Incoming invoices/2026-09/", "drive/Company/Vendors.csv", "mailbox"]),
     ]
     if stripe_info:
-        questions.append(dict(q="Why is the Stripe payout smaller than the invoices paid by card?",
-                              a=f"EUR {S.STRIPE_GROSS_CHARGED} charged, minus a EUR {S.STRIPE_REFUNDED} refund (credit note on JWL-1044) "
-                                f"and EUR {stripe_info['fees']} Stripe fees = EUR {render.money(stripe_info['payout']['amount'])}.",
+        sb = stripe_block
+        questions.append(dict(q="Why is the Stripe payout smaller than what was charged?",
+                              a=f"EUR {sb['gross_charged']} charged (invoices, the payment link, subscriptions, learning day seats), minus "
+                                f"EUR {sb['refunded']} refunds (JWL-1044, Oak Lane's cancelled subscription, Ines's seat), EUR {sb['disputes']} "
+                                f"for the disputed seat including the dispute fee, and EUR {sb['fees']} Stripe fees = EUR {sb['check']}: paid out in "
+                                f"{len(sb['payouts'])} payouts (EUR {' + '.join(po['amount'] for po in sb['payouts'])}) and EUR {sb['still_in_stripe']} "
+                                f"still in Stripe (the disputed seat's payment is pending until it becomes available).",
                               sources=["Stripe sandbox: balance transactions", "stripe/snapshot/"]))
     return dict(
         fictional=True, scenario_date=S.SCENARIO_DATE, month=S.MONTH,

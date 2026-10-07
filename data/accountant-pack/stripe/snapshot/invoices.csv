@@ -1,0 +1,6 @@
+number,id,customer_name,status,total_eur,amount_paid_eur,amount_remaining_eur,due_date,attempt_count,hosted_invoice_url
+JWL-1041,in_1UNjqqRGzbVUD2HtMEOPpRyT,Nina Probe,paid,47.60,47.60,0.00,,1,https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1TXNVYVNhaFJCOWkyR0RlYVpuRUJjZHNTbVp2LDE4MTg3ODE5NA02007mucvbjM?s=ap
+JWL-1042,in_1UNjquRGzbVUD2HtcPG2jnpM,Riverbend Bakery GmbH,open,197.83,0.00,197.83,2026-10-21,0,https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1MlFMOGhjUW9QdllMd0VkN21wYnRHUlk3c2NxLDE4MTg3ODE5NA0200EKqrBa57?s=ap
+JWL-1043,in_1UNjqxRGzbVUD2HtM9a6SAae,Fern Sample Studio GmbH,open,95.20,0.00,95.20,,1,https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1Mk9rM1ZaSW1DMjhoYkZUQVp1UUk4NHJrWWZVLDE4MTg3ODE5NA0200WnsKTucN?s=ap
+JWL-1044,in_1UNjr1RGzbVUD2HtxVWkamra,Moss Training Collective,paid,120.00,120.00,0.00,,1,https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1bDdHUlFNTW82R2QzdGRwZ3R2aU5rRktWUnBvLDE4MTg3ODE5NA0200qsx8fYLn?s=ap
+JWL-1045,in_1UNjr8RGzbVUD2HtBMCQ8H44,Cedar Demo Analytics GmbH,paid,40.00,40.00,0.00,,1,https://invoice.stripe.com/i/acct_1UNjKVRGzbVUD2Ht/test_YWNjdF8xVU5qS1ZSR3piVlVEMkh0LF9WT1d1ZW9NSXdNNlZnTHM1WmZNYjNSWWs4RFVsb0lhLDE4MTg3ODE5NA0200PSSowd4X?s=ap

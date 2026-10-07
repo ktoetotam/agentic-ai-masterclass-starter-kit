@@ -756,6 +756,8 @@ def cmd_reconcile(args) -> int:
     charges = read_csv(root / "out" / "stripe" / "charges.csv")
     txns = read_csv(root / "out" / "stripe" / "balance_transactions.csv")
     payouts = read_csv(root / "out" / "stripe" / "payouts.csv")
+    balance = read_csv(root / "out" / "stripe" / "balance.csv")
+    payout_done = False
     queue = read_csv(root / "out" / "review-queue.csv")
     queue = [q for q in queue if q.get("by") != "reconcile"]
     month_end = cfg["month"] + "-31"
@@ -777,15 +779,26 @@ def cmd_reconcile(args) -> int:
         if "STRIPE" in text:
             po = next((p for p in payouts if p["id"].upper() in text), None) or next((p for p in payouts if money(p["amount_eur"]) == amount), None)
             if po:
-                gross = sum((money(t["amount_eur"]) for t in txns if t["type"] in ("charge", "payment")), D("0"))
-                fees = sum((money(t["fee_eur"]) for t in txns if t["type"] in ("charge", "payment")), D("0"))
-                refunds = -sum((money(t["amount_eur"]) for t in txns if t["type"] in ("refund", "payment_refund")), D("0"))
-                net = gross - fees - refunds
                 how, target = "stripe payout", po["id"]
-                note = f"charged {gross} - fees {fees} - refunds {refunds} = {net}; bank {amount}"
-                add("PAYOUT_IS_NOT_REVENUE", "STRIPE-PAYOUT", note, "Book the payments, fees and refund separately", b["line_id"])
-                if net != amount:
-                    add("PAYOUT_MISMATCH", "STRIPE-PAYOUT", note, "Check for payments outside this period", b["line_id"])
+                if not payout_done:
+                    payout_done = True
+                    gross = sum((money(t["amount_eur"]) for t in txns if t["type"] in ("charge", "payment")), D("0"))
+                    fees = sum((money(t["fee_eur"]) for t in txns if t["type"] in ("charge", "payment")), D("0"))
+                    refunds = -sum((money(t["amount_eur"]) for t in txns if t["type"] in ("refund", "payment_refund")), D("0"))
+                    disputes = -sum((money(t["net_eur"]) for t in txns if t["type"] == "adjustment"), D("0"))
+                    net = gross - fees - refunds - disputes
+                    paid = sum((money(p["amount_eur"]) for p in payouts), D("0"))
+                    rest = sum((money(r.get("available_eur")) or D("0")) + (money(r.get("pending_eur")) or D("0")) for r in balance)
+                    note = (f"charged {gross} - fees {fees} - refunds {refunds} - disputes {disputes} = {net}; "
+                            f"paid out {paid} in {len(payouts)} payout(s), {rest} still in Stripe")
+                    add("PAYOUT_IS_NOT_REVENUE", "STRIPE-PAYOUT", note, "Book the payments, fees, refunds and disputes separately", b["line_id"])
+                    if disputes:
+                        add("DISPUTE", "STRIPE-DISPUTE", f"a disputed payment took back {disputes} including the dispute fee",
+                            "Decide whether to answer the dispute in the Stripe Dashboard", b["line_id"])
+                    if refunds:
+                        add("REFUND", "STRIPE-REFUNDS", f"refunds of {refunds} reduce the payouts", "Match each refund to its credit note or cancellation", b["line_id"])
+                    if net != paid + rest:
+                        add("PAYOUT_MISMATCH", "STRIPE-PAYOUT", note, "Check for payments from another period", b["line_id"])
         if not how:
             found = [n for n in numbers if re.search(rf"(?<![A-Z0-9-]){re.escape(n)}(?![A-Z0-9])", text)]
             if found:

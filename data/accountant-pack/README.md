@@ -11,8 +11,8 @@
 | `drive/` | The shared accounting folder: outgoing invoices JWL-1031 to JWL-1040, incoming invoices (one a scan of the wrong month), September bank statement as PDF and CSV, October so far as CSV, the office lease, the ClearDesk agreement with Riverbend Bakery, a call note, the customer and supplier lists and the house rules |
 | `mailbox/eml/` | Mira's mailbox from September to 7 October: bills by email (one only as HTML), forwards, the expense claim with receipts, a fake "new bank details" invoice, an urgent payment request in the boss's name, Bob's question, the tax adviser's request |
 | `mailbox/mira-beispiel.mbox` | The same mailbox as one file (Google Takeout format, with labels) |
-| `stripe/` | After seeding: `seed-manifest.json` and `snapshot/` (invoices, charges, balance transactions, payout) of the Stripe sandbox |
-| `answer-key/` | `expected.json`: every invoice, bill, bank line and status, 22 planted problems with what to do, 6 things that must not be flagged, and test questions. **Never give this folder to the agent.** |
+| `stripe/` | `seed-manifest.json` and `snapshot/` (invoices, charges, balance transactions, payouts, balance) of the seeded Stripe sandbox |
+| `answer-key/` | `expected.json`: every invoice, bill, bank line and status, 24 planted problems with what to do, 6 things that must not be flagged, and test questions. **Never give this folder to the agent.** |
 | `generator/` | The scripts that build the pack, seed the Stripe sandbox and fill Google Workspace accounts |
 
 ## Deliberate traps
@@ -20,6 +20,7 @@
 - **Arithmetic:** a supplier invoice whose total is EUR 10 too high; an expense claim whose total is a formula without a stored value.
 - **Payments:** a Stripe payout that is charges minus fees minus a refund; an invoice paid through a Stripe payment link (count it once); an invoice Stripe shows as failed and open that was paid by bank; a payment from a group company; one paid two days after month end; GBP converted to EUR with a separate bank fee; a supplier paid through a payment provider; a card payment without any document.
 - **Documents:** a reverse-charge invoice without the customer's VAT ID; a receipt billed to a person with foreign VAT; a US supplier without VAT; a scan without text from August filed in September; the same receipt as PDF and as HTML email; an e-ticket attached twice; a blurred parking receipt; a taxi ride without a receipt.
+- **The online shop in Stripe:** a ClearDesk subscription with a 10% partner coupon, one cancelled the same day and refunded through a credit note, one ending at period end; learning-day seats sold through a payment link, one with an early-bird code, one refunded, one disputed (amount and fee taken back while its payment is still pending); two payouts that only add up together with the pending balance.
 - **Fraud:** the same invoice sent again from a look-alike domain with a new IBAN; an urgent, secret payment request in the managing director's name.
 - **Must not be flagged:** rent by direct debit (the lease is the invoice), bank fees, a cancelled invoice and its cancellation, small German receipts without the company's name, a bill that is open but not yet due.
 - **The question from the intro slides:** "How much does Bob owe for the extra pads?" EUR 197.83, answered from his email, the call note, the agreement and the Stripe invoice.
@@ -43,8 +44,8 @@ About 10 minutes, the evening before. Without it the pack still works offline, b
    uv run --no-project --script data/accountant-pack/generator/generate.py
    ```
 
-   The seed creates 5 customers, invoices JWL-1041 to JWL-1045 (paid, open, failed), the payment-link payment for JWL-1040, a EUR 40 refund through a credit note and one manual payout, then writes `stripe/`. The second command puts the payout into the October bank statement, the Stripe notification into the mailbox and the fees into the answer key. Re-running finds what exists and skips it. Commit the result.
-5. **For participants:** in the sandbox, **Developers → API keys → Create restricted key**, mark it for agent access, and give it **Read** on balance, balance transactions, charges and refunds, customers, invoices, credit notes, payment intents and payouts, nothing else. Hand it over in the room; participants add it as `STRIPE_API_KEY=` to their own `.env`. After the workshop, expire it.
+   The seed creates 12 customers, invoices JWL-1041 to JWL-1045 (paid, open, failed), a catalogue, coupons, a promotion code, two payment links, three subscriptions, four learning-day seat sales (one refunded, one disputed), the payment-link payment for JWL-1040 and manual payouts of what is available, then writes `stripe/`. The second command puts the payout into the October bank statement, the Stripe notification into the mailbox and the fees into the answer key. Re-running finds what exists and skips it. Commit the result.
+5. **For participants:** in the sandbox, **Developers → API keys → Create restricted key**, mark it for agent access, and give it **Read** on balance, balance transactions, charges and refunds, disputes, customers, invoices, credit notes, payment intents, payouts, products and prices, coupons and promotion codes, subscriptions and payment links, nothing else (no Account or Settings). Hand it over in the room; participants add it as `STRIPE_API_KEY=` to their own `.env`. After the workshop, expire it.
 6. Remove `STRIPE_SEED_KEY` from `.env`.
 
 ## Facilitator: fill Google Workspace accounts
