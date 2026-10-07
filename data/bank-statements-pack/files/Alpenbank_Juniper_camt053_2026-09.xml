@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Fictional workshop data · AI Realist Agentic AI Masterclass · not a real bank document. IBAN and BIC are invalid on purpose. -->
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:camt.053.001.08">
+  <BkToCstmrStmt>
+    <GrpHdr>
+      <MsgId>ALPD-CAMT053-20260930-0001</MsgId>
+      <CreDtTm>2026-10-01T06:12:44+02:00</CreDtTm>
+    </GrpHdr>
+    <Stmt>
+      <Id>ALPD-2026-09-0010</Id>
+      <ElctrncSeqNb>9</ElctrncSeqNb>
+      <CreDtTm>2026-10-01T06:12:44+02:00</CreDtTm>
+      <FrToDt><FrDtTm>2026-09-01T00:00:00+02:00</FrDtTm><ToDtTm>2026-09-30T23:59:59+02:00</ToDtTm></FrToDt>
+      <Acct>
+        <Id><IBAN>DE00000000000000000010</IBAN></Id>
+        <Ccy>EUR</Ccy>
+        <Ownr><Nm>Juniper Workshop Lab GmbH</Nm></Ownr>
+        <Svcr><FinInstnId><BICFI>ALPDDEMMXXX</BICFI><Nm>Alpenbank Demo AG</Nm></FinInstnId></Svcr>
+      </Acct>
+      <Bal><Tp><CdOrPrtry><Cd>OPBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">18240.55</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-08-31</Dt></Dt></Bal>
+      <Bal><Tp><CdOrPrtry><Cd>CLBD</Cd></CdOrPrtry></Tp><Amt Ccy="EUR">20506.83</Amt><CdtDbtInd>CRDT</CdtDbtInd><Dt><Dt>2026-09-30</Dt></Dt></Bal>
+      <TxsSummry>
+        <TtlNtries><NbOfNtries>14</NbOfNtries></TtlNtries>
+        <TtlCdtNtries><NbOfNtries>5</NbOfNtries><Sum>5777.58</Sum></TtlCdtNtries>
+        <TtlDbtNtries><NbOfNtries>9</NbOfNtries><Sum>3511.30</Sum></TtlDbtNtries>
+      </TxsSummry>
+      <Ntry>
+        <NtryRef>0001</NtryRef>
+        <Amt Ccy="EUR">1190.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-01</Dt></BookgDt>
+        <ValDt><Dt>2026-09-01</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00001</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>IDDT</Cd><SubFmlyCd>ESDD</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+105</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>LINDWURM HOEFE VERWALTUNG GMBH</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>SEPA-Lastschrift Miete 09/2026 Mandat LHV-0042</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0002</NtryRef>
+        <Amt Ccy="EUR">30.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-12</Dt></BookgDt>
+        <ValDt><Dt>2026-09-12</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00002</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>POSD</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+106</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>VISA DEBIT</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>FORMFLOW.EXAMPLE DUBLIN Karte ****0010</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0003</NtryRef>
+        <Amt Ccy="EUR">25.91</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-14</Dt></BookgDt>
+        <ValDt><Dt>2026-09-14</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00003</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>POSD</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+106</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>VISA DEBIT</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>MEETNOTE.EXAMPLE USD 30,00 Kurs 1,1580 Karte ****0010</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0004</NtryRef>
+        <Amt Ccy="EUR">1071.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-15</Dt></BookgDt>
+        <ValDt><Dt>2026-09-15</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00004</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+166</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Dbtr><Pty><Nm>FERN SAMPLE STUDIO GMBH</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>JWL-1031</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0005</NtryRef>
+        <Amt Ccy="EUR">1797.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-16</Dt></BookgDt>
+        <ValDt><Dt>2026-09-16</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00005</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+116</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>CIRCUIT &amp; CO.</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>CC-26-0903-12</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0006</NtryRef>
+        <Amt Ccy="EUR">1200.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-18</Dt></BookgDt>
+        <ValDt><Dt>2026-09-18</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00006</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+166</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Dbtr><Pty><Nm>MOSS TRAINING COLLECTIVE</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>Invoice JWL-1032</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0007</NtryRef>
+        <Amt Ccy="EUR">285.60</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-20</Dt></BookgDt>
+        <ValDt><Dt>2026-09-20</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00007</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+116</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>SAMPLE &amp; PARTNER STEUERBERATUNG</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>Rechnung SP-2026-0815 Buchhaltung 08/2026</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0008</NtryRef>
+        <Amt Ccy="EUR">89.90</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-24</Dt></BookgDt>
+        <ValDt><Dt>2026-09-24</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00008</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>ICDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+116</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>PAYLATER DEMO GMBH</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>KK-O-55102 KABELKISTE ONLINE</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0009</NtryRef>
+        <Amt Ccy="EUR">800.00</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-24</Dt></BookgDt>
+        <ValDt><Dt>2026-09-24</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00009</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+166</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Dbtr><Pty><Nm>ESTUDIO EJEMPLO SL</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>JWL-1033</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0010</NtryRef>
+        <Amt Ccy="EUR">64.99</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-25</Dt></BookgDt>
+        <ValDt><Dt>2026-09-25</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00010</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>CCRD</Cd><SubFmlyCd>POSD</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+106</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>VISA DEBIT</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>MARKTPLATZ DEMO*7Q2X Karte ****0010</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0011</NtryRef>
+        <Amt Ccy="EUR">1434.90</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-29</Dt></BookgDt>
+        <ValDt><Dt>2026-09-29</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00011</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+166</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Dbtr><Pty><Nm>CEDAR GROUP SERVICES GMBH</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>Rechnung JWL-1034 Cedar Demo Analytics</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0012</NtryRef>
+        <Amt Ccy="EUR">1271.68</Amt>
+        <CdtDbtInd>CRDT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-30</Dt></BookgDt>
+        <ValDt><Dt>2026-10-01</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00012</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>PMNT</Cd><Fmly><Cd>RCDT</Cd><SubFmlyCd>ESCT</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+166</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Dbtr><Pty><Nm>HARBOUR LANE CONSULTING LTD</Nm></Pty></Dbtr></RltdPties>
+            <RmtInf><Ustrd>INV JWL-1035 GBP 1.100,00 Kurs 0,8650</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0013</NtryRef>
+        <Amt Ccy="EUR">15.00</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-30</Dt></BookgDt>
+        <ValDt><Dt>2026-09-30</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00013</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>ACMT</Cd><Fmly><Cd>MDOP</Cd><SubFmlyCd>CHRG</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+805</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>ALPENBANK DEMO AG</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>Entgelt Auslandszahlungseingang SWIFT</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+      <Ntry>
+        <NtryRef>0014</NtryRef>
+        <Amt Ccy="EUR">12.90</Amt>
+        <CdtDbtInd>DBIT</CdtDbtInd>
+        <Sts><Cd>BOOK</Cd></Sts>
+        <BookgDt><Dt>2026-09-30</Dt></BookgDt>
+        <ValDt><Dt>2026-09-30</Dt></ValDt>
+        <AcctSvcrRef>ALPD-2609-00014</AcctSvcrRef>
+        <BkTxCd>
+          <Domn><Cd>ACMT</Cd><Fmly><Cd>MDOP</Cd><SubFmlyCd>CHRG</SubFmlyCd></Fmly></Domn>
+          <Prtry><Cd>NTRF+805</Cd><Issr>DK</Issr></Prtry>
+        </BkTxCd>
+        <NtryDtls>
+          <TxDtls>
+            <Refs><EndToEndId>NOTPROVIDED</EndToEndId></Refs>
+            <RltdPties><Cdtr><Pty><Nm>ALPENBANK DEMO AG</Nm></Pty></Cdtr></RltdPties>
+            <RmtInf><Ustrd>Kontoführung 09/2026</Ustrd></RmtInf>
+          </TxDtls>
+        </NtryDtls>
+      </Ntry>
+    </Stmt>
+  </BkToCstmrStmt>
+</Document>
