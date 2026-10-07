@@ -1,0 +1,40 @@
+From: Noor Sample <noor.sample@lindenhall-events.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Cc: Jordan Example <jordan@juniper-workshop.invalid>
+Subject: Invitation: Maple Room walk-through, Fri 25 Sep 10:00
+Date: Tue, 22 Sep 2026 09:00:00 +0200
+Message-ID: <e049.invitation-maple-room-wa@lindenhall-events.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E049_0"
+
+--=_juniper_E049_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Walk-through of the Maple Room with Alex Example and Jordan Example.
+Meet at the main entrance, Lindenplatz 3.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E049_0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invite.ics"
+Content-Type: text/calendar; method="REQUEST"
+MIME-Version: 1.0
+
+QkVHSU46VkNBTEVOREFSDQpWRVJTSU9OOjIuMA0KUFJPRElEOi0vL0FJIFJlYWxpc3QvL3NlY29u
+ZC1icmFpbi1wYWNrLy9FTg0KQ0FMU0NBTEU6R1JFR09SSUFODQpYLVdSLUNBTE5BTUU6SW52aXRh
+dGlvbg0KTUVUSE9EOlJFUVVFU1QNCkJFR0lOOlZFVkVOVA0KVUlEOndhbGstMDkyNUBqdW5pcGVy
+LXdvcmtzaG9wLmludmFsaWQNCkRUU1RBTVA6MjAyNjEwMDdUMDYwMDAwWg0KRFRTVEFSVDoyMDI2
+MDkyNVQwODAwMDBaDQpEVEVORDoyMDI2MDkyNVQwODQ1MDBaDQpTVU1NQVJZOk1hcGxlIFJvb20g
+d2Fsay10aHJvdWdoDQpMT0NBVElPTjpMaW5kZW4gSGFsbCBFdmVudHNcLCBMaW5kZW5wbGF0eiAz
+XCwgTcO8bmNoZW4NCkRFU0NSSVBUSU9OOkZpY3Rpb25hbCB3b3Jrc2hvcCBkYXRhLg0KT1JHQU5J
+WkVSO0NOPU5vb3IgU2FtcGxlOm1haWx0bzpub29yLnNhbXBsZUBsaW5kZW5oYWxsLWV2ZW50cy5l
+eGFtcGxlDQpBVFRFTkRFRTtDTj1BbGV4IEV4YW1wbGU7Uk9MRT1SRVEtUEFSVElDSVBBTlQ7UEFS
+VFNUQVQ9TkVFRFMtQUNUSU9OO1JTVlA9VFJVRTptYWlsdG86YWxleEBqdW5pcGVyLXdvcmtzaG9w
+LmludmFsaWQNCkFUVEVOREVFO0NOPUpvcmRhbiBFeGFtcGxlO1JPTEU9UkVRLVBBUlRJQ0lQQU5U
+O1BBUlRTVEFUPU5FRURTLUFDVElPTjtSU1ZQPVRSVUU6bWFpbHRvOmpvcmRhbkBqdW5pcGVyLXdv
+cmtzaG9wLmludmFsaWQNCkVORDpWRVZFTlQNCkVORDpWQ0FMRU5EQVINCg==
+
+--=_juniper_E049_0--

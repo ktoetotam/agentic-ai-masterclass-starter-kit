@@ -1,0 +1,9 @@
+# Generated fixtures: keep the bytes exactly as written. Email and calendar formats use CRLF
+# line endings by specification, and Git on Windows must not convert them.
+*.pdf binary
+*.eml binary
+*.mbox binary
+*.ics binary
+*.heic binary
+*.HEIC binary
+*.crdownload binary

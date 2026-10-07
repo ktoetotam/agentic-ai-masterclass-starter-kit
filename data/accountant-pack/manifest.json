@@ -1,0 +1,314 @@
+{
+ "scenario_date": "2026-10-08",
+ "month": "2026-09",
+ "fictional": true,
+ "stripe_seeded": true,
+ "files": [
+  {
+   "path": "answer-key/expected.json",
+   "bytes": 30121,
+   "sha256": "04e464d1867679aabd9e3c76359becbd0c1acd56415a52c271ff34aa7a7971e6",
+   "fictional": true
+  },
+  {
+   "path": "answer-key/review-queue.csv",
+   "bytes": 3801,
+   "sha256": "496f5ab09483c8d901d0e3a82c803ff05330c9118767d673014b6c8ae66c8714",
+   "fictional": true
+  },
+  {
+   "path": "drive/Bank statements/2026-09/Kontoauszug 2026-09.pdf",
+   "bytes": 4094,
+   "sha256": "e7c576293446c19c7c587020d03ac83d8abbae749e9f938d2cf4b36225333c64",
+   "fictional": true
+  },
+  {
+   "path": "drive/Bank statements/2026-09/Umsaetze_2026-09.csv",
+   "bytes": 1676,
+   "sha256": "844bc637a6e2ebd8f39a08eaf284771cee9a51d3fccdf0ece054606b114e5c54",
+   "fictional": true
+  },
+  {
+   "path": "drive/Bank statements/2026-10/Umsaetze_2026-10-01_bis_2026-10-08.csv",
+   "bytes": 954,
+   "sha256": "24edb4006bc135ab4d1204f0cc4651a771b9a11e3c35a2786a38fdff84bcc581",
+   "fictional": true
+  },
+  {
+   "path": "drive/Company/Company and house rules.md",
+   "bytes": 2471,
+   "sha256": "26d5b0e3d88c348a66b2ed89a1f143541b5ad4dae8770ff83b8d573de14be93f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Company/Customers.csv",
+   "bytes": 2004,
+   "sha256": "ce32dd3c50ad8d3461b7d6c5ab92a20b2d3c85106c768d2101b095eb3a7c0d53",
+   "fictional": true
+  },
+  {
+   "path": "drive/Company/Vendors.csv",
+   "bytes": 1374,
+   "sha256": "de23b94ed06c0198c4a1ca3a28182e802008560d5819bc0f35bcea7011063e6b",
+   "fictional": true
+  },
+  {
+   "path": "drive/Contracts/ClearDesk agreement Riverbend Bakery.pdf",
+   "bytes": 3214,
+   "sha256": "99b2a36574579224ad53b77603772db3561de390343980feff6b3983766d7f56",
+   "fictional": true
+  },
+  {
+   "path": "drive/Contracts/Office lease Lindwurm Hoefe (excerpt).pdf",
+   "bytes": 3193,
+   "sha256": "125bd3a6ed8368112365a9ba51c580e05589d15cdf32f20319d9cd5e372c84ba",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-03 Circuit & Co CC-26-0903-12.pdf",
+   "bytes": 3082,
+   "sha256": "09ca2d46c9807f65c7ae39b519b94c69166608fdede50e4d70cd734ef2d20c8e",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-03 Sample & Partner SP-2026-0815.pdf",
+   "bytes": 3146,
+   "sha256": "7b4605ff84f4d170140bda146170202a004a09e768b24ed629015040fd3b9fd5",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-10 Kabelkiste KK-55102.pdf",
+   "bytes": 3035,
+   "sha256": "5e0b728d2b0871a3daaac995a5e665eb18346176cf58ca0814d798a7f990c14f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-25 Lumen Fotografie LF-2026-031.pdf",
+   "bytes": 3232,
+   "sha256": "d3c50462fc07de30c13dbd854f210dbb830db6febf8915a66a4758cf067c60f1",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-25 Wei\u00dfblatt 2026-0042.pdf",
+   "bytes": 3088,
+   "sha256": "114565ee364f6170974118a4122717500584cda09064695cff3ba7d30c40436c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-28 PrintWorks PW-INV-2026-0928.pdf",
+   "bytes": 3055,
+   "sha256": "892f75c7c5a442491cf2dc04766ccd7dd5514b922b655d1de3e7dd8e1add334f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/2026-09-30 Linden Hall LH-A-2026-0930.pdf",
+   "bytes": 3141,
+   "sha256": "d7ed4a22b6a7b49c0f0e407fa0bdb96cd269fed727bcdfe3479e93ffbae7f006",
+   "fictional": true
+  },
+  {
+   "path": "drive/Incoming invoices/2026-09/Scan_2026-09-02_1402.pdf",
+   "bytes": 98940,
+   "sha256": "e5d6dc3ec4b4a5e6f841f3fcf3340a4580112af4fcec259887f0bd64e4180b3c",
+   "fictional": true
+  },
+  {
+   "path": "drive/Notes/2026-09-30 Call Riverbend Bakery.md",
+   "bytes": 474,
+   "sha256": "59ec9bade4c13cc8ca9d9e216ea20080050268f45a1825c79f594de327613977",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1031 Fern Sample Studio GmbH.pdf",
+   "bytes": 3127,
+   "sha256": "6c6b7398a93a93dff489df923b59e55934e95cb646cab957987716667d675285",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1032 Moss Training Collective.pdf",
+   "bytes": 3213,
+   "sha256": "d9a01339f5eebff65f04955ce4f4dcd7341d38620653c4eb93911928bf0e8625",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1033 Estudio Ejemplo S.L.pdf",
+   "bytes": 3163,
+   "sha256": "fff3edd2048fc688b0c7ee95903434fb010309266e0994d1889ee2871586e789",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1034 Cedar Demo Analytics GmbH.pdf",
+   "bytes": 3319,
+   "sha256": "febd2805bd5ceaf39167f74f93e2ed333a087e7c0110d7a29a6639d3c881cbb3",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1035 Harbour Lane Consulting Ltd.pdf",
+   "bytes": 3169,
+   "sha256": "0fdf30b23c71868f71a1f6e778490b3d3190ff7b70d3b6851fd967b26aaeb60f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1036 Fern Sample Studio GmbH.pdf",
+   "bytes": 3133,
+   "sha256": "6f764fe89d35b7967430ebf21da7ef16fcce040c30b713cfe99382ca66fb6a1f",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1037 Moss Training Collective.pdf",
+   "bytes": 3213,
+   "sha256": "dfbdaab7b6979c879a32adb294582ba9bb61c14b390f858be726a9cb99a522ae",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1038 Riverbend Bakery GmbH.pdf",
+   "bytes": 3142,
+   "sha256": "79837dba54ab56069bd3170813cbcb197f28287bb0daa08fadb8613831697d9e",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1039 Riverbend Bakery GmbH.pdf",
+   "bytes": 3046,
+   "sha256": "712959c1e968b4749b3aad50425f1ee4704912fd305b9cd5e8a59845cce17889",
+   "fictional": true
+  },
+  {
+   "path": "drive/Outgoing invoices/2026-09/JWL-1040 Riverbend Bakery GmbH.pdf",
+   "bytes": 3247,
+   "sha256": "5e08d59da320c4476fe5658989abb83378ec4ddd2ee11ef96ae95decfae6ebda",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M01-invoice-cc-26-0903-12.eml",
+   "bytes": 6486,
+   "sha256": "0e005f88a3d6320a5cba75d6d1edaf146700758006f3b1ca3caf534366270487",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M02-rechnung-sp-2026-0815-buchhaltung-august.eml",
+   "bytes": 5187,
+   "sha256": "73ef1b0babf58f150f2c4a0dddf002664c6e383b45fce5c6f4e4f990b2d91034",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M03-fwd-ihre-rechnung-zur-bestellung-kk-o-55102.eml",
+   "bytes": 5269,
+   "sha256": "7368355ef5e8e17092321fdb82bddab5c2909940668de5df3d73e600ed39fe1f",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M04-fwd-your-formflow-receipt-ffl-2026-0912.eml",
+   "bytes": 5413,
+   "sha256": "32619fae1608207a264d30155766b6287f00d75cd75bf84859d7c0fdb31c9c6e",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M05-your-meetnote-receipt-mn-20260914-0310.eml",
+   "bytes": 2639,
+   "sha256": "abac4cc00882d69ff9ccb083b2ae4d81bfcc560b414d6eb5c3bc092c9ccb15d4",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M06-fwd-ihre-rechnung-2026-0042.eml",
+   "bytes": 5259,
+   "sha256": "ab8e726217a82a45f29373987a9f5bf199a54123adf4321d26441d99219a4ccc",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M07-rechnung-lf-2026-031-teamfotos.eml",
+   "bytes": 5369,
+   "sha256": "2a6bb9ba133940c7ec7c7666030a7fb36be5a0750a8037d464fbba497e627029",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M08-fwd-invoice-pw-inv-2026-0928-badges-and-lanyards.eml",
+   "bytes": 5217,
+   "sha256": "e07b49db41df3cf61d023930210de71679d52bacdb35af44c2605b05191e088a",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M09-invoices-and-payments-for-cedar.eml",
+   "bytes": 683,
+   "sha256": "b0be31f2718241150553493fbec90ab7f68effa3ef5b59fb1ba1a315ed24eb29",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M10-deposit-invoice-lh-a-2026-0930-maple-room-22-oct.eml",
+   "bytes": 5356,
+   "sha256": "dc32a5adf191c0d94326b4c08611c8e785484764ba46bb23a9ebf9810b1e0627",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M11-korrigierte-rechnung-lf-2026-031-neue-bankverbin.eml",
+   "bytes": 5686,
+   "sha256": "5afaf7985a5a91c17f78423ab4e449ac891f95c12e642e2e99b55611a868a28a",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M12-unterlagen-september-september-package.eml",
+   "bytes": 1270,
+   "sha256": "1ddc149598c3a651dfb3969365650da0325788ae1d223d366b55e603378acc8e",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M13-expense-claim-september.eml",
+   "bytes": 376706,
+   "sha256": "d0fff175d31de3b5ce1e26a2a40fd33502219c6278057d4c8fb423658c8349ce",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M14-re-invoice-pw-inv-2026-0928-badges-and-lanyards.eml",
+   "bytes": 693,
+   "sha256": "913d497e8cb486ec35383e7683cc60a6331f3f68ca9af318919fbce209868570",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M15-urgent-confidential-payment-today.eml",
+   "bytes": 787,
+   "sha256": "bc4c244758730823195359541cf2b2d16d5bda2bfa87622952e91545541cd868",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M16-maple-room-deposit.eml",
+   "bytes": 652,
+   "sha256": "1984ed565bd77c7badeeb4ef048ad7fd395103d9b9a450024d79013cd3ec6f26",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M17-extra-pads-how-much.eml",
+   "bytes": 632,
+   "sha256": "a65d2456f1c0e3fa4f0da16e5c97ebc5e32f03a6980b4452d721fe2d0a54d311",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M18-cleardesk-october-card-declined-paid-by-transfer.eml",
+   "bytes": 674,
+   "sha256": "0d82aac41b393925b34cf90f4d5548906fa872699c92b474fdfe66cadd4d667b",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M19-your-payout-of-eur-330-97-is-on-its-way.eml",
+   "bytes": 2169,
+   "sha256": "3af9cf90e560ecc13f00d16e69739bcf385f852ddae0c6ccb1b09a7c062537aa",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/eml/M20-your-payout-of-eur-1-037-01-is-on-its-way.eml",
+   "bytes": 2175,
+   "sha256": "47da75784a856a722392f3bffc4d1792dd38b530abdcaecdbef83df2b4e2a34b",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/labels.json",
+   "bytes": 1702,
+   "sha256": "db9204e87a220530cec367809644c56ad572029327dacd0e1ab0faac7491eed9",
+   "fictional": true
+  },
+  {
+   "path": "mailbox/mira-beispiel.mbox",
+   "bytes": 434537,
+   "sha256": "805f49f5716a9b3f6fbcd05727bb5863e1272ef03b82b0df99d930d09700ee4d",
+   "fictional": true
+  }
+ ]
+}

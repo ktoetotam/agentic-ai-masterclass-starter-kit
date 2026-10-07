@@ -1,0 +1,32 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "accountant-agent",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: an accountant agent that turns a month of invoices, receipts, bank statements and Stripe payments into checked tables, a reconciliation and a review list for a person, with every value quoted from its source and every sum done by a script.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "keywords": [
+    "accountant",
+    "invoices",
+    "reconciliation",
+    "stripe",
+    "masterclass"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Accountant Agent",
+        "shortDescription": "Invoices in, checked fields and a reconciled month out.",
+        "longDescription": "Sets up and runs the Agentic AI Masterclass accountant challenge: collect a fictional company's September documents, extract fields with their source line, check the sums with a script, reconcile bank and Stripe, and prepare a DRAFT package for the tax adviser. Nothing is paid or sent.",
+        "developerName": "AI Realist",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Set up my accountant agent for the AI Realist masterclass."
+        ]
+      }
+    }
+  }
+}

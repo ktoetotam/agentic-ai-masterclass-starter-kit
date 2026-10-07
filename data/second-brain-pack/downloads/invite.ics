@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//AI Realist//second-brain-pack//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Invitation
+METHOD:REQUEST
+BEGIN:VEVENT
+UID:walk-0925@juniper-workshop.invalid
+DTSTAMP:20261007T060000Z
+DTSTART:20260925T080000Z
+DTEND:20260925T084500Z
+SUMMARY:Maple Room walk-through
+LOCATION:Linden Hall Events\, Lindenplatz 3\, München
+DESCRIPTION:Fictional workshop data.
+ORGANIZER;CN=Noor Sample:mailto:noor.sample@lindenhall-events.example
+ATTENDEE;CN=Alex Example;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE:mailto:alex@juniper-workshop.invalid
+ATTENDEE;CN=Jordan Example;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;RSVP=TRUE:mailto:jordan@juniper-workshop.invalid
+END:VEVENT
+END:VCALENDAR

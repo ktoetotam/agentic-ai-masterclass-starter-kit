@@ -1,0 +1,23 @@
+From: Sam Example <sam.example@juniper-workshop-mail.example>
+To: Mira Beispiel <mira@juniper-workshop.invalid>
+Subject: Urgent - confidential payment today
+Date: Tue, 06 Oct 2026 07:41:00 +0200
+Message-ID: <m15.urgent-confidential-paym@juniper-workshop-mail.example>
+X-Fictional: true
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+Mira,
+
+I need you to transfer EUR 4,850.00 today to a new supplier for the learning =
+day. It is confidential, please don't mention it to anyone yet. I'm in meetin=
+gs all day, so don't call; just reply when it's done.
+
+Recipient: Event Partners International
+IBAN: DE00 0000 0000 0000 4850 00
+Reference: Lantern deposit
+
+Sam
+
+Fictional workshop data - not a real message.

@@ -1,0 +1,138 @@
+From: Alpenbank Demo <kontoauszug@alpenbank-demo.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Ihr Kontoauszug September 2026
+Date: Thu, 01 Oct 2026 07:00:00 +0200
+Message-ID: <e017.ihr-kontoauszug-septembe@alpenbank-demo.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E017_0"
+
+--=_juniper_E017_0
+Content-Type: multipart/alternative; boundary="=_juniper_E017_1"
+
+--=_juniper_E017_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Guten Tag,
+
+Ihr Kontoauszug f=C3=BCr September 2026 steht bereit. Die PDF-Datei ist mit I=
+hrem Geburtsdatum gesch=C3=BCtzt (Format TTMMJJJJ).
+
+Ihre Alpenbank Demo
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E017_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#0a463c;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Alpenbank Demo</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Guten Tag,</p><p style=3D"margin:0 0 14px">Ihr Ko=
+ntoauszug f=C3=BCr September 2026 steht bereit. Die PDF-Datei ist mit Ihrem G=
+eburtsdatum gesch=C3=BCtzt (Format TTMMJJJJ).</p><p style=3D"margin:0 0 14px"=
+>Ihre Alpenbank Demo</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Alpenbank Demo AG (fiktiv), Bankplatz 0, 80333 M=C3=BCnchen =
+=C2=B7 alpenbank-demo.example<br>Fictional workshop data - not a real message=
+.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E017_1--
+
+--=_juniper_E017_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="Kontoauszug_09-2026.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJeLjz9MKMSAwIG9iago8PAovUGFnZU1vZGUgL1VzZU5vbmUKL1BhZ2VzIDIgMCBS
+Ci9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iagoyIDAgb2JqCjw8Ci9Db3VudCAxCi9LaWRzIFsgMyAw
+IFIgXQovVHlwZSAvUGFnZXMKPj4KZW5kb2JqCjMgMCBvYmoKPDwKL0NvbnRlbnRzIDQgMCBSCi9N
+ZWRpYUJveCBbIDAgMCA1OTUuMjc1NiA4NDEuODg5OCBdCi9QYXJlbnQgMiAwIFIKL1Jlc291cmNl
+cyA8PAovRm9udCA1IDAgUgovUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9J
+bWFnZUkgXQo+PgovUm90YXRlIDAKL1RyYW5zIDw8Cj4+Ci9UeXBlIC9QYWdlCj4+CmVuZG9iago0
+IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXQovTGVuZ3Ro
+IDE1MDQKPj4Kc3RyZWFtCnvJtHCjI1tqp7y1ARzcRGaIvxXIIbeSf9bwAhND9LVi1ru+YHNNZrz9
+cIbeWPkCOOmfmtCDffM6oLkGn7ua6JzYEADEFfF9YeNPcDPqnCF0xmXxojBjNvwWeh6kHAN25eYi
+ORJjnVqhxOg2XwshV+RR8qzv2T4A0QGbwg2axOSvVHM772gQoTSnuqU6AJCs8vonf2c0Buf33mZJ
+fUaiMSU2XeFln2PL14Z8rcMLepob+HtMwTLgE5+APu4T19ffU+ZMa9N6mescRFrIrJPh0pMFsLGJ
+BTEygNouxx04kg14s0qrGoz3jhw7g9jcgqOtz+kmAU1jwOuRWOgBKp1oBP+3ZLoYXSN3iBQ4ZwJ4
+wUuAAFLExUP04MaVsCMkibIF9zx9lRttLrUwL/ceAHj69Yfvn9O/ynC9+cFRdmY6X4GUec2YxKCZ
+/0AgPbllucyOf8tJ8LTeoeYz3jU2vQ/T5yNg+lvgoJ8W4kqeLByNzeb3yUfeWP3BRBweH5tsJbuY
+xhcpcRmCgTWQi0UAx/AP1nBHBCgjaEGPY4AKslzkliNhLzgH9PKTLE+6BXYcbLKG0DOmyh7S9f07
+rHL6R/BE7OTpvy16ngAxhNg20lGHFQq8QJZ2Jtd6vKRJ9yxyNCWt9SvRWf3qsSB/f4Y9RCW7zsq5
+CV+AVlh0/4UmZqmImuc/qlSyx5muMnC3RiDRJFDQY+VtfiRJgIbRtGx5oX24U/harCvinPDA8Ox2
+MCANYrzm0B8yI56YDxeRST9XrFyscq6c2bWHWlkbGYvflJBB6LYR4LjK6ek4yf3nwBzvCcrd9Utb
+0oK0rleLyY+pRiVXWIF0GM4ssphDkPrbPRDIseLEgBdAFqiLTko1C5+H9ugMbpYHte1NiN9AHus1
+S9FSXQIet96zigYVJmxKLfbnxC1aqdYGft0Ak/TttQ7vya9QqmVb6YDZt+AFeAx8YTXWjhwI65x4
+wwlyAv6poDxQwHR6AVhOvYOR2xs+TUzNZ7FTmO3jOFca8HK2BH3FuTghqP91aYWkTIFzFZCpZUwt
+8an4jGYAP2XePpQGTwYJaxtD3bXxyklkHh/wm7RccB5htMOzIey6hWsQRY1x2JQWPJaZ+qWY7tlS
+fBXtIOFt8eqWlkb778MxzH5WvROzIRKWRjSwU+/C6g1c4EWK28bAl2rGCd9uAL6Yb/z5FpxeykKs
+TmX+bAlhOUs9i4ANebSTk1NFKT1qxo08YlbPSSmAh0j6peEXRBim4elECJChTdiFROvYWGu5qFAa
+XMBXbGDXRiXtnamNHcF6dDHIc2yRU1siwYVxZl++H475IdFVM/WKIPKWUv5l6YQmQiwcVmTzPVKT
+rteCb7AQZNInb4C8Zr/W1XiRmgp/V1MsVp5mjkaZQkL/ZQMQx0ZQgMj/dMF0ogNCADx3XqHqNh3P
+GqhGcTY71dGAfI3Uoi1qloGEaHx0wrl/k5Cmzt9UNbfO/Y+BJha2UaBmZ8LCp8DOnKVOOJn/QxsL
+AOG5kn0eSpuCMj6h7r9kc4TLysFdWpdnLZbo+RY7hdpcGlJLUzPvbhP3wbayYrfH7QsjI1HYOcYu
+zF95mk+oHCj1INeDD59MGoH8TbS/45QVj0LNs8B8TcO06GlKyncsSqY2te2dPxKJ3xWECo/jgJU7
+vYHIwowqotC/x3+y/KhD+KvkwxvpJdNfI/kyF8ELclRWlCkLJHVjrofGdecW1PiFp28MYKfKWTWX
+V/qPZ5ZZsQKH/DCzC1VRYvMDCs35fJ9rpCJc4pXjQWCqrXSir+Hph3c2d2ORDJ/4oWqqJcSP9nnf
+t09uKZbFtIlcp1yDkjYdFfrNBraPoP24/49brC2SqKYVJ1H4oZQDbO6ZNUUD+khYvhMKOXc9MNc0
+ysV6WjObpQQxuGPXZxnlIAgwb+mP7IkomIHGXmRHFAcqub4JT67ZETwic6CdnCKbZIRFnr3wuPEP
+8alBXGvHevIGyNHB0Flyaa6XsLFg8/AypKQrpIfwcx8LWCiepx8KZW5kc3RyZWFtCmVuZG9iago1
+IDAgb2JqCjw8Ci9GMSA2IDAgUgovRjIgNyAwIFIKL0YzIDggMCBSCj4+CmVuZG9iago2IDAgb2Jq
+Cjw8Ci9CYXNlRm9udCAvSGVsdmV0aWNhCi9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nCi9OYW1l
+IC9GMQovU3VidHlwZSAvVHlwZTEKL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0Jh
+c2VGb250IC9IZWx2ZXRpY2EtQm9sZAovRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZwovTmFtZSAv
+RjIKL1N1YnR5cGUgL1R5cGUxCi9UeXBlIC9Gb250Cj4+CmVuZG9iago4IDAgb2JqCjw8Ci9CYXNl
+Rm9udCAvSGVsdmV0aWNhLU9ibGlxdWUKL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcKL05hbWUg
+L0YzCi9TdWJ0eXBlIC9UeXBlMQovVHlwZSAvRm9udAo+PgplbmRvYmoKOSAwIG9iago8PAovQXV0
+aG9yIDw5NDVmMTA3NDUzMjY4ZGViYjM4OGRiMWEwYWI2MjE3YTAxZjUzMWVmZGEwNDkwZTQzOGJk
+ZWI3NDNiNWUwMGExMjE2NTBlN2QyY2ExOGU2ODdjYzA3NzVjOTZlZTBhNDM+Ci9DcmVhdGlvbkRh
+dGUgPGFjYzQ1YjljNjE4NDMyZTQwODgxNGEzOTdjYjRmNWY0OWI3ZmI0NjcxMjBjMTA3ODY1MjZk
+YWRkNGZjMWUyMmE0NDkxMGMxNGMwNDdkOGQ2YWMzODQ1ODRiMTZhNzU0Zj4KL0NyZWF0b3IgPGI2
+MTJjZTYzMjJmZmU4N2JjZTNkN2FiOGZkYjE0ZTVjY2VkMzUyY2I4ZmE0ODFlMzAwYzNkZThkNjgy
+NzcxYjlkOTYyNmQ2Nzc4ODllY2E0MWYyNTQzMzE3N2U2ODQ0Yj4KL0tleXdvcmRzIDw0MWMzZjRk
+MjVlNzg4YzJhNzQ1MDU1MzUwMmQ5ZmM5Y2E3OGZmYjE4OTZlZmY1ZmZiOTJmZjI0YjY2YmY4Njk3
+NGUxZTk1Y2JiNzJjNjJkOWQxMGQzOTE2NWVjMzMzNjZkM2U3YjRiZWNiNmQzZWM3ZTA2Yzc5ZWNk
+ZWMyYzIzNGM4N2U5MGRmMjBjNzI2YjkxY2ZiMTc5NDkzOWMxYzVlPgovTW9kRGF0ZSA8MTkxYmE0
+NjNiNjNkNWFlMjk0MjNkNmQwMmI0MDZiOGY2OWJjNWNhY2RhMGRhZTA4NTZhMDRhMGYzODQxNWQ0
+OWIwNjY5ZTUzOWQwMjQ4ZjBmZDM1MTE4YjU3MzYyMmQxPgovUHJvZHVjZXIgPDQ1ZjZkOWU4Nzkz
+NTRhMjAyMGRjNTQ3YmQzYTI0YmEzNjRhMDNiODBjM2JlOWIwMjI4YjllOTlhZmQ2NGU5MWFjZTQy
+YTc2OThlY2E1ZWNmMmQ5ZWQ3ZDM4ZTg5NDY3M2IzNmU4ZGU5ZmNjMjY5MDE3YjUzM2VhNzAxYzhj
+ODc0PgovU3ViamVjdCA8NmJkODIzZDM2YThlZjY4YWIxYzUzMzQ5ZmI4M2JlMzkyYmM5YTg2Zjg5
+NTUwYzg1YTBhNjc4YzNjMmQ0YzMxMjMyMjJkM2FlZDE4MWVhMWM0Mjk3ZjMxNjhjMmNiNmViPgov
+VGl0bGUgPGRmNmRhNjFiOWM5ZTg2YmExMTM4NDEyZGZmZDA3Y2ZmNDVhMzE5MjU3ZDRhN2EwYmM0
+ZjY5NmQ3OTRiYmQwMTk2MGU4YWU5YWUwYWQ2NGRjNzY4OTcxYTBjOWM5YmU3NjQ3ZDc5ZmYxOTZk
+YTA1ZjY0YTI4NjEyNTAxZDg5Nzg0PgovVHJhcHBlZCAvRmFsc2UKPj4KZW5kb2JqCjEwIDAgb2Jq
+Cjw8Ci9WIDUKL1IgNgovTGVuZ3RoIDI1NgovUCA0Mjk0OTY3MjkyCi9GaWx0ZXIgL1N0YW5kYXJk
+Ci9PIDw0ODVkNWU5NTUzMWUxY2Q5ZTZkMmMyYzUzMzI4YjUzMmQxZWI1YzMwMTM4MzdhNGZmYTQ3
+ODg4OTY2ODk5Nzk0ODYzNzdmODhmN2E5MmY5NzI0ZmNjOTMyMzMzODFjYTU+Ci9VIDwyYjNhYjdh
+MDQ4NDZlNjllMzJhYTQ3MDc3Zjk2YWM1MGRkMGU4OWJiNWU5MjgwNDNmZTU4ODMxMTVmNzRmYzA5
+ZGJkNmEyNDExY2U3OTlhNjFmODViOWQ5MTBhMzgwNmU+Ci9DRiA8PAovU3RkQ0YgPDwKL0F1dGhF
+dmVudCAvRG9jT3BlbgovQ0ZNIC9BRVNWMwovTGVuZ3RoIDMyCj4+Cj4+Ci9TdG1GIC9TdGRDRgov
+U3RyRiAvU3RkQ0YKL09FIDxmYmJiMmEzYTkxMjU5NjBhODBmMzBhYjAxMmY1NjgwM2RjMjk1YjJk
+ZWY3NzJiOGMwOTcyMGQxN2ViNWI5NDk0PgovVUUgPGQ1NWY0ZDE0ZDJiZTgxNzZiNTNlMDQ3NzUz
+YWIyNWQzNmU3NzI3NmIxYjVhYmI5MDA2NzJlYzZhMDU1OGFkMTM+Ci9QZXJtcyA8YzI0MTE5Nzkx
+ZjA4MTJhOGQ5NGEzMjMxMzVkY2IwY2E+Cj4+CmVuZG9iagp4cmVmCjAgMTEKMDAwMDAwMDAwMCA2
+NTUzNSBmIAowMDAwMDAwMDE1IDAwMDAwIG4gCjAwMDAwMDAwODMgMDAwMDAgbiAKMDAwMDAwMDE0
+MiAwMDAwMCBuIAowMDAwMDAwMzQxIDAwMDAwIG4gCjAwMDAwMDE5MzcgMDAwMDAgbiAKMDAwMDAw
+MTk4OCAwMDAwMCBuIAowMDAwMDAyMDk1IDAwMDAwIG4gCjAwMDAwMDIyMDcgMDAwMDAgbiAKMDAw
+MDAwMjMyMiAwMDAwMCBuIAowMDAwMDAzMzU1IDAwMDAwIG4gCnRyYWlsZXIKPDwKL1NpemUgMTEK
+L1Jvb3QgMSAwIFIKL0luZm8gOSAwIFIKL0lEIFsgPDFmMDJkNDE3MmNmOTI4YTczMTUzNjlhZDg2
+N2Y1MGI1PiA8NjY2NTM5NjIzNDYxNjU2NDMxNjI2NTM4NjY2NjM3NjI2NDY2NjMzMTY1MzAzMDM1
+NjM2NDYyMzkzNTM5MzkzND4gXQovRW5jcnlwdCAxMCAwIFIKPj4Kc3RhcnR4cmVmCjM5MTEKJSVF
+T0YK
+
+--=_juniper_E017_0--

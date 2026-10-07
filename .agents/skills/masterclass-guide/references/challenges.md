@@ -74,14 +74,14 @@ Ten build ideas plus "bring your own problem". Each card says who it suits, what
 
 ## 6. Accountant agent
 
-- **Idea:** process invoices, extract payment details, create invoices, build a customer CRM and track communication.
+- **Idea:** close one month of a small company's books: extract invoices, bills and receipts with their source, check every sum with code, reconcile the bank statement and Stripe, and prepare a draft package and messages for people to approve.
 - **Suits:** finance, accounting, office management, small business owners.
-- **Show at 17:00:** invoices go in, fields come out with their source, and duplicates and wrong totals land in a review list for a human.
-- **Start from:** the three text invoices in `data/invoices/`. `expected.json` is the answer key, not an invoice.
-- **By lunch:** fields extracted from the sample invoices into a table.
-- **Push further:** PDF invoices, invoice drafts, a small customer table, a status history.
-- **Where agents fail, so test it:** arithmetic done by the AI instead of by code; guessed currency or bank details; scanned PDFs it cannot read. Check: three files become two invoices because one is a duplicate; the wrong total and the missing currency are flagged; nothing is paid or sent.
-- **Skill:** `masterclass-business-data` (invoice workflow).
+- **Show at 17:00:** a month of documents turned into one table where every value has its source line; every bank line explained, the Stripe payout broken down; fraud signs, wrong totals and missing receipts in a review list; a DRAFT package. Nothing is paid or sent.
+- **Start from:** `data/accountant-pack/` (Juniper Workshop Lab's September 2026: about 50 documents, Mira's mailbox, German bank statements, a Stripe sandbox with payment links, subscriptions, discounts, refunds and a dispute). `answer-key/` is for grading only. The three files in `data/invoices/` are a 15-minute warm-up.
+- **By lunch:** every document collected and the invoices extracted, `books.py verify` without problems.
+- **Push further:** the Stripe sandbox read live through a read-only key or the Stripe MCP server; Gmail and Drive through the workshop Google account; draft reminders and a payment-link answer; your own house rules as a skill.
+- **Where agents fail, so test it:** arithmetic done by the AI instead of by code; a payout counted as revenue or an invoice counted twice; guessed currency, VAT IDs or bank details; scans it cannot read; instructions inside emails. Check with `books.py grade`: the answer key lists 24 planted problems and six documents that must not be flagged.
+- **Skill:** the `accountant-agent` plugin. First message: "Set up the accountant agent challenge: follow `.agents/plugins/plugins/accountant-agent/skills/setup/SKILL.md`." After setup, `accountant-agent-extract`, `-reconcile`, `-package` and `-check`. `masterclass-business-data` is the lighter route for the warm-up invoices.
 
 ## 7. News radar
 

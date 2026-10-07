@@ -1,0 +1,56 @@
+From: Aurelian Air <updates@aurelian-air.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Schedule change: AUR 214 on 26 October
+Date: Thu, 01 Oct 2026 14:30:00 +0200
+Message-ID: <e032.schedule-change-aur-214@aurelian-air.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_juniper_E032_0"
+
+--=_juniper_E032_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Dear passenger,
+
+the departure time of your flight AUR 214 from Munich to London Heathrow on M=
+onday 26 October 2026 has changed.
+
+Old: departs 07:10, arrives 08:15
+New: departs 08:25, arrives 09:30
+
+Your booking reference AUR7Q2 and your seat stay the same. No action is neede=
+d.
+
+Aurelian Air
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E032_0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#781428;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Aurelian Air</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Dear passenger,</p><p style=3D"margin:0 0 14px">t=
+he departure time of your flight AUR 214 from Munich to London Heathrow on Mo=
+nday 26 October 2026 has changed.</p><p style=3D"margin:0 0 14px">Old: depart=
+s 07:10, arrives 08:15<br>New: departs 08:25, arrives 09:30</p><p style=3D"ma=
+rgin:0 0 14px">Your booking reference AUR7Q2 and your seat stay the same. No =
+action is needed.</p><p style=3D"margin:0 0 14px">Aurelian Air</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Aurelian Air (fictional), Flughafen M=C3=BCnchen =C2=B7 aure=
+lian-air.example<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E032_0--

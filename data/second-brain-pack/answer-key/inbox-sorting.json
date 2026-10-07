@@ -1,0 +1,86 @@
+{
+  "fixture_only": true,
+  "exclude_from_index": true,
+  "items": [
+    {
+      "item": "notes/0-Inbox/call-noor.md",
+      "belongs_in": "deadlines + people",
+      "why": "Final attendee number to Noor by 15 Oct (DL07); Wi-Fi question stays open"
+    },
+    {
+      "item": "notes/0-Inbox/video-tutorial-idea.md",
+      "belongs_in": "ideas",
+      "why": "Same as I02 'Short video tutorial for the intake form' (duplicate idea)"
+    },
+    {
+      "item": "notes/0-Inbox/hdmi-adapter.md",
+      "belongs_in": "purchases",
+      "why": "New purchase, 2026-10-02, EUR 19.90, Kabelkiste, equipment"
+    },
+    {
+      "item": "notes/0-Inbox/cafe-lindgren-upstairs.md",
+      "belongs_in": "places + ideas",
+      "why": "Note on PL04; same as idea I15"
+    },
+    {
+      "item": "notes/0-Inbox/priya-team-size.md",
+      "belongs_in": "people",
+      "why": "Add to Priya Demo (P08) interactions, 2026-10-01"
+    },
+    {
+      "item": "notes/0-Inbox/passport.md",
+      "belongs_in": "deadlines",
+      "why": "New deadline: renew passport before March 2027"
+    },
+    {
+      "item": "notes/0-Inbox/read-later-handover.md",
+      "belongs_in": "resources",
+      "why": "Same article as 3-Resources/Reading/clip-handover-notes.md (saved twice)"
+    },
+    {
+      "item": "notes/0-Inbox/ravi-mornings.md",
+      "belongs_in": "people",
+      "why": "Add to Ravi Example (P11)"
+    },
+    {
+      "item": "notes/0-Inbox/wifi-linden-hall.md",
+      "belongs_in": "places (open question)",
+      "why": "Still unanswered; see the Telegram message of 7 Oct"
+    },
+    {
+      "item": "notes/0-Inbox/notion-formulas.md",
+      "belongs_in": "ideas",
+      "why": "Same as I05"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-06 19:02)",
+      "belongs_in": "purchases",
+      "why": "Monitor arm, EUR 39.90, Bureau Bits, 2026-10-06 (outside Q3)"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-06 21:15)",
+      "belongs_in": "ideas",
+      "why": "Similar to I10 'Offer the learning day in German'"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-07 07:40)",
+      "belongs_in": "deadlines",
+      "why": "Call Lea before 12 Oct (relates to DL06)"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-07 08:05)",
+      "belongs_in": "receipts",
+      "why": "Photo of the parking receipt; the photo itself is not in the pack"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-07 08:30)",
+      "belongs_in": "places",
+      "why": "Wi-Fi password location (Maple Room whiteboard); the password itself is still not known"
+    },
+    {
+      "item": "telegram/updates.json (2026-10-07 09:10)",
+      "belongs_in": "ignore",
+      "why": "Message from another user ID (200000002): spam, not from Alex"
+    }
+  ]
+}

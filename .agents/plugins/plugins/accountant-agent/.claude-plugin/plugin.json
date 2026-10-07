@@ -1,0 +1,11 @@
+{
+  "name": "accountant-agent",
+  "displayName": "Accountant Agent",
+  "version": "1.0.0",
+  "description": "Masterclass challenge: an accountant agent that turns a month of invoices, receipts, bank statements and Stripe payments into checked tables, a reconciliation and a review list for a person, with every value quoted from its source and every sum done by a script.",
+  "author": {
+    "name": "AI Realist"
+  },
+  "repository": "https://github.com/ktoetotam/agentic-ai-masterclass-starter-kit",
+  "keywords": ["accountant", "invoices", "reconciliation", "stripe", "masterclass"]
+}

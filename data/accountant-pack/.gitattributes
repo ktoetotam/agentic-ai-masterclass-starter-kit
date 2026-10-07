@@ -1,0 +1,8 @@
+# Generated fixtures: keep the bytes exactly as written. Email formats and German bank CSV exports use
+# CRLF line endings, and Git on Windows must not convert them.
+*.pdf binary
+*.eml binary
+*.mbox binary
+*.csv binary
+*.xlsx binary
+*.jpg binary

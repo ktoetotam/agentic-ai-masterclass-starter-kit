@@ -1,0 +1,58 @@
+From: Mira Beispiel <mira@juniper-workshop.invalid>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Fwd: Payment details for your deposit
+Date: Fri, 02 Oct 2026 08:55:00 +0200
+Message-ID: <e076.fwd-payment-details-for@juniper-workshop.invalid>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E076_0"
+
+--=_juniper_E076_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Alex,
+
+forwarding Noor's payment details for the deposit (original attached). I've e=
+ntered them in the bank; please don't copy the account number anywhere else.
+
+Viele Gr=C3=BC=C3=9Fe
+Mira
+
+--
+M. Beispiel =C2=B7 Finance & Office
+Juniper Workshop Lab
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E076_0
+Content-Type: message/rfc822; boundary="=_juniper_E076_1"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+Content-Disposition: attachment
+
+From: Noor Sample <noor.sample@lindenhall-events.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Payment details for your deposit
+Date: Thu, 01 Oct 2026 16:10:00 +0200
+Message-ID: <fwd-noor.payment@lindenhall-events.example>
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 8bit
+MIME-Version: 1.0
+
+Dear Alex,
+
+for the deposit of EUR 300.00 please use:
+Account holder: Linden Hall Events GmbH
+IBAN: DE00 0000 0000 0000 0000 99 (invalid, fictional)
+Reference: LH-Q-2026-0914
+
+Best regards
+Noor Sample
+Events Manager
+Linden Hall Events GmbH · Lindenplatz 3 · 80331 München
+T +49 000 0000001 (fictional)
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E076_0--

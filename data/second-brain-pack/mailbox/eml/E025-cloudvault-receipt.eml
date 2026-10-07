@@ -1,0 +1,104 @@
+From: CloudVault Backup <billing@cloudvault.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: CloudVault receipt
+Date: Sat, 03 Oct 2026 04:00:00 +0200
+Message-ID: <e025.cloudvault-receipt@cloudvault.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E025_0"
+
+--=_juniper_E025_0
+Content-Type: multipart/alternative; boundary="=_juniper_E025_1"
+
+--=_juniper_E025_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+We charged EUR 2.99 for CloudVault Backup 200 GB. Next payment: 3 November 20=
+26.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E025_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#3c82c8;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">CloudVault Backup</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">We charged EUR 2.99 for CloudVault Backup 200 GB.=
+ Next payment: 3 November 2026.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">CloudVault (fictional) =C2=B7 cloudvault.example<br>Fictiona=
+l workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E025_1--
+
+--=_juniper_E025_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="receipt (3).pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChDbG91
+ZFZhdWx0IEJhY2t1cCBcKGZpY3Rpb25hbFwpKSAvQ3JlYXRpb25EYXRlIChEOjIwMDAwMTAxMDAw
+MDAwKzAwJzAwJykgL0NyZWF0b3IgKHNlY29uZC1icmFpbi1wYWNrIGdlbmVyYXRvcikgL0tleXdv
+cmRzIChmaWN0aW9uYWw6IHRydWU7IEFJIFJlYWxpc3QgQWdlbnRpYyBBSSBNYXN0ZXJjbGFzcykg
+L01vZERhdGUgKEQ6MjAwMDAxMDEwMDAwMDArMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQ
+REYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoRmljdGlvbmFsIHdvcmtz
+aG9wIGRvY3VtZW50KSAvVGl0bGUgKFJlY2VpcHQgQ1YtNzcyMTAtMTAwMykgL1RyYXBwZWQgL0Zh
+bHNlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9Db3VudCAxIC9LaWRzIFsgNSAwIFIgXSAvVHlwZSAv
+UGFnZXMKPj4KZW5kb2JqCjkgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0
+ZURlY29kZSBdIC9MZW5ndGggMTEzNwo+PgpzdHJlYW0KR2F0VTJhYGMtKiZEZDQ2QydnRStrYjM9
+VjRUXjBEIkM8ZGBaNFdncGtYQyxiL11ZdWo7aic3Nk5vZmpsNSYsQFZGbDBjOV9fIkZrSSopKDwv
+SEBFI25GaVVbV0YxI1tQKXMpSikocWcjPDgrOTlKNDlZcHB0TClCUCRpX3RxV1JlKUtbPGt1S1Jx
+W0wiPSRibEQmIyRHZDVnSGEhMzdmUCs+bC1WY21eL1hLTzBqIl1MbmlgNSFUXENLWFotNjA6ZEo0
+aSZRXl1AMFVzX1RkQWBGR2BIYzdXI2pmLWhgZFhwR3REYiQoRElkJzZQJUtOWyhOSnFcKFRCa1lu
+LVhraVo8UXUzYTcubFhnQHVbZU4+QTY7Mz0yPStLKnJSMEsia18hTyhBQ2VhaUlcQT07JWdPZWBO
+MmZrWnVTI0xiVktTQCFqbF1zL11yMlswPztAaHUvZGBuUGhFREkyLjJCcTg3OFAyRXE/ZyQoZWFa
+KUVtL0VhNV9JUW82WFolMUw3U1VtVTdgIkZ0YGxVJmZzOlMzTFYicjkjS0pPaicjZnA2KEZFKVRi
+YCxeXyExcF1yPCFjOkg2aDhaMUZFIl1dUVtMY3NzXlU8TjhjS19mOjVIQUtDW1pEaSw8U0IzQypN
+LExlSGs7QmM4cD5LY0wrcF1RcihJKFw5Sks0QVA4XD0uZ14wakRsLVInNUtpXDIzVkBDQys/Y1sl
+ZkNpTzYkcjw1VSxTVUQuPzc0TFchUm9kXDQlJj4lOlhXaWBEWj1BI2F0JF4rWnBGXzRpay5pO3Ft
+NlRCQGFFO09nQidvXV1WayZ1XEJbIzVVXGJgdE9tN2lBPnBWQ0pbQE5QQSs0aGQhRjBYSWBtb2sx
+Jjx0dElDKy5CLk8hYSFgPktAaT1sOERnVlw8WlIlbiddKz9jQW9dQiQjKitiUEZXaEk5NnFbZWA0
+QW46RClHaFxMPEBlRTM7Jz4qUmdEI2w5ZzhgTk02JGlJc10lQlw4cjQ8ISMwT01QOFtzc2hrbkNV
+X1gvPCkkL081R29AUGMyR1hxby4oN0ZpWSJoYCUyXDRHZFZObEMrYSFiYXMiMjBbXWhbWFtXKyZR
+Ll1RWURHP3VALzVqPWo3cGwlUkUmaS1UZDQ5Kl1BPTpRbm4jSFtLXzZNZU9hdW1xbE82W2Q6UFlk
+VDlBPlQoPktwPWhfQFQocCoqY15WKSJfYyUtWC5FSjExdUVscm9lQkVjamZEOi0ibW8+OiNkTXJV
+KmpmVVJcJGxYZSdXJytcViMwPWZzbCNNS141WEg+MUgyLjY8NEAjKjBuQTpMK0hVL1xGKCUoY2pf
+PVxIYHFBQiskSjJFV05NSFVsYzhsJFgoSkEhVUlCYzBDby47SklQb01uTSM4ajhNXWdwInJIci5U
+bEg3RTIwaCJwMWxiXWYvcmw1SE09QjRzSmBJMFVyaGM3NyhqOjBELlhEMTs5YjUkJFg1I3RvR0JD
+TXQlKmpZPkhXXTpjNVohXTM6LDZGJm4iPE8uTH4+ZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgMTAK
+MDAwMDAwMDAwMCA2NTUzNSBmIAowMDAwMDAwMDYxIDAwMDAwIG4gCjAwMDAwMDAxMTIgMDAwMDAg
+biAKMDAwMDAwMDIxOSAwMDAwMCBuIAowMDAwMDAwMzMxIDAwMDAwIG4gCjAwMDAwMDA0NDYgMDAw
+MDAgbiAKMDAwMDAwMDY0OSAwMDAwMCBuIAowMDAwMDAwNzE3IDAwMDAwIG4gCjAwMDAwMDEwOTcg
+MDAwMDAgbiAKMDAwMDAwMTE1NiAwMDAwMCBuIAp0cmFpbGVyCjw8Ci9JRCAKWzwzNTRmMmM4OTBk
+NDRjYzZkYTIxNGQzNTkwYzBhZWUzOT48MzU0ZjJjODkwZDQ0Y2M2ZGEyMTRkMzU5MGMwYWVlMzk+
+XQolIFJlcG9ydExhYiBnZW5lcmF0ZWQgUERGIGRvY3VtZW50IC0tIGRpZ2VzdCAob3BlbnNvdXJj
+ZSkKCi9JbmZvIDcgMCBSCi9Sb290IDYgMCBSCi9TaXplIDEwCj4+CnN0YXJ0eHJlZgoyMzg0CiUl
+RU9GCg==
+
+--=_juniper_E025_0--

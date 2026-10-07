@@ -1,0 +1,105 @@
+From: StreamBox <receipts@streambox.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Your StreamBox receipt
+Date: Tue, 15 Sep 2026 03:12:00 +0200
+Message-ID: <e021.your-streambox-receipt@streambox.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E021_0"
+
+--=_juniper_E021_0
+Content-Type: multipart/alternative; boundary="=_juniper_E021_1"
+
+--=_juniper_E021_1
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Thanks for watching. We charged EUR 13.99 for StreamBox Standard. Your next p=
+ayment is on 15 October 2026.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E021_1
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#c81414;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">StreamBox</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Thanks for watching. We charged EUR 13.99 for Str=
+eamBox Standard. Your next payment is on 15 October 2026.</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">StreamBox Media (fictional) =C2=B7 streambox.example<br>Fict=
+ional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E021_1--
+
+--=_juniper_E021_0
+Content-Type: application/pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="StreamBox receipt 2026-09.pdf"
+MIME-Version: 1.0
+
+JVBERi0xLjMKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3Vy
+Y2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNCAwIFIKPj4KZW5kb2JqCjIg
+MCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2Rpbmcg
+L05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8
+PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9O
+YW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwK
+L0Jhc2VGb250IC9IZWx2ZXRpY2EtT2JsaXF1ZSAvRW5jb2RpbmcgL1dpbkFuc2lFbmNvZGluZyAv
+TmFtZSAvRjMgL1N1YnR5cGUgL1R5cGUxIC9UeXBlIC9Gb250Cj4+CmVuZG9iago1IDAgb2JqCjw8
+Ci9Db250ZW50cyA5IDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFy
+ZW50IDggMCBSIC9SZXNvdXJjZXMgPDwKL0ZvbnQgMSAwIFIgL1Byb2NTZXQgWyAvUERGIC9UZXh0
+IC9JbWFnZUIgL0ltYWdlQyAvSW1hZ2VJIF0KPj4gL1JvdGF0ZSAwIC9UcmFucyA8PAoKPj4gCiAg
+L1R5cGUgL1BhZ2UKPj4KZW5kb2JqCjYgMCBvYmoKPDwKL1BhZ2VNb2RlIC9Vc2VOb25lIC9QYWdl
+cyA4IDAgUiAvVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKNyAwIG9iago8PAovQXV0aG9yIChTdHJl
+YW1Cb3ggXChmaWN0aW9uYWxcKSkgL0NyZWF0aW9uRGF0ZSAoRDoyMDAwMDEwMTAwMDAwMCswMCcw
+MCcpIC9DcmVhdG9yIChzZWNvbmQtYnJhaW4tcGFjayBnZW5lcmF0b3IpIC9LZXl3b3JkcyAoZmlj
+dGlvbmFsOiB0cnVlOyBBSSBSZWFsaXN0IEFnZW50aWMgQUkgTWFzdGVyY2xhc3MpIC9Nb2REYXRl
+IChEOjIwMDAwMTAxMDAwMDAwKzAwJzAwJykgL1Byb2R1Y2VyIChSZXBvcnRMYWIgUERGIExpYnJh
+cnkgLSBcKG9wZW5zb3VyY2VcKSkgCiAgL1N1YmplY3QgKEZpY3Rpb25hbCB3b3Jrc2hvcCBkb2N1
+bWVudCkgL1RpdGxlIChQYXltZW50IHJlY2VpcHQgU0JYLTA5MTUtMjAwNDQpIC9UcmFwcGVkIC9G
+YWxzZQo+PgplbmRvYmoKOCAwIG9iago8PAovQ291bnQgMSAvS2lkcyBbIDUgMCBSIF0gL1R5cGUg
+L1BhZ2VzCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxh
+dGVEZWNvZGUgXSAvTGVuZ3RoIDExOTQKPj4Kc3RyZWFtCkdhdFUyYWA/LSomQUAqU3FJbUw6cD9d
+c1M8Xms6WzopJm5wYiE/Z0wpRyxhaVlYJDoqcl1VZEErOTdSNGlhTjRVVzkyPWkybTleTF8hJFFf
+XlFUWXFBZEtQREY1UitjOlZbXHA9VC9mPmI2WTRLT3QvZktJYj1cJlNuR2g3cUhIb2VnKiZEcDk8
+ZC1DZG5FJUszSmxJJ1c8WldDM0snPVZEP2xZREJVTFhcWEM5MjdubWRTR24ia15gKUptXW9vUlti
+LUAuUCMtQE5HX3FEaWQoMyhjXy9SQUFrbWJBV14iQVxEcXRAQm9Za1gsNm1lVmRXNlA0XXJnSWRO
+R1o5QCVJIWJpTzdjLD5RZyFbJDZuczZubVBbQjVcNCNHNGtBP150RW1PRDI8NCUyRVUxdCovQGci
+NWgzSD89S2JpLkM7NFk2VmFqYk5qQUNbWGQmKm8mSjBCN2BsZVJwdWhILD1JO249IT5rLWIzZGdo
+bC5qJDoxJ2NEMkhTam9JJUVbVCwnSCJRO2EjJlBKRz5EcE5WZSRIUXBbOlZ0N1E/OnRvaSQxK2Jt
+KWNPZFIxUmFZYDg2UygxcV8/N1pmSj8nJ2lCbTg8YFBkM0pdS2FeZXFsby5SaztOMWhBIzVSbzpx
+OTE/YWlMSzEvMyRmMCtiJltaU2klJFplXlw1U1g/azw5P0hUSFhTSyc/UHV1UzNrNDpRYmxfdDIv
+YSZAXkw6OyViQVJQdFVrT2RVITFaImk/X1I5OFk2RnBMIitrcVpfWVpLYk0sakUldTk8M3MyLG5z
+OlYnNTtRXT1SU3EoTWksPCtVbm5FbjNjOkpkblg7W3FsND9sNkBaSWtLIjhaO086JmwoaElwWHVd
+YEc8O2deYjcnLktxT20xQld1dUdsWW4jdDBjVXIlLC00JGBANHBcVlc1MENNPk1RaEE1KVJlN2Qy
+XG5qbCszaFJpXEBTV1k5NUtWcUJeTCNTQCcqcVJsOSchNkowa25NVm11JGUvLU9UX2lpL2wtTT0o
+VFFhR1NCQ2tQKk46IlJuYDNwJzdtLGMlTDs8JDtvKGtbNDExZTprOS1dUCZYW1U2LnAhLiJRX2VE
+NUw4NUJfWUVZbENOUiJfaT5uWDtfOjwnT2Y8UCY0NzxlQVhIU09fOzZyOj0mU1NoT1BZK1packRn
+VlcxaGFJbThCJ1w0cTZxUUU1WlpDMmtMdHFdWSxuNV9xTlI+TWErPEYzR0RDOVEsIVZVS0MvZHBC
+M2g8ZjtMR21DJnBPOV1DY1EkKEcxIjVdJEVIQipkM05fNFFWKWxANC9UYWQwQUhUTm0rUDJUPGsl
+SGFBOiFJWUI7ZyE3PTgvYyY3KF5GNUtBQl0zQ1lxNTMjUmxSKGwnTiRTamhtLnNqRGRVUEQqSFZm
+SFZGNnJ1ZUdZLjdtRz9AOzw0W3FRaE9iXmVkUGwkIldDdDdyIlA5PC5IalkzOjU2cCpncS1iVUpc
+Kj09R2lqa1gnKjloKlpQUSxeTSEmZUVdSUptJ0hpMz5zXmdIS1RkNzlNdU9vaEFla2BLLTJJalUq
+J09ucD1QJjZXbFxyZW5hOHMsOWRddCRhRXBNZC9+PmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDEw
+CjAwMDAwMDAwMDAgNjU1MzUgZiAKMDAwMDAwMDA2MSAwMDAwMCBuIAowMDAwMDAwMTEyIDAwMDAw
+IG4gCjAwMDAwMDAyMTkgMDAwMDAgbiAKMDAwMDAwMDMzMSAwMDAwMCBuIAowMDAwMDAwNDQ2IDAw
+MDAwIG4gCjAwMDAwMDA2NDkgMDAwMDAgbiAKMDAwMDAwMDcxNyAwMDAwMCBuIAowMDAwMDAxMDk4
+IDAwMDAwIG4gCjAwMDAwMDExNTcgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZmQxNTg1OTRm
+MzdhODE0ZTJiZmVhMjQ0ODliYjc5ZGE+PGZkMTU4NTk0ZjM3YTgxNGUyYmZlYTI0NDg5YmI3OWRh
+Pl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3Vy
+Y2UpCgovSW5mbyA3IDAgUgovUm9vdCA2IDAgUgovU2l6ZSAxMAo+PgpzdGFydHhyZWYKMjQ0Mgol
+JUVPRgo=
+
+--=_juniper_E021_0--

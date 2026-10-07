@@ -1,0 +1,18 @@
+date,id,type,amount_eur,fee_eur,net_eur,description,source,available_on
+2026-10-07,txn_3UNjqrRGzbVUD2Ht1THhAwb7,charge,47.60,1.75,45.85,Invoice JWL-1041,ch_3UNjqrRGzbVUD2Ht11g2cz9k,2026-10-07
+2026-10-07,txn_3UNjr3RGzbVUD2Ht0K6PazAp,charge,120.00,4.03,115.97,Invoice JWL-1044,ch_3UNjr3RGzbVUD2Ht0Kd0C4Y4,2026-10-07
+2026-10-07,txn_3UNjr3RGzbVUD2Ht0BDToP3q,refund,-40.00,0.00,-40.00,REFUND FOR CHARGE (Invoice JWL-1044),re_3UNjr3RGzbVUD2Ht0wvddXEI,2026-10-07
+2026-10-07,txn_3UNjr9RGzbVUD2Ht0Ixpw2pr,charge,40.00,1.51,38.49,Invoice JWL-1045,ch_3UNjr9RGzbVUD2Ht0hBBaujm,2026-10-07
+2026-10-07,txn_3UNjrJRGzbVUD2Ht13qyUf7J,charge,42.84,1.60,41.24,Subscription creation,ch_3UNjrJRGzbVUD2Ht1yGRThuC,2026-10-07
+2026-10-07,txn_3UNjrNRGzbVUD2Ht0GqV39LG,charge,47.60,1.75,45.85,Subscription creation,ch_3UNjrNRGzbVUD2Ht0z12Xv5e,2026-10-07
+2026-10-07,txn_3UNjrNRGzbVUD2Ht0qN2SGKT,refund,-47.60,0.00,-47.60,REFUND FOR CHARGE (Subscription creation),re_3UNjrNRGzbVUD2Ht0QFUBvTw,2026-10-07
+2026-10-07,txn_3UNjrTRGzbVUD2Ht11CYSXGN,charge,47.60,1.75,45.85,Subscription creation,ch_3UNjrTRGzbVUD2Ht1e7iRLpq,2026-10-07
+2026-10-07,txn_3UNjrXRGzbVUD2Ht11aVYQfq,charge,149.00,4.94,144.06,"Learning day seat, Tara Sample (payment link)",ch_3UNjrXRGzbVUD2Ht1XUtTlxF,2026-10-07
+2026-10-07,txn_3UNjrZRGzbVUD2Ht0Hn1qljV,charge,119.20,4.00,115.20,"Learning day seat, Leon Beispiel (payment link), code EARLYBIRD20",ch_3UNjrZRGzbVUD2Ht0rzU8l02,2026-10-07
+2026-10-07,txn_3UNjraRGzbVUD2Ht0Wqc6uU9,charge,149.00,4.94,144.06,"Learning day seat, Ines Demo (payment link)",ch_3UNjraRGzbVUD2Ht0LKJ4hVv,2026-10-07
+2026-10-07,txn_3UNjraRGzbVUD2Ht0aPOmGDO,refund,-149.00,0.00,-149.00,"REFUND FOR CHARGE (Learning day seat, Ines Demo (payment link))",re_3UNjraRGzbVUD2Ht0x3lHsP6,2026-10-07
+2026-10-07,txn_3UNjrdRGzbVUD2Ht1InpR6O3,charge,149.00,4.94,144.06,"Learning day seat, Kim Example (payment link)",ch_3UNjrdRGzbVUD2Ht1gYZ1Jit,2026-10-14
+2026-10-07,txn_1UNjreRGzbVUD2Ht8UqrLMX3,adjustment,-149.00,20.00,-169.00,Chargeback withdrawal for ch_3UNjrdRGzbVUD2Ht1gYZ1Jit,du_1UNjreRGzbVUD2HtVWbwdJO2,2026-10-07
+2026-10-07,txn_3UNjrgRGzbVUD2Ht0ACl5VMO,charge,1071.00,33.99,1037.01,JWL-1040 (paid with payment link),ch_3UNjrgRGzbVUD2Ht00wpDlS5,2026-10-07
+2026-10-07,txn_1UNjriRGzbVUD2HtWA4X7VRZ,payout,-330.97,0.00,-330.97,Juniper Workshop Lab payout (workshop),po_1UNjriRGzbVUD2Ht7FDo8rs9,2026-10-07
+2026-10-07,txn_1UNjstRGzbVUD2HtJYn97dts,payout,-1037.01,0.00,-1037.01,Juniper Workshop Lab payout (workshop),po_1UNjstRGzbVUD2Htxts74ov3,2026-10-07

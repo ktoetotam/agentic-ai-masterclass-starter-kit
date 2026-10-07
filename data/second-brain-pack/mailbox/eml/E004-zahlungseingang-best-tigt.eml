@@ -1,0 +1,48 @@
+From: Brightwell Energie <zahlungen@brightwell-energie.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: Zahlungseingang =?utf-8?q?best=C3=A4tigt?=
+Date: Fri, 14 Aug 2026 07:55:00 +0200
+Message-ID: <e004.zahlungseingang-best-tig@brightwell-energie.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_juniper_E004_0"
+
+--=_juniper_E004_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Guten Tag,
+
+wir haben Ihre Zahlung =C3=BCber 79,10 EUR f=C3=BCr die Rechnung BW-2026-08-1=
+18761 am 14.08.2026 erhalten.
+
+Ihr Brightwell Kundenservice
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E004_0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#e6aa14;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">Brightwell Energie GmbH</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Guten Tag,</p><p style=3D"margin:0 0 14px">wir ha=
+ben Ihre Zahlung =C3=BCber 79,10 EUR f=C3=BCr die Rechnung BW-2026-08-118761 =
+am 14.08.2026 erhalten.</p><p style=3D"margin:0 0 14px">Ihr Brightwell Kunden=
+service</p></td></tr>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">Sonnenallee 100, 80335 M=C3=BCnchen =C2=B7 brightwell-energi=
+e.example<br>Fictional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E004_0--

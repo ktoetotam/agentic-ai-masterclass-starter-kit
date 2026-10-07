@@ -1,0 +1,45 @@
+From: Sam Example <sam@juniper-workshop.invalid>
+To: Alex Example <alex@juniper-workshop.invalid>,
+ Jordan Example <jordan@juniper-workshop.invalid>,
+ Mira Beispiel <mira@juniper-workshop.invalid>,
+ Theo Muster <theo@juniper-workshop.invalid>
+Subject: Invitation: Weekly check-in, Tue 6 Oct 09:30
+Date: Mon, 05 Oct 2026 17:00:00 +0200
+Message-ID: <e084.invitation-weekly-check@juniper-workshop.invalid>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=_juniper_E084_0"
+
+--=_juniper_E084_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Weekly check-in for Project Lantern. Agenda: venue deposit, attendee numbers,=
+ handover guide.
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E084_0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="invite.ics"
+Content-Type: text/calendar; method="REQUEST"
+MIME-Version: 1.0
+
+QkVHSU46VkNBTEVOREFSDQpWRVJTSU9OOjIuMA0KUFJPRElEOi0vL0FJIFJlYWxpc3QvL3NlY29u
+ZC1icmFpbi1wYWNrLy9FTg0KQ0FMU0NBTEU6R1JFR09SSUFODQpYLVdSLUNBTE5BTUU6SW52aXRh
+dGlvbg0KTUVUSE9EOlJFUVVFU1QNCkJFR0lOOlZFVkVOVA0KVUlEOmNoZWNraW4tMTAwNkBqdW5p
+cGVyLXdvcmtzaG9wLmludmFsaWQNCkRUU1RBTVA6MjAyNjEwMDdUMDYwMDAwWg0KRFRTVEFSVDoy
+MDI2MTAwNlQwNzMwMDBaDQpEVEVORDoyMDI2MTAwNlQwODE1MDBaDQpTVU1NQVJZOldlZWtseSBj
+aGVjay1pbg0KTE9DQVRJT046T2ZmaWNlDQpERVNDUklQVElPTjpGaWN0aW9uYWwgd29ya3Nob3Ag
+ZGF0YS4NCk9SR0FOSVpFUjtDTj1TYW0gRXhhbXBsZTptYWlsdG86c2FtQGp1bmlwZXItd29ya3No
+b3AuaW52YWxpZA0KQVRURU5ERUU7Q049QWxleCBFeGFtcGxlO1JPTEU9UkVRLVBBUlRJQ0lQQU5U
+O1BBUlRTVEFUPU5FRURTLUFDVElPTjtSU1ZQPVRSVUU6bWFpbHRvOmFsZXhAanVuaXBlci13b3Jr
+c2hvcC5pbnZhbGlkDQpBVFRFTkRFRTtDTj1Kb3JkYW4gRXhhbXBsZTtST0xFPVJFUS1QQVJUSUNJ
+UEFOVDtQQVJUU1RBVD1ORUVEUy1BQ1RJT047UlNWUD1UUlVFOm1haWx0bzpqb3JkYW5AanVuaXBl
+ci13b3Jrc2hvcC5pbnZhbGlkDQpBVFRFTkRFRTtDTj1NaXJhIEJlaXNwaWVsO1JPTEU9UkVRLVBB
+UlRJQ0lQQU5UO1BBUlRTVEFUPU5FRURTLUFDVElPTjtSU1ZQPVRSVUU6bWFpbHRvOm1pcmFAanVu
+aXBlci13b3Jrc2hvcC5pbnZhbGlkDQpBVFRFTkRFRTtDTj1UaGVvIE11c3RlcjtST0xFPVJFUS1Q
+QVJUSUNJUEFOVDtQQVJUU1RBVD1ORUVEUy1BQ1RJT047UlNWUD1UUlVFOm1haWx0bzp0aGVvQGp1
+bmlwZXItd29ya3Nob3AuaW52YWxpZA0KRU5EOlZFVkVOVA0KRU5EOlZDQUxFTkRBUg0K
+
+--=_juniper_E084_0--

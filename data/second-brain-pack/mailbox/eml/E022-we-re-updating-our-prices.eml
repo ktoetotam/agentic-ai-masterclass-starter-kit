@@ -1,0 +1,53 @@
+From: StreamBox <news@streambox.example>
+To: Alex Example <alex@juniper-workshop.invalid>
+Subject: We're updating our prices
+Date: Thu, 01 Oct 2026 11:00:00 +0200
+Message-ID: <e022.we-re-updating-our-price@streambox.example>
+X-Fictional: true
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=_juniper_E022_0"
+
+--=_juniper_E022_0
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hello,
+
+from 1 November 2026, StreamBox Standard costs EUR 15.99 per month (currently=
+ EUR 13.99). The new price applies from your first payment on or after 1 Nove=
+mber.
+
+If you don't want to continue, you can cancel any time before then.
+
+StreamBox
+
+Fictional workshop data - not a real message.
+
+--=_juniper_E022_0
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+
+<!doctype html><html><head><meta charset=3D"utf-8"></head>
+<body style=3D"margin:0;background:#f2f2f2;font-family:Arial,Helvetica,sans-s=
+erif">
+<table role=3D"presentation" width=3D"100%" cellpadding=3D"0" cellspacing=3D"=
+0"><tr><td align=3D"center" style=3D"padding:20px 8px">
+<table role=3D"presentation" width=3D"600" cellpadding=3D"0" cellspacing=3D"0=
+" style=3D"background:#ffffff;max-width:600px">
+<tr><td style=3D"background:#c81414;padding:16px 24px;color:#ffffff;font-size=
+:20px;font-weight:bold">StreamBox</td></tr>
+
+<tr><td style=3D"padding:24px;font-size:14px;line-height:1.5;color:#222222"><=
+p style=3D"margin:0 0 14px">Hello,</p><p style=3D"margin:0 0 14px">from 1 Nov=
+ember 2026, StreamBox Standard costs EUR 15.99 per month (currently EUR 13.99=
+). The new price applies from your first payment on or after 1 November.</p><=
+p style=3D"margin:0 0 14px">If you don&#x27;t want to continue, you can cance=
+l any time before then.</p><p style=3D"margin:0 0 14px">StreamBox</p></td></t=
+r>
+<tr><td style=3D"padding:14px 24px;font-size:11px;color:#777777;border-top:1p=
+x solid #eeeeee">StreamBox Media (fictional) =C2=B7 streambox.example<br>Fict=
+ional workshop data - not a real message.</td></tr>
+</table></td></tr></table></body></html>
+
+--=_juniper_E022_0--

@@ -9,8 +9,10 @@ Use these files immediately when you cannot bring approved work material. Preser
 | `company-brief.md` | Website, HTML deck, media studio | Audience, approved claims, brand voice and CTA |
 | `leads.csv` | Market & lead scout | Explainable scoring, missing data, outreach drafts |
 | `knowledge/` | Second brain | Revision, contradiction, answerable and missing facts |
+| `second-brain-pack/` | Second brain, Invoice Agent | A fictional person's whole working life: 84 emails with attachments, a Drive folder, a messy Downloads folder, 42 notes, six record databases, a calendar and 40 test questions. See its README |
 | `media/storyboard.md` | HTML deck, media studio | Narrative, captions and a no-generator fallback |
-| `invoices/` | Accountant agent | Duplicate detection, arithmetic, missing currency |
+| `accountant-pack/` | Accountant agent | A fictional company's September books: invoices, bills, receipts, an expense claim, a mailbox, German bank statements, a Stripe sandbox snapshot and an answer key with 24 planted problems. See its README |
+| `invoices/` | Accountant agent (warm-up) | Duplicate detection, arithmetic, missing currency |
 | `news/feed.xml` and `news/source-notes.md` | News radar | Deduplication, dates, evidence and offline ingestion |
 | `localisation/` | Localisation agent | Glossary, variables, plural forms and locale formats |
 | `sales.csv` | Spreadsheet killer | Reconciliation, filters and scenario calculations |
