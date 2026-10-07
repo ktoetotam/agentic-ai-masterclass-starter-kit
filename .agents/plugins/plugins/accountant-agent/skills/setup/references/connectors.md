@@ -48,6 +48,15 @@ Vendors publish agent skills for their own products. They explain the product; t
   ```
 
   `stripe-docs` looks things up in Stripe's documentation; `stripe-best-practices` covers sandboxes, subscriptions, refunds and key permissions. Manually installed skills do not update themselves (`npx skills update -y`).
+
+  The installer asks five questions (checked with `skills` 1.7.1 on 7 October 2026). Walk the participant through them; they type the answers themselves:
+  1. "Need to install the following packages: skills... Ok to proceed?" `y`.
+  2. It lists all ten Stripe skills: that is only the list; `--skill` installs the two named.
+  3. "Which agents do you want to install to?" Codex is included under "Universal" (`.agents/skills`). For Claude Code, search `claude` and press Space on "Claude Code (.claude/skills)", or Claude Code will not see the skills.
+  4. "Installation scope": Global (`~/.agents/skills`, `~/.claude/skills`), so the skills stay out of the project's Git.
+  5. "Proceed with installation?" only if the summary lists exactly `stripe-best-practices` and `stripe-docs`. Then "Install the find-skills skill?": No.
+
+  Skills load when a chat starts: start a new chat, then check with `$stripe-docs` (Codex) or `/stripe-docs` (Claude Code).
 - **Never install `stripe-pay`** in this challenge: it lets an agent send money to another business. `npx skills add https://docs.stripe.com` without `--skill` installs it together with the rest, and so does the Stripe plugin.
 - **Stripe plugin** ([Agent plugins for Stripe](https://docs.stripe.com/agents/plugin)): all Stripe skills plus the Stripe MCP server, kept up to date. Claude Code: `claude plugin install stripe@claude-plugins-official`. Codex: `codex plugin add stripe@openai-curated`. It signs in to a Stripe account, so it is for after the course, with a sandbox; during the workshop use the read-only key and the setup above.
 - **Anthropic `finance` plugin** for Claude Code ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins/tree/main/finance)): month-end close, journal entries and a `reconciliation` skill for bank, subledger and intercompany reconciliations. Install with `claude plugin marketplace add anthropics/knowledge-work-plugins` and `claude plugin install finance@knowledge-work-plugins`. Compare its method with `books.py reconcile`; it is not financial, tax or audit advice. It also lists Snowflake, Databricks, BigQuery and Slack connectors: do not sign in to any you do not need.

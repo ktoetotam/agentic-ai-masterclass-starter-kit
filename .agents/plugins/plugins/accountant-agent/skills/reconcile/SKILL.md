@@ -23,6 +23,8 @@ Open `out/matches.csv` and `out/status.csv` and say in plain words:
 - invoices paid through Stripe are counted once, inside the payout, never again as bank payments;
 - which customer invoices are open or overdue, and which bills are open, on hold or blocked, and why.
 
+If Stripe's own `stripe-docs` and `stripe-best-practices` skills are installed (see `../setup/references/connectors.md`), use them to check how Stripe treats refunds, disputes, dispute fees and payouts, and name the Stripe page. They explain Stripe; the amounts still come from `books.py`.
+
 Read `out/review-queue.csv` with the participant. For each item: what it is, why it matters, what a person should do. Use `../setup/references/review-codes.md` for the meaning of each code.
 
 ## Answer questions with sources
