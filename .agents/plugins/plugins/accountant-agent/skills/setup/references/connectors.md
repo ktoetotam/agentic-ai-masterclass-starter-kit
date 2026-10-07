@@ -37,4 +37,18 @@ Use the account the facilitator gave you (`...@hypefree.ai`), never a work accou
 | Customers | A CSV export | Notion, HubSpot (official MCP servers) |
 | Documents | One Drive or SharePoint folder, read-only | Google Drive, Microsoft 365 connectors |
 
-For Claude Code, Anthropic's `finance` plugin ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins/tree/main/finance)) has a reconciliation skill worth reading. It also lists Snowflake, Databricks, BigQuery and Slack connectors: do not sign in to any you do not need.
+## Official skills and plugins from the vendors
+
+Vendors publish agent skills for their own products. They explain the product; they never replace `books.py`, which does every sum. Offer them only when the participant asks, install only what they pick, and say what each one can do before installing it. Checked 7 October 2026.
+
+- **Stripe agent skills** ([docs.stripe.com/skills](https://docs.stripe.com/skills)). The index at `https://docs.stripe.com/.well-known/skills/index.json` lists ten skills. In the workshop install only the two that read and explain:
+
+  ```bash
+  npx skills add https://docs.stripe.com --skill stripe-docs --skill stripe-best-practices
+  ```
+
+  `stripe-docs` looks things up in Stripe's documentation; `stripe-best-practices` covers sandboxes, subscriptions, refunds and key permissions. Manually installed skills do not update themselves (`npx skills update -y`).
+- **Never install `stripe-pay`** in this challenge: it lets an agent send money to another business. `npx skills add https://docs.stripe.com` without `--skill` installs it together with the rest, and so does the Stripe plugin.
+- **Stripe plugin** ([Agent plugins for Stripe](https://docs.stripe.com/agents/plugin)): all Stripe skills plus the Stripe MCP server, kept up to date. Claude Code: `claude plugin install stripe@claude-plugins-official`. Codex: `codex plugin add stripe@openai-curated`. It signs in to a Stripe account, so it is for after the course, with a sandbox; during the workshop use the read-only key and the setup above.
+- **Anthropic `finance` plugin** for Claude Code ([knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins/tree/main/finance)): month-end close, journal entries and a `reconciliation` skill for bank, subledger and intercompany reconciliations. Install with `claude plugin marketplace add anthropics/knowledge-work-plugins` and `claude plugin install finance@knowledge-work-plugins`. Compare its method with `books.py reconcile`; it is not financial, tax or audit advice. It also lists Snowflake, Databricks, BigQuery and Slack connectors: do not sign in to any you do not need.
+- **Gmail and Google Drive**: the ready-made Claude connectors or Codex plugins above. Google's own Workspace CLI (`googleworkspace/cli`) ships agent skills too, but says it is not an officially supported Google product and needs a Google Cloud project: skip it in the workshop.
