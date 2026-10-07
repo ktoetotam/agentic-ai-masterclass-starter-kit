@@ -1,0 +1,6 @@
+Datum;Typ;Wertpapier;ISIN;Stück;Kurs (EUR);Kurswert (EUR);Gebühren (EUR);Steuern (EUR);Betrag Verrechnungskonto (EUR)
+01.07.2026;Sparplan Kauf;Welt Aktien ETF (fictional);XX0000000001;3,512;142,36;500,00;0,00;0,00;-500,00
+03.08.2026;Sparplan Kauf;Welt Aktien ETF (fictional);XX0000000001;3,488;143,35;500,00;0,00;0,00;-500,00
+01.09.2026;Sparplan Kauf;Welt Aktien ETF (fictional);XX0000000001;3,579;139,70;500,00;0,00;0,00;-500,00
+15.09.2026;Ausschüttung;Welt Aktien ETF (fictional);XX0000000001;214,732;0,42;90,19;0,00;16,65;73,54
+22.09.2026;Verkauf;Demo Tech AG (fictional);XX0000000003;20,000;61,20;1.224,00;1,00;85,19;1.137,81

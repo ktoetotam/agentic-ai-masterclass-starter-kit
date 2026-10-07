@@ -12,6 +12,7 @@ Use these files immediately when you cannot bring approved work material. Preser
 | `second-brain-pack/` | Second brain, Invoice Agent | A fictional person's whole working life: 84 emails with attachments, a Drive folder, a messy Downloads folder, 42 notes, six record databases, a calendar and 40 test questions. See its README |
 | `media/storyboard.md` | HTML deck, media studio | Narrative, captions and a no-generator fallback |
 | `accountant-pack/` | Accountant agent | A fictional company's September books: invoices, bills, receipts, an expense claim, a mailbox, German bank statements, a Stripe sandbox snapshot and an answer key with 24 planted problems. See its README |
+| `bank-statements-pack/` | Accountant agent, any finance build | Five fictional accounts in real export formats: company bank (CAMT.053, MT940), personal bank (CSV, PDF), broker, crypto exchange and a PayPal-style wallet. See its README |
 | `invoices/` | Accountant agent (warm-up) | Duplicate detection, arithmetic, missing currency |
 | `news/feed.xml` and `news/source-notes.md` | News radar | Deduplication, dates, evidence and offline ingestion |
 | `localisation/` | Localisation agent | Glossary, variables, plural forms and locale formats |

@@ -13,7 +13,7 @@ Run `books.py package`. It writes `out/month-end-2026-09.xlsx` (Summary, Status,
 
 ## 2. Questions for the tax adviser
 
-Add to `out/summary.md` a short section "Questions for the tax adviser" in plain words: bills from abroad without VAT, bills addressed to a person, the reverse-charge invoice without a VAT ID, anything else in the review queue a person cannot decide alone. Do not calculate the VAT payable; the tax adviser does that.
+Add to `out/summary.md` a short section "Questions for the tax adviser" in plain words: bills from abroad without VAT, bills addressed to a person, the reverse-charge invoice without a VAT ID, anything else in the review queue a person cannot decide alone. Do not calculate the VAT payable; the tax adviser does that. When a question touches a German tax rule (small business exemption, reverse charge, small invoices, deadlines, e-invoices, record keeping), quote the rule and link the official source from `../setup/references/german-tax-sources.md`; never decide it.
 
 ## 3. Drafts, never sent
 
