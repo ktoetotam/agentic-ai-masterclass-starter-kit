@@ -369,7 +369,8 @@ def set_timezone(args, users, tz):
         cal = api(args, u, "calendar", "v3")
         before = run(cal.calendars().get(calendarId="primary", fields="timeZone"))["timeZone"]
         if before != tz:
-            run(cal.calendars().patch(calendarId="primary", body={"timeZone": tz}, fields="timeZone"))
+            # patch answers "Not Found" for the alias "primary", so it gets the calendar's real id (the address)
+            run(cal.calendars().patch(calendarId=u, body={"timeZone": tz}, fields="timeZone"))
         print(f"{u}: calendar time zone {before} -> {tz}" if before != tz else f"{u}: calendar time zone already {tz}")
 
 
