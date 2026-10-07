@@ -259,6 +259,23 @@ def seed_calendar(args, user):
     print(f"  calendar: added {len(events)} events")
 
 
+def share_calendars(args, users, viewer):
+    """Let the facilitator see each participant's primary calendar (read-only, no notification emails)."""
+    if not args.apply:
+        print(f"  calendar: would share {len(users)} calendars read-only with {viewer}")
+        return
+    for u in users:
+        cal = api(args, u, "calendar", "v3")
+        run(cal.acl().insert(calendarId="primary", sendNotifications=False,
+                             body={"role": "reader", "scope": {"type": "user", "value": viewer}}))
+    vcal = api(args, viewer, "calendar", "v3")
+    listed = {c["id"] for c in run(vcal.calendarList().list(maxResults=250)).get("items", [])}
+    for u in users:
+        if u not in listed:
+            run(vcal.calendarList().insert(body={"id": u, "selected": True}))
+    print(f"  calendar: {len(users)} calendars shared read-only with {viewer} and added to its calendar list")
+
+
 # ---------------------------------------------------------------------------------- check
 
 def check(args, users):
@@ -286,10 +303,14 @@ def main():
     ap.add_argument("--apply", action="store_true", help="really write; without it nothing changes")
     ap.add_argument("--check", action="store_true", help="only report what each account contains")
     ap.add_argument("--reimport-mail", action="store_true", help="move earlier pack emails to Trash and import them again")
+    ap.add_argument("--share-calendars-with", help="give this account read access to every participant's calendar")
     args = ap.parse_args()
     users = [u.strip() for u in args.users.split(",") if u.strip()]
     if args.check:
         check(args, users)
+        return
+    if args.share_calendars_with:
+        share_calendars(args, users, args.share_calendars_with)
         return
     parts = set(args.only.split(","))
     if "drive" in parts:
