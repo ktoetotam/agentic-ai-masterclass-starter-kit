@@ -2,7 +2,7 @@
 
 Each group uses **one private GitHub repository**, and each participant works in their own local clone and branch. Choose one repository owner to prepare the first copy and invite the group. The facilitator supplies the approved GitHub owner, repository name, and group membership; those destinations must be confirmed before creating repositories or granting access.
 
-If your facilitator has already created your group repository from the private starter template, accept the invitation and go straight to **Each teammate clones their own copy** below. Do not initialize another repository or push a separate first commit into it.
+If your facilitator has already created and set up your group repository, accept the invitation and go straight to **Each teammate clones their own copy** below. Do not initialize another repository, push a separate first commit into it, or copy starter-kit files over its harness (`AGENTS.md`, `CLAUDE.md`, `.codex/`, `.claude/`, the skills). The whole day happens in that repository.
 
 You can begin immediately on one shared laptop with a local Git repository. Take turns as the driver while the others review. A remote repository is needed when several laptops exchange changes; a local repository alone does not synchronize them.
 
@@ -12,7 +12,7 @@ Open the extracted workshop folder in Codex and use:
 
 > Use $masterclass-teamwork to help our group work together. Our team slug is team-01. First check Git and whether this folder is already a repository. If we are the designated owner, initialize this standalone kit locally and help us review the first commit. If a shared repository already exists, help me clone the approved URL into a separate folder and create my own branch. Preserve existing files and history. Do not create a remote repository or invite people until the facilitator has supplied the owner, repository name, and membership.
 
-Install **Git 2.55.0 or newer** with the [user-account installation instructions](../../../../guides/setup-technical.md#install-git), then reopen the terminal and check:
+Install **Git 2.55.0 or newer** in your user account with `$masterclass-setup`, then reopen the terminal and check:
 
 ```text
 git --version

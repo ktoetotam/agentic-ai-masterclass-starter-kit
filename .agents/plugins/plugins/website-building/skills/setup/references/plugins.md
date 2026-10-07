@@ -1,6 +1,8 @@
 # Plugins that pair well with the website challenge (Claude Code)
 
-Everything here is optional. The `website-building` skills work alone. These are the plugins we use around them, with the repository each one comes from, so you can read the source before installing. Sources and commands checked on 4 October 2026 against each repository's marketplace file and README.
+Everything here is optional. The `website-building` skills work alone. These are the plugins we use around them, with the repository each one comes from, so you can read the source before installing. Sources and commands checked on 4 October 2026 against each repository's marketplace file and README; `stripe`, `resend` and `cloudflare` on 7 October 2026.
+
+In a masterclass group repository, `.claude/settings.json` already enables `frontend-design`, `design`, `stripe`, `resend` and `cloudflare` for the whole group: accept the install prompt when you trust the folder instead of installing them again.
 
 Install syntax (Claude Code): `claude plugin marketplace add --scope local <owner/repo>` once, then `claude plugin install --scope local <plugin>@<marketplace>`. **Always pass `--scope local`:** both commands default to `user`, which installs for every project on the computer ([plugin commands reference](https://code.claude.com/docs/en/plugins/cli-reference)). `local` keeps the plugin to this project and out of Git. Say so before installing, and remove with `claude plugin uninstall --scope local <plugin>`. Inside a chat the same works as `/plugin`. Codex does not use these plugins; the `website-building` skills cover the same steps there.
 
@@ -15,13 +17,18 @@ Install syntax (Claude Code): `claude plugin marketplace add --scope local <owne
 | Brand and layout | **figma** | Read a Figma design (frames, tokens) and turn it into code | [figma/mcp-server-guide](https://github.com/figma/mcp-server-guide) (Figma) |
 | Images | **canva** | Create, resize and brand-check designs in the participant's own Canva account | [canva-sdks/canva-skills](https://github.com/canva-sdks/canva-skills/tree/main/plugins/canva) (Canva) |
 | Critique (7) | **playwright** | A real browser for screenshots at phone and desktop width | [anthropics/claude-plugins-public](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright), wrapping [microsoft/playwright-mcp](https://github.com/microsoft/playwright-mcp) |
-| Deploy (8) | **cloudflare** | See the warning below | [cloudflare/skills](https://github.com/cloudflare/skills) (Cloudflare, Apache-2.0) |
+| Payments | **stripe** | Stripe's skills for Checkout, webhooks and sandbox keys | [stripe/ai](https://github.com/stripe/ai) (Stripe) |
+| Email | **resend** | Resend's sending and email best-practice skills | [resend/resend-skills](https://github.com/resend/resend-skills) (Resend) |
+| Deploy (8) | **cloudflare** | Cloudflare's own skills for Wrangler, Workers and D1 (`wrangler`, `workers-best-practices`, `web-perf`); its connector stays signed out, see below | [cloudflare/skills](https://github.com/cloudflare/skills) (Cloudflare, Apache-2.0) |
 
 ## Install commands
 
 ```sh
-# Anthropic official marketplace (already known to Claude Code): frontend-design, figma, canva, playwright
+# Anthropic official marketplace (already known to Claude Code): frontend-design, stripe, resend, cloudflare, figma, canva, playwright
 claude plugin install --scope local frontend-design@claude-plugins-official
+claude plugin install --scope local stripe@claude-plugins-official
+claude plugin install --scope local resend@claude-plugins-official
+claude plugin install --scope local cloudflare@claude-plugins-official
 
 # Anthropic knowledge-work marketplace: design, marketing, searchfit-seo
 claude plugin marketplace add --scope local anthropics/knowledge-work-plugins
@@ -33,7 +40,7 @@ Direct from the SearchFit repository instead: `claude plugin marketplace add --s
 
 ## Read this before installing
 
-- **Third-party code.** `searchfit-seo`, `figma`, `canva` and `cloudflare` are written by the companies named, not by AI Realist. Skim the repository first. A plugin is instructions plus optional connectors; it can ask the agent to run commands.
+- **Third-party code.** `searchfit-seo`, `figma`, `canva`, `stripe`, `resend` and `cloudflare` are written by the companies named, not by AI Realist. Skim the repository first. A plugin is instructions plus optional connectors; it can ask the agent to run commands.
 - **Bundled connectors.** Several plugins ship with connector definitions. The `design` and `marketing` plugins list Slack, Linear, Asana, Notion, Atlassian, Figma, Canva and more. They do nothing until you sign in to them. **Do not sign in to any you do not need**, and never to a service that sends messages or edits company records on your behalf. Check with `/mcp` and disable what you do not use.
-- **The Cloudflare plugin is not recommended for this workshop.** It bundles `https://mcp.cloudflare.com/mcp`, the account-wide API connector. Its sign-in covers a whole account and cannot be limited to your one workshop Worker. Participants publish only to their own workshop deploy, through `website-building-deploy`, `masterclass-deploy` and the facilitator's deployment target. If you want Cloudflare guidance, read the skills in [cloudflare/skills](https://github.com/cloudflare/skills) (`wrangler`, `workers-best-practices`, `web-perf`) as documentation, or use the read-only Documentation connector from `connectors.md`.
+- **Cloudflare plugin: install it, leave its connector signed out.** Its skills (`wrangler`, `workers-best-practices`, `web-perf`) are the best guide to Workers and D1. It also bundles `https://mcp.cloudflare.com/mcp`, the account-wide API connector: its sign-in covers a whole account and cannot be limited to your one workshop Worker, so do not sign in to it (check with `/mcp`). Publish only to your own workshop deploy, through `website-building-deploy`, `masterclass-deploy` and the facilitator's deployment target. The same goes for the `stripe` and `resend` connectors: the site uses its own sandbox keys from `.dev.vars`.
 - **No plugin replaces the checks.** Run `seo_check.py` and `check_page.py` anyway; they measure, and the result goes in the handover.

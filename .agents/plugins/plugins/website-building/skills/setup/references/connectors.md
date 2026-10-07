@@ -64,7 +64,7 @@ Keys used: `url`, `enabled`, `enabled_tools`, `disabled_tools`, `bearer_token_en
 
 ## Plugins and skills worth knowing
 
-See `plugins.md` in this folder: frontend-design, design, searchfit-seo, marketing, figma, canva and playwright, each with the repository it comes from, and why the Cloudflare plugin is not recommended. GitHub work uses the `gh` command-line tool the workshop already sets up.
+See `plugins.md` in this folder: frontend-design, design, stripe, resend, cloudflare, searchfit-seo, marketing, figma, canva and playwright, each with the repository it comes from, and why the Cloudflare plugin's connector stays signed out. GitHub work uses the `gh` command-line tool the workshop already sets up.
 
 ## What not to add for this challenge
 
